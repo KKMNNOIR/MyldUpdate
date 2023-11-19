@@ -1,7 +1,7 @@
 {
 	"multipart": [
 		{
-			"when": { "south": true },
+			"when": { "south": "true" },
 			"apply": [
 				{ "model": "block/vine"},
 				{ "model": "block/vine_alt1"},
@@ -13,7 +13,7 @@
 			]
 		},
 		{
-			"when": { "west": true },
+			"when": { "west": "true" },
 			"apply": [
 				{ "model": "block/vine", "y": 90 },
 				{ "model": "block/vine_alt1", "y": 90 },
@@ -25,7 +25,7 @@
 			]
 		},
 		{
-			"when": { "north": true },
+			"when": { "north": "true" },
 			"apply": [
 				{ "model": "block/vine", "y": 180 },
 				{ "model": "block/vine_alt1", "y": 180 },
@@ -37,7 +37,7 @@
 			]
 		},
 		{
-			"when": { "east": true },
+			"when": { "east": "true" },
 			"apply": [
 				{ "model": "block/vine", "y": 270 },
 				{ "model": "block/vine_alt1", "y": 270 },
@@ -49,7 +49,7 @@
 			]
 		},
 		{
-			"when": { "up": true },
+			"when": { "up": "true" },
 			"apply": [
 				{ "model": "block/vine", "x": 90 },
 				{ "model": "block/vine_alt1", "x": 90 },
@@ -61,7 +61,7 @@
 			]
 		},
 		{
-			"when": { "up": false, "east": false, "north": false, "south": false, "west": false },
+			"when": { "up": "false", "east": "false", "north": "false", "south": "false", "west": "false" },
 			"apply": [
 				{ "model": "block/polyporaceae_n0" },
 				{ "model": "block/polyporaceae_n1" },
