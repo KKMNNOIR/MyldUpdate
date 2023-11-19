@@ -1,0 +1,22 @@
+{
+    "structures": [
+        {
+            "structure": "vanilla_plus:desert_well",
+            "weight": 2
+        },
+        {
+            "weight": 1,
+            "structure": "vanilla_plus:ruined_desert_well"
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 10,
+        "separation": 5,
+        "salt": 1811656695,
+        "exclusion_zone": {
+            "other_set": "vanilla_plus:desert_fossil",
+            "chunk_count": 1
+        }
+    }
+}

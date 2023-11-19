@@ -1,0 +1,123 @@
+{
+    
+    "fallback": "vanilla_plus:nether_fortress/terminator",
+    "elements": [
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_closed_intersections_1"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_closed_intersections_2"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_open_intersections_1"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_open_intersections_2"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_intersection",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_open_intersections_3"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_intersection",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_open_intersections_4"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_1"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_2"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_3"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_staircase_1"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_staircase_2"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_balcony_blaze"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/bridges/bridge_balcony_wither_skeleton"
+            }
+        }
+    ]
+}

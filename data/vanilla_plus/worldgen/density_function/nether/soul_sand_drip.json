@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:mul",
+    "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+            "type": "minecraft:add",
+            "argument1": {
+                "type": "minecraft:add",
+                "argument1": {
+                    "type": "minecraft:y_clamped_gradient",
+                    "from_y": 128,
+                    "to_y": 230,
+                    "from_value": -1,
+                    "to_value": 1
+                },
+                "argument2": {
+                    "type": "minecraft:y_clamped_gradient",
+                    "from_y": -32,
+                    "to_y": 128,
+                    "from_value": 0,
+                    "to_value": 0
+                }
+            },
+            "argument2": {
+                "type": "minecraft:mul",
+                "argument1": {
+                    "type": "minecraft:noise",
+                    "noise": "vanilla_plus:nether/soul_sand_drip",
+                    "xz_scale": 8,
+                    "y_scale": 0
+                },
+                "argument2": 1
+            }
+        },
+        "argument2": 1
+    },
+    "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "vanilla_plus:nether/ridges_folded",
+            "points": [
+                {
+                    "location": -1.0,
+                    "derivative": 0.0,
+                    "value": 8.0
+                },
+                {
+                    "location": -0.4,
+                    "derivative": 0,
+                    "value": 1
+                },
+                {
+                    "location": 0,
+                    "derivative": 0,
+                    "value": 0.5
+                },
+                {
+                    "location": 1,
+                    "derivative": 0,
+                    "value": 0.25
+                }
+            ]
+        }
+    }
+}

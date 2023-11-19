@@ -1,0 +1,12 @@
+{
+    "feature": {
+        "type": "minecraft:random_patch",
+        "config": {
+            "feature": "vanilla_plus:nether_fortress/terminator_base",
+            "tries": 12,
+            "xz_spread": 2,
+            "y_spread": 2
+        }
+    },
+    "placement": []
+}
