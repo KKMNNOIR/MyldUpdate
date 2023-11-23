@@ -1,41 +1,11 @@
 {
   "type": "vanilla_plus:development_room",
   "generator": {
-    "settings": {
-      "lakes": false,
-      "features": false,
-      "biome": "vanilla_plus:development_room",
-      "structures": {
-        "structures": {
-          "minecraft:igloo": {
-            "spacing": 32,
-            "separation": 8,
-            "salt": 14357618
-          },
-          "minecraft:village": {
-            "spacing": 32,
-            "separation": 8,
-            "salt": 10387312
-          },
-          "minecraft:pillager_outpost": {
-            "spacing": 10,
-            "separation": 4,
-            "salt": 10387312
-          }
-        }
-      },
-      "layers": [
-        {
-          "height": 1,
-          "block": "minecraft:bedrock"
-        },
-        {
-          "height": 45,
-          "block": "minecraft:smooth_stone"
-        }
-      ]
-    },
-    "type": "minecraft:flat",
-    "seed": 0
+    "type": "minecraft:noise",
+    "settings": "vanilla_plus:development_room",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "vanilla_plus:development_room"
+    }
   }
 }
