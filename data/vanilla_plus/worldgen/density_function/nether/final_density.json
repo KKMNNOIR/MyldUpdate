@@ -64,7 +64,7 @@
                                                           "argument1": "vanilla_plus:nether/offset",
                                                           "argument2": {
                                                             "type": "minecraft:max",
-                                                            "argument1": "vanilla_plus:nether/soul_sand_drip",
+                                                            "argument1": "vanilla_plus:nether/ceiling_spine",
                                                             "argument2": "vanilla_plus:nether/islands"
                                                           }
                                                         }
