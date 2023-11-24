@@ -25,7 +25,7 @@
                 "type": "minecraft:mul",
                 "argument1": {
                     "type": "minecraft:noise",
-                    "noise": "vanilla_plus:nether/soul_sand_drip",
+                    "noise": "vanilla_plus:nether/ceiling_spine",
                     "xz_scale": 8,
                     "y_scale": 0
                 },
