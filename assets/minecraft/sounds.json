@@ -1,7 +1,7 @@
 {
   "music.nether.blackstone_wastes": {
     "sounds": [
-      { "name": "music/game/nether/blackstone_wastes/fizz", "stream": true, "volume": 0.5, "weight": 7 },
+      { "name": "music/game/nether/nether_wastes/rubedo", "stream": true, "volume": 0.5, "weight": 7 },
       { "name": "music/game/nether/nether1", "stream": true, "weight": 1},
       { "name": "music/game/nether/nether2", "stream": true, "weight": 1},
       { "name": "music/game/nether/nether3", "stream": true, "weight": 1},
@@ -10,7 +10,7 @@
   },
   "music.nether.nether_frost": {
     "sounds": [
-      { "name": "music/game/nether/frost_deltas/lost_settlement", "stream":true, "volume": 0.5, "weight": 7 },
+      { "name": "music/game/nether/soulsand_valley/so_below", "stream":true, "volume": 0.5, "weight": 7 },
       { "name": "music/game/nether/nether1", "stream": true, "weight": 1 },
       { "name": "music/game/nether/nether2", "stream": true, "weight": 1 },
       { "name": "music/game/nether/nether3", "stream": true, "weight": 1 },
@@ -19,10 +19,13 @@
   },
   "music.cave.outpost": {
     "sounds": [
-      { "name": "music/game/cave/outpost", "stream":true, "volume": 0.5, "weight": 7 },
-      { "name": "music/game/calm1", "stream": true, "weight": 1 },
-      { "name": "music/game/calm2", "stream": true, "weight": 1 },
-      { "name": "music/game/calm3", "stream": true, "weight": 1 },
+      { "name": "music/game/stand_tall", "stream":true, "volume": 0.5, "weight": 7 },
+      { "name": "music/game/hal1", "stream": true, "weight": 1 },
+      { "name": "music/game/hal2", "stream": true, "weight": 1 },
+      { "name": "music/game/hal3", "stream": true, "weight": 1 },
+      { "name": "music/game/hal4", "stream": true, "weight": 1 },
+      { "name": "music/game/piano1", "stream": true, "weight": 1 },
+      { "name": "music/game/piano2", "stream": true, "weight": 1 },
       { "name": "music/game/piano3", "stream": true, "weight": 1 }
     ]
   },
@@ -377,16 +380,18 @@
   },
   "minecraft:music.cave.desert_cave": {
     "sounds": [
-      { "name": "music/game/cave/desert_temple", "stream":true, "volume": 0.5, "weight": 7 },
-      { "name": "music/game/calm1", "stream": true, "weight": 1 },
-      { "name": "music/game/calm2", "stream": true, "weight": 1 },
-      { "name": "music/game/calm3", "stream": true, "weight": 1 },
-      { "name": "music/game/piano3", "stream": true, "weight": 1 }
+      { "name": "music/game/one_more_day", "stream":true, "volume": 0.5, "weight": 7 },
+      { "name": "music/game/hal1", "stream": true, "weight": 1 },
+      { "name": "music/game/hal2", "stream": true, "weight": 1 },
+      { "name": "music/game/hal3", "stream": true, "weight": 1 },
+      { "name": "music/game/hal4", "stream": true, "weight": 1 },
+      { "name": "music/game/nuance1", "stream": true, "weight": 1 },
+      { "name": "music/game/nuance2", "stream": true, "weight": 1 }
     ]
   },
   "music.nether.withering_nether_wastes": {
     "sounds": [
-      { "name": "music/game/nether/withering_nether_wasted/nether_wastes", "stream": true, "volume": 0.5, "weight": 7 },
+      { "name": "music/game/nether/nether_wastes/rubedo", "stream": true, "volume": 0.5, "weight": 7 },
       { "name": "music/game/nether/nether1", "stream": true, "weight": 1},
       { "name": "music/game/nether/nether2", "stream": true, "weight": 1},
       { "name": "music/game/nether/nether3", "stream": true, "weight": 1},
