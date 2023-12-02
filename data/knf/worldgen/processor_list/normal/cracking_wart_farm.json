@@ -1,0 +1,186 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:nether_wart",
+                        "probability": 0.25
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_wart",
+                        "Properties": {
+                            "age": "1"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:nether_wart",
+                        "probability": 0.25
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_wart",
+                        "Properties": {
+                            "age": "2"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:nether_wart",
+                        "probability": 0.25
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_wart",
+                        "Properties": {
+                            "age": "3"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:nether_bricks",
+                        "probability": 0.375
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_nether_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:capped",
+            "limit": 1,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:random_blockstate_match",
+                            "block_state": {
+                                "Name": "minecraft:black_glazed_terracotta",
+                                "Properties": {
+                                    "facing": "south"
+                                }
+                            },
+                            "probability": 0.25
+                        },
+                        "output_state": {
+                            "Name": "minecraft:chest",
+                            "Properties": {
+                                "type": "single",
+                                "facing": "south",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "block_entity_modifier": {
+                            "type": "minecraft:append_loot",
+                            "loot_table": "minecraft:chests/nether_bridge"
+                        }
+                    },
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:random_blockstate_match",
+                            "block_state": {
+                                "Name": "minecraft:black_glazed_terracotta",
+                                "Properties": {
+                                    "facing": "west"
+                                }
+                            },
+                            "probability": 0.25
+                        },
+                        "output_state": {
+                            "Name": "minecraft:chest",
+                            "Properties": {
+                                "type": "single",
+                                "facing": "west",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "block_entity_modifier": {
+                            "type": "minecraft:append_loot",
+                            "loot_table": "minecraft:chests/nether_bridge"
+                        }
+                    },
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:blockstate_match",
+                            "block_state": {
+                                "Name": "minecraft:black_glazed_terracotta",
+                                "Properties": {
+                                    "facing": "east"
+                                }
+                            }
+                        },
+                        "output_state": {
+                            "Name": "minecraft:chest",
+                            "Properties": {
+                                "type": "single",
+                                "facing": "east",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "block_entity_modifier": {
+                            "type": "minecraft:append_loot",
+                            "loot_table": "minecraft:chests/nether_bridge"
+                        }
+                    },
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:random_blockstate_match",
+                            "block_state": {
+                                "Name": "minecraft:black_glazed_terracotta",
+                                "Properties": {
+                                    "facing": "north"
+                                }
+                            },
+                            "probability": 0.25
+                        },
+                        "output_state": {
+                            "Name": "minecraft:chest",
+                            "Properties": {
+                                "type": "single",
+                                "facing": "north",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "block_entity_modifier": {
+                            "type": "minecraft:append_loot",
+                            "loot_table": "minecraft:chests/nether_bridge"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
