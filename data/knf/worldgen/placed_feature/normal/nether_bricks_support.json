@@ -38,7 +38,8 @@
                                         "minecraft:polished_blackstone_bricks",
                                         "minecraft:polished_blackstone_brick_wall",
                                         "minecraft:cracked_nether_bricks",
-                                        "minecraft:cracked_polished_blackstone_bricks"
+                                        "minecraft:cracked_polished_blackstone_bricks",
+                                        "minecraft:ladder"
                                     ],
                                     "offset": [
                                         0,
