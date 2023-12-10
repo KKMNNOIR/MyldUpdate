@@ -9,20 +9,6 @@
                 "processors": "knf:normal/magma_deco",
                 "location": "knf:normal/bridges/straight_magma"
             }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "minecraft:feature_pool_element",
-                "projection": "rigid",
-                "feature": "knf:normal/magma_patch"
-            }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "minecraft:empty_pool_element"
-            }
         }
     ]
 }
