@@ -8,8 +8,8 @@
                 "type": "minecraft:add",
                 "argument1": {
                     "type": "minecraft:y_clamped_gradient",
-                    "from_y": 128,
-                    "to_y": 230,
+                    "from_y": 230,
+                    "to_y": 320,
                     "from_value": -1,
                     "to_value": 1
                 },
@@ -47,17 +47,17 @@
                 {
                     "location": -0.4,
                     "derivative": 0,
-                    "value": 1
+                    "value": 8
                 },
                 {
                     "location": 0,
                     "derivative": 0,
-                    "value": 0.5
+                    "value": 8
                 },
                 {
                     "location": 1,
                     "derivative": 0,
-                    "value": 0.25
+                    "value": 8
                 }
             ]
         }
