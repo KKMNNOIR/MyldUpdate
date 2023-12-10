@@ -15,7 +15,7 @@
         "grass_color": 1445122,
         "foliage_color": 1248512,
         "music": {
-            "sound": "minecraft:music.nether.blackstone_wastes",
+            "sound": "minecraft:music.nether.charred_wastes",
             "min_delay": 1200,
             "max_delay": 2400,
             "replace_current_music": false
