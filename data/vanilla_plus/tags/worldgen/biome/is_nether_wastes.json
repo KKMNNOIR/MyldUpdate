@@ -1,6 +1,7 @@
 {
     "values": [
-        "vanilla_plus:moldy_nether_wastes",
-        "vanilla_plus:withering_wastes"
+        "vanilla_plus:nether/sparse_crimson_plains",
+        "vanilla_plus:nether/sparse_warped_plains",
+        "vanilla_plus:nether/charred_wastes_edge"
     ]
 }
