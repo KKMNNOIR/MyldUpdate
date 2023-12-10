@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:dirt"
+                }
+            },
+            "rules": [ //どのブロックをどのブロックに変化させるか。所でこの変化パターンどっかで見たことあるな？
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "tag": "minecraft:base_stone_overworld"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:blackstone"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:grass_block"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:crimson_nylium"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:sand",
+                            "minecraft:red_sand"
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:soul_sand"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:gold_ores"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:gilded_blackstone"
+                        }
+                    }
+                }
+            ]
+        },
+        "target": { // 変化させたいブロック
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+                "minecraft:stone",
+                "minecraft:deepslate",
+                "minecraft:grass_block",
+                "minecraft:sand",
+                "minecraft:red_sand",
+                "minecraft:gold_ore",
+                "minecraft:deepslate_gold_ore",
+                "minecraft:nether_gold_ore"
+            ]
+        },
+        "radius": 0,
+        "half_height": 0
+    }
+}
