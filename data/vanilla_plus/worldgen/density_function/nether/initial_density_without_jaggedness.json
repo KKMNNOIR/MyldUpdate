@@ -38,7 +38,11 @@
                     "argument1": 4.0,
                     "argument2": {
                         "type": "minecraft:add",
-                        "argument1": "vanilla_plus:nether/depth",
+                        "argument1": {
+                          "type": "minecraft:add",
+                          "argument1": "vanilla_plus:nether/ocean/depth",
+                          "argument2": "vanilla_plus:nether/inland/depth"
+                      },
                         "argument2": {
                             "type": "minecraft:spline",
                             "spline": {
