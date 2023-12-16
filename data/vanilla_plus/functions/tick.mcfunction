@@ -50,10 +50,6 @@ execute as @e[type=minecraft:wither_skeleton,tag=!changeDone] at @s if biome ~ ~
 # Ruined Portal -- Replace Netherrack with Other blocks to match terrain.
 execute as @e[type=minecraft:armor_stand,tag=Replacer] at @s run function vanilla_plus:replace_portal_blocks
 
-## Diamond Forest -- Hoglin jockey
-# execute as @e[type=zoglin,tag=!vpCheckedSpawned,predicate=vanilla_plus:in_diamond_forest] run function vanilla_plus:diamond_cave/spawn_check_ground
-# execute as @e[type=hoglin,predicate=vanilla_plus:in_diamond_forest,tag=!Done] at @s run function vanilla_plus:diamond_cave/ride_pigman
-
 ## Modified Pillager Outpost
 # Sometimes, Witches throw lingering potion
 execute as @e[type=potion,predicate=vanilla_plus:linger_chance] at @s if entity @e[type=witch,tag=OutpostWarrior,distance=..3] run data modify entity @s Item.id set value "minecraft:lingering_potion"
@@ -135,3 +131,6 @@ execute as @e[tag=vpSpawnerCenter] at @s run kill @s
 
 # Ancient Ruins
 execute as @e[tag=vpAncientRuinsPlacer] at @s run function vanilla_plus:ancient_ruins/placement
+
+# in volcanic biomes
+execute as @e[type=minecraft:blaze] at @s if biome ~ ~ ~ #vanilla_plus:volcanic_biomes run function vanilla_plus:volcanic/blaze_ambient
