@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:mul",
+    "argument1": "minecraft:nether/base_3d_noise",
+    "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "vanilla_plus:nether/continents",
+            "points": [
+                {
+                  "location": -0.19,
+                  "value": 1,
+                  "derivative": 0
+                },
+                {
+                  "location": 0.0,
+                  "value": 0,
+                  "derivative": 0
+                }
+            ]
+        }
+    }
+}
