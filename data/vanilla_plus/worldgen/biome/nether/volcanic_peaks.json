@@ -3,8 +3,8 @@
     "downfall": 0,
     "has_precipitation": false,
     "effects": {
-        "sky_color": 8716288,
-        "fog_color": 8716288,
+        "sky_color": 7430240,
+        "fog_color": 7430240,
         "water_color": 4143941,
         "water_fog_color": 4340809,
         "grass_color": 13746882,
@@ -54,15 +54,15 @@
             },
             {
                 "type": "minecraft:magma_cube",
-                "weight": 100,
-                "minCount": 2,
-                "maxCount": 5
+                "weight": 120,
+                "minCount": 4,
+                "maxCount": 6
             },
             {
                 "type": "minecraft:blaze",
                 "weight": 100,
                 "minCount": 2,
-                "maxCount": 3
+                "maxCount": 4
             }
         ],
         "underground_water_creature": [],
