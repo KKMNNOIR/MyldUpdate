@@ -12,6 +12,11 @@ scoreboard objectives add PosFX dummy
 scoreboard objectives add PosFY dummy
 scoreboard objectives add PosFZ dummy
 scoreboard objectives add usedWitherSnake minecraft.used:minecraft.bow
+scoreboard objectives add vpBlazeMaxHealth dummy
+scoreboard objectives modify vpBlazeCurrentHealth displayautoupdate true
+scoreboard objectives add vpBlazeCurrentHealth dummy
+scoreboard objectives add vpBlazeHealingTimer dummy
+
 team add NameHidden
 
 # NameHidden team hide Name tag
