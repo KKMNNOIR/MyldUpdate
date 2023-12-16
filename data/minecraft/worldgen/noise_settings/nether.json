@@ -17,9 +17,9 @@
         "vein_gap": 0,
         "erosion": "vanilla_plus:nether/erosion",
         "depth": {
-            "type": "minecraft:mul",
-            "argument1": "vanilla_plus:nether/depth",
-            "argument2": 0.25
+            "type": "minecraft:add",
+            "argument1": "vanilla_plus:nether/ocean/depth",
+            "argument2": "vanilla_plus:nether/inland/depth"
         },
         "ridges": "vanilla_plus:nether/ridges",
         "initial_density_without_jaggedness": "vanilla_plus:nether/initial_density_without_jaggedness",
@@ -1062,7 +1062,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "vanilla_plus:nether/sparse_crimson_plains"
+                        "vanilla_plus:nether/crimson_barrens"
                     ]
                 },
                 "then_run": {
@@ -1252,7 +1252,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "vanilla_plus:nether/sparse_warped_plains"
+                        "vanilla_plus:nether/warped_barrens"
                     ]
                 },
                 "then_run": {
@@ -1442,7 +1442,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "vanilla_plus:nether/charred_wastes",
+                        "vanilla_plus:nether/withered_barrens",
                         "vanilla_plus:nether/charred_forest"
                     ]
                 },
@@ -2295,7 +2295,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "vanilla_plus:nether/charred_wastes_edge"
+                        "vanilla_plus:nether/withered_barrens_edge"
                     ]
                 },
                 "then_run": {
