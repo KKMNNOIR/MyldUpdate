@@ -41,7 +41,8 @@
     [
       "minecraft:delta",
       "minecraft:small_basalt_columns",
-      "minecraft:large_basalt_columns"
+      "minecraft:large_basalt_columns",
+      "vanilla_plus:basalt_ceiling_columns"
     ],
     [],
     [
