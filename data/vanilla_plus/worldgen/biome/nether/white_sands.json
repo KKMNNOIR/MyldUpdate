@@ -74,13 +74,13 @@
         "monster": [
             {
                 "type": "minecraft:zombified_piglin",
-                "weight": 50,
+                "weight": 35,
                 "minCount": 1,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:ghast",
-                "weight": 1,
+                "weight": 50,
                 "maxCount": 1,
                 "minCount": 1
             },
