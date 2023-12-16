@@ -1,7 +1,7 @@
 {
     "values": [
-        "vanilla_plus:nether/sparse_crimson_plains",
-        "vanilla_plus:nether/sparse_warped_plains",
-        "vanilla_plus:nether/charred_wastes_edge"
+        "vanilla_plus:nether/crimson_barrens",
+        "vanilla_plus:nether/warped_barrens",
+        "vanilla_plus:nether/withered_barrens_edge"
     ]
 }

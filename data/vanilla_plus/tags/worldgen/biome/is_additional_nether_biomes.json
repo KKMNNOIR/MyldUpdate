@@ -1,18 +1,13 @@
 {
     "values": [
-        "vanilla_plus:nether/charred_forest",
-        "vanilla_plus:nether/charred_wastes",
-        "vanilla_plus:nether/crimson_plains",
+        "#vanilla_plus:nether_plains",
         "vanilla_plus:nether/diamond_forest",
-        "vanilla_plus:nether/scorched_joints",
-        "vanilla_plus:nether/warped_plains",
         "vanilla_plus:nether/mixed_fungi_forest",
         "vanilla_plus:nether/nether_gold_mine",
         "vanilla_plus:nether/white_sands",
-        "vanilla_plus:nether/sparse_crimson_plains",
-        "vanilla_plus:nether/sparse_warped_plains",
-        "vanilla_plus:nether/charred_wastes_edge",
+        "#vanilla_plus:is_nether_wastes",
         "vanilla_plus:nether/volcanic_peaks",
-        "vanilla_plus:nether/nether_frost"
+        "vanilla_plus:nether/nether_frost",
+        "#vanilla_plus:is_blackstone_biomes"
     ]
 }
