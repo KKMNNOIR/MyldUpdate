@@ -1,133 +1,27 @@
 {
-    "feature": {
-        "type": "minecraft:simple_random_selector",
-        "config": {
-            "features": [
-                {
-                    "feature": {
-                        "type": "minecraft:random_patch",
-                        "config": {
-                            "feature": {
-                                "feature": {
-                                    "type": "minecraft:simple_block",
-                                    "config": {
-                                        "to_place": {
-                                            "type": "minecraft:simple_state_provider",
-                                            "state": {
-                                                "Name": "minecraft:sculk_vein",
-                                                "Properties": {
-                                                    "east": "false",
-                                                    "down": "false",
-                                                    "north": "false",
-                                                    "south": "false",
-                                                    "up": "false",
-                                                    "waterlogged": "false",
-                                                    "west": "false"
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "placement": [
-                                    {
-                                        "type": "minecraft:block_predicate_filter",
-                                        "predicate": {
-                                            "type": "minecraft:any_of",
-                                            "predicates": [
-                                                {
-                                                    "type": "minecraft:matching_blocks",
-                                                    "offset": [
-                                                        0,
-                                                        0,
-                                                        -1
-                                                    ],
-                                                    "blocks": "minecraft:birch_log"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "placement": []
-                },
-                {
-                    "feature": {
-                        "type": "minecraft:random_patch",
-                        "config": {
-                            "tries": 100,
-                            "xz_spread": 7,
-                            "y_spread": 3,
-                            "feature": {
-                                "feature": {
-                                    "type": "minecraft:simple_block",
-                                    "config": {
-                                        "to_place": {
-                                            "type": "minecraft:simple_state_provider",
-                                            "state": {
-                                                "Name": "minecraft:vine",
-                                                "Properties": {
-                                                    "north": "false",
-                                                    "east": "false",
-                                                    "south": "false",
-                                                    "up": "false",
-                                                    "west": "false"
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "placement": [
-                                    {
-                                        "type": "minecraft:block_predicate_filter",
-                                        "predicate": {
-                                            "type": "minecraft:any_of",
-                                            "predicates": [
-                                                {
-                                                    "type": "minecraft:matching_blocks",
-                                                    "offset": [
-                                                        0,
-                                                        0,
-                                                        1
-                                                    ],
-                                                    "blocks": "minecraft:birch_log"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "placement": []
-                }
-            ]
-        }
-    },
+    "feature": "vanilla_plus:polyporaceae",
     "placement": [
         {
-            "type": "minecraft:height_range",
-            "height": {
-                "type": "minecraft:uniform",
-                "min_inclusive": {
-                    "absolute": 64
-                },
-                "max_inclusive": {
-                    "below_top": 0
-                }
-            }
+            "type": "minecraft:count",
+            "count": 36
         },
         {
             "type": "minecraft:rarity_filter",
             "chance": 1
         },
         {
+            "type": "minecraft:heightmap",
+            "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+        },
+        {
             "type": "minecraft:in_square"
         },
         {
-            "type": "minecraft:count",
-            "count": 36
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:birch_log"
+            }
         },
         {
             "type": "minecraft:biome"
