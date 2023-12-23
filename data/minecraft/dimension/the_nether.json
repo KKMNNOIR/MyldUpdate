@@ -19,7 +19,7 @@
               ],
               "temperature": [
                 -1,
-                -0.45
+                1
               ],
               "humidity": [
                 -1,
@@ -37,10 +37,100 @@
             "parameters": {
               "weirdness": [
                 -1,
+                1
+              ],
+              "continentalness": [
+                -1.05,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1.05,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                0.2
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1.05,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.55,
+                -0.45
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens_edge"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
                 -0.155
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -70,7 +160,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -100,7 +190,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -130,7 +220,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -160,7 +250,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -190,7 +280,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -220,7 +310,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -250,7 +340,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -280,7 +370,7 @@
                 -0.155
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -302,96 +392,6 @@
               "offset": 0
             },
             "biome": "minecraft:warped_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                1
-              ],
-              "continentalness": [
-                -1.05,
-                -0.19
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                -1,
-                0.1
-              ],
-              "depth": [
-                -1.1,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:basalt_deltas"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                1
-              ],
-              "continentalness": [
-                -1.05,
-                -0.19
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                -1.1,
-                0.2
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/charred_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                1
-              ],
-              "continentalness": [
-                -1.05,
-                -0.19
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                -0.55,
-                -0.45
-              ],
-              "humidity": [
-                -1,
-                1
-              ],
-              "depth": [
-                -1.1,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens_edge"
           },
           {
             "parameters": {
@@ -3490,7 +3490,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -3520,7 +3520,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -3550,7 +3550,7 @@
                 1
               ],
               "continentalness": [
-                -1.2,
+                -1.05,
                 -0.19
               ],
               "erosion": [
@@ -3611,7 +3611,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3641,7 +3641,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3671,7 +3671,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3701,7 +3701,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3731,7 +3731,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3761,7 +3761,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3791,7 +3791,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3821,7 +3821,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3851,7 +3851,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3881,7 +3881,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -3911,7 +3911,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -4057,6 +4057,336 @@
             "parameters": {
               "weirdness": [
                 0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                0.2
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.55,
+                -0.45
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens_edge"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.45,
+                -0.15
+              ],
+              "humidity": [
+                -1,
+                -0.35
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/white_sands"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.45,
+                -0.15
+              ],
+              "humidity": [
+                -0.35,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:nether_wastes"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.15,
+                0
+              ],
+              "humidity": [
+                -1,
+                0.3
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/crimson_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -0.15,
+                0
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/warped_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0,
+                0.2
+              ],
+              "humidity": [
+                -1,
+                0.3
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/crimson_plains"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0,
+                0.2
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/warped_plains"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
+                0.4
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                0.2
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.155,
                 0.56666666
               ],
               "continentalness": [
@@ -4172,6 +4502,396 @@
               "offset": 0
             },
             "biome": "vanilla_plus:nether/diamond_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.93333334
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.78
+              ],
+              "temperature": [
+                -1,
+                -0.15
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/nether_gold_mine"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.93333334
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.78
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/volcanic_peaks"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                0.2
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -0.55,
+                -0.45
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens_edge"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -0.45,
+                -0.15
+              ],
+              "humidity": [
+                -1,
+                -0.35
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/white_sands"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -0.45,
+                -0.15
+              ],
+              "humidity": [
+                -0.35,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:nether_wastes"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -0.15,
+                0
+              ],
+              "humidity": [
+                -1,
+                0.3
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/crimson_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -0.15,
+                0
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/warped_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                0,
+                0.2
+              ],
+              "humidity": [
+                -1,
+                0.3
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/crimson_plains"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                0,
+                0.2
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/warped_plains"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                -1.1,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.4,
+                0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                -1.1,
+                0.2
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
           },
           {
             "parameters": {
@@ -5587,66 +6307,6 @@
             "parameters": {
               "weirdness": [
                 0.7666667,
-                0.93333334
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -1,
-                -0.78
-              ],
-              "temperature": [
-                -1,
-                -0.15
-              ],
-              "humidity": [
-                -1,
-                1
-              ],
-              "depth": [
-                -1.1,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/nether_gold_mine"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                0.7666667,
-                0.93333334
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -1,
-                -0.78
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                -1,
-                1
-              ],
-              "depth": [
-                -1.1,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/volcanic_peaks"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                0.7666667,
                 1
               ],
               "continentalness": [
@@ -6427,7 +7087,637 @@
             "parameters": {
               "weirdness": [
                 -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -1.05,
+                0.03
+              ],
+              "erosion": [
+                -1,
                 1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:crimson_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                0.3
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/mixed_fungi_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -0.19,
+                -0.11
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.3,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:warped_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.7666667
+              ],
+              "continentalness": [
+                -0.11,
+                0.03
+              ],
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.93333334
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.93333334
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.93333334,
+                -0.7666667
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.93333334,
+                -0.7666667
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                -1.05,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.155
+              ],
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:basalt_deltas"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "erosion": [
+                -0.78,
+                -0.375
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "erosion": [
+                -0.375,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.155
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                1
+              ],
+              "erosion": [
+                -0.375,
+                -0.2225
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                0.03,
+                0.3
+              ],
+              "erosion": [
+                -0.2225,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.155
+              ],
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "temperature": [
+                0.2,
+                1
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.7666667,
+                -0.56666666
+              ],
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "erosion": [
+                0.05,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.56666666,
+                0.56666666
               ],
               "continentalness": [
                 -1.05,
@@ -6456,486 +7746,6 @@
           {
             "parameters": {
               "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                -1,
-                0.1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:crimson_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                0.3
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/mixed_fungi_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.19,
-                -0.11
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:warped_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                -1,
-                0.1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:basalt_deltas"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.7666667
-              ],
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.93333334
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -1,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -1,
-                -0.93333334
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -1,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.93333334,
-                -0.7666667
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -0.78,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.93333334,
-                -0.7666667
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -0.78,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.155
-              ],
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "erosion": [
-                -0.78,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.56666666
-              ],
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "erosion": [
-                -0.78,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                -1,
-                0.1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:basalt_deltas"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.56666666
-              ],
-              "continentalness": [
-                -0.19,
-                0.03
-              ],
-              "erosion": [
-                -0.78,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.155
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -0.375,
-                1
-              ],
-              "temperature": [
-                -1,
-                -0.55
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.56666666
-              ],
-              "continentalness": [
-                0.03,
-                1
-              ],
-              "erosion": [
-                -0.375,
-                -0.2225
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                -0.7666667,
-                -0.56666666
-              ],
-              "continentalness": [
-                0.3,
-                1
-              ],
-              "erosion": [
-                -0.2225,
-                0.05
-              ],
-              "temperature": [
-                0.2,
-                1
-              ],
-              "humidity": [
-                0.1,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "vanilla_plus:nether/withered_barrens"
-          },
-          {
-            "parameters": {
-              "weirdness": [
                 -0.56666666,
                 -0.155
               ],
@@ -7331,7 +8141,7 @@
               ],
               "continentalness": [
                 -0.19,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -7597,7 +8407,7 @@
             "parameters": {
               "weirdness": [
                 0.155,
-                0.56666666
+                0.4
               ],
               "continentalness": [
                 0.03,
@@ -7605,15 +8415,15 @@
               ],
               "erosion": [
                 -1,
-                -0.375
-              ],
-              "temperature": [
-                0.2,
                 1
               ],
-              "humidity": [
+              "temperature": [
                 -1,
-                0.1
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
               ],
               "depth": [
                 0.2,
@@ -7621,13 +8431,13 @@
               ],
               "offset": 0
             },
-            "biome": "minecraft:basalt_deltas"
+            "biome": "vanilla_plus:nether/withered_barrens"
           },
           {
             "parameters": {
               "weirdness": [
                 0.155,
-                0.56666666
+                0.4
               ],
               "continentalness": [
                 0.03,
@@ -7657,11 +8467,11 @@
             "parameters": {
               "weirdness": [
                 0.265,
-                0.4
+                0.56666666
               ],
               "continentalness": [
                 -0.11,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -7687,11 +8497,11 @@
             "parameters": {
               "weirdness": [
                 0.265,
-                0.4
+                0.56666666
               ],
               "continentalness": [
                 -0.11,
-                1
+                0.03
               ],
               "erosion": [
                 -1,
@@ -7720,20 +8530,20 @@
                 0.56666666
               ],
               "continentalness": [
-                -0.11,
-                0.03
+                0.03,
+                1
               ],
               "erosion": [
-                -1,
+                -0.78,
                 1
               ],
               "temperature": [
-                0.2,
-                1
+                -1,
+                -0.55
               ],
               "humidity": [
-                -1,
-                0.1
+                0.1,
+                1
               ],
               "depth": [
                 0.2,
@@ -7741,7 +8551,7 @@
               ],
               "offset": 0
             },
-            "biome": "minecraft:crimson_forest"
+            "biome": "vanilla_plus:nether/withered_barrens"
           },
           {
             "parameters": {
@@ -7750,12 +8560,12 @@
                 0.56666666
               ],
               "continentalness": [
-                -0.11,
-                0.03
+                0.03,
+                1
               ],
               "erosion": [
-                -1,
-                1
+                -0.78,
+                -0.375
               ],
               "temperature": [
                 0.2,
@@ -7763,7 +8573,7 @@
               ],
               "humidity": [
                 0.1,
-                0.3
+                1
               ],
               "depth": [
                 0.2,
@@ -7771,58 +8581,28 @@
               ],
               "offset": 0
             },
-            "biome": "vanilla_plus:nether/mixed_fungi_forest"
+            "biome": "vanilla_plus:nether/withered_barrens"
           },
           {
             "parameters": {
               "weirdness": [
-                0.4,
-                0.56666666
+                0.56666666,
+                0.7666667
               ],
               "continentalness": [
-                -0.11,
-                0.03
+                -1.05,
+                -0.19
               ],
               "erosion": [
                 -1,
                 1
               ],
               "temperature": [
-                0.2,
-                0.55
-              ],
-              "humidity": [
-                0.3,
-                1
-              ],
-              "depth": [
-                0.2,
-                1.1
-              ],
-              "offset": 0
-            },
-            "biome": "minecraft:warped_forest"
-          },
-          {
-            "parameters": {
-              "weirdness": [
-                0.4,
-                0.56666666
-              ],
-              "continentalness": [
-                -0.11,
-                0.03
-              ],
-              "erosion": [
                 -1,
-                1
-              ],
-              "temperature": [
-                0.55,
-                1
+                -0.55
               ],
               "humidity": [
-                0.3,
+                0.1,
                 1
               ],
               "depth": [
@@ -7831,7 +8611,7 @@
               ],
               "offset": 0
             },
-            "biome": "vanilla_plus:nether/diamond_forest"
+            "biome": "vanilla_plus:nether/charred_forest"
           },
           {
             "parameters": {
@@ -7845,7 +8625,7 @@
               ],
               "erosion": [
                 -0.78,
-                1
+                -0.375
               ],
               "temperature": [
                 -1,
@@ -7922,6 +8702,36 @@
               "offset": 0
             },
             "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.56666666,
+                0.7666667
+              ],
+              "continentalness": [
+                -0.19,
+                0.03
+              ],
+              "erosion": [
+                -0.375,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
           },
           {
             "parameters": {
@@ -7935,7 +8745,7 @@
               ],
               "erosion": [
                 -0.375,
-                1
+                -0.2225
               ],
               "temperature": [
                 -1,
@@ -7990,6 +8800,66 @@
                 0.7666667
               ],
               "continentalness": [
+                0.03,
+                0.3
+              ],
+              "erosion": [
+                -0.2225,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.56666666,
+                1
+              ],
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "erosion": [
+                -0.2225,
+                0.05
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.56666666,
+                0.7666667
+              ],
+              "continentalness": [
                 0.3,
                 1
               ],
@@ -8012,6 +8882,36 @@
               "offset": 0
             },
             "biome": "vanilla_plus:nether/withered_barrens"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                0.56666666,
+                0.7666667
+              ],
+              "continentalness": [
+                0.3,
+                1
+              ],
+              "erosion": [
+                0.05,
+                1
+              ],
+              "temperature": [
+                -1,
+                -0.55
+              ],
+              "humidity": [
+                0.1,
+                1
+              ],
+              "depth": [
+                0.2,
+                1.1
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:nether/charred_forest"
           },
           {
             "parameters": {
@@ -8020,7 +8920,7 @@
                 1
               ],
               "continentalness": [
-                -0.19,
+                -1.05,
                 0.03
               ],
               "erosion": [
