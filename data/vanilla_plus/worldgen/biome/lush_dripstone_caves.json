@@ -32,7 +32,7 @@
       ],
       [
         "minecraft:amethyst_geode",
-        "minecraft:large_dripstone"
+        "vanilla_plus:large_dripstone"
       ],
       [
         "minecraft:monster_room",
@@ -77,7 +77,7 @@
         "vanilla_plus:disk_magma"
       ],
       [
-        "minecraft:dripstone_cluster",
+        "vanilla_plus:dripstone_cluster",
         "minecraft:pointed_dripstone",
         "vanilla_plus:dripstone_terrace"
       ],
