@@ -13,7 +13,7 @@
     "ambient_light": 0.1,
     "fixed_time": 1000,
     "name": "the_nether",
-    "effects": "minecraft:overworld",
+    "effects": "minecraft:the_nether",
     "height": 512,
     "min_y": -32,
     "monster_spawn_block_light_limit": 0,
