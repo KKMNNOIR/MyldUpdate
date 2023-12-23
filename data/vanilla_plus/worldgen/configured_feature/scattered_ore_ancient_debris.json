@@ -1,7 +1,7 @@
 {
     "type": "minecraft:scattered_ore",
     "config": {
-        "size": 16,
+        "size": 64,
         "discard_chance_on_air_exposure": 0.125,
         "targets": [
           {
