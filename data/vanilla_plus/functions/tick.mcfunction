@@ -134,3 +134,7 @@ execute as @e[tag=vpAncientRuinsPlacer] at @s run function vanilla_plus:ancient_
 
 # in volcanic biomes
 execute as @e[type=minecraft:blaze] at @s if biome ~ ~ ~ #vanilla_plus:volcanic_biomes run function vanilla_plus:volcanic/blaze_ambient
+
+# in Diamond Forest
+execute as @e[type=minecraft:hoglin,tag=!vpSummoned] at @s if biome ~ ~ ~ vanilla_plus:nether/diamond_forest run function vanilla_plus:diamond_forest/summon_zoglin
+execute as @e[type=minecraft:skeleton,tag=!vpSummonedHorse] at @s if biome ~ ~ ~ vanilla_plus:nether/diamond_forest run function vanilla_plus:diamond_forest/ride_skeleton_horse
