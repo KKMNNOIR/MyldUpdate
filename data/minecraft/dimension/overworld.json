@@ -43549,6 +43549,66 @@
               ],
               "temperature": [
                 -1,
+                0.775
+              ],
+              "humidity": [
+                0.7,
+                1
+              ],
+              "depth": [
+                0.2,
+                0.9
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:lush_caves"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1.2,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.775,
+                1
+              ],
+              "humidity": [
+                -1,
+                0.7
+              ],
+              "depth": [
+                0.2,
+                0.9
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:amethyst_caves"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -1,
+                -0.05
+              ],
+              "continentalness": [
+                -1.2,
+                0.8
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.775,
                 1
               ],
               "humidity": [
@@ -43622,6 +43682,66 @@
               "offset": 0
             },
             "biome": "vanilla_plus:lush_dripstone_caves"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.05,
+                1
+              ],
+              "continentalness": [
+                -1.2,
+                -0.19
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.775,
+                1
+              ],
+              "humidity": [
+                0.7,
+                1
+              ],
+              "depth": [
+                0.2,
+                0.9
+              ],
+              "offset": 0
+            },
+            "biome": "vanilla_plus:amethyst_caves"
+          },
+          {
+            "parameters": {
+              "weirdness": [
+                -0.05,
+                1
+              ],
+              "continentalness": [
+                -0.19,
+                0.8
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "temperature": [
+                0.775,
+                1
+              ],
+              "humidity": [
+                0.7,
+                1
+              ],
+              "depth": [
+                0.2,
+                0.9
+              ],
+              "offset": 0
+            },
+            "biome": "minecraft:lush_caves"
           },
           {
             "parameters": {
@@ -66985,7 +67105,10 @@
                 -1,
                 1
               ],
-              "depth": 2,
+              "depth": [
+                1.2,
+                1.2
+              ],
               "offset": 0
             },
             "biome": "minecraft:deep_dark"
