@@ -17,6 +17,7 @@ scoreboard objectives modify vpBlazeCurrentHealth displayautoupdate true
 scoreboard objectives add vpBlazeCurrentHealth dummy
 scoreboard objectives add vpBlazeHealingTimer dummy
 scoreboard objectives add vpHoglinAge dummy
+scoreboard objectives add vpStartingHouseType dummy
 
 team add NameHidden
 

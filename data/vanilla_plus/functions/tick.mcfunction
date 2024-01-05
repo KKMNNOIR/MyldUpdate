@@ -8,6 +8,9 @@
 ### There are generic commands.
 
 ##
+# Initial spawned
+execute as @e[type=minecraft:armor_stand,tag=vpStartingHouseStarter,tag=!vpStartingHouseGenerated] at @s positioned over motion_blocking_no_leaves run function vanilla_plus:starting_house/check_type
+
 # in Mushroom island
 # Sometimes Brown Mooshroom spawns.
 execute as @e[type=mooshroom,tag=!brownDone,nbt={Type:"red"}] at @s if biome ~ ~ ~ minecraft:mushroom_fields run function vanilla_plus:mushroom_island/brown
@@ -20,7 +23,8 @@ execute as @e[type=creeper,tag=!IcyCreeper] at @s if biome ~ ~ ~ #vanilla_plus:i
 execute as @e[tag=IcyCreeper] at @s run function vanilla_plus:nether_frost/icy_creeper_ambient
 
 #Frozen Zombie spawns
-execute as @e[type=zombie,tag=!FrozenZombie] at @s if biome ~ ~ ~ #vanilla_plus:is_frost_biomes run data merge entity @s {CustomName:'{"text": "Frozen Zombie","color": "#315CD4","bold": true,"italic": false}',Tags:["FrozenZombie"],PersistenceRequired:0b,Team:"NameHidden"}
+execute as @e[type=zombie,tag=!FrozenZombie] at @s if biome ~ ~ ~ #vanilla_plus:is_frost_biomes run function vanilla_plus:nether_frost/frozen_zombie_modify
+
 ##Frozen Zombie attacks with snowball
 execute as @e[tag=FrozenZombie] at @s run function vanilla_plus:nether_frost/frozen_zombie_ambient
 
