@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "type": "paletted_permutations",
+            "textures": [
+                "trims/models/armor/piglin_brute",
+                "trims/models/armor/frozen_zombie",
+                "trims/models/armor/frozen_zombie_leggings"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "none": "trims/color_palettes/none"
+            }
+        }
+    ]
+}
