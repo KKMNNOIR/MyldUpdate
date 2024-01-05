@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:fossil",
+    "config": {
+        "fossil_structures": [
+            "vanilla_plus:starting_house/starting_house_starter"
+        ],
+        "overlay_structures": [
+            "vanilla_plus:starting_house/starting_house_starter"
+        ],
+        "fossil_processors": "vanilla_plus:ignore_air",
+        "overlay_processors": "vanilla_plus:nope",
+        "max_empty_corners_allowed": 4
+    }
+}
