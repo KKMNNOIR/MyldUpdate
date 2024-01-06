@@ -5,10 +5,28 @@
             "vanilla_plus:starting_house/starting_house_starter"
         ],
         "overlay_structures": [
-            "vanilla_plus:starting_house/starting_house_starter"
+            "vanilla_plus:starting_house/starting_house_starter_overlay"
         ],
-        "fossil_processors": "vanilla_plus:ignore_air",
-        "overlay_processors": "vanilla_plus:nope",
+        "fossil_processors": {
+            "processors": [
+                {
+                    "processor_type": "minecraft:block_ignore",
+                    "blocks": [
+                        {
+                            "Name": "minecraft:air"
+                        }
+                    ]
+                }
+            ]
+        },
+        "overlay_processors": {
+            "processors": [
+                {
+                    "processor_type": "minecraft:block_rot",
+                    "integrity": 0
+                }
+            ]
+        },
         "max_empty_corners_allowed": 4
     }
 }
