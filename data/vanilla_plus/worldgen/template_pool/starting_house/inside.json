@@ -6,17 +6,42 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "processors": "minecraft:empty",
+                "processors": {
+                    "processors": [
+                        {
+                            "processor_type": "minecraft:protected_blocks",
+                            "value": "#vanilla_plus:protected_starting_house_blocks"
+                        }
+                    ]
+                },
                 "location": "vanilla_plus:starting_house/inside"
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:starting_house_inside",
+                "location": "vanilla_plus:starting_house/inside_extra_small"
+            }
+        },
+        {
+            "weight": 2,
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
                 "processors": "minecraft:empty",
-                "location": "vanilla_plus:starting_house/inside_extra_small"
+                "location": "vanilla_plus:starting_house/inside_extra_small_nope"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:starting_house_inside",
+                "location": "vanilla_plus:starting_house/inside_extra_large"
             }
         },
         {
@@ -25,7 +50,7 @@
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
                 "processors": "minecraft:empty",
-                "location": "vanilla_plus:starting_house/inside_extra_large"
+                "location": "vanilla_plus:starting_house/inside_extra_large_nope"
             }
         }
     ]
