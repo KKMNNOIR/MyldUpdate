@@ -1,5 +1,5 @@
 {
-    "feature": "vanilla_plus:fallen_spruce",
+    "feature": "vanilla_plus:fallen_spruce_aged",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",
