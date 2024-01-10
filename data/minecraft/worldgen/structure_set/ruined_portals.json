@@ -3,39 +3,56 @@
     "type": "minecraft:random_spread",
     "salt": 34222645,
     "separation": 15,
-    "spacing": 40
+    "spacing": 40,
+    "locate_offset": [
+        8,
+        0,
+        8
+    ]
   },
   "structures": [
     {
       "structure": "minecraft:ruined_portal",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_desert",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_jungle",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_swamp",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_mountain",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_ocean",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "minecraft:ruined_portal_nether",
-      "weight": 1
+      "weight": 10
     },
     {
       "structure": "vanilla_plus:white_portals",
+      "weight": 10
+    },
+    {
+      "structure": "vanilla_plus:ruined_portal_with_guard_normal",
+      "weight": 1
+    },
+    {
+      "structure": "vanilla_plus:ruined_portal_with_guard_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "vanilla_plus:ruined_portal_with_guard_swamp",
       "weight": 1
     }
   ]
