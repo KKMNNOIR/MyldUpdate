@@ -10,7 +10,7 @@
     },
     "features": [
       {
-        "chance": 0.1,
+        "chance": 0.3,
         "feature": {
           "feature": "vanilla_plus:starting_house_starter",
           "placement": []
