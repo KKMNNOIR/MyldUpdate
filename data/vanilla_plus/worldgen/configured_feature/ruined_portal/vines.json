@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "tries": 200,
+        "xz_spread": 24,
+        "y_spread": 12,
+        "feature": {
+            "feature": "minecraft:vines",
+            "placement": []
+        }
+    }
+}
