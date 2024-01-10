@@ -1,0 +1,122 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/giant_portal_with_guard_1"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/giant_portal_with_guard_2"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/giant_portal_with_guard_3"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_1"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_2"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_3"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_4"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_5"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_6"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_7"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_8"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_9"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_jungle",
+                "location": "vanilla_plus:ruined_portal/with_guard/jungle/portal_with_guard_10"
+            }
+        }
+    ]
+}
