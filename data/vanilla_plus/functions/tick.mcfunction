@@ -54,6 +54,9 @@ execute as @e[type=minecraft:wither_skeleton,tag=!changeDone] at @s if biome ~ ~
 # Ruined Portal -- Replace Netherrack with Other blocks to match terrain.
 execute as @e[type=minecraft:armor_stand,tag=Replacer] at @s run function vanilla_plus:replace_portal_blocks
 
+# With guard
+execute as @e[type=minecraft:zombified_piglin,tag=vpPiglinGuard,tag=!vpPiglinGuardModified] at @s run function vanilla_plus:ruined_portal_with_guard/modify
+
 ## Modified Pillager Outpost
 # Sometimes, Witches throw lingering potion
 execute as @e[type=potion,predicate=vanilla_plus:linger_chance] at @s if entity @e[type=witch,tag=OutpostWarrior,distance=..3] run data modify entity @s Item.id set value "minecraft:lingering_potion"
