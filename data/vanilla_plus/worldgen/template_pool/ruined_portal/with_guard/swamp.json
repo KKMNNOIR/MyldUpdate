@@ -7,7 +7,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/giant_portal_with_guard_1"
+                "location": "vanilla_plus:ruined_portal/with_guard/giant_portal_with_guard_1"
             }
         },
         {
@@ -16,7 +16,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/giant_portal_with_guard_2"
+                "location": "vanilla_plus:ruined_portal/with_guard/giant_portal_with_guard_2"
             }
         },
         {
@@ -25,7 +25,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/giant_portal_with_guard_3"
+                "location": "vanilla_plus:ruined_portal/with_guard/giant_portal_with_guard_3"
             }
         },
         {
@@ -34,7 +34,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_1"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_1"
             }
         },
         {
@@ -43,7 +43,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_2"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_2"
             }
         },
         {
@@ -52,7 +52,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_3"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_3"
             }
         },
         {
@@ -61,7 +61,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_4"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_4"
             }
         },
         {
@@ -70,7 +70,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_5"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_5"
             }
         },
         {
@@ -79,7 +79,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_6"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_6"
             }
         },
         {
@@ -88,7 +88,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_7"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_7"
             }
         },
         {
@@ -97,7 +97,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_8"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_8"
             }
         },
         {
@@ -106,7 +106,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_9"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_9"
             }
         },
         {
@@ -115,7 +115,7 @@
                 "element_type": "minecraft:legacy_single_pool_element",
                 "projection": "rigid",
                 "processors": "vanilla_plus:ruined_portal_swamp",
-                "location": "vanilla_plus:ruined_portal/with_guard/swamp/portal_with_guard_10"
+                "location": "vanilla_plus:ruined_portal/with_guard/portal_with_guard_10"
             }
         }
     ]
