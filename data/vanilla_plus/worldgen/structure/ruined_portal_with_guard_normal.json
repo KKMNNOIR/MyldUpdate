@@ -10,23 +10,33 @@
     "start_height": {
         "absolute": 0
     },
-    "start_pool": "vanilla_plus:ruined_portal/with_guard/normal",
+    "start_pool": "vanilla_plus:ruined_portal/with_guard/portal",
     "start_jigsaw_name": "minecraft:start",
     "use_expansion_hack": false,
     "pool_aliases": [
         {
             "type": "minecraft:random",
-            "alias": "vanilla_plus:ruined_portal/with_guard/normal",
+            "alias": "vanilla_plus:ruined_portal/with_guard/portal",
             "targets": [
                 {
                     "weight": 1,
-                    "data": "vanilla_plus:ruined_portal/with_guard/normal"
+                    "data": "vanilla_plus:ruined_portal/with_guard/portal"
                 },
                 {
                     "weight": 1,
-                    "data": "vanilla_plus:ruined_portal/with_guard/normal_mirror"
+                    "data": "vanilla_plus:ruined_portal/with_guard/portal_mirror"
                 }
             ]
+        },
+        {
+            "type": "minecraft:direct",
+            "alias": "vanilla_plus:ruined_portal/with_guard/overgrown",
+            "target": "minecraft:empty"
+        },
+        {
+            "type": "minecraft:direct",
+            "alias": "vanilla_plus:ruined_portal/with_guard/vines",
+            "target": "minecraft:empty"
         }
     ]
 }
