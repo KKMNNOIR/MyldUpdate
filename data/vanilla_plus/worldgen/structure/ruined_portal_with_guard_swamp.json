@@ -27,6 +27,11 @@
                     "data": "vanilla_plus:ruined_portal/with_guard/swamp_mirror"
                 }
             ]
+        },
+        {
+            "type": "minecraft:direct",
+            "alias": "vanilla_plus:ruined_portal/with_guard/overgrown",
+            "target": "minecraft:empty"
         }
     ]
 }
