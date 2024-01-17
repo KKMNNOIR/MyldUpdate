@@ -8,7 +8,7 @@
     "spawn_overrides": {},
     "project_start_to_heightmap": "WORLD_SURFACE_WG",
     "start_height": {
-        "absolute": 0
+        "absolute": 1
     },
     "start_pool": "vanilla_plus:ruined_portal/with_guard/jungle",
     "start_jigsaw_name": "minecraft:start",
