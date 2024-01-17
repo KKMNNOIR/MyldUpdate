@@ -1,4 +1,6 @@
 {
+  "type": "minecraft:max",
+  "argument1": {
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:add",
@@ -103,7 +105,27 @@
         "input": "vanilla_plus:nether/depth",
         "max_exclusive": 0,
         "min_inclusive": -10,
-        "when_in_range": 0,
+        "when_in_range": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_y": 120,
+            "to_y": 352,
+            "from_value": 0,
+            "to_value": 2
+          },
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": "minecraft:nether/base_3d_noise",
+            "argument2": {
+              "type": "minecraft:abs",
+              "argument": {
+                "type": "minecraft:half_negative",
+                "argument": "vanilla_plus:nether/depth"
+              }
+            }
+          }
+        },
         "when_out_of_range": 0
       }
     },
@@ -114,4 +136,122 @@
       "from_value": 0,
       "to_value": 2
     }
+  },
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": { // ベース地形
+      "type": "minecraft:squeeze",
+      "argument": {
+          "type": "minecraft:mul",
+          "argument1": 0.64,
+          "argument2": {
+              "type": "minecraft:interpolated",
+              "argument": {
+                  "type": "minecraft:blend_density",
+                  "argument": {
+                      "type": "minecraft:add",
+                      "argument1": 2.5,
+                      "argument2": {
+                          "type": "minecraft:mul",
+                          "argument1": {
+                              "type": "minecraft:y_clamped_gradient",
+                              "from_y": -8,
+                              "to_y": 28,
+                              "from_value": 0,
+                              "to_value": 1
+                          },
+                          "argument2": {
+                              "type": "minecraft:add",
+                              "argument1": -2.5,
+                              "argument2": {
+                                  "type": "minecraft:add",
+                                  "argument1": 0.9375,
+                                  "argument2": {
+                                      "type": "minecraft:mul",
+                                      "argument1": {
+                                          "type": "minecraft:add",
+                                          "argument1": {
+                                              "type": "minecraft:y_clamped_gradient",
+                                              "from_y": 128,
+                                              "to_y": 200,
+                                              "from_value": 2,
+                                              "to_value": 2
+                                          },
+                                          "argument2": {
+                                              "type": "minecraft:y_clamped_gradient",
+                                              "from_y": 280,
+                                              "to_y": 320,
+                                              "from_value": 0,
+                                              "to_value": -2.5
+                                          }
+                                      },
+                                      "argument2": {
+                                          "type": "minecraft:add",
+                                          "argument1": -0.9375,
+                                          "argument2": {
+                                            "type": "minecraft:max",
+                                            "argument1": "vanilla_plus:nether/inland/base",
+                                            "argument2": {
+                                              "type": "minecraft:add",
+                                              "argument1": {
+                                                "type": "minecraft:max",
+                                                "argument1": "vanilla_plus:nether/inland/base",
+                                                "argument2": {
+                                                  "type": "minecraft:add",
+                                                  "argument1": "vanilla_plus:nether/inland/base",
+                                                  "argument2": {
+                                                    "type": "minecraft:range_choice",
+                                                    "input": "vanilla_plus:nether/pillars",
+                                                    "min_inclusive": -1000000,
+                                                    "max_exclusive": 0.03,
+                                                    "when_in_range": -1000000,
+                                                    "when_out_of_range": {
+                                                        "type": "minecraft:add",
+                                                        "argument1": "vanilla_plus:nether/pillars",
+                                                        "argument2": {
+                                                          "type": "minecraft:abs",
+                                                          "argument": {
+                                                            "type": "minecraft:y_clamped_gradient",
+                                                            "from_value": 1.5,
+                                                            "from_y": -32,
+                                                            "to_value": -1.5,
+                                                            "to_y": 256
+                                                          }
+                                                        }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "argument2": "vanilla_plus:nether/ceiling_spine"
+                                            }
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    },
+    "argument2": {
+      "type": "minecraft:range_choice",
+      "input": "vanilla_plus:nether/depth",
+      "max_exclusive": 0,
+      "min_inclusive": -10,
+      "when_in_range": {
+        "type": "minecraft:add",
+        "argument1": "minecraft:nether/base_3d_noise",
+        "argument2": {
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:half_negative",
+            "argument": "vanilla_plus:nether/depth"
+          }
+        }
+      },
+      "when_out_of_range": 0
+    }
+  }
 }
