@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:snowy_plains",
+        "minecraft:ice_spikes",
+        "minecraft:snowy_slopes",
+        "minecraft:frozen_peaks",
+        "minecraft:snowy_beach",
+        "minecraft:frozen_river",
+        "minecraft:snowy_taiga",
+        "vanilla_plus:snowy_old_growth_pine_taiga",
+        "vanilla_plus:snowy_old_growth_spruce_taiga",
+        "vanilla_plus:snowy_dead_forest",
+        "minecraft:jagged_peaks",
+        "vanilla_plus:icy_grove",
+        "vanilla_plus:ice_cave",
+        "vanilla_plus:snowy_cave",
+        "vanilla_plus:tundra"
+    ]
+}
