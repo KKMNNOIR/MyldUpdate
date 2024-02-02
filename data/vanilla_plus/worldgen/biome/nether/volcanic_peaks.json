@@ -80,7 +80,9 @@
         [],
         [],
         [],
-        [],
+        [
+            "vanilla_plus:spring_open_volcanic_peaks"
+        ],
         [
             "vanilla_plus:basalt_blob",
             "vanilla_plus:tuff_blob",
