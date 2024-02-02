@@ -1,16 +1,24 @@
 {
-    "type": "minecraft:lake",
+    "type": "minecraft:delta_feature",
     "config": {
-        "fluid": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:packed_ice"
+        "contents": {
+            "Name": "minecraft:packed_ice"
+        },
+        "rim": {
+            "Name": "minecraft:mossy_cobblestone"
+        },
+        "rim_size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 1,
+                "max_inclusive": 2
             }
         },
-        "barrier": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:mossy_cobblestone"
+        "size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 3,
+                "max_inclusive": 7
             }
         }
     }
