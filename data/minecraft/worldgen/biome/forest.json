@@ -80,16 +80,17 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:forest_flowers",
-      "minecraft:trees_birch_and_oak",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_forest",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
+      "vanilla_plus:forest_flowers",
+      "vanilla_plus:fallen_birch_and_oak",
+      "vanilla_plus:flower_default",
+      "vanilla_plus:patch_grass_forest",
+      "vanilla_plus:brown_mushroom_forest",
+      "vanilla_plus:red_mushroom_forest",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin"
+      "vanilla_plus:patch_pumpkin"
     ],
     [
+      "vanilla_plus:trees_forest",
       "minecraft:freeze_top_layer"
     ]
   ],
