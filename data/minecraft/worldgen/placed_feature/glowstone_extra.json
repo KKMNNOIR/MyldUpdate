@@ -4,7 +4,7 @@
     "config": {
       "features": [
         {
-          "chance": 0.25,
+          "chance": 0.5,
           "feature": {
             "feature": "vanilla_plus:glowstone_roots",
             "placement": []
