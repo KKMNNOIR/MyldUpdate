@@ -144,7 +144,7 @@
         ],
         [
             "minecraft:amethyst_geode",
-            "minecraft:forest_rock"
+            "vanilla_plus:mossy_rock_tundra"
         ],
         [
             "minecraft:fossil_upper",
@@ -196,6 +196,7 @@
         ],
         [
             "vanilla_plus:glow_lichen_tundra",
+            "vanilla_plus:trees_tundra",
             "vanilla_plus:flower_tundra",
             "vanilla_plus:patch_grass_tundra",
             "vanilla_plus:brown_mushroom_tundra",
@@ -204,7 +205,8 @@
             "minecraft:patch_pumpkin"
         ],
         [
-            "minecraft:freeze_top_layer"
+            "minecraft:freeze_top_layer",
+            "vanilla_plus:snow_top_layer_decay"
         ]
     ]
 }
