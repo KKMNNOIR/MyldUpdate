@@ -1,522 +1,111 @@
 {
-    "type": "minecraft:simple_random_selector",
+    "type": "minecraft:random_patch",
     "config": {
-        "features": [
-            {
-                "feature": {
-                    "type": "minecraft:random_patch",
-                    "config": {
-                        "tries": 200,
-                        "xz_spread": 11,
-                        "y_spread": 0,
-                        "feature": {
-                            "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                    "direction": "down",
-                                    "allowed_placement": {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:netherrack",
-                                                "minecraft:lava",
-                                                "minecraft:magma_block",
-                                                "minecraft:stone_bricks",
-                                                "minecraft:stone_brick_slab",
-                                                "minecraft:stone_brick_stairs",
-                                                "minecraft:obsidian",
-                                                "minecraft:crying_obsidian",
-                                                "minecraft:mossy_stone_bricks",
-                                                "minecraft:mossy_stone_brick_slab",
-                                                "minecraft:mossy_stone_brick_stairs",
-                                                "minecraft:chiseled_stone_bricks",
-                                                "minecraft:stone_brick_wall",
-                                                "minecraft:mossy_stone_brick_wall",
-                                                "minecraft:iron_bars",
-                                                "minecraft:gold_block",
-                                                "minecraft:chest",
-                                                "minecraft:smooth_stone_slab",
-                                                "minecraft:cracked_stone_bricks",
-                                                "minecraft:air"
-                                            ]
-                                        }
-                                    },
-                                    "prioritize_tip": false,
-                                    "layers": [
-                                        {
-                                            "height": {
-                                                "type": "minecraft:biased_to_bottom",
-                                                "value": {
-                                                    "min_inclusive": 2,
-                                                    "max_inclusive": 7
-                                                }
-                                            },
-                                            "provider": {
-                                                "type": "minecraft:weighted_state_provider",
-                                                "entries": [
-                                                    {
-                                                        "weight": 93,
-                                                        "data": {
-                                                            "Name": "minecraft:netherrack"
-                                                        }
-                                                    },
-                                                    {
-                                                        "weight": 7,
-                                                        "data": {
-                                                            "Name": "minecraft:magma_block"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "placement": [
-                                {
-                                    "type": "minecraft:environment_scan",
-                                    "direction_of_search": "down",
-                                    "max_steps": 32,
-                                    "target_condition": {
-                                        "type": "minecraft:all_of",
-                                        "predicates": [
-                                            {
-                                                "type": "minecraft:solid"
-                                            },
-                                            {
-                                                "type": "minecraft:matching_blocks",
-                                                "offset": [
-                                                    0,
-                                                    1,
-                                                    0
-                                                ],
-                                                "blocks": [
-                                                    "minecraft:air",
-                                                    "minecraft:water"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                }
+        "tries": 400,
+        "xz_spread": 12,
+        "y_spread": 0,
+        "feature": {
+            "feature": {
+                "type": "minecraft:block_column",
+                "config": {
+                    "direction": "down",
+                    "allowed_placement": {
+                        "type": "minecraft:not",
+                        "predicate": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:netherrack",
+                                "minecraft:lava",
+                                "minecraft:magma_block",
+                                "minecraft:stone_bricks",
+                                "minecraft:stone_brick_slab",
+                                "minecraft:stone_brick_stairs",
+                                "minecraft:obsidian",
+                                "minecraft:crying_obsidian",
+                                "minecraft:mossy_stone_bricks",
+                                "minecraft:mossy_stone_brick_slab",
+                                "minecraft:mossy_stone_brick_stairs",
+                                "minecraft:chiseled_stone_bricks",
+                                "minecraft:stone_brick_wall",
+                                "minecraft:mossy_stone_brick_wall",
+                                "minecraft:iron_bars",
+                                "minecraft:gold_block",
+                                "minecraft:chest",
+                                "minecraft:smooth_stone_slab",
+                                "minecraft:cracked_stone_bricks",
+                                "minecraft:air"
                             ]
                         }
-                    }
-                },
-                "placement": []
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                        {
+                            "height": {
+                                "type": "minecraft:biased_to_bottom",
+                                "value": {
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 7
+                                }
+                            },
+                            "provider": {
+                                "type": "minecraft:weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "weight": 93,
+                                        "data": {
+                                            "Name": "minecraft:netherrack"
+                                        }
+                                    },
+                                    {
+                                        "weight": 7,
+                                        "data": {
+                                            "Name": "minecraft:magma_block"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
             },
-            {
-                "feature": {
-                    "type": "minecraft:random_patch",
-                    "config": {
-                        "tries": 200,
-                        "xz_spread": 10,
-                        "y_spread": 0,
-                        "feature": {
-                            "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                    "direction": "down",
-                                    "allowed_placement": {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:netherrack",
-                                                "minecraft:lava",
-                                                "minecraft:magma_block",
-                                                "minecraft:stone_bricks",
-                                                "minecraft:stone_brick_slab",
-                                                "minecraft:stone_brick_stairs",
-                                                "minecraft:obsidian",
-                                                "minecraft:crying_obsidian",
-                                                "minecraft:mossy_stone_bricks",
-                                                "minecraft:mossy_stone_brick_slab",
-                                                "minecraft:mossy_stone_brick_stairs",
-                                                "minecraft:chiseled_stone_bricks",
-                                                "minecraft:stone_brick_wall",
-                                                "minecraft:mossy_stone_brick_wall",
-                                                "minecraft:iron_bars",
-                                                "minecraft:gold_block",
-                                                "minecraft:chest",
-                                                "minecraft:smooth_stone_slab",
-                                                "minecraft:cracked_stone_bricks",
-                                                "minecraft:air"
-                                            ]
-                                        }
+            "placement": [
+                {
+                    "type": "minecraft:environment_scan",
+                    "direction_of_search": "down",
+                    "max_steps": 4,
+                    "target_condition": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:solid"
                                     },
-                                    "prioritize_tip": false,
-                                    "layers": [
-                                        {
-                                            "height": {
-                                                "type": "minecraft:biased_to_bottom",
-                                                "value": {
-                                                    "min_inclusive": 2,
-                                                    "max_inclusive": 7
-                                                }
-                                            },
-                                            "provider": {
-                                                "type": "minecraft:weighted_state_provider",
-                                                "entries": [
-                                                    {
-                                                        "weight": 93,
-                                                        "data": {
-                                                            "Name": "minecraft:netherrack"
-                                                        }
-                                                    },
-                                                    {
-                                                        "weight": 7,
-                                                        "data": {
-                                                            "Name": "minecraft:magma_block"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "placement": [
-                                {
-                                    "type": "minecraft:environment_scan",
-                                    "direction_of_search": "down",
-                                    "max_steps": 32,
-                                    "target_condition": {
-                                        "type": "minecraft:all_of",
-                                        "predicates": [
-                                            {
-                                                "type": "minecraft:solid"
-                                            },
-                                            {
-                                                "type": "minecraft:matching_blocks",
-                                                "offset": [
-                                                    0,
-                                                    1,
-                                                    0
-                                                ],
-                                                "blocks": [
-                                                    "minecraft:air",
-                                                    "minecraft:water"
-                                                ]
-                                            }
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:water"
                                         ]
                                     }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "placement": []
-            },
-            {
-                "feature": {
-                    "type": "minecraft:random_patch",
-                    "config": {
-                        "tries": 200,
-                        "xz_spread": 9,
-                        "y_spread": 0,
-                        "feature": {
-                            "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                    "direction": "down",
-                                    "allowed_placement": {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:netherrack",
-                                                "minecraft:lava",
-                                                "minecraft:magma_block",
-                                                "minecraft:stone_bricks",
-                                                "minecraft:stone_brick_slab",
-                                                "minecraft:stone_brick_stairs",
-                                                "minecraft:obsidian",
-                                                "minecraft:crying_obsidian",
-                                                "minecraft:mossy_stone_bricks",
-                                                "minecraft:mossy_stone_brick_slab",
-                                                "minecraft:mossy_stone_brick_stairs",
-                                                "minecraft:chiseled_stone_bricks",
-                                                "minecraft:stone_brick_wall",
-                                                "minecraft:mossy_stone_brick_wall",
-                                                "minecraft:iron_bars",
-                                                "minecraft:gold_block",
-                                                "minecraft:chest",
-                                                "minecraft:smooth_stone_slab",
-                                                "minecraft:cracked_stone_bricks",
-                                                "minecraft:air"
-                                            ]
-                                        }
-                                    },
-                                    "prioritize_tip": false,
-                                    "layers": [
-                                        {
-                                            "height": {
-                                                "type": "minecraft:biased_to_bottom",
-                                                "value": {
-                                                    "min_inclusive": 2,
-                                                    "max_inclusive": 7
-                                                }
-                                            },
-                                            "provider": {
-                                                "type": "minecraft:weighted_state_provider",
-                                                "entries": [
-                                                    {
-                                                        "weight": 93,
-                                                        "data": {
-                                                            "Name": "minecraft:netherrack"
-                                                        }
-                                                    },
-                                                    {
-                                                        "weight": 7,
-                                                        "data": {
-                                                            "Name": "minecraft:magma_block"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                ]
                             },
-                            "placement": [
-                                {
-                                    "type": "minecraft:environment_scan",
-                                    "direction_of_search": "down",
-                                    "max_steps": 32,
-                                    "target_condition": {
-                                        "type": "minecraft:all_of",
-                                        "predicates": [
-                                            {
-                                                "type": "minecraft:solid"
-                                            },
-                                            {
-                                                "type": "minecraft:matching_blocks",
-                                                "offset": [
-                                                    0,
-                                                    1,
-                                                    0
-                                                ],
-                                                "blocks": [
-                                                    "minecraft:air",
-                                                    "minecraft:water"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:water"
+                                ]
+                            }
+                        ]
                     }
-                },
-                "placement": []
-            },
-            {
-                "feature": {
-                    "type": "minecraft:random_patch",
-                    "config": {
-                        "tries": 200,
-                        "xz_spread": 8,
-                        "y_spread": 0,
-                        "feature": {
-                            "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                    "direction": "down",
-                                    "allowed_placement": {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:netherrack",
-                                                "minecraft:lava",
-                                                "minecraft:magma_block",
-                                                "minecraft:stone_bricks",
-                                                "minecraft:stone_brick_slab",
-                                                "minecraft:stone_brick_stairs",
-                                                "minecraft:obsidian",
-                                                "minecraft:crying_obsidian",
-                                                "minecraft:mossy_stone_bricks",
-                                                "minecraft:mossy_stone_brick_slab",
-                                                "minecraft:mossy_stone_brick_stairs",
-                                                "minecraft:chiseled_stone_bricks",
-                                                "minecraft:stone_brick_wall",
-                                                "minecraft:mossy_stone_brick_wall",
-                                                "minecraft:iron_bars",
-                                                "minecraft:gold_block",
-                                                "minecraft:chest",
-                                                "minecraft:smooth_stone_slab",
-                                                "minecraft:cracked_stone_bricks",
-                                                "minecraft:air"
-                                            ]
-                                        }
-                                    },
-                                    "prioritize_tip": false,
-                                    "layers": [
-                                        {
-                                            "height": {
-                                                "type": "minecraft:biased_to_bottom",
-                                                "value": {
-                                                    "min_inclusive": 2,
-                                                    "max_inclusive": 7
-                                                }
-                                            },
-                                            "provider": {
-                                                "type": "minecraft:weighted_state_provider",
-                                                "entries": [
-                                                    {
-                                                        "weight": 93,
-                                                        "data": {
-                                                            "Name": "minecraft:netherrack"
-                                                        }
-                                                    },
-                                                    {
-                                                        "weight": 7,
-                                                        "data": {
-                                                            "Name": "minecraft:magma_block"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "placement": [
-                                {
-                                    "type": "minecraft:environment_scan",
-                                    "direction_of_search": "down",
-                                    "max_steps": 32,
-                                    "target_condition": {
-                                        "type": "minecraft:all_of",
-                                        "predicates": [
-                                            {
-                                                "type": "minecraft:solid"
-                                            },
-                                            {
-                                                "type": "minecraft:matching_blocks",
-                                                "offset": [
-                                                    0,
-                                                    1,
-                                                    0
-                                                ],
-                                                "blocks": [
-                                                    "minecraft:air",
-                                                    "minecraft:water"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "placement": []
-            },
-            {
-                "feature": {
-                    "type": "minecraft:random_patch",
-                    "config": {
-                        "tries": 100,
-                        "xz_spread": 7,
-                        "y_spread": 0,
-                        "feature": {
-                            "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                    "direction": "down",
-                                    "allowed_placement": {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:netherrack",
-                                                "minecraft:lava",
-                                                "minecraft:magma_block",
-                                                "minecraft:stone_bricks",
-                                                "minecraft:stone_brick_slab",
-                                                "minecraft:stone_brick_stairs",
-                                                "minecraft:obsidian",
-                                                "minecraft:crying_obsidian",
-                                                "minecraft:mossy_stone_bricks",
-                                                "minecraft:mossy_stone_brick_slab",
-                                                "minecraft:mossy_stone_brick_stairs",
-                                                "minecraft:chiseled_stone_bricks",
-                                                "minecraft:stone_brick_wall",
-                                                "minecraft:mossy_stone_brick_wall",
-                                                "minecraft:iron_bars",
-                                                "minecraft:gold_block",
-                                                "minecraft:chest",
-                                                "minecraft:smooth_stone_slab",
-                                                "minecraft:cracked_stone_bricks",
-                                                "minecraft:air"
-                                            ]
-                                        }
-                                    },
-                                    "prioritize_tip": false,
-                                    "layers": [
-                                        {
-                                            "height": {
-                                                "type": "minecraft:biased_to_bottom",
-                                                "value": {
-                                                    "min_inclusive": 2,
-                                                    "max_inclusive": 7
-                                                }
-                                            },
-                                            "provider": {
-                                                "type": "minecraft:weighted_state_provider",
-                                                "entries": [
-                                                    {
-                                                        "weight": 93,
-                                                        "data": {
-                                                            "Name": "minecraft:netherrack"
-                                                        }
-                                                    },
-                                                    {
-                                                        "weight": 7,
-                                                        "data": {
-                                                            "Name": "minecraft:magma_block"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "placement": [
-                                {
-                                    "type": "minecraft:environment_scan",
-                                    "direction_of_search": "down",
-                                    "max_steps": 32,
-                                    "target_condition": {
-                                        "type": "minecraft:all_of",
-                                        "predicates": [
-                                            {
-                                                "type": "minecraft:solid"
-                                            },
-                                            {
-                                                "type": "minecraft:matching_blocks",
-                                                "offset": [
-                                                    0,
-                                                    1,
-                                                    0
-                                                ],
-                                                "blocks": [
-                                                    "minecraft:air",
-                                                    "minecraft:water"
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "placement": []
-            }
-        ]
+                }
+            ]
+        }
     }
 }
