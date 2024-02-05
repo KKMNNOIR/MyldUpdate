@@ -19,14 +19,7 @@
         ],
         "default": {
             "feature": "vanilla_plus:volcanic_bomb_basalt",
-            "placement": [
-                {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                        "type": "minecraft:true"
-                    }
-                }
-            ]
+            "placement": []
         }
     }
 }
