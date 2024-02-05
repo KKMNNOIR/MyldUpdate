@@ -62,6 +62,10 @@
     {
       "structure": "vanilla_plus:ruined_portal_with_guard_desert",
       "weight": 1
+    },
+    {
+      "structure": "vanilla_plus:ruined_portal_with_guard_snowy",
+      "weight": 1
     }
   ]
 }
