@@ -1,7 +1,7 @@
 {
   "type": "minecraft:add",
   "argument1": {
-    "type": "minecraft:mul",
+    "type": "minecraft:add",
     "argument1": "vanilla_plus:nether/inland/final_density",
     "argument2": {
       "type": "minecraft:spline",
@@ -10,22 +10,22 @@
         "points": [
           {
             "location": -1,
-            "value": 0.0,
+            "value": -0.7,
             "derivative": 0
           },
           {
-            "location": -0.25,
-            "value": 0.0,
+            "location": -0.45,
+            "value": -0.7,
             "derivative": 0
           },
           {
-            "location": -0.07,
-            "value": 0.4,
-            "derivative": 6.0
+            "location": -0.04,
+            "value": 0.5,
+            "derivative": 0
           },
           {
             "location": 0.1,
-            "value": 1.0,
+            "value": 0.5,
             "derivative": 0
           }
         ]
@@ -33,7 +33,7 @@
     }
   },
   "argument2": {
-    "type": "minecraft:mul",
+    "type": "minecraft:add",
     "argument1": "vanilla_plus:nether/ocean/final_density",
     "argument2": {
       "type": "minecraft:spline",
@@ -42,22 +42,22 @@
         "points": [
           {
             "location": -1,
-            "value": 1.0,
+            "value": 0.5,
             "derivative": 0
           },
           {
-            "location": -0.25,
-            "value": 1.0,
+            "location": -0.45,
+            "value": 0.5,
             "derivative": 0
           },
           {
-            "location": -0.07,
-            "value": 0.4,
-            "derivative": -6.0
+            "location": -0.04,
+            "value": -0.7,
+            "derivative": 0
           },
           {
             "location": 0.1,
-            "value": 0.0,
+            "value": -0.7,
             "derivative": 0
           }
         ]
