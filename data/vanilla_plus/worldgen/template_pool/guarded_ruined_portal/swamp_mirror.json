@@ -1,0 +1,122 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/giant_portal_1_mirror"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/giant_portal_2_mirror"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/giant_portal_3_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_1_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_2_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_3_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_4_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_5_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_6_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_7_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_8_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_9_mirror"
+            }
+        },
+        {
+            "weight": 95,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:ruined_portal_swamp",
+                "location": "vanilla_plus:guarded_ruined_portal/portal_10_mirror"
+            }
+        }
+    ]
+}

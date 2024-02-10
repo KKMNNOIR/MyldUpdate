@@ -1,0 +1,9 @@
+{
+    "feature": "vanilla_plus:ruined_portal/netherrack_spread/jungle",
+    "placement": [
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR_WG"
+        }
+    ]
+}
