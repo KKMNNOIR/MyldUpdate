@@ -7,6 +7,7 @@
         "minecraft:nether_brick_fence",
         "minecraft:nether_brick_slab",
         "minecraft:nether_brick_stairs",
-        "minecraft:nether_brick_wall"
+        "minecraft:nether_brick_wall",
+        "minecraft:polished_blackstone_brick_wall"
     ]
 }
