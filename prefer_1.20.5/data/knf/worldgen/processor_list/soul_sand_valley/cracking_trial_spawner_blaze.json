@@ -1,0 +1,633 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "probability": 0.375,
+                        "block": "minecraft:nether_bricks"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_nether_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:netherite_block",
+                        "probability": 0.9
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:chiseled_nether_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":20.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":19.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":18.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":17.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":16.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":15.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":14.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:trial_spawner",
+                        "probability": 0.125
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":13.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:trial_spawner"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:trial_spawner",
+                        "Properties": {
+                            "trial_spawner_state": "waiting_for_players"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "loot_tables_to_eject":[
+                                {
+                                    "data":"knf:trial_spawner/blaze/consumables",
+                                    "weight": 6
+                                },
+                                {
+                                    "data":"knf:trial_spawner/blaze/fire_resistance_potion",
+                                    "weight": 6
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/enchanted_golden_apple",
+                                    "weight": 2
+                                },
+                                {
+                                    "data": "knf:trial_spawner/blaze/netherite",
+                                    "weight": 1
+                                }
+                            ],
+                            "simultaneous_mobs": 2.0,
+                            "spawn_data": {
+                                "entity": {
+                                    "Tags":[
+                                        "vpFortressSpawned",
+                                        "knf_fire_trails"
+                                    ],
+                                    "id":"minecraft:blaze"
+                                }
+                            },
+                            "spawn_potentials":[
+                                {
+                                    "data":{
+                                        "entity":{
+                                            "Tags":[
+                                                "vpFortressSpawned",
+                                                "knf_fire_trails"
+                                            ],
+                                            "id":"minecraft:blaze"
+                                        }
+                                    },
+                                    "weight":1
+                                }
+                            ],
+                            "ticks_between_spawn":20,
+                            "total_mobs":12.0,
+                            "total_mobs_added_per_player":1.0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

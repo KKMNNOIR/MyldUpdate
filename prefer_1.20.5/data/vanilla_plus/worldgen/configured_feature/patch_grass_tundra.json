@@ -1,0 +1,100 @@
+{
+    "type": "minecraft:flower",
+    "config": {
+      "feature": {
+        "feature": {
+          "type": "minecraft:random_selector",
+          "config": {
+            "default": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                        "to_place": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "data": {
+                                "Name": "minecraft:short_grass"
+                              },
+                              "weight": 1
+                            },
+                            {
+                              "data": {
+                                "Name": "minecraft:fern"
+                              },
+                              "weight": 4
+                            }
+                          ]
+                        }
+                    }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:air"
+                    }
+                  }
+                ]
+            },
+            "features": [
+                {
+                    "feature": {
+                        "feature": {
+                          "type": "minecraft:random_patch",
+                          "config": {
+                            "xz_spread": 3,
+                            "y_spread": 0,
+                            "tries": 10,
+                            "feature": {
+                              "feature": {
+                                "type": "minecraft:simple_block",
+                                "config": {
+                                  "to_place": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                          "Name": "minecraft:moss_block"
+                                      }
+                                  }
+                                }
+                              },
+                              "placement": [
+                                {
+                                  "type": "minecraft:block_predicate_filter",
+                                  "predicate": {
+                                      "type": "minecraft:matching_block_tag",
+                                      "tag": "minecraft:moss_replaceable"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        "placement": [
+                            {
+                                "type": "minecraft:random_offset",
+                                "xz_spread": 0,
+                                "y_spread": -1
+                            },
+                            {
+                              "type": "minecraft:block_predicate_filter",
+                              "predicate": {
+                                  "type": "minecraft:matching_block_tag",
+                                  "tag": "minecraft:moss_replaceable"
+                              }
+                            }
+                        ]
+                    },
+                    "chance": 0.6
+                }
+            ]
+          }
+        },
+        "placement": []
+      },
+      "tries": 32,
+      "xz_spread": 7,
+      "y_spread": 3
+    }
+}

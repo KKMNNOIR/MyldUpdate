@@ -1,0 +1,17 @@
+{
+    "biome.vanilla_plus.blacK_forest": "黒い森",
+    "biome.vanilla_plus.blackstone_wastes": "黒石の荒野",
+    "biome.vanilla_plus.crimson_plains": "真紅の平原",
+    "biome.vanilla_plus.diamond_forest": "ダイヤモンドの森",
+    "biome.vanilla_plus.frost_deltas": "氷の三角州",
+    "biome.vanilla_plus.modified_nether_wastes": "変異したネザーの荒地",
+    "biome.vanilla_plus.nether_gold_mine": "ネザー金山",
+    "biome.vanilla_plus.scorched_dunes": "焼け焦げた砂丘",
+    "biome.vanilla_plus.warped_plains": "歪んだ平原",
+    "biome.vanilla_plus.white_sands": "白い砂地",
+    "death.attack.frozen_snowball": "%1$s は雪玉の冷たさに耐えられなかった",
+    "death.attack.frozen_snowball.player": "%1$s は%2$s の雪玉の冷たさに耐えられなかった",
+    "item.fire_brand": "ファイアブランド",
+    "item.minecraft.ominous_shield": "不吉な盾",
+    "item.wither_snake": "ウィザースネーク"
+}

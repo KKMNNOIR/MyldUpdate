@@ -1,0 +1,29 @@
+{
+    "feature": "minecraft:patch_red_mushroom",
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 24,
+                "max_inclusive": 32
+            }
+        }
+      },
+      {
+        "type": "minecraft:rarity_filter",
+        "chance": 8
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:heightmap",
+        "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+}

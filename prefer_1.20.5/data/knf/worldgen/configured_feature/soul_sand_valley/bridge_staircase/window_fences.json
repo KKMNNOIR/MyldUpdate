@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "prioritize_tip": false,
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "layers": [
+            {
+                "height": 4,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 3,
+                            "data": {
+                                "Name": "minecraft:nether_brick_fence"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:air"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

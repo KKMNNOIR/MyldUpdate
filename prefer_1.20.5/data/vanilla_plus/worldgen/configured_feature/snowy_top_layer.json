@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "half_height": 0,
+        "radius": 0,
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:snow"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:not",
+                    "predicate": {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "tag": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "blocks": [
+                                    "minecraft:ice"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "blocks": [
+                        "minecraft:air"
+                    ]
+                }
+            ]
+        },
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:randomized_int_state_provider",
+                "property": "layers",
+                "source": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:snow",
+                        "Properties": {
+                            "layers": "1"
+                        }
+                    }
+                },
+                "values": {
+                    "type": "minecraft:biased_to_bottom",
+                    "value": {
+                        "min_inclusive": 1,
+                        "max_inclusive": 4
+                    }
+                }
+            },
+            "rules": []
+        }
+    }
+}

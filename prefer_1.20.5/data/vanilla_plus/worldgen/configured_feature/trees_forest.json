@@ -1,0 +1,28 @@
+{
+    "config": {
+      "features": [
+        {
+          "feature": "vanilla_plus:fallen_birch",
+          "chance": 0.025
+        },
+        {
+          "chance": 0.025,
+          "feature": "vanilla_plus:fallen_oak"
+        },
+        {
+          "feature": "vanilla_plus:tall_oak_bees_0002_vines",
+          "chance": 0.025
+        },
+        {
+          "feature": "vanilla_plus:tall_birch_bees_0002",
+          "chance": 0.2
+        },
+        {
+          "chance": 0.25,
+          "feature": "vanilla_plus:tall_oak_bees_0002"
+        }
+      ],
+      "default": "vanilla_plus:tall_oak_straight_bees_0002"
+    },
+    "type": "minecraft:random_selector"
+}  

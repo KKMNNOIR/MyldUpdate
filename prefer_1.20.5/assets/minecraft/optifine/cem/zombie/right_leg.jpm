@@ -1,0 +1,17 @@
+{
+    "invertAxis": "xy",
+	"translate": [-1.9, -12, 0],
+	"boxes": [
+		{"coordinates": [0, 0, -2, 4, 12, 4], "textureOffset": [0, 16]}
+	],
+	"submodels": [
+		{
+			"id": "right_pants",
+			"invertAxis": "xy",
+			"translate": [-1.9, 12, 0],
+			"boxes": [
+				{"coordinates": [1.9, -12, -2, 4, 12, 4], "textureOffset": [0, 32]}
+			]
+		}
+	]
+}
