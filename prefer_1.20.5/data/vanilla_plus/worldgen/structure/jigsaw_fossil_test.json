@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "vanilla_plus:development_room",
+    "max_distance_from_center": 80,
+    "size": 7,
+    "spawn_overrides": {},
+    "start_height": {
+        "absolute": 72
+    },
+    "start_pool": "vanilla_plus:jigsaw_feature_test2",
+    "step": "surface_structures",
+    "use_expansion_hack": false
+}
