@@ -82,10 +82,8 @@
                             {
                                 "height": {
                                     "type": "minecraft:uniform",
-                                    "value": {
-                                        "min_inclusive": 2,
-                                        "max_inclusive": 4
-                                    }
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 4
                                 },
                                 "provider": {
                                     "type": "minecraft:weighted_state_provider",
@@ -178,10 +176,8 @@
                             {
                                 "height": {
                                     "type": "minecraft:uniform",
-                                    "value": {
-                                        "min_inclusive": 2,
-                                        "max_inclusive": 4
-                                    }
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 4
                                 },
                                 "provider": {
                                     "type": "minecraft:weighted_state_provider",
@@ -274,10 +270,8 @@
                             {
                                 "height": {
                                     "type": "minecraft:uniform",
-                                    "value": {
-                                        "min_inclusive": 2,
-                                        "max_inclusive": 4
-                                    }
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 4
                                 },
                                 "provider": {
                                     "type": "minecraft:weighted_state_provider",
@@ -370,10 +364,8 @@
                             {
                                 "height": {
                                     "type": "minecraft:uniform",
-                                    "value": {
-                                        "min_inclusive": 2,
-                                        "max_inclusive": 4
-                                    }
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 4
                                 },
                                 "provider": {
                                     "type": "minecraft:weighted_state_provider",

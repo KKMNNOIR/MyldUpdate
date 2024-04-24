@@ -93,10 +93,8 @@
                                 {
                                     "height": {
                                         "type": "minecraft:uniform",
-                                        "value": {
-                                            "min_inclusive": 0,
-                                            "max_inclusive": 1
-                                        }
+                                        "min_inclusive": 0,
+                                        "max_inclusive": 1
                                     },
                                     "provider": {
                                         "type": "minecraft:simple_state_provider",
@@ -108,10 +106,8 @@
                                 {
                                     "height": {
                                         "type": "minecraft:uniform",
-                                        "value": {
-                                            "min_inclusive": 2,
-                                            "max_inclusive": 4
-                                        }
+                                        "min_inclusive": 2,
+                                        "max_inclusive": 4
                                     },
                                     "provider": {
                                         "type": "minecraft:simple_state_provider",
@@ -209,10 +205,8 @@
                                 {
                                     "height": {
                                         "type": "minecraft:uniform",
-                                        "value": {
-                                            "min_inclusive": 2,
-                                            "max_inclusive": 4
-                                        }
+                                        "min_inclusive": 2,
+                                        "max_inclusive": 4
                                     },
                                     "provider": {
                                         "type": "minecraft:simple_state_provider",
@@ -310,10 +304,8 @@
                                 {
                                     "height": {
                                         "type": "minecraft:uniform",
-                                        "value": {
-                                            "min_inclusive": 2,
-                                            "max_inclusive": 4
-                                        }
+                                        "min_inclusive": 2,
+                                        "max_inclusive": 4
                                     },
                                     "provider": {
                                         "type": "minecraft:simple_state_provider",
@@ -411,10 +403,8 @@
                                 {
                                     "height": {
                                         "type": "minecraft:uniform",
-                                        "value": {
-                                            "min_inclusive": 2,
-                                            "max_inclusive": 4
-                                        }
+                                        "min_inclusive": 2,
+                                        "max_inclusive": 4
                                     },
                                     "provider": {
                                         "type": "minecraft:simple_state_provider",

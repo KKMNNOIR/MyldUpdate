@@ -120,7 +120,7 @@
       },
       "trunk_placer": {
         "type": "minecraft:fancy_trunk_placer",
-        "base_height": 12,
+        "base_height": 16,
         "height_rand_a": 8,
         "height_rand_b": 24
       },
@@ -146,10 +146,8 @@
         },
         "trunk_offset_y": {
           "type": "minecraft:uniform",
-          "value": {
-            "min_inclusive": 0,
-            "max_inclusive": 3
-          }
+          "min_inclusive": 0,
+          "max_inclusive": 3
         },
         "mangrove_root_placement": {
           "can_grow_through": "#minecraft:dirt",

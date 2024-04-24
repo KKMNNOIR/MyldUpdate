@@ -25,30 +25,24 @@
                                         "weight": 78,
                                         "data": {
                                             "type": "minecraft:biased_to_bottom",
-                                            "value": {
-                                                "min_inclusive": 1,
-                                                "max_inclusive": 3
-                                            }
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 3
                                         }
                                     },
                                     {
                                         "weight": 2,
                                         "data": {
                                             "type": "minecraft:biased_to_bottom",
-                                            "value": {
-                                                "min_inclusive": 4,
-                                                "max_inclusive": 8
-                                            }
+                                            "min_inclusive": 4,
+                                            "max_inclusive": 8
                                         }
                                     },
                                     {
                                         "weight": 1,
                                         "data": {
                                             "type": "minecraft:biased_to_bottom",
-                                            "value": {
-                                                "min_inclusive": 9,
-                                                "max_inclusive": 13
-                                            }
+                                            "min_inclusive": 9,
+                                            "max_inclusive": 13
                                         }
                                     }
                                 ]

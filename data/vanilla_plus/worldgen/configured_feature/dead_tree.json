@@ -122,10 +122,8 @@
                             "height_rand_b": 0,
                             "extra_branch_length": {
                                 "type": "minecraft:uniform",
-                                "value": {
-                                    "min_inclusive": 0,
-                                    "max_inclusive": 4
-                                }
+                                "min_inclusive": 0,
+                                "max_inclusive": 4
                             },
                             "extra_branch_steps": {
                                 "type": "minecraft:uniform",

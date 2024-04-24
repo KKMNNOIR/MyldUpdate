@@ -42,10 +42,8 @@
         "offset": 6,
         "radius": {
             "type": "minecraft:uniform",
-            "value": {
-                "min_inclusive": 3,
-                "max_inclusive": 4
-            }
+            "min_inclusive": 3,
+            "max_inclusive": 4
         }
       },
       "foliage_provider": {

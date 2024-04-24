@@ -13,10 +13,8 @@
         "offset": 1,
         "radius": {
             "type": "minecraft:uniform",
-            "value": {
-                "max_inclusive": 4,
-                "min_inclusive": 3
-            }
+            "max_inclusive": 4,
+            "min_inclusive": 3
         },
         "height": 5
       },
