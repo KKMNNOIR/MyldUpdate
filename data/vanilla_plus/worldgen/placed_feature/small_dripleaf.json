@@ -28,10 +28,8 @@
             "vertical_range": 1,
             "xz_radius": {
                 "type": "minecraft:uniform",
-                "value": {
-                    "min_inclusive": 4,
-                    "max_inclusive": 12
-                }
+                "min_inclusive": 4,
+                "max_inclusive": 12
             },
             "vegetation_feature": {
                 "feature": {

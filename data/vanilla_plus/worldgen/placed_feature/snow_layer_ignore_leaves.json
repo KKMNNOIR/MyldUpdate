@@ -14,10 +14,8 @@
                             "property": "layers",
                             "values": {
                                 "type": "minecraft:uniform",
-                                "value": {
-                                    "min_inclusive": 1,
-                                    "max_inclusive": 8
-                                }
+                                "min_inclusive": 1,
+                                "max_inclusive": 8
                             },
                             "source": {
                                 "type": "minecraft:simple_state_provider",

@@ -66,10 +66,8 @@
                                                 "property": "layers",
                                                 "values": {
                                                     "type": "minecraft:biased_to_bottom",
-                                                    "value": {
-                                                        "min_inclusive": 1,
-                                                        "max_inclusive": 4
-                                                    }
+                                                    "min_inclusive": 1,
+                                                    "max_inclusive": 4
                                                 }
                                             }
                                         }
@@ -224,10 +222,8 @@
             "type": "minecraft:random_offset",
             "xz_spread": {
                 "type": "minecraft:uniform",
-                "value": {
-                    "min_inclusive": 0,
-                    "max_inclusive": 16
-                }
+                "min_inclusive": 0,
+                "max_inclusive": 16
             },
             "y_spread": 0
         },
