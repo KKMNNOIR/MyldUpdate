@@ -1,7 +1,0 @@
-{
-    "message_id": "vanilla_plus:copper_spike",
-    "death_message_type": "default",
-    "exhaustion": 0.0,
-    "scaling": "always",
-    "effects": "poking"
-}
