@@ -1,0 +1,19 @@
+{
+    "invertAxis": "xy",
+	"translate": [5, -22, 0],
+	"mirrorTexture": "u",
+	"boxes": [
+		{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48]}
+	],
+	"submodels": [
+		{
+			"id": "left_sleeve",
+			"invertAxis": "xy",
+			"translate": [5, 22, 0],
+			"mirrorTexture": "u",
+			"boxes": [
+				{"coordinates": [-13, -10, -2, 4, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.25}
+			]
+		}
+	]
+}

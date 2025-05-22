@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:fossil",
+    "config": {
+        "fossil_structures": [
+            "vanilla_plus:monster_rooms/monster_room_placer",
+            "vanilla_plus:monster_rooms/creeper_monster_room_placer"
+        ],
+        "overlay_structures": [
+            "vanilla_plus:monster_rooms/monster_room_placer_overlay",
+            "vanilla_plus:monster_rooms/creeper_monster_room_placer_overlay"
+        ],
+        "fossil_processors": "minecraft:empty",
+        "overlay_processors": "minecraft:empty",
+        "max_empty_corners_allowed": 4
+    }
+}

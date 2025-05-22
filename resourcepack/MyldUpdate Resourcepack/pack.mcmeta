@@ -1,0 +1,37 @@
+{
+	"pack": {
+		"pack_format": 41,
+		"description": [
+            {
+                "text": "This is my "
+            },
+            {
+                "text": "WILD UPDATE !!",
+                "color": "#98fb98",
+                "bold": true
+            }
+        ],
+        "supported_formats": [
+            18,
+            64
+        ]
+	},
+    "overlays": {
+        "entries": [
+            {
+                "formats": [
+                    18,
+                    31
+                ],
+                "directory": "prefer_1.20.5"
+            },
+            {
+                "formats": [
+                    32,
+                    43
+                ],
+                "directory": "prefer_1.21.4"
+            }
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "feature": "vanilla_plus:replace_vine",
+    "placement": [
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": { "below_top": 0 },
+                "min_inclusive": { "absolute": 64 }
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:vine"]
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:birch_log",
+                                            "minecraft:birch_leaves"
+                                        ],
+                                        "offset": [
+                                            0,
+                                            1,
+                                            1
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:vine"]
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:birch_log",
+                                            "minecraft:birch_leaves"
+                                        ],
+                                        "offset": [
+                                            0,
+                                            1,
+                                            -1
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 64
+        }
+    ]
+}

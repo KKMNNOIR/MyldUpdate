@@ -1,0 +1,19 @@
+{
+    "invertAxis": "xy",
+	"translate": [1.9, -12, 0],
+	"mirrorTexture": "u",
+	"boxes": [
+		{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [16, 48]}
+	],
+	"submodels": [
+		{
+			"id": "left_pants",
+			"invertAxis": "xy",
+			"translate": [1.9, 12, 0],
+			"mirrorTexture": "u",
+			"boxes": [
+				{"coordinates": [-5.9, -12, -2, 4, 12, 4], "textureOffset": [0, 48], "sizeAdd": 0.25}
+			]
+		}
+	]
+}

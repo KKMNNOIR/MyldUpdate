@@ -1,0 +1,11 @@
+{
+    "description": {
+        "translate": "jukebox.minecraft.the_arch_illager",
+        "fallback": "The Arch Illager"
+    },
+    "sound_event": {
+        "sound_id": "music.the_arch_illager"
+    },
+    "length_in_seconds": 165,
+    "comparator_output": 15
+}

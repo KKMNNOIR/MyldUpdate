@@ -1,0 +1,48 @@
+{
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 24, -4, 8, 8, 8], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 24, -4, 8, 8, 8], "textureOffset": [32, 0], "sizeAdd": 0.25}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"model": "./zombie/body.jpm"
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"model": "./zombie/left_arm.jpm"
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"model": "./zombie/right_arm.jpm"
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"model": "./zombie/left_leg.jpm"
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"model": "./zombie/right_leg.jpm"
+		}
+	]
+}

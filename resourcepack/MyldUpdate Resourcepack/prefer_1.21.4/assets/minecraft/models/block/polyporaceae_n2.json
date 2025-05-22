@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"7": "block/mushroom_block_inside",
+		"particle": "block/brown_mushroom_block",
+		"top": "block/brown_mushroom_block"
+	},
+	"elements": [
+		{
+			"from": [-3.25, 9.375, -4.25],
+			"to": [6.75, 11.375, 6.25],
+			"faces": {
+				"north": {"uv": [0, 0, 10, 2], "texture": "#top"},
+				"east": {"uv": [0, 0, 10, 2], "texture": "#top"},
+				"south": {"uv": [0, 0, 10, 2], "texture": "#top"},
+				"west": {"uv": [0, 0, 10, 2], "texture": "#top"},
+				"up": {"uv": [0, 0, 10, 10], "texture": "#top"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#7"}
+			}
+		}
+	]
+}

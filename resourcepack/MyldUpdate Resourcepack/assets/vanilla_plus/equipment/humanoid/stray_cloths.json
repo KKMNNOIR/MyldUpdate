@@ -1,0 +1,20 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "vanilla_plus:stray_cloths",
+                "dyeable": {
+                    "color_when_undyed": 6387319
+                }
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "vanilla_plus:stray_cloths",
+                "dyeable": {
+                    "color_when_undyed": 6387319
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "vanilla_plus:blaceb.ttf",
+            "shift": [0, 0],
+            "size": 12,
+            "oversample": 12
+        }
+    ]
+}

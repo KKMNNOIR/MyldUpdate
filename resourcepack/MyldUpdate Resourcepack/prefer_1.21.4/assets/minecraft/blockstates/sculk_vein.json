@@ -1,0 +1,94 @@
+{
+    "multipart": [
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein"
+        },
+        "when": {
+          "north": "true"
+        }
+      },
+      {
+        "apply": [
+            { "model": "block/polyporaceae_s0" },
+            { "model": "block/polyporaceae_s1" },
+            { "model": "block/polyporaceae_s2" },
+            { "model": "block/polyporaceae_s3" },
+            { "model": "block/polyporaceae_s4" }
+        ],
+        "when": {
+          "down": "false",
+          "east": "false",
+          "north": "false",
+          "south": "false",
+          "up": "false",
+          "west": "false",
+          "waterlogged": "false"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/gama"
+        },
+        "when": {
+          "down": "false",
+          "east": "false",
+          "north": "false",
+          "south": "false",
+          "up": "false",
+          "west": "false",
+          "waterlogged": "true"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein",
+          "uvlock": true,
+          "y": 90
+        },
+        "when": {
+          "east": "true"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein",
+          "uvlock": true,
+          "y": 180
+        },
+        "when": {
+          "south": "true"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein",
+          "uvlock": true,
+          "y": 270
+        },
+        "when": {
+          "west": "true"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein",
+          "uvlock": true,
+          "x": 270
+        },
+        "when": {
+          "up": "true"
+        }
+      },
+      {
+        "apply": {
+          "model": "minecraft:block/sculk_vein",
+          "uvlock": true,
+          "x": 90
+        },
+        "when": {
+          "down": "true"
+        }
+      }
+    ]
+  }
