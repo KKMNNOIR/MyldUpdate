@@ -1,1 +1,0 @@
-execute as @e[tag=kshSetButton] at @s run function ksh:place_stone_button
