@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/powder_snow_outline.png",
+            "height": 68,
+            "ascent": 32,
+            "chars": ["\u0073"]
+        }
+    ]
+}

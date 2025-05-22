@@ -1,0 +1,17 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/tipped_arrow_head",
+        "layer1": "item/tipped_arrow_base"
+    },
+    "overrides": [
+    	{
+    		"predicate": { "custom_model_data": 802 },
+    		"model": "item/ice_arrow"
+    	},
+        {
+            "predicate": { "custom_model_data": 9999 },
+            "model": "item/air"
+        }
+    ]
+}

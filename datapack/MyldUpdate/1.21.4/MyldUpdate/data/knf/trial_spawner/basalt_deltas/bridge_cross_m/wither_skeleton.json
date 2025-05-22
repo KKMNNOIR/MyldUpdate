@@ -1,0 +1,71 @@
+{
+    "total_mobs": 240.0,
+    "total_mobs_added_per_player": 0.5,
+    "simultaneous_mobs": 6.0,
+    "simultaneous_mobs_added_per_player": 0.5,
+    "spawn_potentials": [
+        {
+            "weight": 1,
+            "data": {
+                "entity": {
+                    "id": "minecraft:wither_skeleton"
+                },
+                "equipment": {
+                    "loot_table": "knf:wither_skeleton_equipment/basalt_deltas/ominous_range",
+                    "slot_drop_chances": 0.0
+                },
+                "custom_spawn_rules": {
+                    "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    },
+                    "sky_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    }
+                }
+            }
+        },
+        {
+            "weight": 2,
+            "data": {
+                "entity": {
+                    "id": "minecraft:wither_skeleton"
+                },
+                "equipment": {
+                    "loot_table": "knf:wither_skeleton_equipment/basalt_deltas/ominous_melee",
+                    "slot_drop_chances": 0.0
+                },
+                "custom_spawn_rules": {
+                    "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    },
+                    "sky_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    }
+                }
+            }
+        }
+    ],
+    "items_to_drop_when_ominous": "knf:basalt_deltas/ominous_drop_wind_charge",
+    "loot_tables_to_eject": [
+        {
+            "weight": 1,
+            "data": "knf:trial_spawner/basalt_deltas/wither_skeleton/smithing_template"
+        },
+        {
+            "weight": 5,
+            "data": "knf:trial_spawner/basalt_deltas/wither_skeleton/consumables"
+        },
+        {
+            "weight": 2,
+            "data": "knf:trial_spawner/basalt_deltas/wither_skeleton/equipment"
+        },
+        {
+            "weight": 3,
+            "data": "knf:trial_spawner/basalt_deltas/wither_skeleton/skull"
+        }
+    ]
+}

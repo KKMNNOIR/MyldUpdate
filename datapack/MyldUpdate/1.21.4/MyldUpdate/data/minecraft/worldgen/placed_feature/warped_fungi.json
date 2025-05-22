@@ -1,0 +1,27 @@
+{
+  "feature": "vanilla_plus:warped_forest/warped_fungus/warped_fungus",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 8
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+          "type": "minecraft:matching_blocks",
+          "offset": [
+              0,
+              -1,
+              0
+          ],
+          "blocks": [
+            "minecraft:warped_nylium",
+            "minecraft:netherrack"
+          ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

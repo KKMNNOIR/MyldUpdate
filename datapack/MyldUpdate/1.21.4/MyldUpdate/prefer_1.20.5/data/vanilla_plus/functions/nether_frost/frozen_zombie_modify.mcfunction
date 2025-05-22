@@ -1,0 +1,5 @@
+data merge entity @s {CustomName:'{"text": "Frozen Zombie","color": "#315CD4","bold": true,"italic": false}',Tags:["FrozenZombie"],PersistenceRequired:0b,Team:"NameHidden"}
+# item replace entity @s armor.head with minecraft:chainmail_helmet{Trim:{material:"vanilla_plus:none",pattern:"vanilla_plus:frozen_zombie"},apply_opti:1b} 1
+# item replace entity @s armor.chest with minecraft:chainmail_chestplate{Trim:{material:"vanilla_plus:none",pattern:"vanilla_plus:frozen_zombie"},apply_opti:1b} 1
+# item replace entity @s armor.legs with minecraft:chainmail_leggings{Trim:{material:"vanilla_plus:none",pattern:"vanilla_plus:frozen_zombie"},apply_opti:1b} 1
+# item replace entity @s armor.feet with minecraft:chainmail_boots{Trim:{material:"vanilla_plus:none",pattern:"vanilla_plus:frozen_zombie"},apply_opti:1b} 1

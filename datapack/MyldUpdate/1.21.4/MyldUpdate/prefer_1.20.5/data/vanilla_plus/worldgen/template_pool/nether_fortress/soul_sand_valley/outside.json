@@ -1,0 +1,69 @@
+{
+    
+    "fallback": "vanilla_plus:nether_fortress/soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 7,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/bridge_1"
+            }
+        },
+        {
+            "weight": 12,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/intersection_1"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/closed_intersections_1"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/balcony_blaze"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/balcony_wither_skeleton"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/bridge_staircase_1"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "vanilla_plus:nether_fortress/soul_sand_valley/bridges/bridge_staircase_2"
+            }
+        }
+    ]
+}

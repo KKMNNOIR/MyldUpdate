@@ -1,0 +1,10 @@
+{
+    "feature": "vanilla_plus:ruined_portal/netherrack_spread",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 1
+        }
+    ]
+}

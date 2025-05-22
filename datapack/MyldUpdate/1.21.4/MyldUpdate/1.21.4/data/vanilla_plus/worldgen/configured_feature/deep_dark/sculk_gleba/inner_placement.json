@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 16,
+        "y_spread": 16,
+        "tries": 640,
+        "feature": {
+            "feature": {
+                "type": "minecraft:multiface_growth",
+                "config": {
+                    "block": "minecraft:sculk_vein",
+                    "can_place_on_ceiling": true,
+                    "can_place_on_floor": true,
+                    "can_place_on_wall": true,
+                    "search_range": 64,
+                    "chance_of_spreading": 0.85,
+                    "can_be_placed_on": "#vanilla_plus:can_grow_sculk_spore"
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:cave_air"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

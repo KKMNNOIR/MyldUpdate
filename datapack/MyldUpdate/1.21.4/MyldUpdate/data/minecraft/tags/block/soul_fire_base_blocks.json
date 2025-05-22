@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:blackstone",
+        "minecraft:diamond_block",
+        "minecraft:diamond_ore",
+        "minecraft:deepslate_tiles",
+        "minecraft:chiseled_deepslate",
+        "minecraft:prismarine"
+    ]
+}

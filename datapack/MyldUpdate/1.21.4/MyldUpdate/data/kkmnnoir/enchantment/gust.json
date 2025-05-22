@@ -1,0 +1,94 @@
+{
+    "anvil_cost": 4,
+    "description": "突風",
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:explode",
+            "block_interaction": "trigger",
+            "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+            "knockback_multiplier": {
+              "type": "minecraft:lookup",
+              "fallback": {
+                "type": "minecraft:linear",
+                "base": 0.5,
+                "per_level_above_first": 0.35
+              },
+              "values": [
+                1.2,
+                1.75,
+                2.2
+              ]
+            },
+            "large_particle": {
+              "type": "minecraft:gust_emitter_large"
+            },
+            "radius": 3.5,
+            "small_particle": {
+              "type": "minecraft:gust_emitter_small"
+            },
+            "sound": "minecraft:entity.wind_charge.wind_burst"
+          },
+          "enchanted": "attacker"
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+            "effect": {
+                "type": "minecraft:explode",
+                "block_interaction": "trigger",
+                "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                "knockback_multiplier": {
+                  "type": "minecraft:lookup",
+                  "fallback": {
+                    "type": "minecraft:linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.35
+                  },
+                  "values": [
+                    1.2,
+                    1.75,
+                    2.2
+                  ]
+                },
+                "large_particle": {
+                  "type": "minecraft:gust_emitter_large"
+                },
+                "radius": 3.5,
+                "small_particle": {
+                  "type": "minecraft:gust_emitter_small"
+                },
+                "sound": "minecraft:entity.wind_charge.wind_burst"
+            }
+        }
+      ],
+      "minecraft:knockback": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 0.5,
+              "per_level_above_first": 0.35
+            }
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 65,
+      "per_level_above_first": 9
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 9
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#kkmnnoir:enchantable/range_weapon",
+    "weight": 2
+}

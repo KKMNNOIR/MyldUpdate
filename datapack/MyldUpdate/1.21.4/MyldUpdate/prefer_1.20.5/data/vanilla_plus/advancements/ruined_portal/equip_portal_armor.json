@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "equiping": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "items": [
+                                        "minecraft:netherite_chestplate"
+                                    ],
+                                    "nbt": "{vpid:\"ruined_portal_guard_armor\"}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "vanilla_plus:ruined_portal_with_guard/fire_resistance"
+    }
+}

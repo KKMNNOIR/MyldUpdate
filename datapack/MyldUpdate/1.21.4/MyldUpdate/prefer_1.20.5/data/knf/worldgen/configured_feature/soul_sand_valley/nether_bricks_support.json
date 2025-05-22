@@ -1,0 +1,108 @@
+{
+    "type": "minecraft:block_column", //ブロックを1方向に伸長するfeature
+    "config": {
+        "direction": "down", //下方向に伸ばす
+        "allowed_placement": {
+            "type": "minecraft:any_of", //OR条件
+            "predicates": [
+                {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:not", //次に宣言する条件を反転
+                            "predicate": {
+                                "type": "minecraft:has_sturdy_face", //sturdy_face:buttonなど、他のブロックの側面にくっつけるタイプのブロックがくっつけられるか。16ボクセル分が対象。
+                                "offset": [ //上からx,y,z方向。この場合、y方向に+1=1ブロック上
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "direction": "up" //上面。
+                            }
+                        },
+                        {
+                            "type": "minecraft:not",
+                            "predicate": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_bricks",
+                                    "minecraft:nether_brick_fence",
+                                    "minecraft:nether_brick_wall",
+                                    "minecraft:bone_block",
+                                    "minecraft:polished_blackstone_bricks",
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ],
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prioritize_tip": true,
+        "layers": [
+            {
+                "height": 1024, //1024ブロックの高さ
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 16,
+                            "data": {
+                                "Name": "minecraft:nether_bricks"
+                            }
+                        },
+                        {
+                            "weight": 2,
+                            "data": {
+                                "Name": "minecraft:cracked_nether_bricks"
+                            }
+                        },
+                        {
+                            "weight": 4,
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "value": {
+                        "min_inclusive": 4,
+                        "max_inclusive": 12
+                    }
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:soul_sand"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:soul_soil"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,2988 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        { //フェンス
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                { //東西
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        { //東/西
+                                            "type": "minecraft:any_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        -1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        { // 南/北に接続していない
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        { //南/北も接続
+                                            "type": "minecraft:any_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        -1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        { // 東/西に接続していない
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //東
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //西
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //南
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //北
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //南、西
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        -1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //北、西
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        -1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        -1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        { 
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //南、東
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //北、東
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        -1
+                                                    ],
+                                                    "tag": "knf:can_connect_fence"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //独立
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_fence"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_fence"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        { //塀
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                { //東西に接続
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_wall"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        -1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "tag": "knf:can_connect_wall"
+                                                },
+                                                {
+                                                    "type": "minecraft:not",
+                                                    "predicate": {
+                                                        "type": "minecraft:any_of",
+                                                        "predicates": [
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    0,
+                                                                    1,
+                                                                    0
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            },
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    0,
+                                                                    0,
+                                                                    1
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            },
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    0,
+                                                                    0,
+                                                                    -1
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                { //南北に接続
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        1
+                                                    ],
+                                                    "tag": "knf:can_connect_wall"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        -1
+                                                    ],
+                                                    "tag": "knf:can_connect_wall"
+                                                },
+                                                {
+                                                    "type": "minecraft:not",
+                                                    "predicate": {
+                                                        "type": "minecraft:any_of",
+                                                        "predicates": [
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    0,
+                                                                    1,
+                                                                    0
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            },
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    1,
+                                                                    0,
+                                                                    0
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            },
+                                                            {
+                                                                "type": "minecraft:matching_block_tag",
+                                                                "offset": [
+                                                                    -1,
+                                                                    0,
+                                                                    0
+                                                                ],
+                                                                "tag": "knf:can_connect_wall"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                { //東
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //西
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //南
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { //北
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                { // 隣接なし
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": [
+                                                "minecraft:nether_brick_wall",
+                                                "minecraft:polished_blackstone_brick_wall"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:any_of",
+                                                "predicates": [
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            -1,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    },
+                                                    {
+                                                        "type": "minecraft:matching_block_tag",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            -1
+                                                        ],
+                                                        "tag": "knf:can_connect_wall"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:matching_block_tag",
+                    "offset": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "tag": "knf:consist_fortress"
+                }
+            ]
+        },
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:nether_brick_fence",
+                    "Properties": {
+                        "west": "false",
+                        "waterlogged": "false",
+                        "south": "false",
+                        "north": "false",
+                        "east": "false"
+                    }
+                }
+            },
+            "rules": [
+                { //フェンスの下がブラックストーンレンガの塀=>空気
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:air"
+                        }
+                    }
+                },
+                { //フェンス：東西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "true",
+                                "north": "false",
+                                "south": "false",
+                                "west": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:南北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "true",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:東
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_fence"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "true",
+                                "north": "false",
+                                "south": "false",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_fence"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "false",
+                                "west": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:南
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "tag": "knf:can_connect_fence"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "true",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "tag": "knf:can_connect_fence"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "false",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:南東
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "true",
+                                "north": "false",
+                                "south": "true",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:北東
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "true",
+                                "north": "true",
+                                "south": "false",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:南西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "true",
+                                "west": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:北西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "tag": "knf:can_connect_fence"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "true",
+                                "south": "false",
+                                "west": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //フェンス:孤立
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_fence"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_fence"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_fence",
+                            "Properties": {
+                                "east": "false",
+                                "north": "false",
+                                "south": "false",
+                                "west": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:東西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                1,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "low",
+                                "north": "none",
+                                "south": "none",
+                                "west": "low",
+                                "up": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:南北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                1,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "low",
+                                "west": "none",
+                                "up": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:東
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "low",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "low",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:南
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "low",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ネザーレンガ塀:孤立
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:東西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                1,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "low",
+                                "north": "none",
+                                "south": "none",
+                                "west": "low",
+                                "up": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:南北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    },
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "tag": "knf:can_connect_wall"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                1,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "low",
+                                "west": "none",
+                                "up": "false",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:東
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "low",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:西
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "low",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:南
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "low",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:北
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "low",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                },
+                { //ブラックストーンレンガ塀:孤立
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_brick_wall"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "tag": "knf:can_connect_wall"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "radius": 1,
+        "half_height": 1
+    }
+}

@@ -1,0 +1,24 @@
+{
+    
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "ksh:normal/fill_portal_frame_decorations",
+                "location": "ksh:normal/start/portal"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "ksh:normal/fill_portal_frame_decorations",
+                "location": "ksh:normal/start/portal_2"
+            }
+        }
+    ]
+}

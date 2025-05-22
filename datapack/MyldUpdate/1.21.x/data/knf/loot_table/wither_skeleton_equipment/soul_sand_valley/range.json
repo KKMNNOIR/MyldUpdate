@@ -1,0 +1,535 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "ウィザースネーク",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 20210224
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "kkmnnoir:wither_shot": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:punch": {
+                    "min": 1,
+                    "max": 2
+                  }
+                },
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.42
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:multishot": {
+                    "min": 1,
+                    "max": 2
+                  }
+                },
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.125
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "kkmnnoir:tempo_theft": {
+                    "min": 1,
+                    "max": 2
+                  }
+                },
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+          "rolls": 1.0,
+          "bonus_rolls": 0.0,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:netherite_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.01
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:diamond_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.05
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:iron_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.075
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:chainmail_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.1
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:golden_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.125
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:leather_chestplate",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.15
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              },
+                              {
+                                  "function": "minecraft:set_components",
+                                  "components": {
+                                      "minecraft:dyed_color": 2564128
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "rolls": 1.0,
+          "bonus_rolls": 0.0,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:netherite_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.01
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:diamond_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.05
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:iron_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.075
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:chainmail_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.1
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:golden_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.125
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:leather_helmet",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.15
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              },
+                              {
+                                  "function": "minecraft:set_components",
+                                  "components": {
+                                      "minecraft:dyed_color": 2564128
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "rolls": 1.0,
+          "bonus_rolls": 0.0,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:netherite_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.01
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:diamond_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.05
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:iron_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.075
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:chainmail_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.1
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:golden_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.125
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:leather_leggings",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.15
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              },
+                              {
+                                  "function": "minecraft:set_components",
+                                  "components": {
+                                      "minecraft:dyed_color": 2564128
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "rolls": 1.0,
+          "bonus_rolls": 0.0,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:netherite_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.01
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:diamond_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.05
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:iron_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.075
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:chainmail_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.1
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:golden_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.125
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              }
+                          ]
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:leather_boots",
+                          "conditions": [
+                              {
+                                  "condition": "minecraft:random_chance",
+                                  "chance": 0.15
+                              }
+                          ],
+                          "functions": [
+                              {
+                                  "function": "minecraft:reference",
+                                  "name": "knf:soul_sand_valley/from_spawner_modifier"
+                              },
+                              {
+                                  "function": "minecraft:set_components",
+                                  "components": {
+                                      "minecraft:dyed_color": 2564128
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      }
+    ]
+}

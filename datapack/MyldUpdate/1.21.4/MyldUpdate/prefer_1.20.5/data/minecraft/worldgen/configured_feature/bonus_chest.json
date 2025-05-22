@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": {
+        "type": "minecraft:bonus_chest",
+        "config": {}
+      },
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 1.0,
+        "feature": {
+          "feature": "vanilla_plus:starting_house_starter",
+          "placement": []
+        }
+      }
+    ]
+  }
+}
