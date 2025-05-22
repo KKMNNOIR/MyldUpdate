@@ -1,0 +1,1801 @@
+{
+    "processors": [
+        { // Common
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:obsidian",
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:crying_obsidian"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:lava",
+                        "probability": 1.0
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:netherrack"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:netherrack",
+                        "probability": 0.07
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:magma_block"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:gold_block",
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        { // Stone -> Not mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        { // Stone Bricks -> Not mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        { // Chiseled Stone Bricks -> Not mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        { // Stone -> Mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        { // Stone bricks -> Mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        { // Stone bricks -> Mossy stone bricks
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.1
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_stairs"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_slab",
+                            "Properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_slab",
+                            "Properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_slab",
+                            "Properties": {
+                                "type": "double",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "double",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_slab",
+                            "Properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_slab",
+                            "Properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_slab",
+                            "Properties": {
+                                "type": "double",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "double",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:smooth_stone_slab",
+                            "Properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:smooth_stone_slab",
+                            "Properties": {
+                                "type": "top",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.2,
+                        "block_state": {
+                            "Name": "minecraft:smooth_stone_slab",
+                            "Properties": {
+                                "type": "double",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "double",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.4,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "outer_right",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "outer_right",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "outer_right",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.1,
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "waterlogged": "false",
+                                "shape": "outer_right",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_slab",
+                        "Properties": {
+                            "half": "bottom",
+                            "waterlogged": "false",
+                            "shape": "outer_right",
+                            "facing": "west"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "tall",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "tall",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:stone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "low",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:mossy_stone_brick_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "low",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

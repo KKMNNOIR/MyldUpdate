@@ -1,0 +1,14 @@
+{
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/ghast_spawner",
+                "location": "vanilla_plus:spawner"
+            }
+        }
+    ],
+    "fallback": "minecraft:empty"
+}

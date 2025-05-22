@@ -1,0 +1,11 @@
+{
+    "type": "vanilla_plus:development_room",
+    "generator": {
+      "type": "minecraft:noise",
+      "settings": "vanilla_plus:test_density",
+      "biome_source": {
+        "type": "minecraft:fixed",
+        "biome": "vanilla_plus:development_room"
+      }
+    }
+  }

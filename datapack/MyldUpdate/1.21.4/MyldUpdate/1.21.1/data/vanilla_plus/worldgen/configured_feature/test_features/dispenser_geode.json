@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:geode",
+    "config": {
+        "blocks": {
+            "outer_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:polished_tuff"
+                }
+            },
+            "middle_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:polished_diorite"
+                }
+            },
+            "inner_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:redstone_ore"
+                }
+            },
+            "alternate_inner_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:redstone_block"
+                }
+            },
+            "filling_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:cave_air"
+                }
+            },
+            "inner_placements": [
+                {
+                    "Name": "minecraft:dispenser"
+                },
+                {
+                    "Name": "minecraft:dropper"
+                },
+                {
+                    "Name": "minecraft:observer"
+                }
+            ],
+            "invalid_blocks": "#minecraft:geode_invalid_blocks",
+            "cannot_replace": "#minecraft:features_cannot_replace"
+        },
+        "crack": {
+            "base_crack_size": 2.0,
+            "crack_point_offset": 2,
+            "generate_crack_chance": 0.95
+        },
+        "use_alternate_layer0_chance": 0.325,
+        "placements_require_layer0_alternate": false,
+        "use_potential_placements_chance": 0.35,
+        "layers": {
+            "filling": 1.7,
+            "inner_layer": 2.2,
+            "middle_layer": 3.2,
+            "outer_layer": 4.2
+        },
+        "invalid_blocks_threshold": 1,
+        "noise_multiplier": 0.05
+    }
+}

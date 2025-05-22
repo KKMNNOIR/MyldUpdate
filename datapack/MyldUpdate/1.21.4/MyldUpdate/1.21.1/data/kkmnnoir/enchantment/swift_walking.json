@@ -1,0 +1,41 @@
+{
+  "description": "移動速度上昇",
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1,
+  "max_level": 10,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "agility",
+        "attribute": "minecraft:generic.movement_speed",
+        "amount": {
+          "type": "minecraft:fraction",
+          "numerator": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.5
+          },
+          "denominator": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1.5
+          }
+        },
+        "operation": "add_value",
+        "uuid": "26968cd7-dfbd-4015-9f2a-03c7436cb0dd"
+      }
+    ]
+  }
+}

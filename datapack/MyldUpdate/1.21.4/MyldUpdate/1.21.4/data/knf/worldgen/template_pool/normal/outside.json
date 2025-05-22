@@ -1,0 +1,113 @@
+{
+    "fallback": "knf:normal/terminators",
+    "elements": [
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/open_intersection_1"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/open_intersection_2"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/straight"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/staircase_1"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/staircase_2"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/balcony_blaze"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/balcony_wither_skeleton"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/closed_intersection_1"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/closed_intersection_2"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking",
+                "location": "knf:normal/bridges/closed_intersection"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:normal/cracking_intersection_well",
+                "location": "knf:normal/bridges/intersection_well"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "knf:normal/bridges/intersection_no_well"
+            }
+        }
+    ]
+}

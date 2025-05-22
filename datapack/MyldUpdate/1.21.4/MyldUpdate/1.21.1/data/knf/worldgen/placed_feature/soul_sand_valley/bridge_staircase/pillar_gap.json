@@ -1,0 +1,14 @@
+{
+    "feature": "knf:soul_sand_valley/bridge_staircase/pillar_gap",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 0,
+                "max_inclusive": 4
+            }
+        }
+    ]
+}

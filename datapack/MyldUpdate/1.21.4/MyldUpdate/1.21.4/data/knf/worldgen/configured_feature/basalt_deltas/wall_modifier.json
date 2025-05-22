@@ -1,0 +1,274 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:polished_blackstone_wall",
+                    "Properties": {
+                        "west": "none",
+                        "waterlogged": "false",
+                        "south": "none",
+                        "north": "none",
+                        "east": "none",
+                        "up": "true"
+                    }
+                }
+            },
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "none",
+                                "waterlogged": "false",
+                                "west": "tall",
+                                "up": "false"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "tall",
+                                "south": "tall",
+                                "waterlogged": "false",
+                                "west": "none",
+                                "up": "false"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        -1,
+                                        0,
+                                        0
+                                    ],
+                                    "tag": "knf:can_connect_wall"
+                                }
+                            },
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "none",
+                                "waterlogged": "false",
+                                "west": "none",
+                                "up": "true"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        0,
+                                        0,
+                                        -1
+                                    ],
+                                    "tag": "knf:can_connect_wall"
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "south": "tall",
+                                "east": "none",
+                                "north": "none",
+                                "waterlogged": "false",
+                                "west": "none",
+                                "up": "true"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "tag": "knf:can_connect_wall"
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "north": "tall",
+                                "east": "none",
+                                "south": "none",
+                                "waterlogged": "false",
+                                "west": "none",
+                                "up": "true"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "tag": "knf:can_connect_wall"
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "tag": "knf:can_connect_wall"
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_wall",
+                            "Properties": {
+                                "west": "tall",
+                                "waterlogged": "false",
+                                "south": "none",
+                                "north": "none",
+                                "east": "none",
+                                "up": "true"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "target": {
+            "type": "minecraft:true"
+        },
+        "radius": 0,
+        "half_height": 0
+    }
+}

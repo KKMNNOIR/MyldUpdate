@@ -1,0 +1,119 @@
+{
+    "type": "minecraft:tree",
+    "config": {
+      "decorators": [
+        {
+            "type": "minecraft:alter_ground",
+            "provider": {
+                "type": "minecraft:noise_provider",
+                "noise": {
+                    "firstOctave": -1,
+                    "amplitudes": [
+                        1,
+                        1
+                    ]
+                },
+                "scale": 1,
+                "states": [
+                    {
+                        "Name": "minecraft:rooted_dirt"
+                    },
+                    {
+                        "Name": "minecraft:grass_block"
+                    }
+                ],
+                "seed": 1
+            }
+        }
+      ],
+      "dirt_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:dirt"
+        }
+      },
+      "foliage_placer": {
+        "type": "minecraft:blob_foliage_placer",
+        "height": 6,
+        "offset": 6,
+        "radius": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 3,
+            "max_inclusive": 4
+        }
+      },
+      "foliage_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:oak_leaves",
+          "Properties": {
+            "distance": "7",
+            "persistent": "false",
+            "waterlogged": "false"
+          }
+        }
+      },
+      "force_dirt": false,
+      "ignore_vines": true,
+      "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "limit": 30,
+        "lower_size": 0,
+        "upper_size": 1
+      },
+      "trunk_placer": {
+        "type": "minecraft:fancy_trunk_placer",
+        "base_height": 24,
+        "height_rand_a": 8,
+        "height_rand_b": 4
+      },
+      "trunk_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:oak_log",
+          "Properties": {
+            "axis": "y"
+          }
+        }
+      },
+      "root_placer": {
+        "type": "minecraft:mangrove_root_placer",
+        "root_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "minecraft:oak_wood",
+                "Properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "trunk_offset_y": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 4,
+            "min_inclusive": 1
+        },
+        "mangrove_root_placement": {
+            "muddy_roots_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:rooted_dirt"
+                }
+            },
+            "muddy_roots_in": "#minecraft:dirt",
+            "can_grow_through": "#minecraft:dirt",
+            "random_skew_chance": 0.1,
+            "max_root_width": 2,
+            "max_root_length": 16
+        },
+        "above_root_placement": {
+            "above_root_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:moss_carpet"
+                }
+            },
+            "above_root_placement_chance": 0.2
+        }
+      }
+    }
+}

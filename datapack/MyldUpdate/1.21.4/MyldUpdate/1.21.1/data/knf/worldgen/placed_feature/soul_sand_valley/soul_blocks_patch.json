@@ -1,0 +1,35 @@
+{
+    "feature": "knf:soul_sand_valley/soul_blocks_patch",
+    "placement": [
+        {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "down",
+            "max_steps": 32,
+            "target_condition": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:nether_bricks",
+                            "minecraft:cracked_nether_bricks",
+                            "minecraft:polished_blackstone_bricks",
+                            "minecraft:cracked_polished_blackstone_bricks"
+                        ]
+                    },
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                            0,
+                            1,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:air"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

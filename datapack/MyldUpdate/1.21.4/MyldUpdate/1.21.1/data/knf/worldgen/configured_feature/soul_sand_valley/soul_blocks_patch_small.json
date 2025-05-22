@@ -1,0 +1,158 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 4,
+        "y_spread": 0,
+        "tries": 100,
+        "feature": {
+            "feature": {
+                "type": "minecraft:vegetation_patch",
+                "config": {
+                    "depth": 1,
+                    "vertical_range": 2,
+                    "xz_radius": 0,
+                    "extra_bottom_block_chance": 0,
+                    "extra_edge_column_chance": 0,
+                    "surface": "floor",
+                    "replaceable": "#knf:soul_blocks_replaceables",
+                    "ground_state": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                            {
+                                "data": {
+                                    "Name": "minecraft:soul_sand"
+                                },
+                                "weight": 3
+                            },
+                            {
+                                "data": {
+                                    "Name": "minecraft:soul_soil"
+                                },
+                                "weight": 8
+                            }
+                        ]
+                    },
+                    "vegetation_chance": 0.625,
+                    "vegetation_feature": {
+                        "feature": {
+                            "type": "minecraft:simple_block",
+                            "config": {
+                                "to_place": {
+                                    "type": "minecraft:weighted_state_provider",
+                                    "entries": [
+                                        {
+                                            "data": {
+                                                "Name": "minecraft:crimson_roots"
+                                            },
+                                            "weight": 2
+                                        },
+                                        {
+                                            "data": {
+                                                "Name": "minecraft:warped_roots"
+                                            },
+                                            "weight": 6
+                                        },
+                                        {
+                                            "data": {
+                                                "Name": "minecraft:nether_sprouts"
+                                            },
+                                            "weight": 6
+                                        },
+                                        {
+                                            "data": {
+                                                "Name": "minecraft:wither_rose"
+                                            },
+                                            "weight": 3
+                                        },
+                                        {
+                                            "data": {
+                                                "Name": "minecraft:soul_fire"
+                                            },
+                                            "weight": 3
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:replaceable"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_bricks",
+                                    "minecraft:cracked_nether_bricks",
+                                    "minecraft:polished_blackstone_bricks",
+                                    "minecraft:cracked_polished_blackstone_bricks"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:any_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "blocks": "minecraft:air"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "offset": [
+                                                        -1,
+                                                        0,
+                                                        0
+                                                    ],
+                                                    "blocks": "minecraft:air"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "offset": [
+                                                        0,
+                                                        0,
+                                                        1
+                                                    ],
+                                                    "blocks": "minecraft:air"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "offset": [
+                                                        1,
+                                                        0,
+                                                        -1
+                                                    ],
+                                                    "blocks": "minecraft:air"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

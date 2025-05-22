@@ -1,0 +1,96 @@
+{
+    
+    "fallback": "knf:soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking",
+                "location": "knf:soul_sand_valley/corridors/straight"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_corridor",
+                "location": "knf:soul_sand_valley/corridors/curve_with_chest_1"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_corridor",
+                "location": "knf:soul_sand_valley/corridors/curve_with_chest_2"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_stairs",
+                "location": "knf:soul_sand_valley/corridors/staircase"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/corridors/balcony"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_wart_farm",
+                "location": "knf:soul_sand_valley/farm/nether_wart_farm_1"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_wart_farm",
+                "location": "knf:soul_sand_valley/farm/nether_wart_farm_2"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking",
+                "location": "knf:soul_sand_valley/corridors/intersection_1"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking",
+                "location": "knf:soul_sand_valley/corridors/intersection_2"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/jail_degradation",
+                "location": "knf:soul_sand_valley/corridors/jail_1"
+            }
+        }
+    ]
+}

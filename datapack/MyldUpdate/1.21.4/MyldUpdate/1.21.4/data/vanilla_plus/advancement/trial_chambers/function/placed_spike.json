@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "placed": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": [
+                                "minecraft:armor_stand"
+                            ],
+                            "components": {
+                                "minecraft:entity_data": {
+                                    "id": "minecraft:armor_stand",
+                                    "Tags": ["vpOxidizedCopperSpikeBase"],
+                                    "Invisible": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {}
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "vanilla_plus:trial_chambers/oxidized_copper_spike/placed_base"
+    }
+}

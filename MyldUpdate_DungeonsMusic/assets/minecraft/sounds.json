@@ -1,0 +1,54 @@
+{
+    "music.nether.charred_wastes": {
+      "sounds": [
+        { "name": "music/game/nether/charred_wastes/fizz", "stream": true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/nether/concrete_halls", "stream": true, "weight": 1},
+        { "name": "music/game/nether/dead_voxel", "stream": true, "weight": 1},
+        { "name": "music/game/nether/warmth", "stream": true, "weight": 1},
+        { "name": "music/game/nether/ballad_of_the_cats", "stream": true, "weight": 1}
+      ]
+    },
+    "music.nether.nether_frost": {
+      "sounds": [
+        { "name": "music/game/nether/nether_frost/lost_settlement", "stream":true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/nether/concrete_halls", "stream": true, "weight": 1},
+        { "name": "music/game/nether/dead_voxel", "stream": true, "weight": 1},
+        { "name": "music/game/nether/warmth", "stream": true, "weight": 1},
+        { "name": "music/game/nether/ballad_of_the_cats", "stream": true, "weight": 1}
+      ]
+    },
+    "music.cave.outpost": {
+      "sounds": [
+        { "name": "music/game/cave/outpost", "stream":true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/stand_tall", "stream":true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/subwoofer_lullaby", "stream": true, "weight": 1 },
+        { "name": "music/game/living_mice", "stream": true, "weight": 1 },
+        { "name": "music/game/haggstrom", "stream": true, "weight": 1 },
+        { "name": "music/game/danny", "stream": true, "weight": 1 },
+        { "name": "music/game/dry_hands", "stream": true, "weight": 1 },
+        { "name": "music/game/wet_hands", "stream": true, "weight": 1 },
+        { "name": "music/game/mice_on_venus", "stream": true, "weight": 1 }
+      ]
+    },
+    "music.cave.desert_cave": {
+      "sounds": [
+        { "name": "music/game/cave/desert_temple", "stream":true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/one_more_day", "stream":true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/subwoofer_lullaby", "stream": true, "weight": 1 },
+        { "name": "music/game/living_mice", "stream": true, "weight": 1 },
+        { "name": "music/game/haggstrom", "stream": true, "weight": 1 },
+        { "name": "music/game/danny", "stream": true, "weight": 1 },
+        { "name": "music/game/key", "stream": true, "weight": 1 },
+        { "name": "music/game/oxygene", "stream": true, "weight": 1 }
+      ]
+    },
+    "music.nether.sparse_crimson_plains": {
+      "sounds": [
+        { "name": "music/game/nether/sparse_crimson_plains/nether_wastes", "stream": true, "volume": 0.5, "weight": 7 },
+        { "name": "music/game/nether/concrete_halls", "stream": true, "weight": 1},
+        { "name": "music/game/nether/dead_voxel", "stream": true, "weight": 1},
+        { "name": "music/game/nether/warmth", "stream": true, "weight": 1},
+        { "name": "music/game/nether/ballad_of_the_cats", "stream": true, "weight": 1}
+      ]
+    }
+  }  
