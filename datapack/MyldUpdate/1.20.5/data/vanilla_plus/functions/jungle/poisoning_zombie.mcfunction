@@ -1,1 +1,0 @@
-data modify entity @s {} merge from storage vanilla_plus:jungle_mob_data data[0]
