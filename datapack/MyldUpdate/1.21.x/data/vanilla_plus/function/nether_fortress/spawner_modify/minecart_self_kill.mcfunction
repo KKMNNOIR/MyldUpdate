@@ -1,1 +1,0 @@
-execute as @e[tag=FortressMonsterSpawner] at @s run kill @s
