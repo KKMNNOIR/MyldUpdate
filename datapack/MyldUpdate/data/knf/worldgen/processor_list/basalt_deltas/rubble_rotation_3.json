@@ -1,0 +1,736 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:block_rot",
+            "integrity": 0.33333333334,
+            "rottable_blocks": [
+                "minecraft:player_head"
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "0"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "1"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "2"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "3"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "4"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "5"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "6"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "7"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "8"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "9"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "10"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "11"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "12"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "13"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "14"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:player_head",
+                        "probability": 0.0625
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:player_head",
+                        "Properties": {
+                            "rotation": "15"
+                        }
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        -1194565936,
+                                        330711524,
+                                        -1235409996,
+                                        -1365090661
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmODJjNTRjOTdlNzFlZGFkZTY5MmQ0NzUzZGY1NjAxMzI5Nzk0ZWM1MGFmMWRmNWZmYmMxMDM0ZWM5YmIyNyJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:note_block_sound": "minecraft:block.stone.hit",
+                                "minecraft:custom_name": {
+                                    "text": "Blackstone",
+                                    "bold": true,
+                                    "italic": false,
+                                    "underlined": true,
+                                    "color": "gold"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

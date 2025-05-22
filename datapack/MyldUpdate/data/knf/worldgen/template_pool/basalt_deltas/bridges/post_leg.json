@@ -1,0 +1,19 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "feature": "knf:basalt_deltas/bridge_post_leg",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:empty_pool_element"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "minecraft:desert",
+    "minecraft:warm_ocean",
+    "#minecraft:is_jungle",
+    "#minecraft:is_savanna",
+    "#vanilla_plus:is_nether_hot",
+    "#minecraft:is_badlands",
+    "minecraft:mangrove_swamp",
+    "vanilla_plus:lush_desert",
+    "vanilla_plus:steppe",
+    "vanilla_plus:wastes",
+    "vanilla_plus:deep_warm_ocean"
+  ],
+  "replace": true
+}

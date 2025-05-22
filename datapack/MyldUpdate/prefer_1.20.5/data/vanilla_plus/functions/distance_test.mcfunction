@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand] at @s if entity @a[predicate=vanilla_plus:distance_test] run say yes

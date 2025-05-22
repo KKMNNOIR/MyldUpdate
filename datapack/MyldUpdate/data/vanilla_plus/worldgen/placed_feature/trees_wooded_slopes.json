@@ -1,0 +1,116 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "config": {
+            "default": {
+                "feature": {
+                  "type": "minecraft:simple_random_selector",
+                  "config": {
+                    "features": [
+                      {
+                        "feature": "vanilla_plus:coniferous_tree",
+                        "placement": []
+                      },
+                      {
+                        "feature": "vanilla_plus:coniferous_tree_with_vines",
+                        "placement": []
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "Name": "minecraft:spruce_sapling",
+                                "Properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "features": [
+                {
+                    "feature": {
+                        "feature": "minecraft:cherry_bees_005",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                  "type": "minecraft:would_survive",
+                                  "state": {
+                                    "Name": "minecraft:cherry_sapling",
+                                    "Properties": {
+                                      "stage": "0"
+                                    }
+                                  }
+                                }
+                            }
+                        ]
+                    },
+                    "chance": 0.0125
+                },
+                {
+                  "feature": {
+                    "feature": "vanilla_plus:birch_wooded_slopes",
+                    "placement": [
+                      {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                          "type": "minecraft:would_survive",
+                          "state": {
+                            "Name": "minecraft:birch_sapling",
+                            "Properties": {
+                              "stage": "0"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "chance": 0.02
+                },
+                {
+                  "feature": "minecraft:oak_bees_0002_leaf_litter",
+                  "chance": 0.1
+                }
+            ]
+        }
+    },
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "data": 10,
+              "weight": 9
+            },
+            {
+              "data": 11,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:surface_water_depth_filter",
+        "max_water_depth": 0
+      },
+      {
+        "type": "minecraft:heightmap",
+        "heightmap": "OCEAN_FLOOR"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+}

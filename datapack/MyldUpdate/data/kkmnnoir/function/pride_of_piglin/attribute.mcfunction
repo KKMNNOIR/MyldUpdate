@@ -1,0 +1,2 @@
+data modify storage kkmnnoir:portal_guard_enchantment_levels pride_of_piglin set from entity @s equipment.mainhand.components."minecraft:enchantments".levels."kkmnnoir:pride_of_piglins"
+item modify entity @s weapon.mainhand kkmnnoir:pride_of_piglin

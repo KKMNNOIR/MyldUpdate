@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "default": {
+            "feature": "vanilla_plus:cherry_bees_005",
+            "placement": []
+        },
+        "features": [
+            {
+                "feature": {
+                    "feature": "vanilla_plus:fancy_oak_cherry",
+                    "placement": []
+                },
+                "chance": 0.1
+            }
+        ]
+    }
+}

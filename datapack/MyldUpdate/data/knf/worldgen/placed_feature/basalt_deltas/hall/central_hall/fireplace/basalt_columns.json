@@ -1,0 +1,14 @@
+{
+    "feature": "knf:basalt_deltas/hall/central_hall/fireplace/basalt_columns",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:uniform",
+                "min_inclusive": -2,
+                "max_inclusive": 2
+            },
+            "y_spread": 0
+        }
+    ]
+}

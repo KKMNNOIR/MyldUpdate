@@ -1,0 +1,10 @@
+{
+    "feature": "knf:basalt_deltas/pilaster_extension",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "y_spread": -2,
+            "xz_spread": 0
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#minecraft:is_taiga",
+        "#minecraft:is_hill",
+        "vanilla_plus:snowy_old_growth_pine_taiga",
+        "vanilla_plus:snowy_old_growth_spruce_taiga",
+        "vanilla_plus:coniferous_forest",
+        "minecraft:grove"
+    ]
+}

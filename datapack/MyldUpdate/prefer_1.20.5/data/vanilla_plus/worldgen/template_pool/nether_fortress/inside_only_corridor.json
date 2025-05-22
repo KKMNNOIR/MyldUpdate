@@ -1,0 +1,78 @@
+{
+    
+    "fallback": "vanilla_plus:nether_fortress/terminator",
+    "elements": [
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_straight_1"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_curving_corridor",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_curve_with_chest_1"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking_curving_corridor",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_curve_with_chest_2"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_intersection_2"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_intersection_2"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_staircase"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_balcony"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/normal/corridors/corridor_3_way_1"
+            }
+        }
+    ]
+}

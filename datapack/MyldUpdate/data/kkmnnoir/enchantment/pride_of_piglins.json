@@ -1,0 +1,72 @@
+{
+    "description": {
+        "translate": "enchantment.kkmnnoir.pride_of_piglin",
+        "fallback": "ピグリンの誇り",
+        "color": "gold"
+    },
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 5
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 10
+    },
+    "slots": [
+        "any"
+    ],
+    "anvil_cost": 4,
+    "supported_items": "#minecraft:enchantable/vanishing",
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:attack_damage",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 1.5,
+                    "per_level_above_first": 1.5
+                },
+                "id": "kkmnnoir:portal_guard_attack",
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:attack_knockback",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 1.0,
+                    "per_level_above_first": 1.0
+                },
+                "id": "kkmnnoir:portal_guard_knockback_resistance",
+                "operation": "add_value"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:pride_of_piglin/attribute"
+                },
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "components": {
+                                        "minecraft:custom_data": {
+                                            "is_proud_of": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

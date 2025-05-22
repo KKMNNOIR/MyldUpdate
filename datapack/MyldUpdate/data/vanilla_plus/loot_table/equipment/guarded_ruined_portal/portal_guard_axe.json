@@ -1,0 +1,56 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.vanilla_plus.portal_guard_axe",
+                                "fallback": "門守の戦斧",
+                                "color": "gold"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.portal_guard_axe.description_0",
+                                    "fallback": "ポータルを守り続けていたピグリンが持っていた斧"
+                                },
+                                {
+                                    "translate": "item.portal_guard_axe.description_1",
+                                    "fallback": "その真の力はピグリンにしか引き出せないという"
+                                }
+                            ],
+                            "mode": "replace_all",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "kkmnnoir:portal_guard_sharpness": {
+                                    "type": "minecraft:uniform",
+                                    "min": 5,
+                                    "max": 10
+                                },
+                                "minecraft:unbreaking": {
+                                    "type": "minecraft:uniform",
+                                    "min": 5,
+                                    "max": 10
+                                },
+                                "kkmnnoir:portal_guard_flame": 2,
+                                "kkmnnoir:pride_of_piglins": 5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

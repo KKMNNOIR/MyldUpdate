@@ -1,0 +1,34 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:list_pool_element",
+                "elements": [
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/bridge_end/east",
+                        "projection": "rigid"
+                    },
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/bridge_end/north",
+                        "projection": "rigid"
+                    },
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/bridge_end/south",
+                        "projection": "rigid"
+                    },
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/bridge_end/west",
+                        "projection": "rigid"
+                    }
+                ],
+                "projection": "rigid"
+            }
+        }
+    ]
+}

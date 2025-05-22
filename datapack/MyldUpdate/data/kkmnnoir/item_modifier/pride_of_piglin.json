@@ -1,0 +1,49 @@
+{
+    "function": "minecraft:sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:attack_damage",
+                    "amount": {
+                        "type": "minecraft:storage",
+                        "storage": "kkmnnoir:portal_guard_enchantment_levels",
+                        "path": "pride_of_piglin"
+                    },
+                    "id": "kkmnnoir:portal_guard_attack",
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "attribute": "minecraft:attack_knockback",
+                    "amount": {
+                        "type": "minecraft:storage",
+                        "storage": "kkmnnoir:portal_guard_enchantment_levels",
+                        "path": "pride_of_piglin"
+                    },
+                    "id": "kkmnnoir:portal_guard_knockback_resistance",
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "#kkmnnoir:piglins"
+                    }
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:custom_data": {
+                    "is_proud_of": true
+                }
+            }
+        }
+    ]
+}

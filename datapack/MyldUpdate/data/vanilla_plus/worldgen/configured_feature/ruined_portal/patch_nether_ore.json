@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 12,
+        "y_spread": 7,
+        "tries": 200,
+        "feature": {
+            "feature": {
+                "type": "minecraft:ore",
+                "config": {
+                    "discard_chance_on_air_exposure": 0.05,
+                    "size": 3,
+                    "targets": [
+                        {
+                            "target": {
+                                "predicate_type": "minecraft:block_match",
+                                "block": "minecraft:netherrack"
+                            },
+                            "state": {
+                                "Name": "minecraft:nether_gold_ore"
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": []
+        }
+    }
+}

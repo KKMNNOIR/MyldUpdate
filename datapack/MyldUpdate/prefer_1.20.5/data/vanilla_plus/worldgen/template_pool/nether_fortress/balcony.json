@@ -1,0 +1,15 @@
+{
+    
+    "fallback": "vanilla_plus:nether_fortress/terminator",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/cracking",
+                "location": "vanilla_plus:nether_fortress/balcony_spawner"
+            }
+        }
+    ]
+}

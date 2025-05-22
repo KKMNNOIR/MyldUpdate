@@ -1,0 +1,22 @@
+{
+    "feature": "knf:basalt_deltas/bridge_end/west",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -1
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:black_stained_glass",
+                "offset": [
+                    1,
+                    0,
+                    0
+                ]
+            }
+        }
+    ]
+}

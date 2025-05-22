@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "prioritize_tip": false,
+        "allowed_placement": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                        "minecraft:nether_bricks",
+                        "minecraft:cracked_nether_bricks"
+                    ]
+                }
+            ]
+        },
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:weighted_list",
+                    "distribution": [
+                        {
+                            "weight": 2,
+                            "data": 0
+                        },
+                        {
+                            "weight": 4,
+                            "data": 1
+                        },
+                        {
+                            "weight": 3,
+                            "data": 2
+                        },
+                        {
+                            "weight": 1,
+                            "data": 3
+                        }
+                    ]
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:air"
+                    }
+                }
+            }
+        ]
+    }
+}

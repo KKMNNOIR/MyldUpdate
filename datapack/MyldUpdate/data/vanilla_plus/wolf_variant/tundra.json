@@ -1,0 +1,18 @@
+{
+    "assets": {
+        "wild": "minecraft:entity/wolf/wolf_tundra",
+        "angry": "minecraft:entity/wolf/wolf_tundra_angry",
+        "tame": "minecraft:entity/wolf/wolf_tame"
+    },
+    "spawn_conditions": [
+        {
+            "priority": 1,
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "vanilla_plus:tundra"
+                ]
+            }
+        }
+    ]
+}

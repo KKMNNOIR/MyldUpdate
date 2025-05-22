@@ -1,0 +1,60 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "y_spread": 1,
+        "xz_spread": 5,
+        "tries": 25,
+        "feature": {
+            "feature": {
+                "type": "minecraft:block_column",
+                "config": {
+                    "direction": "down",
+                    "allowed_placement": {
+                        "type": "minecraft:replaceable"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                        {
+                            "height": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 10,
+                                "max_inclusive": 16
+                            },
+                            "provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:weeping_vines"
+                                }
+                            }
+                        },
+                        {
+                            "height": 1,
+                            "provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:weeping_vines_plant"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:nether_wart_block"
+                        ],
+                        "offset": [
+                            0,
+                            1,
+                            0
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

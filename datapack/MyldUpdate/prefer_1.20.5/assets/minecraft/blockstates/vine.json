@@ -1,0 +1,72 @@
+{
+	"multipart": [
+		{
+			"when": { "south": true },
+			"apply": [
+				{ "model": "block/vine"},
+				{ "model": "block/vine_alt1"},
+				{ "model": "block/vine_alt2"},
+				{ "model": "block/vine_alt3"},
+				{ "model": "block/vine_alt_4"},
+				{ "model": "block/vine_alt_5"},
+				{ "model": "block/vine_alt_6"}
+			]
+		},
+		{
+			"when": { "west": true },
+			"apply": [
+				{ "model": "block/vine", "y": 90 },
+				{ "model": "block/vine_alt1", "y": 90 },
+				{ "model": "block/vine_alt2", "y": 90 },
+				{ "model": "block/vine_alt3", "y": 90 },
+				{ "model": "block/vine_alt_4", "y": 90 },
+				{ "model": "block/vine_alt_5", "y": 90 },
+				{ "model": "block/vine_alt_6", "y": 90 }
+			]
+		},
+		{
+			"when": { "north": true },
+			"apply": [
+				{ "model": "block/vine", "y": 180 },
+				{ "model": "block/vine_alt1", "y": 180 },
+				{ "model": "block/vine_alt2", "y": 180 },
+				{ "model": "block/vine_alt3", "y": 180 },
+				{ "model": "block/vine_alt_4", "y": 180 },
+				{ "model": "block/vine_alt_5", "y": 180 },
+				{ "model": "block/vine_alt_6", "y": 180 }
+			]
+		},
+		{
+			"when": { "east": true },
+			"apply": [
+				{ "model": "block/vine", "y": 270 },
+				{ "model": "block/vine_alt1", "y": 270 },
+				{ "model": "block/vine_alt2", "y": 270 },
+				{ "model": "block/vine_alt3", "y": 270 },
+				{ "model": "block/vine_alt_4", "y": 270 },
+				{ "model": "block/vine_alt_5", "y": 270 },
+				{ "model": "block/vine_alt_6", "y": 270 }
+			]
+		},
+		{
+			"when": { "up": true },
+			"apply": [
+				{ "model": "block/vine", "x": 90 },
+				{ "model": "block/vine_alt1", "x": 90 },
+				{ "model": "block/vine_alt2", "x": 90 },
+				{ "model": "block/vine_alt3", "x": 90 },
+				{ "model": "block/vine_alt_4", "x": 90 },
+				{ "model": "block/vine_alt_5", "x": 90 },
+				{ "model": "block/vine_alt_6", "x": 90 }
+			]
+		},
+		{
+			"when": { "up": false, "east": false, "north": false, "south": false, "west": false },
+			"apply": [
+				{ "model": "block/polyporaceae_n0" },
+				{ "model": "block/polyporaceae_n1" },
+				{ "model": "block/polyporaceae_n2" }
+			]
+		}
+	]
+}

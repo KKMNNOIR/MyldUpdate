@@ -1,0 +1,495 @@
+{
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "vanilla_plus:nether/continents",
+      "points": [
+        {
+          "location": -1.2,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": -0.6,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": 0,
+          "derivative": 0,
+          "value": {
+            "coordinate": "vanilla_plus:nether/erosion",
+            "points": [
+              {
+                "location": -0.85,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "vanilla_plus:nether/temperature",
+                  "points": [
+                    {
+                      "location": -1.0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.575,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "location": 0.55,
+          "derivative": 0,
+          "value": {
+            "coordinate": "vanilla_plus:nether/erosion",
+            "points": [
+              {
+                "location": -0.85,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "vanilla_plus:nether/temperature",
+                  "points": [
+                    {
+                      "location": -1.0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.575,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": -0.58,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "vanilla_plus:nether/temperature",
+                  "points": [
+                    {
+                      "location": -1.0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.575,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": -0.3,
+                "derivative": 0,
+                "value": 0
+              },
+              {
+                "location": 1,
+                "derivative": 0,
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "location": 1,
+          "derivative": 0,
+          "value": {
+            "coordinate": "vanilla_plus:nether/erosion",
+            "points": [
+              {
+                "location": -0.85,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "vanilla_plus:nether/temperature",
+                  "points": [
+                    {
+                      "location": -1.0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.575,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": -0.58,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "vanilla_plus:nether/temperature",
+                  "points": [
+                    {
+                      "location": -1.0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.575,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 1.0,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "vanilla_plus:nether/ridges_folded",
+                        "points": [
+                          {
+                            "location": -1,
+                            "derivative": 1,
+                            "value": -1
+                          },
+                          {
+                              "location": -0.4,
+                              "derivative": 0.1,
+                              "value": 0
+                          },
+                          {
+                              "location": 1,
+                              "derivative": 6,
+                              "value": 2
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": -0.3,
+                "derivative": 0,
+                "value": 0
+              },
+              {
+                "location": 1,
+                "derivative": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+}

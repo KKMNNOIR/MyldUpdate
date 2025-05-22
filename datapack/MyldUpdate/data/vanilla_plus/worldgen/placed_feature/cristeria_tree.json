@@ -1,0 +1,16 @@
+{
+    "feature": "vanilla_plus:cristeria_tree",
+    "placement": [
+        {
+            "type": "minecraft:rarity_filter",
+            "chance": 8
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+        },
+        {
+            "type": "minecraft:in_square"
+        }
+    ]
+}

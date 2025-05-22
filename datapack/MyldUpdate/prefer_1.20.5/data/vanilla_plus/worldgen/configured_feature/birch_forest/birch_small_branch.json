@@ -1,0 +1,302 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "half_height": 0,
+        "radius": 1,
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:replaceable"
+                },
+                {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "blocks": [
+                                "minecraft:birch_log"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                -1,
+                                0,
+                                0
+                            ],
+                            "blocks": [
+                                "minecraft:birch_log"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                0,
+                                0,
+                                1
+                            ],
+                            "blocks": [
+                                "minecraft:birch_log"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                0,
+                                0,
+                                -1
+                            ],
+                            "blocks": [
+                                "minecraft:birch_log"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "state_provider": {
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:birch_log"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:birch_log"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "blocks": [
+                                                "minecraft:birch_log"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "blocks": [
+                                                "minecraft:birch_log"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                            {
+                                "weight": 1,
+                                "data": {
+                                    "Name": "minecraft:birch_log",
+                                    "Properties": {
+                                        "axis": "x"
+                                    }
+                                }
+                            },
+                            {
+                                "weight": 2,
+                                "data": {
+                                    "Name": "minecraft:air"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:birch_log"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:birch_log"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "offset": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "blocks": [
+                                                "minecraft:birch_log"
+                                            ]
+                                        },
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "blocks": [
+                                                "minecraft:birch_log"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                            {
+                                "weight": 1,
+                                "data": {
+                                    "Name": "minecraft:birch_log",
+                                    "Properties": {
+                                        "axis": "z"
+                                    }
+                                }
+                            },
+                            {
+                                "weight": 2,
+                                "data": {
+                                    "Name": "minecraft:air"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:air"
+                }
+            }
+        }
+    }
+}

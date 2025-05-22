@@ -1,0 +1,14 @@
+{
+    "feature": "knf:basalt_deltas/hall/central_hall/fireplace/wall_wall",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 0,
+                "max_inclusive": 3
+            }
+        }
+    ]
+}

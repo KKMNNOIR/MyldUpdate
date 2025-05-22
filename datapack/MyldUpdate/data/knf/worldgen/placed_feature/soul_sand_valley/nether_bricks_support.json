@@ -1,0 +1,10 @@
+{
+    "feature": "knf:soul_sand_valley/nether_bricks_support",
+    "placement": [
+        {
+            "type": "minecraft:random_offset", // x/z方向あるいはy方向に生成位置をずらす。
+            "y_spread": -2, // y-2の場所に生成。つまり、ジグソーの下から生える。
+            "xz_spread": 0
+        }
+    ]
+}

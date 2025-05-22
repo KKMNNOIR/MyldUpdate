@@ -1,0 +1,33 @@
+{
+    "feature": "vanilla_plus:ice_spikes_nether",
+    "placement": [
+        {
+            "type": "minecraft:noise_based_count",
+            "noise_factor": 266,
+            "noise_offset": 0.8,
+            "noise_to_count_ratio": 400
+        },
+        {
+            "type": "minecraft:count",
+            "count": 256
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "above_bottom": 0
+                },
+                "max_inclusive": {
+                    "below_top": 0
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

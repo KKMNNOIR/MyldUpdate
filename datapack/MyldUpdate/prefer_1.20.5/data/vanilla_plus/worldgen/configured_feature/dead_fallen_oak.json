@@ -1,0 +1,418 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "features": [
+            {
+                "chance": 0.25,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:block_column",
+                        "config": {
+                            "direction": "east",
+                            "allowed_placement": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:dirt",
+                                            "minecraft:grass_block",
+                                            "minecraft:snow_block"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "prioritize_tip": false,
+                            "layers": [
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "y"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                            {
+                                                "weight": 3,
+                                                "data": {
+                                                    "Name": "minecraft:air"
+                                                }
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "data": {
+                                                    "Name": "minecraft:vine",
+                                                    "Properties": {
+                                                        "west": "true",
+                                                        "north": "false",
+                                                        "south": "false",
+                                                        "up": "false",
+                                                        "east": "false"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "height": {
+                                        "type": "minecraft:uniform",
+                                        "value": {
+                                            "min_inclusive": 0,
+                                            "max_inclusive": 1
+                                        }
+                                    },
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:air"
+                                        }
+                                    }
+                                },
+                                {
+                                    "height": {
+                                        "type": "minecraft:uniform",
+                                        "value": {
+                                            "min_inclusive": 2,
+                                            "max_inclusive": 4
+                                        }
+                                    },
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "x"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.25,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:block_column",
+                        "config": {
+                            "direction": "west",
+                            "allowed_placement": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:dirt",
+                                            "minecraft:grass_block",
+                                            "minecraft:snow_block"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "prioritize_tip": false,
+                            "layers": [
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "y"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                            {
+                                                "weight": 3,
+                                                "data": {
+                                                    "Name": "minecraft:air"
+                                                }
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "data": {
+                                                    "Name": "minecraft:vine",
+                                                    "Properties": {
+                                                        "west": "false",
+                                                        "north": "false",
+                                                        "south": "false",
+                                                        "up": "false",
+                                                        "east": "true"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "height": {
+                                        "type": "minecraft:uniform",
+                                        "value": {
+                                            "min_inclusive": 2,
+                                            "max_inclusive": 4
+                                        }
+                                    },
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "x"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.25,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:block_column",
+                        "config": {
+                            "direction": "north",
+                            "allowed_placement": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:dirt",
+                                            "minecraft:grass_block",
+                                            "minecraft:snow_block"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "prioritize_tip": false,
+                            "layers": [
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "y"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                            {
+                                                "weight": 3,
+                                                "data": {
+                                                    "Name": "minecraft:air"
+                                                }
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "data": {
+                                                    "Name": "minecraft:vine",
+                                                    "Properties": {
+                                                        "east": "false",
+                                                        "south": "true",
+                                                        "north": "false",
+                                                        "up": "false",
+                                                        "west": "false"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "height": {
+                                        "type": "minecraft:uniform",
+                                        "value": {
+                                            "min_inclusive": 2,
+                                            "max_inclusive": 4
+                                        }
+                                    },
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "z"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.25,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:block_column",
+                        "config": {
+                            "direction": "south",
+                            "allowed_placement": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:dirt",
+                                            "minecraft:grass_block",
+                                            "minecraft:snow_block"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "prioritize_tip": false,
+                            "layers": [
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "y"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "height": 1,
+                                    "provider": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                            {
+                                                "weight": 3,
+                                                "data": {
+                                                    "Name": "minecraft:air"
+                                                }
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "data": {
+                                                    "Name": "minecraft:vine",
+                                                    "Properties": {
+                                                        "east": "false",
+                                                        "south": "false",
+                                                        "north": "true",
+                                                        "up": "false",
+                                                        "west": "false"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "height": {
+                                        "type": "minecraft:uniform",
+                                        "value": {
+                                            "min_inclusive": 2,
+                                            "max_inclusive": 4
+                                        }
+                                    },
+                                    "provider": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:stripped_oak_log",
+                                            "Properties": {
+                                                "axis": "z"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "placement": []
+                }
+            }
+        ],
+        "default": {
+            "feature": {
+                "type": "minecraft:simple_random_selector",
+                "config": {
+                    "features": [
+                        "vanilla_plus:snowy_forest_oak",
+                        "vanilla_plus:dead_oak"
+                    ]
+                }
+            },
+            "placement": []
+        }
+    }
+}

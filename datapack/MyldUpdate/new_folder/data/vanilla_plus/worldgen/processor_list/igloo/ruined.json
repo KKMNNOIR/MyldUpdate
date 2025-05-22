@@ -1,0 +1,121 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:block_rot",
+            "integrity": 0.65,
+            "rottable_blocks": [
+                "minecraft:snow_block",
+                "minecraft:quartz_bricks",
+                "minecraft:snow",
+                "minecraft:ice",
+                "minecraft:red_carpet",
+                "minecraft:brown_carpet",
+                "minecraft:white_carpet",
+                "minecraft:light_gray_carpet"
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:stone_bricks",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "Name": "minecraft:infested_stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:cracked_stone_bricks",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "Name": "minecraft:infested_cracked_stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:mossy_stone_bricks",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "Name": "minecraft:infested_mossy_stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "probability": 0.15
+                    },
+                    "output_state": {
+                        "Name": "minecraft:infested_chiseled_stone_bricks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:furnace",
+                            "Properties": {
+                                "facing": "north",
+                                "lit": "true"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "Name": "minecraft:furnace",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "minecraft:flower_pots"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:potted_dead_bush"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:chipped_anvil"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:damaged_anvil"
+                    }
+                }
+            ]
+        }
+    ]
+}

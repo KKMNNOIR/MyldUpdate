@@ -1,0 +1,1300 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.034783
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.065217
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.195652
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "north",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "south",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.034783
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.065217
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.195652
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.034783
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.065217
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.195652
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "east",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.02173913
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "facing": "west",
+                            "half": "top",
+                            "shape": "straight",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:polished_blackstone_brick_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:black_glazed_terracotta",
+                            "Properties": {
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.032608696
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "top",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.034783
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.065217
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:black_glazed_terracotta",
+                        "probability": 0.195652
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            ]
+        }
+    ]
+}

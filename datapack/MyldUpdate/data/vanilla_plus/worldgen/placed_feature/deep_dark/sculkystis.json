@@ -1,0 +1,28 @@
+{
+    "feature": "vanilla_plus:deep_dark/sculk_fungus/sculkystis",
+    "placement": [
+        {
+            "type": "minecraft:rarity_filter",
+            "chance": 8
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:trapezoid",
+                "max_inclusive": {
+                    "absolute": 0
+                },
+                "min_inclusive": {
+                    "above_bottom": 0
+                },
+                "plateau": 10
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

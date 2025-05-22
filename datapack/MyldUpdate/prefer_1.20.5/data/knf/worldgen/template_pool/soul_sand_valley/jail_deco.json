@@ -1,0 +1,38 @@
+{
+    
+    "fallback": "knf:soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "knf:soul_sand_valley/jail/lantern"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "knf:soul_sand_valley/jail_decorations/blackstone_pile"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "knf:soul_sand_valley/jail_decorations/skull"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:empty_pool_element",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

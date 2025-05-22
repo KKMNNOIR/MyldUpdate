@@ -1,0 +1,89 @@
+{
+    "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+            "to_place": {
+                "type": "minecraft:randomized_int_state_provider",
+                "property": "level",
+                "values": {
+                    "type": "minecraft:uniform",
+                    "value": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 7
+                    }
+                },
+                "source": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:light",
+                        "Properties": {
+                            "level": "0",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": {
+                "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": 2,
+                    "max_inclusive": 5
+                }
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:replaceable"
+                    },
+                    {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "blocks": [
+                                    "minecraft:small_amethyst_bud",
+                                    "minecraft:medium_amethyst_bud",
+                                    "minecraft:large_amethyst_bud",
+                                    "minecraft:amethyst_cluster"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "blocks": [
+                                    "minecraft:small_amethyst_bud",
+                                    "minecraft:medium_amethyst_bud",
+                                    "minecraft:large_amethyst_bud"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

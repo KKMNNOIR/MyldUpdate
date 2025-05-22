@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "half_height": 0,
+        "radius": 0,
+        "target": {
+            "type": "minecraft:true"
+        },
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:smooth_stone_slab"
+                }
+            },
+            "rules": []
+        }
+    }
+}

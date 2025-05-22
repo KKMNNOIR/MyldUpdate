@@ -1,0 +1,8 @@
+{
+    "asset_id": "minecraft:entity/cat/gray_tabby",
+    "spawn_conditions": [
+        {
+            "priority": 0
+        }
+    ]
+}

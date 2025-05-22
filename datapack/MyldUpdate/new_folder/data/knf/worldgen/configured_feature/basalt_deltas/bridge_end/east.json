@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "east",
+        "allowed_placement": {
+            "type": "minecraft:replaceable"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 1,
+                    "max_inclusive": 4
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 18,
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 2,
+                            "data": {
+                                "Name": "minecraft:blackstone"
+                            }
+                        },
+                        {
+                            "weight": 9,
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:gilded_blackstone"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:spring_feature",
+    "config": {
+        "hole_count": 1,
+        "rock_count": 4,
+        "requires_block_below": false,
+        "state": {
+            "Name": "minecraft:lava",
+            "Properties": {
+                "falling": "true"
+            }
+        },
+        "valid_blocks": "#knf:consist_fortress_basalt"
+    }
+}

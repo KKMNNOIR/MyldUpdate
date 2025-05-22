@@ -1,0 +1,167 @@
+{
+    "feature": {
+        "type": "minecraft:vegetation_patch",
+        "config": {
+            "surface": "floor",
+            "depth": 1,
+            "vertical_range": 1,
+            "extra_bottom_block_chance": 0,
+            "extra_edge_column_chance": 0.8,
+            "vegetation_chance": 0.8,
+            "xz_radius": 9,
+            "replaceable": "#vanilla_plus:nether_bricks",
+            "ground_state": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "Name": "minecraft:nether_bricks"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:cracked_nether_bricks"
+                        }
+                    },
+                    {
+                        "weight": 8,
+                        "data": {
+                            "Name": "minecraft:soul_soil"
+                        }
+                    },
+                    {
+                        "weight": 3,
+                        "data": {
+                            "Name": "minecraft:soul_sand"
+                        }
+                    }
+                ]
+            },
+            "vegetation_feature": {
+                "feature": {
+                    "type": "minecraft:random_selector",
+                    "config": {
+                        "features": [
+                            {
+                                "chance": 0.025,
+                                "feature": {
+                                    "feature": {
+                                        "type": "minecraft:simple_block",
+                                        "config": {
+                                            "to_place": {
+                                                "type": "minecraft:simple_state_provider",
+                                                "state": {
+                                                    "Name": "minecraft:crimson_roots"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "placement": []
+                                }
+                            },
+                            {
+                                "chance": 0.025,
+                                "feature": {
+                                    "feature": {
+                                        "type": "minecraft:simple_block",
+                                        "config": {
+                                            "to_place": {
+                                                "type": "minecraft:simple_state_provider",
+                                                "state": {
+                                                    "Name": "minecraft:warped_roots"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "placement": []
+                                }
+                            },
+                            {
+                                "chance": 0.025,
+                                "feature": {
+                                    "feature": {
+                                        "type": "minecraft:simple_block",
+                                        "config": {
+                                            "to_place": {
+                                                "type": "minecraft:simple_state_provider",
+                                                "state": {
+                                                    "Name": "minecraft:nether_sprouts"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "placement": []
+                                }
+                            },
+                            {
+                                "chance": 0.6,
+                                "feature": {
+                                    "feature": {
+                                        "type": "minecraft:simple_block",
+                                        "config": {
+                                            "to_place": {
+                                                "type": "minecraft:simple_state_provider",
+                                                "state": {
+                                                    "Name": "minecraft:wither_rose"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "placement": []
+                                }
+                            },
+                            {
+                                "chance": 0.15,
+                                "feature": {
+                                    "feature": {
+                                        "type": "minecraft:simple_block",
+                                        "config": {
+                                            "to_place": {
+                                                "type": "minecraft:simple_state_provider",
+                                                "state": {
+                                                    "Name": "minecraft:soul_fire"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "placement": []
+                                }
+                            }
+                        ],
+                        "default": {
+                            "feature": {
+                                "type": "minecraft:no_op",
+                                "config": {}
+                            },
+                            "placement": []
+                        }
+                    }
+                },
+                "placement": []
+            }
+        }
+    },
+    "placement": [
+        {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "down",
+            "max_steps": 32,
+            "target_condition": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:nether_bricks",
+                            "minecraft:cracked_nether_bricks",
+                            "minecraft:polished_blackstone_bricks",
+                            "minecraft:cracked_polished_blackstone_bricks"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "description": "衰弱の矢",
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+      "base": 4,
+      "per_level_above_first": 1
+    },
+    "max_cost": {
+      "base": 8,
+      "per_level_above_first": 1
+    },
+    "anvil_cost": 0,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:wither",
+            "min_duration": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 1
+            },
+            "max_duration": {
+              "type": "minecraft:linear",
+              "base": 3,
+              "per_level_above_first": 2
+            },
+            "min_amplifier": 2,
+            "max_amplifier": 4
+          }
+        }
+      ]
+    }
+}

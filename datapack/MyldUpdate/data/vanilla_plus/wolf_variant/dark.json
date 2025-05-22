@@ -1,0 +1,18 @@
+{
+    "assets": {
+        "wild": "minecraft:entity/wolf/wolf_dark",
+        "angry": "minecraft:entity/wolf/wolf_dark_angry",
+        "tame": "minecraft:entity/wolf/wolf_dark_tame"
+    },
+    "spawn_conditions": [
+        {
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "minecraft:dark_forest"
+                ]
+            },
+            "priority": 1
+        }
+    ]
+}

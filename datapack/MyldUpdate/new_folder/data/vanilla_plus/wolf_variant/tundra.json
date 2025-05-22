@@ -1,0 +1,6 @@
+{
+    "wild_texture": "minecraft:entity/wolf/wolf_tundra",
+    "angry_texture": "minecraft:entity/wolf/wolf_tundra_angry",
+    "tame_texture": "minecraft:entity/wolf/wolf_tundra_tame",
+    "biomes": "vanilla_plus:tundra"
+}

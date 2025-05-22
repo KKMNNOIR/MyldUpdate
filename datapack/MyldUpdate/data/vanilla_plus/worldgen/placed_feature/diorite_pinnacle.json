@@ -1,0 +1,41 @@
+{
+    "feature": "vanilla_plus:diorite_pinnacle",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 256
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "above_bottom": 2
+                },
+                "max_inclusive": {
+                    "below_top": 8
+                }
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                    "minecraft:white_concrete_powder",
+                    "minecraft:white_concrete",
+                    "minecraft:quartz_block"
+                ],
+                "offset": [
+                    0,
+                    -1,
+                    0
+                ]
+            }
+        },
+        { "type": "minecraft:biome" }
+    ]
+}

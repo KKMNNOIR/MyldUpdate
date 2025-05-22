@@ -1,0 +1,29 @@
+{
+    "feature": {
+        "type": "minecraft:random_boolean_selector",
+        "config": {
+            "feature_false": {
+                "feature": "vanilla_plus:dark_forest/thin_dark_oak",
+                "placement": []
+            },
+            "feature_true": {
+                "feature": "vanilla_plus:dark_forest/thin_dark_oak_vined",
+                "placement": []
+            }
+        }
+    },
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "Name": "minecraft:dark_oak_sapling",
+                    "Properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

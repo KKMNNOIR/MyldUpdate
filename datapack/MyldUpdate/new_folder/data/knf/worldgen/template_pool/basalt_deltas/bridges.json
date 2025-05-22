@@ -1,0 +1,131 @@
+{
+    "fallback": "knf:basalt_deltas/terminators",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/start",
+                "projection": "rigid",
+                "processors": "knf:basalt_deltas/degradation/bridge"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/straight_1",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 4
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/crossing_small",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 6
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/crossing_middle",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 8
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/exit_short",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/balcony",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_1",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_2",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/suspension_bridge",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 4
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/lamp_post",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/corruption_1",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/corruption_2",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            },
+            "weight": 1
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stair/wither_skeleton_spawner",
+                "processors": "minecraft:empty",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stair/wither_skeleton_spawner_archer",
+                "processors": "minecraft:empty",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

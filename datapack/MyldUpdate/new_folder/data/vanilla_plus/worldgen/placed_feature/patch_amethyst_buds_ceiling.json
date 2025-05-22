@@ -1,0 +1,61 @@
+{
+    "feature": "vanilla_plus:patch_amethyst_buds_ceiling",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 256,
+                "min_inclusive": 192
+            }
+        },
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 12,
+                "min_inclusive": 3
+              }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "above_bottom": 0
+                },
+                "max_inclusive": {
+                    "below_top": 0
+                }
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:amethyst_block"
+                        ],
+                        "offset": [
+                            0,
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "minecraft:replaceable"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}
