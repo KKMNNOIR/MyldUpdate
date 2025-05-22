@@ -1,9 +1,0 @@
-{
-  "wild_texture": "minecraft:entity/wolf/wolf",
-  "angry_texture": "minecraft:entity/wolf/wolf_angry",
-  "tame_texture": "minecraft:entity/wolf/wolf_tame",
-  "biomes": [
-    "minecraft:taiga",
-    "vanilla_plus:coniferous_forest"
-  ]
-}
