@@ -1,0 +1,55 @@
+{
+    "description": {
+        "text": "Solar Stand Decorator ",
+        "extra": [
+            {
+                "color": "light_purple",
+                "text": "[Technical]",
+                "italic": true
+            }
+        ]
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "any"
+    ],
+    "anvil_cost": 0,
+    "supported_items": "#minecraft:enchantable/vanishing",
+    "weight": 1,
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "knf:basalt_deltas/solar/stand_decorate"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "dimension": "minecraft:the_nether"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"BasaltFortressSolarStand\"]}"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

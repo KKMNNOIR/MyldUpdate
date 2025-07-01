@@ -1,0 +1,1 @@
+data modify storage knf:basalt_deltas_frotress_trial_magma_cube Size set value 0
