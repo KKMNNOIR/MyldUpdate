@@ -1,2 +1,0 @@
-execute unless block ~ ~-1 ~ #minecraft:nether_carver_replaceables run execute positioned ~ ~-1 ~ run function vanilla_plus:nether_fossils/find_ground
-execute if block ~ ~-1 ~ #minecraft:nether_carver_replaceables run function vanilla_plus:nether_fossils/found_ground

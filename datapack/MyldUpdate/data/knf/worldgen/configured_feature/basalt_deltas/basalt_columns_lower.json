@@ -31,25 +31,6 @@
                                                 }
                                             }
                                         ]
-                                    },
-                                    {
-                                        "type": "minecraft:not",
-                                        "predicate": {
-                                            "type": "minecraft:matching_blocks",
-                                            "blocks": [
-                                                "minecraft:polished_blackstone_bricks",
-                                                "minecraft:polished_blackstone_brick_wall",
-                                                "minecraft:cracked_nether_bricks",
-                                                "minecraft:cracked_polished_blackstone_bricks",
-                                                "minecraft:ladder",
-                                                "minecraft:polished_blackstone"
-                                            ],
-                                            "offset": [
-                                                0,
-                                                -3,
-                                                0
-                                            ]
-                                        }
                                     }
                                 ]
                             }

@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "vanilla_plus:tick"
+        "vanilla_plus:tick",
+        "knf:tick"
     ]
 }

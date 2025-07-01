@@ -1,5 +1,5 @@
 {
-    "feature": "knf:basalt_deltas/bridges_hole",
+    "feature": "knf:basalt_deltas/bridges/hole",
     "placement": [
         {
             "type": "minecraft:random_offset",

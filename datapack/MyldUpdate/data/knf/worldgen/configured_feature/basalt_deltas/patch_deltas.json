@@ -1,9 +1,9 @@
 {
     "type": "minecraft:random_patch",
     "config": {
-        "xz_spread": 13,
+        "xz_spread": 4,
         "y_spread": 0,
-        "tries": 180,
+        "tries": 7,
         "feature": {
             "feature": {
                 "type": "minecraft:random_selector",
@@ -31,7 +31,7 @@
                         "predicates": [
                             {
                                 "type": "minecraft:matching_block_tag",
-                                "tag": "knf:basalt_fortress_consists"
+                                "tag": "knf:consist_fortress_basalt"
                             },
                             {
                                 "type": "minecraft:matching_blocks",

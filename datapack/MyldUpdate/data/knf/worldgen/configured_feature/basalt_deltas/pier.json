@@ -51,20 +51,70 @@
         "prioritize_tip": false,
         "layers": [
             {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 2,
+                    "max_inclusive": 5
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            },
+                            "weight": 2
+                        },
+                        {
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            },
+                            "weight": 3
+                        }
+                    ]
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 1,
+                    "max_inclusive": 2
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 2,
+                    "max_inclusive": 6
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:smooth_basalt"
+                    }
+                }
+            },
+            {
                 "height": 1024,
                 "provider": {
                     "type": "minecraft:weighted_state_provider",
                     "entries": [
                         {
-                            "weight": 4,
+                            "weight": 7,
                             "data": {
-                                "Name": "minecraft:polished_blackstone_bricks"
+                                "Name": "minecraft:basalt"
                             }
                         },
                         {
-                            "weight": 1,
+                            "weight": 2,
                             "data": {
-                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                                "Name": "minecraft:cobbled_deepslate"
                             }
                         }
                     ]

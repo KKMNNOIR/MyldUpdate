@@ -1,9 +1,0 @@
-{
-    "asset_name": "none",
-    "description": {
-      "color": "#ddf7f7",
-      "translate": "trim_material.minecraft.frozen_zombie"
-    },
-    "ingredient": "minecraft:snowball",
-    "item_model_index": 0.11
-}

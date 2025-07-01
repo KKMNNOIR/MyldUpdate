@@ -1,5 +1,0 @@
-{
-    "type": "minecraft:add",
-    "argument1": "vanilla_plus:nether/depth",
-    "argument2": "minecraft:nether/base_3d_noise"
-}

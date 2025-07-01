@@ -1,0 +1,47 @@
+{
+    "spawn_potentials": [
+        {
+            "weight": 1,
+            "data": {
+                "entity": {
+                    "id": "minecraft:blaze"
+                },
+                "custom_spawn_rules": {
+                    "block_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    },
+                    "sky_light_limit": {
+                        "min_inclusive": 0,
+                        "max_inclusive": 15
+                    }
+                },
+                "equipment": {
+                    "loot_table": "knf:blaze_equipment/fire_trails",
+                    "slot_drop_chances": {
+                        "feet": 0.0
+                    }
+                }
+            }
+        }
+    ],
+    "total_mobs": 24.0,
+    "total_mobs_added_per_player": 0.5,
+    "simultaneous_mobs": 4.0,
+    "simultaneous_mobs_added_per_player": 0.5,
+    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/items_to_drop",
+    "loot_tables_to_eject": [
+        {
+            "weight": 1,
+            "data": "knf:trial_spawner/basalt_deltas/blaze/key"
+        },
+        {
+            "weight": 7,
+            "data": "knf:trial_spawner/basalt_deltas/blaze/consumables"
+        },
+        {
+            "weight": 2,
+            "data": "knf:trial_spawner/basalt_deltas/blaze/equipment"
+        }
+    ]
+}

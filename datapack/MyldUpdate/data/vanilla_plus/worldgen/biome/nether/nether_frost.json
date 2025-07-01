@@ -12,8 +12,9 @@
         "music": [
             {
                 "data": {
-                    // "sound": "minecraft:music.nether.nether_frost",
-                    "sound": "minecraft:music.nether.basalt_deltas",
+                    "sound": {
+                        "sound_id": "minecraft:music.nether.nether_frost"
+                    },
                     "min_delay": 1200,
                     "max_delay": 2400,
                     "replace_current_music": false
@@ -21,18 +22,21 @@
                 "weight": 1
             }
         ],
-        // "ambient_sound": "minecraft:ambient.nether_frost.loop",
-        "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+        "ambient_sound": {
+            "sound_id": "minecraft:ambient.nether_frost.loop"
+        },
         "mood_sound": {
-            // "sound": "minecraft:ambient.nether_frost.mood",
-            "sound": "minecraft:ambient.basalt_deltas.mood",
+            "sound": {
+                "sound_id": "minecraft:ambient.nether_frost.mood"
+            },
             "tick_delay": 6000,
             "block_search_extent": 8,
             "offset": 2
         },
         "additions_sound": {
-            // "sound": "minecraft:ambient.nether_frost.additions",
-            "sound": "minecraft:ambient.basalt_deltas.additions",
+            "sound": {
+                "sound_id": "minecraft:ambient.nether_frost.additions"
+            },
             "tick_chance": 0.0111
         },
         "particle": {

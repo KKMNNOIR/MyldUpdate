@@ -1,5 +1,5 @@
 {
-    "fallback": "knf:basalt_deltas/terminators",
+    "fallback": "knf:basalt_deltas/bridge_end",
     "elements": [
         {
             "weight": 1,

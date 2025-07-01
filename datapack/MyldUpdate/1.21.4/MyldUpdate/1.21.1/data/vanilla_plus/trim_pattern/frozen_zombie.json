@@ -1,8 +1,0 @@
-{
-    "asset_id": "frozen_zombie",
-    "decal": false,
-    "description": {
-      "translate": "trim_pattern.minecraft.frozen_zombie"
-    },
-    "template_item": "minecraft:snowball"
-}

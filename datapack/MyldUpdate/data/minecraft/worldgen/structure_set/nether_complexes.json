@@ -12,10 +12,14 @@
     },
     {
       "structure": "minecraft:bastion_remnant",
-      "weight": 3
+      "weight": 9
     },
     {
-      "structure": "vanilla_plus:soul_sand_nether_fortress",
+      "structure": "knf:soul_sand_nether_fortress",
+      "weight": 2
+    },
+    {
+      "structure": "knf:ruins_nether_fortress",
       "weight": 2
     }
   ]

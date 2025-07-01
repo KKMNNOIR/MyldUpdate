@@ -13,8 +13,9 @@
         "music": [
             {
                 "data": {
-                    // "sound": "minecraft:music.nether.charred_wastes",
-                    "sound": "minecraft:music.nether.nether_wastes",
+                    "sound": {
+                        "sound_id": "minecraft:music.nether.charred_wastes"
+                    },
                     "min_delay": 1200,
                     "max_delay": 2400,
                     "replace_current_music": false

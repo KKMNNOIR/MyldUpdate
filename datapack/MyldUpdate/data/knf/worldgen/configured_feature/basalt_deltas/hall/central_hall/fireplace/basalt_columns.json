@@ -5,7 +5,7 @@
         "y_spread": 0,
         "tries": 4,
         "feature": {
-            "feature": "knf:basalt_deltas/hall/central_hall/ceiling/basalt_column",
+            "feature": "knf:basalt_deltas/hall/central_hall/fireplace/basalt_column",
             "placement": [
                 {
                     "type": "minecraft:block_predicate_filter",

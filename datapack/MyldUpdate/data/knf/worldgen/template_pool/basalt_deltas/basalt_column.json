@@ -19,6 +19,12 @@
                 ],
                 "projection": "rigid"
             }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:empty_pool_element"
+            }
         }
     ]
 }

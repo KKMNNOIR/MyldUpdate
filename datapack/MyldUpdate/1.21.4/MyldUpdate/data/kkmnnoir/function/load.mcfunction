@@ -1,3 +1,0 @@
-# data merge storage kkmnnoir:miasma_effects {effects:[{id:"minecraft:poison",amplifier:3,duration:100},{id:"minecraft:blindness",amplifier:0,duration:200},{id:"minecraft:hunger",amplifier:0,duration:3600},{id:"minecraft:mining_fatigue",amplifier:3,duration:3600},{id:"minecraft:nausea",amplifier:0,duration:200},{id:"minecraft:slowness",amplifier:6,duration:100},{id:"minecraft:weakness",amplifier:6,duration:120},{id:"minecraft:infested",amplifier:0,duration:3600},{id:"minecraft:oozing",amplifier:0,duration:3600},{id:"minecraft:weaving",amplifier:0,duration:3600},{id:"minecraft:wind_charged",amplifier:0,duration:3600}]}
-
-scoreboard objectives add kkmnMiasmaRadius dummy

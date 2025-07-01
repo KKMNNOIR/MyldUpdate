@@ -23,7 +23,7 @@
                             "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                    "Name": "minecraft:weeping_vines"
+                                    "Name": "minecraft:weeping_vines_plant"
                                 }
                             }
                         },
@@ -32,7 +32,7 @@
                             "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                    "Name": "minecraft:weeping_vines_plant"
+                                    "Name": "minecraft:weeping_vines"
                                 }
                             }
                         }

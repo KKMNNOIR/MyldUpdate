@@ -8,6 +8,12 @@
                 "feature": "knf:basalt_deltas/hall/central_hall/fireplace/wall_wall",
                 "projection": "rigid"
             }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:empty_pool_element"
+            }
         }
     ]
 }

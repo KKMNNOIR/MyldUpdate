@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "vanilla_plus:load",
-        "kkmnnoir:load"
+        "kkmnnoir:load",
+        "knf:load"
     ]
 }

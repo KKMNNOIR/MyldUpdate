@@ -1,5 +1,5 @@
 {
-    "fallback": "knf:basalt_deltas/terminators",
+    "fallback": "knf:basalt_deltas/bridge_end",
     "elements": [
         {
             "weight": 6,
@@ -32,7 +32,7 @@
             "weight": 2,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "location": "knf:basalt_deltas/bridges/large_crossing/blaze_trial_spawner",
+                "location": "knf:basalt_deltas/trial_spawner/bridge_cross/blaze_trial_spawner",
                 "projection": "rigid",
                 "processors": "minecraft:empty"
             }
@@ -41,7 +41,7 @@
             "weight": 1,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "location": "knf:basalt_deltas/bridges/large_crossing/wither_skeleton_trial_spawner",
+                "location": "knf:basalt_deltas/trial_spawner/bridge_cross/wither_skeleton_trial_spawner",
                 "projection": "rigid",
                 "processors": "minecraft:empty"
             }
@@ -50,7 +50,7 @@
             "weight": 1,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "location": "knf:basalt_deltas/bridges/large_crossing/magma_cube_trial_spawner",
+                "location": "knf:basalt_deltas/trial_spawner/bridge_cross/magma_cube_trial_spawner",
                 "projection": "rigid",
                 "processors": "minecraft:empty"
             }

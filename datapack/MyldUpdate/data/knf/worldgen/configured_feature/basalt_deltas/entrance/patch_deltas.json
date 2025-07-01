@@ -10,28 +10,14 @@
                 "config": {
                     "default": {
                         "feature": "knf:basalt_deltas/solidified_deltas",
-                        "placement": [
-                            {
-                                "type": "minecraft:noise_based_count",
-                                "noise_to_count_ratio": 1,
-                                "noise_factor": 1,
-                                "noise_offset": 0
-                            }
-                        ]
+                        "placement": []
                     },
                     "features": [
                         {
                             "chance": 0.3,
                             "feature": {
                                 "feature": "knf:basalt_deltas/delta",
-                                "placement": [
-                                    {
-                                        "type": "minecraft:noise_based_count",
-                                        "noise_to_count_ratio": 1,
-                                        "noise_factor": 1,
-                                        "noise_offset": 0
-                                    }
-                                ]
+                                "placement": []
                             }
                         }
                     ]

@@ -1,2 +1,0 @@
-execute as @s[scores={vpBlazeHealingTimer=1..20}] run scoreboard players remove @s vpBlazeHealingTimer 1
-execute if score @s vpBlazeHealingTimer matches 0 run scoreboard players reset @s vpBlazeHealingTimer

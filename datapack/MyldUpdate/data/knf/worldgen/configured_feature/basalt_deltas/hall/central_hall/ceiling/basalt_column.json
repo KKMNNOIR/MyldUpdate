@@ -59,15 +59,6 @@
                         "predicates": [
                             {
                                 "type": "minecraft:replaceable"
-                            },
-                            {
-                                "type": "minecraft:not",
-                                "predicate": {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": [
-                                        "minecraft:air"
-                                    ]
-                                }
                             }
                         ]
                     }

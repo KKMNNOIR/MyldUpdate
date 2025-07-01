@@ -2,7 +2,7 @@
     "downfall": 0,
     "temperature": 2,
     "carvers": [
-            "vanilla_plus:nether_cave"
+        "vanilla_plus:nether_cave"
     ],
     "has_precipitation": false,
     "effects": {
@@ -25,8 +25,9 @@
         "music": [
             {
                 "data": {
-                    // "sound": "minecraft:music.nether.charred_wastes",
-                    "sound": "minecraft:music.nether.nether_wastes",
+                    "sound": {
+                        "sound_id": "minecraft:music.nether.charred_wastes"
+                    },
                     "min_delay": 1200,
                     "max_delay": 2400,
                     "replace_current_music": false

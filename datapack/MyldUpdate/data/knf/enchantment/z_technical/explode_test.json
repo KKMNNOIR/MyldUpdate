@@ -1,0 +1,41 @@
+{
+    "description": "test explode",
+    "anvil_cost": 0,
+    "max_level": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/vanishing",
+    "slots": ["any"],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "block_interaction": "none",
+                    "radius": 1,
+                    "create_fire": false,
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": 0.5,
+                        "per_level_above_first": 0.5
+                    },
+                    "small_particle": {
+                        "type": "minecraft:explosion"
+                    },
+                    "large_particle": {
+                        "type": "minecraft:explosion_emitter"
+                    },
+                    "sound": "minecraft:entity.villager.death",
+                    "damage_type": "minecraft:explosion"
+                }
+            }
+        ]
+    }
+}

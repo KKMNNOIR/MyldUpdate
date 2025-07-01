@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:true"
+                        },
+                        "prioritize_tip": false,
+                        "layers": [
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "minecraft:polished_blackstone_brick_wall"
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "minecraft:nether_brick_fence"
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "minecraft:black_stained_glass_pane"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": 0,
+                        "y_spread": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

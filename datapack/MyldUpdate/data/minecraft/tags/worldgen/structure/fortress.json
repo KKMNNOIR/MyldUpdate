@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:fortress",
-        "vanilla_plus:soul_sand_nether_fortress"
+        "knf:soul_sand_nether_fortress",
+        "knf:ruins_nether_fortress"
     ]
 }

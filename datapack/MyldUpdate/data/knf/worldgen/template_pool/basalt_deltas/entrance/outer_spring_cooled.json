@@ -8,7 +8,7 @@
                 "elements": [
                     {
                         "element_type": "minecraft:feature_pool_element",
-                        "feature": "minecraft:basalt_pillar",
+                        "feature": "knf:basalt_deltas/entrance/basalt_pillar",
                         "projection": "rigid"
                     },
                     {

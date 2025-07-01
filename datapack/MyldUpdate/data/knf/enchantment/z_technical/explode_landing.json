@@ -1,0 +1,98 @@
+{
+    "description": {
+        "translate": "enchantments.knf.z_technical/explode_landing",
+        "fallback": "爆着"
+    },
+    "anvil_cost": 0,
+    "max_level": 3,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "supported_items": "#minecraft:enchantable/vanishing",
+    "weight": 1,
+    "slots": [
+        "any"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:explode",
+                            "radius": {
+                                "type": "minecraft:linear",
+                                "base": 1,
+                                "per_level_above_first": 1
+                            },
+                            "knockback_multiplier": {
+                                "type": "minecraft:linear",
+                                "base": 0.5,
+                                "per_level_above_first": 0.5
+                            },
+                            "damage_type": "minecraft:explosion",
+                            "block_interaction": "trigger",
+                            "sound": "minecraft:entity.generic.explode",
+                            "small_particle": {
+                                "type": "minecraft:explosion"
+                            },
+                            "large_particle": {
+                                "type": "minecraft:explosion_emitter"
+                            }
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "knf:basalt_deltas/ominous_trial/explode_landing/tag"
+                        }
+                    ]
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ExplodeLanded\"]}"
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:location_check",
+                                "offsetY": -1,
+                                "predicate": {
+                                    "block": {
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "movement": {
+                                    "fall_distance": {
+                                        "min": 1
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
