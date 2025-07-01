@@ -1,0 +1,251 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_blackstone_bricks",
+                        "probability": 0.6
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_blackstone_bricks",
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "none",
+                                "east": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "none",
+                            "east": "none",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_blackstone",
+                        "probability": 0.5
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "waterlogged": "false",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.4
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "waterlogged": "false",
+                            "facing": "west"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:spawner",
+                        "probability": 0.3334
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:spawner"
+                    },
+                    "block_entity_modifier": {
+                        "type": "minecraft:append_static",
+                        "data": {
+                            "Delay": 0,
+                            "MaxNearbyEntities": 6,
+                            "MaxSpawnDelay": 800,
+                            "MinSpawnDelay": 200,
+                            "RequiredPlayerRange": 16,
+                            "SpawnCount": 4,
+                            "SpawnData": {
+                                "entity": {
+                                    "id": "minecraft:wither_skeleton",
+                                    "equipment": {
+                                        "mainhand": {
+                                            "id": "minecraft:bow"
+                                        }
+                                    }
+                                },
+                                "equipment": {
+                                    "loot_table": "knf:equipment/basalt_deltas/wither_skeleton_archer",
+                                    "slot_drop_chances": 0.0853
+                                }
+                            },
+                            "SpawnPotentials": [
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "entity": {
+                                            "id": "minecraft:wither_skeleton",
+                                            "equipment": {
+                                                "mainhand": {
+                                                    "id": "minecraft:bow"
+                                                }
+                                            }
+                                        },
+                                        "equipment": {
+                                            "loot_table": "knf:equipment/basalt_deltas/wither_skeleton_archer",
+                                            "slot_drop_chances": 0.0853
+                                        }
+                                    }
+                                }
+                            ],
+                            "SpawnRange": 4,
+                            "id": "minecraft:mob_spawner"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

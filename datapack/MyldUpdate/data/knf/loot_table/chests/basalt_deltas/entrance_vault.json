@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template_upgrading"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template_upgrading",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/rare",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/common",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0.0,
+                "max": 1.0
+            },
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/common",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:empty"
+                }
+            ]
+        }
+    ]
+}

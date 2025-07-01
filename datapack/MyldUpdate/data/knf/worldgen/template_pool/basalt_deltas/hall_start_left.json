@@ -1,0 +1,14 @@
+{
+    "fallback": "knf:basalt_deltas/hall_end",
+    "elements": [
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/turn_right",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

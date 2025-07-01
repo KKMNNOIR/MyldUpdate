@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 10,
+        "y_spread": 0,
+        "tries": 200,
+        "feature": {
+            "feature": {
+                "type": "minecraft:random_selector",
+                "config": {
+                    "default": {
+                        "feature": {
+                            "type": "minecraft:delta_feature",
+                            "config": {
+                                "contents": {
+                                    "Name": "minecraft:magma_block"
+                                },
+                                "rim": {
+                                    "Name": "minecraft:basalt",
+                                    "Properties": {
+                                        "axis": "y"
+                                    }
+                                },
+                                "size": {
+                                    "type": "minecraft:biased_to_bottom",
+                                    "min_inclusive": 1,
+                                    "max_inclusive": 2
+                                },
+                                "rim_size": {
+                                    "type": "minecraft:biased_to_bottom",
+                                    "min_inclusive": 1,
+                                    "max_inclusive": 2
+                                }
+                            }
+                        },
+                        "placement": []
+                    },
+                    "features": [
+                        {
+                            "chance": 0.2,
+                            "feature": {
+                                "feature": {
+                                    "type": "minecraft:delta_feature",
+                                    "config": {
+                                        "contents": {
+                                            "Name": "minecraft:lava"
+                                        },
+                                        "rim": {
+                                            "Name": "minecraft:magma_block"
+                                        },
+                                        "size": {
+                                            "type": "minecraft:biased_to_bottom",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 2
+                                        },
+                                        "rim_size": {
+                                            "type": "minecraft:biased_to_bottom",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 2
+                                        }
+                                    }
+                                },
+                                "placement": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "knf:consist_fortress_basalt"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:air"
+                                ],
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

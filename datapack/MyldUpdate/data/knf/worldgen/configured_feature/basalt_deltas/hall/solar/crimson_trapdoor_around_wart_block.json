@@ -1,0 +1,167 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "radius": 1,
+        "half_height": 0,
+        "target": {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+                "minecraft:air"
+            ]
+        },
+        "state_provider": {
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:air"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_wart_block",
+                                    "minecraft:red_nether_bricks"
+                                ],
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:crimson_trapdoor",
+                            "Properties": {
+                                "half": "bottom",
+                                "open": "true",
+                                "facing": "west"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:air"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_wart_block",
+                                    "minecraft:red_nether_bricks"
+                                ],
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:crimson_trapdoor",
+                            "Properties": {
+                                "half": "bottom",
+                                "open": "true",
+                                "facing": "north"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:air"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_wart_block",
+                                    "minecraft:red_nether_bricks"
+                                ],
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:crimson_trapdoor",
+                            "Properties": {
+                                "half": "bottom",
+                                "open": "true",
+                                "facing": "east"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:air"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:nether_wart_block",
+                                    "minecraft:red_nether_bricks"
+                                ],
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:crimson_trapdoor",
+                            "Properties": {
+                                "half": "bottom",
+                                "open": "true",
+                                "facing": "south"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:air"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "fallback": "knf:basalt_deltas/hall_end",
+    "elements": [
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/straight",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/turn_right",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/crossing_1",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/crossing_2",
+                "processors": "knf:basalt_deltas/degradation/hall_2",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/balcony_left_fence",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/balcony_right_fence",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/balcony_front_fence",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/wart_chamber",
+                "processors": "knf:basalt_deltas/degradation/wart_chamber",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/wart_farm",
+                "processors": "knf:basalt_deltas/degradation/wart_chamber",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/staircase_1",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

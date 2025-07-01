@@ -1,0 +1,193 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "radius": 1,
+        "half_height": 0,
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                        "minecraft:air"
+                    ]
+                },
+                {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:chiseled_polished_blackstone",
+                            "offset": [
+                                1,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:chiseled_polished_blackstone",
+                            "offset": [
+                                -1,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:chiseled_polished_blackstone",
+                            "offset": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:chiseled_polished_blackstone",
+                            "offset": [
+                                0,
+                                0,
+                                -1
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "state_provider": {
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:chiseled_polished_blackstone",
+                                "offset": [
+                                    1,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_button",
+                            "Properties": {
+                                "face": "wall",
+                                "facing": "west",
+                                "powered": "false"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:chiseled_polished_blackstone",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_button",
+                            "Properties": {
+                                "face": "wall",
+                                "facing": "north",
+                                "powered": "false"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:chiseled_polished_blackstone",
+                                "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_button",
+                            "Properties": {
+                                "face": "wall",
+                                "facing": "east",
+                                "powered": "false"
+                            }
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:chiseled_polished_blackstone",
+                                "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                ]
+                            }
+                        ]
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:polished_blackstone_button",
+                            "Properties": {
+                                "face": "wall",
+                                "facing": "south",
+                                "powered": "false"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:air"
+                }
+            }
+        }
+    }
+}

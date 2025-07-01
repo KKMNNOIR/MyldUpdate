@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 2,
+        "y_spread": 0,
+        "tries": 7,
+        "feature": {
+            "feature": "knf:basalt_deltas/hall/solar/stain",
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:deepslate_bricks",
+                                    "minecraft:cracked_deepslate_bricks",
+                                    "minecraft:cobbled_deepslate"
+                                ],
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

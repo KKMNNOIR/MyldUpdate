@@ -1,0 +1,86 @@
+{
+    "fallback": "knf:basalt_deltas/bridge_end",
+    "elements": [
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/higher/straight",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/higher/crossing_small",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/higher/exit_short",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/higher/crossing_middle",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/middle_crossing_center_lamp",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/higher/suspension_bridge",
+                "processors": "knf:basalt_deltas/degradation/large_crossing",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/balcony",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_1",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_2",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

@@ -1,0 +1,393 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/back",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/front_left",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/front_right",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/back_right",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/back_left",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/drawbridge",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/pillar",
+                "processors": "knf:basalt_deltas/degradation/entrance_pillar",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/enter_floor",
+                "processors": [
+                    {
+                        "processor_type": "minecraft:block_rot",
+                        "integrity": 0.51
+                    }
+                ],
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/exit_floor",
+                "processors": [
+                    {
+                        "processor_type": "minecraft:block_rot",
+                        "integrity": 0.68
+                    }
+                ],
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/stairs_1",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/stairs_2",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/stairs_3",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/stairs_4",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/stairs_5",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_1",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_1_left",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_2",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_2_left",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_3",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_3_left",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_4",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_4_left",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_corner_1",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_corner_2",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_corner_3",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_1",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_2",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_3",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_4",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/parapet_front",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/parapet_extend_front",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/parapet_back",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/parapet_extend_back",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/pilaster",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/window_1",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/window_2",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/window_4",
+                "processors": "knf:basalt_deltas/degradation/entrance",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_column_1",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_column_2",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_column_3",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/atrium_front_column_4",
+                "processors": "knf:basalt_deltas/degradation/entrance_atrium",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/outer_spring_cooled",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

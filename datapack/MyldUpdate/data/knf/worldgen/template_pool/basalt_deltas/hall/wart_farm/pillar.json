@@ -1,0 +1,59 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/pillar_1",
+                "processors": "knf:basalt_deltas/degradation/wart_chamber",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/pillar_2",
+                "processors": "knf:basalt_deltas/degradation/wart_chamber",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/fallen_pillar",
+                "processors": "knf:basalt_deltas/degradation/wart_chamber",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/pillar_rubble_1",
+                "processors": "knf:basalt_deltas/rubble_rotation_1",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/pillar_rubble_2",
+                "processors": "knf:basalt_deltas/rubble_rotation_2",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/nether_wart_farm/pillar_rubble_3",
+                "processors": "knf:basalt_deltas/rubble_rotation_3",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

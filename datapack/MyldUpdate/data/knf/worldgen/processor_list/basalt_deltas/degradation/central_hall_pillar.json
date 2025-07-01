@@ -1,0 +1,1158 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:protected_blocks",
+            "value": "#knf:consist_fortress_basalt"
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "probability": 0.6,
+                        "block": "minecraft:polished_blackstone_bricks"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:polished_blackstone_bricks",
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "tall",
+                                "east": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "tall",
+                            "east": "none",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "none",
+                                "east": "tall",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "none",
+                            "east": "tall",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "tall",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "tall",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "none",
+                            "west": "tall",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "tall",
+                                "east": "tall",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "tall",
+                            "east": "tall",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "none",
+                                "east": "tall",
+                                "south": "tall",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "none",
+                            "east": "tall",
+                            "south": "tall",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_wall",
+                            "Properties": {
+                                "north": "none",
+                                "east": "none",
+                                "south": "tall",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_wall",
+                        "Properties": {
+                            "north": "none",
+                            "east": "none",
+                            "south": "tall",
+                            "west": "tall",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_slab",
+                            "Properties": {
+                                "type": "bottom"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "bottom"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_blackstone_brick_slab",
+                            "Properties": {
+                                "type": "top"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:blackstone_slab",
+                        "Properties": {
+                            "type": "top"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "probability": 0.5,
+                        "block": "minecraft:deepslate_bricks"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_deepslate_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "probability": 0.2,
+                        "block": "minecraft:deepslate_bricks"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "bottom",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "bottom",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_stairs",
+                            "Properties": {
+                                "half": "top",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_stairs",
+                        "Properties": {
+                            "half": "top",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_slab",
+                            "Properties": {
+                                "type": "bottom"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_slab",
+                        "Properties": {
+                            "type": "bottom"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_brick_slab",
+                            "Properties": {
+                                "type": "top"
+                            }
+                        },
+                        "probability": 0.3
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_slab",
+                        "Properties": {
+                            "type": "top"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "x"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "x"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "y"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "y"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:polished_basalt",
+                            "Properties": {
+                                "axis": "z"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:basalt",
+                        "Properties": {
+                            "axis": "z"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_tiles",
+                        "probability": 0.5
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_deepslate_tiles"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:deepslate_tiles",
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_tile_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "tall",
+                                "south": "tall",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "tall",
+                            "south": "tall",
+                            "west": "tall",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_tile_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "tall",
+                                "south": "none",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "tall",
+                            "south": "none",
+                            "west": "tall"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_tile_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "tall",
+                                "south": "tall",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "tall",
+                            "south": "tall",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:deepslate_tile_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "tall",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cobbled_deepslate_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "none",
+                            "south": "tall",
+                            "west": "tall",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:red_nether_bricks",
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:red_nether_bricks",
+                        "probability": 0.15
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:cracked_nether_bricks"
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:red_nether_brick_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "tall",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_brick_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "tall",
+                            "south": "none",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:red_nether_brick_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "tall",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_brick_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "none",
+                            "south": "tall",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:red_nether_brick_wall",
+                            "Properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "tall",
+                                "west": "tall",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_brick_wall",
+                        "Properties": {
+                            "east": "none",
+                            "north": "none",
+                            "south": "tall",
+                            "west": "tall",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:red_nether_brick_wall",
+                            "Properties": {
+                                "east": "tall",
+                                "north": "none",
+                                "south": "tall",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.2
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "output_state": {
+                        "Name": "minecraft:nether_brick_wall",
+                        "Properties": {
+                            "east": "tall",
+                            "north": "none",
+                            "south": "tall",
+                            "west": "none",
+                            "up": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
