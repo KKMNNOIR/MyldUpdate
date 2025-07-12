@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "knf:item.black_bone",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/black_bone"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/ink_sac"
+        }
+    }
+}
