@@ -234,7 +234,7 @@
                                             }
                                         },
                                         "equipment": {
-                                            "loot_table": "knf:equipment/basalt_deltas/wither_skeleton_archer",
+                                            "loot_table": "knf:equipment/basalt_deltas/wither_skeleton/bridge_stair_archer",
                                             "slot_drop_chances": 0.0853
                                         }
                                     }
