@@ -4,8 +4,19 @@
         {
             "weight": 1,
             "element": {
-                "element_type": "minecraft:feature_pool_element",
-                "feature": "knf:basalt_deltas/hall/iron_trapdoor_around_pillar",
+                "element_type": "minecraft:list_pool_element",
+                "elements": [
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/hall/iron_trapdoor_around_pillar",
+                        "projection": "rigid"
+                    },
+                    {
+                        "element_type": "minecraft:feature_pool_element",
+                        "feature": "knf:basalt_deltas/hall/weathered_pilaster_tuff_wall",
+                        "projection": "rigid"
+                    }
+                ],
                 "projection": "rigid"
             }
         }
