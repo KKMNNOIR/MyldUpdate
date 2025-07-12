@@ -1,0 +1,39 @@
+{
+    "weight": 1,
+    "description": {
+        "translate": "enchantments.kkmnnoir.blast_immunity",
+        "fallback": "爆発ダメージ無効"
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 0,
+    "supported_items": "#minecraft:enchantable/armor",
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "effect": {},
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_explosion",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
