@@ -17,7 +17,7 @@
                     }
                 },
                 "equipment": {
-                    "loot_table": "knf:blaze_equipment/fire_trails",
+                    "loot_table": "knf:equipment/basalt_deltas/blaze/fire_trails",
                     "slot_drop_chances": {
                         "feet": 0.0
                     }
@@ -25,11 +25,11 @@
             }
         }
     ],
-    "total_mobs": 24.0,
-    "total_mobs_added_per_player": 0.5,
+    "total_mobs": 12.0,
+    "total_mobs_added_per_player": 1.0,
     "simultaneous_mobs": 4.0,
     "simultaneous_mobs_added_per_player": 0.5,
-    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/items_to_drop",
+    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/blaze/items_to_drop",
     "loot_tables_to_eject": [
         {
             "weight": 1,

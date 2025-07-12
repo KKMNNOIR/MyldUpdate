@@ -1,6 +1,6 @@
 {
-    "total_mobs": 240.0,
-    "total_mobs_added_per_player": 0.5,
+    "total_mobs": 12.0,
+    "total_mobs_added_per_player": 1.0,
     "simultaneous_mobs": 6.0,
     "simultaneous_mobs_added_per_player": 0.5,
     "spawn_potentials": [
@@ -12,7 +12,7 @@
                     "Size": 1
                 },
                 "equipment": {
-                    "loot_table": "knf:blaze_equipment/fire_trails",
+                    "loot_table": "knf:equipment/basalt_deltas/blaze/fire_trails",
                     "slot_drop_chances": {
                         "feet":0.0
                     }
@@ -37,7 +37,7 @@
                     "Size": 2
                 },
                 "equipment": {
-                    "loot_table": "knf:equipment/basalt_deltas/magma_cube_medium",
+                    "loot_table": "knf:equipment/basalt_deltas/magma_cube/medium",
                     "slot_drop_chances": 0.0
                 },
                 "custom_spawn_rules": {
@@ -60,7 +60,7 @@
                     "Size": 4
                 },
                 "equipment": {
-                    "loot_table": "knf:equipment/basalt_deltas/magma_cube_large",
+                    "loot_table": "knf:equipment/basalt_deltas/magma_cube/large",
                     "slot_drop_chances": 0.0
                 },
                 "custom_spawn_rules": {
@@ -83,7 +83,7 @@
                     "Size": 8
                 },
                 "equipment": {
-                    "loot_table": "knf:equipment/basalt_deltas/magma_cube_giant",
+                    "loot_table": "knf:equipment/basalt_deltas/magma_cube/giant",
                     "slot_drop_chances": 0.0
                 },
                 "custom_spawn_rules": {
@@ -99,7 +99,7 @@
             }
         }
     ],
-    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/items_to_drop",
+    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/magma_cube/items_to_drop",
     "loot_tables_to_eject": [
         {
             "weight": 1,

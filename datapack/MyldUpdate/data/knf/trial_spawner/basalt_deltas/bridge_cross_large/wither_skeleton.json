@@ -1,6 +1,6 @@
 {
-    "total_mobs": 240.0,
-    "total_mobs_added_per_player": 0.5,
+    "total_mobs": 12.0,
+    "total_mobs_added_per_player": 1.0,
     "simultaneous_mobs": 6.0,
     "simultaneous_mobs_added_per_player": 0.5,
     "spawn_potentials": [
@@ -11,7 +11,7 @@
                     "id": "minecraft:wither_skeleton"
                 },
                 "equipment": {
-                    "loot_table": "knf:wither_skeleton_equipment/basalt_deltas/ominous_range",
+                    "loot_table": "knf:equipment/basalt_deltas/wither_skeleton/ominous_range",
                     "slot_drop_chances": 0.0
                 },
                 "custom_spawn_rules": {
@@ -33,7 +33,7 @@
                     "id": "minecraft:wither_skeleton"
                 },
                 "equipment": {
-                    "loot_table": "knf:wither_skeleton_equipment/basalt_deltas/ominous_melee",
+                    "loot_table": "knf:equipment/basalt_deltas/wither_skeleton/ominous_melee",
                     "slot_drop_chances": 0.0
                 },
                 "custom_spawn_rules": {
@@ -49,7 +49,7 @@
             }
         }
     ],
-    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/items_to_drop",
+    "items_to_drop_when_ominous": "knf:trial_spawner/basalt_deltas/wither_skeleton/items_to_drop",
     "loot_tables_to_eject": [
         {
             "weight": 1,
