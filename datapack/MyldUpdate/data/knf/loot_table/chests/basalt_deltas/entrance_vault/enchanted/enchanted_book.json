@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "kkmnnoir:blast_immunity",
+                                "kkmnnoir:fire_immunity",
+                                "kkmnnoir:falling_immunity",
+                                "kkmnnoir:wither_edge",
+                                "kkmnnoir:fire_trails",
+                                "kkmnnoir:unbreakable",
+                                "kkmnnoir:shoot_back"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

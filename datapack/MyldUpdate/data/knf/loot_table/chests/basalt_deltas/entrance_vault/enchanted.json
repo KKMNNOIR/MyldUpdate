@@ -2,12 +2,15 @@
     "type": "minecraft:chest",
     "pools": [
         {
-            "rolls": 1.0,
+            "rolls": {
+                "min": 1.0,
+                "max": 4.0
+            },
             "bonus_rolls": 0.0,
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template_upgrading"
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_armor"
                 }
             ]
         },
@@ -17,13 +20,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template_upgrading",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "knf:chests/basalt_deltas/entrance_vault/smithing_template",
-                    "weight": 3
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_weapons"
                 }
             ]
         },
@@ -33,7 +30,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted"
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_book"
                 }
             ]
         }
