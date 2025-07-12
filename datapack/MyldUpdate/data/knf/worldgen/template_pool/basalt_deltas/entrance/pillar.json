@@ -9,6 +9,15 @@
                 "processors": "knf:basalt_deltas/degradation/entrance_pillar",
                 "location": "knf:basalt_deltas/entrance/pillar"
             }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/entrance/pillar_fire",
+                "processors": "knf:basalt_deltas/degradation/entrance_pillar",
+                "projection": "rigid"
+            }
         }
     ]
 }
