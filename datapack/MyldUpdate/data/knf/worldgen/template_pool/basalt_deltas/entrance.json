@@ -59,15 +59,6 @@
             "weight": 1,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "location": "knf:basalt_deltas/entrance/pillar",
-                "processors": "knf:basalt_deltas/degradation/entrance_pillar",
-                "projection": "rigid"
-            }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "minecraft:single_pool_element",
                 "location": "knf:basalt_deltas/entrance/enter_floor",
                 "processors": [
                     {
