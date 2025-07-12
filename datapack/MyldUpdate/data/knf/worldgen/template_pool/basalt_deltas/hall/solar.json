@@ -14,7 +14,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "location": "knf:basalt_deltas/solar/roof_light",
-                "processors": [],
+                "processors": "knf:basalt_deltas/degradation/solar",
                 "projection": "rigid"
             },
             "weight": 1
@@ -23,7 +23,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "location": "knf:basalt_deltas/solar/roof_light_ruined",
-                "processors": [],
+                "processors": "knf:basalt_deltas/degradation/solar",
                 "projection": "rigid"
             },
             "weight": 1
