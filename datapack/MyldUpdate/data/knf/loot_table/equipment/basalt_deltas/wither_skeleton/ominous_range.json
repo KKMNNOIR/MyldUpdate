@@ -85,71 +85,82 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:netherite_boots",
-            "functions": [
+            "type": "minecraft:alternatives",
+            "children": [
               {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:protection": 4
-                },
+                "type": "minecraft:item",
                 "conditions": [
                   {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.3
+                    "chance": 0.25
+                  }
+                ],
+                "name": "minecraft:netherite_boots",
+                "functions": [
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:protection": 4
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:blast_protection": 4
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:projectile_protection": 4
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.3
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:unbreaking": 3
+                    },
+                    "conditions": [
+                      {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.375
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:blast_protection": 4
-                },
-                "conditions": [
+                "type": "minecraft:item",
+                "name": "minecraft:netherite_boots",
+                "functions": [
                   {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.3
+                    "function": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "kkmnnoir:falling_immunity": 1
+                    }
                   }
                 ]
-              },
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:projectile_protection": 4
-                },
-                "conditions": [
-                  {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.3
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:unbreaking": 3
-                },
-                "conditions": [
-                  {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.375
-                  }
-                ]
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.375
               }
             ]
           }
-        ],
-        "conditions": [
-            {
-                "condition": "minecraft:random_chance",
-                "chance": 0.25
-            }
         ]
       },
       {

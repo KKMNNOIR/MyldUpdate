@@ -12,7 +12,8 @@
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
-                                "kkmnnoir:fire_trails": 1
+                                "kkmnnoir:fire_trails": 1,
+                                "minecraft:knockback": 2
                             }
                         }
                     ]
@@ -32,8 +33,8 @@
                             "enchantments": {
                                 "minecraft:fire_aspect": {
                                     "type": "minecraft:uniform",
-                                    "min": 4,
-                                    "max": 7
+                                    "min": 2,
+                                    "max": 3
                                 }
                             }
                         }
