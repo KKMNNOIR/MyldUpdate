@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "vanilla_plus:pale_undergarden/clay_pool_with_creaking_pole",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "vanilla_plus:pale_undergarden/clay_with_creaking_pole",
+      "placement": []
+    }
+  }
+}

@@ -11,45 +11,26 @@
         "per_level_above_first": 1
     },
     "weight": 1,
-    "supported_items": "minecraft:fire_charge",
+    "supported_items": "#minecraft:enchantable/armor",
     "slots": [
         "any"
     ],
     "effects": {
-        "minecraft:projectile_spawned": [
+        "minecraft:post_attack": [
             {
                 "effect": {
-                    "type": "minecraft:spawn_particles",
-                    "particle": {
-                        "type": "minecraft:flame"
-                    },
-                    "horizontal_position": {
-                        "type": "in_bounding_box",
-                        "offset": 0,
-                        "scale": 1
-                    },
-                    "horizontal_velocity": {
-                        "base": 0,
-                        "movement_scale": 1
-                    },
-                    "vertical_position": {
-                        "type": "in_bounding_box",
-                        "offset": 0,
-                        "scale": 1
-                    },
-                    "vertical_velocity": {
-                        "base": 0,
-                        "movement_scale": 1
-                    },
-                    "speed": 0
-                }
-            }
-        ],
-        "minecraft:location_changed": [
+                    "type": "minecraft:run_function",
+                    "function": "knf:ench_func_test"
+                },
+                "enchanted": "victim",
+                "affected": "damaging_entity"
+            },
             {
+                "enchanted": "victim",
+                "affected": "victim",
                 "effect": {
-                    "type": "minecraft:ignite",
-                    "duration": 120
+                    "type": "minecraft:run_function",
+                    "function": "knf:ench_test_3"
                 }
             }
         ]

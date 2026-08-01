@@ -10,6 +10,5 @@
     "max_distance_from_center": 80,
     "size": 7,
     "start_pool": "vanilla_plus:igloo/ruined/original_start",
-    "use_expansion_hack": false,
-    "liquid_settings": "ignore_waterlogging"
+    "use_expansion_hack": false
 }

@@ -1,6 +1,9 @@
 {
-    "type": "minecraft:forest_rock",
+    "type": "minecraft:block_blob",
     "config": {
+        "can_place_on": {
+            "type": "minecraft:solid"
+        },
         "state": {
             "Name": "minecraft:obsidian"
         }

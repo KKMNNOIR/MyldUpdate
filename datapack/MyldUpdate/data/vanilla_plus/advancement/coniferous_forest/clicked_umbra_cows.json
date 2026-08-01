@@ -8,11 +8,19 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:interaction",
-                            "nbt": "{Tags:[\"vpUmbraCowClickPoint\"]}",
+                            "minecraft:entity_type": "minecraft:interaction",
                             "vehicle": {
-                                "type": "minecraft:cow",
-                                "nbt": "{Tags:[\"vpUmbraCow\"]}"
+                                "minecraft:entity_type": "minecraft:cow",
+                                "minecraft:entity_tags": {
+                                    "any_of": [
+                                        "vpUmbraCow"
+                                    ]
+                                }
+                            },
+                            "minecraft:entity_tags": {
+                                "any_of": [
+                                    "vpUmbraCowClickPoint"
+                                ]
                             }
                         }
                     }

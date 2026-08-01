@@ -56,6 +56,33 @@
         },
         {
             "type": "minecraft:biome"
+        },
+        {
+            "type": "minecraft:count",
+            "count": 100
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -7,
+                "max": 7,
+                "plateau": 0
+            },
+            "y_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                "offset": [0,-1,0]
+            }
         }
     ]
 }

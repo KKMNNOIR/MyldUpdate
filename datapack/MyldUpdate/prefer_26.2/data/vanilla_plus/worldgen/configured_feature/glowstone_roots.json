@@ -1,0 +1,169 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 0,
+        "y_spread": 6,
+        "feature": {
+            "feature": {
+                "type": "minecraft:random_selector",
+                "config": {
+                    "default": {
+                        "feature": {
+                            "type": "minecraft:no_op",
+                            "config": {}
+                        },
+                        "placement": []
+                    },
+                    "features": [
+                        {
+                            "feature": {
+                                "feature": "vanilla_plus:glowstone_roots/first",
+                                "placement": [
+                                    {
+                                        "type": "minecraft:block_predicate_filter",
+                                        "predicate": {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:replaceable"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_block_tag",
+                                                    "offset": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                    ],
+                                                    "tag": "minecraft:nether_carver_replaceables"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "chance": 0.3
+                        },
+                        {
+                            "feature": {
+                                "feature": "vanilla_plus:glowstone_roots/second",
+                                "placement": [
+                                    {
+                                        "type": "minecraft:random_offset",
+                                        "xz_spread": 0,
+                                        "y_spread": -4
+                                    },
+                                    {
+                                        "type": "minecraft:environment_scan",
+                                        "direction_of_search": "up",
+                                        "max_steps": 32,
+                                        "target_condition": {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "blocks": "minecraft:glowstone",
+                                                    "offset": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "chance": 0.3
+                        },
+                        {
+                            "feature": {
+                                "feature": "vanilla_plus:glowstone_roots/third",
+                                "placement": [
+                                    {
+                                        "type": "minecraft:random_offset",
+                                        "xz_spread": 0,
+                                        "y_spread": -4
+                                    }
+                                ]
+                            },
+                            "chance": 0.3
+                        },
+                        {
+                            "feature": {
+                                "feature": "vanilla_plus:glowstone_roots/horizontal",
+                                "placement": [
+                                    {
+                                        "type": "minecraft:random_offset",
+                                        "xz_spread": 0,
+                                        "y_spread": -16
+                                    },
+                                    {
+                                        "type": "minecraft:environment_scan",
+                                        "direction_of_search": "up",
+                                        "max_steps": 32,
+                                        "target_condition": {
+                                            "type": "minecraft:all_of",
+                                            "predicates": [
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "blocks": "minecraft:glowstone"
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "blocks": "minecraft:glowstone",
+                                                    "offset": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "minecraft:matching_blocks",
+                                                    "blocks": "minecraft:glowstone",
+                                                    "offset": [
+                                                        0,
+                                                        -1,
+                                                        0
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "chance": 0.1
+                        }
+                    ]
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_block_tag",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "tag": "vanilla_plus:glowstone_roots_valid_blocks"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "tries": 300
+    }
+}

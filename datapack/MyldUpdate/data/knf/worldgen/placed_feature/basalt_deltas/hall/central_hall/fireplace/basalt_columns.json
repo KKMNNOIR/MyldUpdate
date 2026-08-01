@@ -1,14 +1,45 @@
 {
-    "feature": "knf:basalt_deltas/hall/central_hall/fireplace/basalt_columns",
-    "placement": [
-        {
-            "type": "minecraft:random_offset",
-            "xz_spread": {
-                "type": "minecraft:uniform",
-                "min_inclusive": -2,
-                "max_inclusive": 2
-            },
-            "y_spread": 0
-        }
-    ]
+	"feature": "knf:basalt_deltas/hall/central_hall/fireplace/basalt_column",
+	"placement": [
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"min_inclusive": -2,
+				"max_inclusive": 2
+			},
+			"y_spread": 0
+		},
+		{
+			"type": "minecraft:count",
+			"count": 4
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:trapezoid",
+				"min": -1,
+				"max": 1,
+				"plateau": 0
+			},
+			"y_spread": 0
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+						"type": "minecraft:matching_blocks",
+						"blocks": ["minecraft:basalt", "minecraft:magma_block"],
+						"offset": [0, -1, 0]
+					},
+					{
+						"type": "minecraft:matching_blocks",
+						"blocks": ["minecraft:air"]
+					}
+				]
+			}
+		}
+	]
 }

@@ -1,0 +1,37 @@
+{
+    "feature": "vanilla_plus:basalt_trees",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 256
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "absolute": 33
+                },
+                "max_inclusive": {
+                    "below_top": 5
+                }
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:not",
+                "predicate": {
+                    "type": "minecraft:matching_fluids",
+                    "fluids": "minecraft:lava"
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

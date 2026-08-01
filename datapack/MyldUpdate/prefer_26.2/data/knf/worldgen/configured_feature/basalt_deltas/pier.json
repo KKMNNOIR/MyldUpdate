@@ -1,0 +1,125 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "down",
+        "allowed_placement": {
+            "type": "minecraft:any_of",
+            "predicates": [
+                {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:has_sturdy_face",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "direction": "up"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:not",
+                            "predicate": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_bricks",
+                                    "minecraft:polished_blackstone_brick_wall",
+                                    "minecraft:cracked_nether_bricks",
+                                    "minecraft:cracked_polished_blackstone_bricks",
+                                    "minecraft:ladder",
+                                    "minecraft:polished_blackstone"
+                                ],
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 2,
+                    "max_inclusive": 5
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            },
+                            "weight": 2
+                        },
+                        {
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            },
+                            "weight": 3
+                        }
+                    ]
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 1,
+                    "max_inclusive": 2
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:cracked_polished_blackstone_bricks"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 2,
+                    "max_inclusive": 6
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:smooth_basalt"
+                    }
+                }
+            },
+            {
+                "height": 1024,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 7,
+                            "data": {
+                                "Name": "minecraft:basalt"
+                            }
+                        },
+                        {
+                            "weight": 2,
+                            "data": {
+                                "Name": "minecraft:cobbled_deepslate"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "description": {
+        "translate": "enchantment.kkmnnoir.zombie_rider",
+        "fallback": "腐馬乗り"
+    },
+    "max_level": 1,
+    "anvil_cost": 0,
+    "min_cost": {
+        "base": 4,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 4
+    },
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "vanilla_plus:trial_chambers/bursting_miasma/zombie_rider"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"vpBurstingMiasma\"]}"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"vpMiasmaRided\"]}"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

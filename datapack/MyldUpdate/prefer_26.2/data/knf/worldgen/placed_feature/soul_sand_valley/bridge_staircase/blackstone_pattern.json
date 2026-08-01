@@ -1,0 +1,14 @@
+{
+    "feature": "knf:soul_sand_valley/bridge_staircase/blackstone_pattern",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 1
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+        }
+    ]
+}

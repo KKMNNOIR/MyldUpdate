@@ -1,0 +1,221 @@
+{
+    "type": "minecraft:archaeology",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:potion_contents": {
+                                    "potion": "minecraft:strong_healing",
+                                    "custom_effects": [
+                                        {
+                                            "id": "minecraft:absorption",
+                                            "amplifier": 0,
+                                            "duration": 20,
+                                            "ambient": true,
+                                            "show_icon": false,
+                                            "show_particles": false
+                                        },
+                                        {
+                                            "id": "minecraft:bad_omen",
+                                            "duration": 32768,
+                                            "amplifier": 0
+                                        },
+                                        {
+                                            "id": "minecraft:trial_omen",
+                                            "amplifier": 0,
+                                            "duration": 32768
+                                        },
+                                        {
+                                            "id": "minecraft:raid_omen",
+                                            "amplifier": 0,
+                                            "duration": 32768
+                                        },
+                                        {
+                                            "id": "minecraft:blindness",
+                                            "amplifier": 0,
+                                            "duration": 400
+                                        },
+                                        {
+                                            "id": "minecraft:darkness",
+                                            "amplifier": 0,
+                                            "duration": 400
+                                        },
+                                        {
+                                            "id": "minecraft:conduit_power",
+                                            "amplifier": 0,
+                                            "duration": 100
+                                        },
+                                        {
+                                            "id": "minecraft:dolphins_grace",
+                                            "amplifier": 0,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "minecraft:fire_resistance",
+                                            "amplifier": 0,
+                                            "duration": 40
+                                        },
+                                        {
+                                            "id": "minecraft:glowing",
+                                            "amplifier": 0,
+                                            "duration": 8192
+                                        },
+                                        {
+                                            "id": "minecraft:haste",
+                                            "amplifier": 0,
+                                            "duration": 60
+                                        },
+                                        {
+                                            "id": "minecraft:health_boost",
+                                            "amplifier": 0,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "minecraft:hero_of_the_village",
+                                            "amplifier": 0,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "minecraft:hunger",
+                                            "amplifier": 4,
+                                            "duration": 400
+                                        },
+                                        {
+                                            "id": "minecraft:infested",
+                                            "amplifier": 0,
+                                            "duration": 32768,
+                                            "show_icon": false,
+                                            "show_particles": false
+                                        },
+                                        {
+                                            "id": "minecraft:instant_damage",
+                                            "amplifier": 4,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "minecraft:invisibility",
+                                            "amplifier": 0,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "minecraft:jump_boost",
+                                            "amplifier": 0,
+                                            "duration": 8192
+                                        },
+                                        {
+                                            "id": "minecraft:levitation",
+                                            "amplifier": 0,
+                                            "duration": 1024
+                                        },
+                                        {
+                                            "id": "minecraft:luck",
+                                            "amplifier": 0,
+                                            "duration": 32768
+                                        },
+                                        {
+                                            "id": "minecraft:mining_fatigue",
+                                            "amplifier": 4,
+                                            "duration": 6000
+                                        },
+                                        {
+                                            "id": "minecraft:nausea",
+                                            "amplifier": 0,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "minecraft:night_vision",
+                                            "amplifier": 0,
+                                            "duration": 2048
+                                        },
+                                        {
+                                            "id": "minecraft:oozing",
+                                            "amplifier": 0,
+                                            "duration": 32768
+                                        },
+                                        {
+                                            "id": "minecraft:poison",
+                                            "amplifier": 4,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "minecraft:resistance",
+                                            "amplifier": 1,
+                                            "duration": 1200
+                                        },
+                                        {
+                                            "id": "minecraft:saturation",
+                                            "amplifier": 4,
+                                            "duration": 60
+                                        },
+                                        {
+                                            "id": "minecraft:slow_falling",
+                                            "amplifier": 0,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "minecraft:slowness",
+                                            "amplifier": 2,
+                                            "duration": 120
+                                        },
+                                        {
+                                            "id": "minecraft:speed",
+                                            "amplifier": 255,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "minecraft:strength",
+                                            "amplifier": 1,
+                                            "duration": 40
+                                        },
+                                        {
+                                            "id": "minecraft:unluck",
+                                            "amplifier": 4,
+                                            "duration": 8192
+                                        },
+                                        {
+                                            "id": "minecraft:water_breathing",
+                                            "amplifier": 0,
+                                            "duration": 1200
+                                        },
+                                        {
+                                            "id": "minecraft:weakness",
+                                            "amplifier": 4,
+                                            "duration": 6000
+                                        },
+                                        {
+                                            "id": "minecraft:weaving",
+                                            "amplifier": 0,
+                                            "duration": 32768,
+                                            "show_icon": false,
+                                            "show_particles": false
+                                        },
+                                        {
+                                            "id": "minecraft:wind_charged",
+                                            "amplifier": 0,
+                                            "duration": 32768,
+                                            "show_icon": false,
+                                            "show_particles": false
+                                        },
+                                        {
+                                            "id": "minecraft:wither",
+                                            "amplifier": 4,
+                                            "duration": 200
+                                        }
+                                    ]
+                                }                                
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

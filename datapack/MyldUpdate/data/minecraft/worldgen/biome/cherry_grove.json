@@ -6,33 +6,33 @@
     ],
   "downfall": 0.8,
   "effects": {
-    "fog_color": 12638463,
     "foliage_color": 11983713,
     "grass_color": 11983713,
-    "mood_sound": {
-      "block_search_extent": 8,
-      "offset": 2.0,
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000
-    },
-    "music": [
-      {
-        "data": {
-          "max_delay": 24000,
-          "min_delay": 12000,
-          "replace_current_music": false,
-          "sound": "minecraft:music.overworld.cherry_grove"
-        },
-        "weight": 1
+    "water_color": 6141935
+  },
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.overworld.cherry_grove",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.overworld.cherry_grove",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
       }
-    ],
-    "sky_color": 8103167,
-    "water_color": 6141935,
-    "water_fog_color": 6141935
+    },
+    "minecraft:visual/sky_color": 8103167,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 6141935
   },
   "features": [
     [],
     [
+      "vanilla_plus:lake_water_surface_mossy",
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],

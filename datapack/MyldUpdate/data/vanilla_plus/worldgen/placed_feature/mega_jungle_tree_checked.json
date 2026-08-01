@@ -7,7 +7,7 @@
                 "type": "minecraft:would_survive",
                 "state": {
                     "Name": "minecraft:jungle_sapling",
-                    "stage": "0"
+                    "Properties": {"stage": "0"}
                 }
             }
         }

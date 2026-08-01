@@ -1,46 +1,13 @@
 {
     "feature": {
-        "type": "minecraft:random_patch",
+        "type": "minecraft:simple_block",
         "config": {
-            "feature": {
-                "feature": {
-                    "type": "minecraft:simple_block",
-                    "config": {
-                        "to_place": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                                "Name": "minecraft:frogspawn"
-                            }
-                        }
-                    }
-                },
-                "placement": [
-                    {
-                        "type": "minecraft:block_predicate_filter",
-                        "predicate": {
-                            "type": "minecraft:all_of",
-                            "predicates": [
-                                {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": ["minecraft:air"]
-                                },
-                                {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": ["minecraft:water"],
-                                    "offset": [
-                                        0,
-                                        -1,
-                                        0
-                                    ]
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "tries": 30,
-            "xz_spread": 0,
-            "y_spread": 0
+            "to_place": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:frogspawn"
+                }
+            }
         }
     },
     "placement": [
@@ -57,6 +24,27 @@
         },
         {
             "type": "minecraft:biome"
+        },
+        {
+            "type": "minecraft:count",
+            "count": 30
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:air"]
+                    },
+                    {
+                        "type": "minecraft:matching_fluids",
+                        "fluids": "#minecraft:water",
+                        "offset": [0,-1,0]
+                    }
+                ]
+            }
         }
     ]
 }

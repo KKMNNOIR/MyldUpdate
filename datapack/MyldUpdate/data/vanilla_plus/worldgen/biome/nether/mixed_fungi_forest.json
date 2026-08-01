@@ -6,53 +6,63 @@
             "vanilla_plus:nether_cave"
   ],
   "effects": {
-    "mood_sound": {
-      "sound": {
-        "sound_id": "minecraft:ambient.mixed_fungi_forest.mood"
-      },
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": {
-        "sound_id": "minecraft:ambient.mixed_fungi_forest.additions"
-      },
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.crimson_forest",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
+    "water_color": 15496969
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": {
+          "sound_id": "minecraft:ambient.mixed_fungi_forest.mood"
         },
-        "weight": 3
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": {
+          "sound_id": "minecraft:ambient.mixed_fungi_forest.additions"
+        },
+        "tick_chance": 0.0111
+      },
+      "loop": {
+        "sound_id": "minecraft:ambient.mixed_fungi_forest.loop"
+      }
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": {
+          "sound_id": "minecraft:music.nether.mixed_fungi_forest"
+        },
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": {
+          "sound_id": "minecraft:music.nether.mixed_fungi_forest"
+        },
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:crimson_spore"
+        },
+        "probability": 0.025
       },
       {
-        "data": {
-          "sound": "minecraft:music.nether.warped_forest",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
+        "particle": {
+          "type": "minecraft:warped_spore"
         },
-        "weight": 1
+        "probability": 0.0125
       }
     ],
-    "particle": {
-      "options": {
-        "type": "minecraft:crimson_spore"
-      },
-      "probability": 0.025
-    },
-    "ambient_sound": {
-      "sound_id": "minecraft:ambient.mixed_fungi_forest.loop"
-    },
-    "sky_color": 3343107,
-    "fog_color": 3343107,
-    "water_color": 15496969,
-    "water_fog_color": 15496969
+    "minecraft:visual/sky_color": 3343107,
+    "minecraft:visual/fog_color": "#2f0333",
+    "minecraft:visual/water_fog_color": 15496969
   },
   "features": [
     [],

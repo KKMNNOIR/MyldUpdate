@@ -1,37 +1,50 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.nether_wastes.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.nether_wastes.additions",
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.nether_wastes",
-          "min_delay": 1200,
-          "max_delay": 2400,
-          "replace_current_music": false
-        },
-        "weight": 1
-      }
-    ],
-    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
-    "sky_color": 3344392,
-    "fog_color": 3344392,
-    "water_color": 9460055,
-    "water_fog_color": 9460055,
-    "particle": {
-      "options": {
-        "type": "minecraft:crimson_spore"
+    "water_color": 9460055
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.nether_wastes.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
       },
-      "probability": 0.0025
-    }
+      "additions": {
+        "sound": "minecraft:ambient.nether_wastes.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.nether_wastes.loop"
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": {
+          "sound_id": "minecraft:music.nether.sparse_crimson_plains"
+        },
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": {
+          "sound_id": "minecraft:music.nether.sparse_crimson_plains"
+        },
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:visual/sky_color": 3344392,
+    "minecraft:visual/fog_color": 3344392,
+    "minecraft:visual/water_fog_color": 9460055,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:crimson_spore"
+        },
+        "probability": 0.0025
+      }
+    ]
   },
   "carvers": [
             "vanilla_plus:nether_cave"

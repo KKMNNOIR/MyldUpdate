@@ -1,0 +1,115 @@
+{
+    "weight": 5,
+    "description": {
+        "translate": "enchantment.kkmnnoir.obverblow",
+        "fallback": "オーバーブロウ"
+    },
+    "supported_items": "#minecraft:enchantable/mace",
+    "slots": [
+        "mainhand"
+    ],
+    "anvil_cost": 0,
+    "min_cost": {
+        "base": 4,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 1
+    },
+    "max_level": 3,
+    "exclusive_set": [
+        "minecraft:wind_burst",
+        "minecraft:density"
+    ],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "block_interaction": "trigger",
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                      "type": "minecraft:lookup",
+                      "fallback": {
+                        "type": "minecraft:linear",
+                        "base": 1.5,
+                        "per_level_above_first": 0.35
+                      },
+                      "values": [
+                        1.2,
+                        1.75,
+                        2.2
+                      ]
+                    },
+                    "large_particle": {
+                      "type": "minecraft:gust_emitter_large"
+                    },
+                    "radius": 3.5,
+                    "small_particle": {
+                      "type": "minecraft:gust_emitter_small"
+                    },
+                    "sound": "minecraft:entity.wind_charge.wind_burst"
+                  }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+              "affected": "victim",
+              "effect": {
+                "type": "minecraft:explode",
+                "block_interaction": "trigger",
+                "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                "knockback_multiplier": {
+                  "type": "minecraft:lookup",
+                  "fallback": {
+                    "type": "minecraft:linear",
+                    "base": 1.5,
+                    "per_level_above_first": 0.35
+                  },
+                  "values": [
+                    1.2,
+                    1.75,
+                    2.2
+                  ]
+                },
+                "large_particle": {
+                  "type": "minecraft:gust_emitter_large"
+                },
+                "radius": 3.5,
+                "small_particle": {
+                  "type": "minecraft:gust_emitter_small"
+                },
+                "sound": "minecraft:entity.wind_charge.wind_burst"
+              },
+              "enchanted": "attacker",
+              "requirements": {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "flags": {
+                    "is_flying": false
+                  },
+                  "movement": {
+                    "fall_distance": {
+                      "min": 1.5
+                    }
+                  }
+                }
+              }
+            }
+        ],
+        "minecraft:smash_damage_per_fallen_block": [
+            {
+              "effect": {
+                "type": "minecraft:add",
+                "value": {
+                  "type": "minecraft:linear",
+                  "base": 0.5,
+                  "per_level_above_first": 0.5
+                }
+              }
+            }
+        ]
+    }
+}

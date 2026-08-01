@@ -4,13 +4,7 @@
         {
             "condition": "minecraft:location_check",
             "predicate": {
-                "structure": "minecraft:fortress"
-            }
-        },
-        {
-            "condition": "minecraft:location_check",
-            "predicate": {
-                "structure": "vanilla_plus:soul_sand_nether_fortress"
+                "structures": ["minecraft:fortress","knf:soul_sand_nether_fortress","knf:ruins_nether_fortress"]
             }
         }
     ]

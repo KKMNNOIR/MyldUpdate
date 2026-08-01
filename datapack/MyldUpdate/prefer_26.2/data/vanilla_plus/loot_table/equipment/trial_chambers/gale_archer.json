@@ -1,0 +1,121 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "kkmnnoir:gust": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 1,
+          "max": 4
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_boots",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:trim": {
+                    "material": "minecraft:gold",
+                    "pattern": "minecraft:flow"
+                  }
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_chestplate",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:trim": {
+                    "material": "minecraft:gold",
+                    "pattern": "minecraft:flow"
+                  }
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_helmet",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:trim": {
+                    "material": "minecraft:gold",
+                    "pattern": "minecraft:flow"
+                  }
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_leggings",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:trim": {
+                    "material": "minecraft:gold",
+                    "pattern": "minecraft:flow"
+                  }
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

@@ -24,6 +24,25 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "minecraft:not",
+                            "predicate": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                    "minecraft:polished_blackstone_bricks",
+                                    "minecraft:polished_blackstone_brick_wall",
+                                    "minecraft:cracked_nether_bricks",
+                                    "minecraft:cracked_polished_blackstone_bricks",
+                                    "minecraft:ladder",
+                                    "minecraft:polished_blackstone"
+                                ],
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ]
+                            }
                         }
                     ]
                 }
@@ -32,7 +51,7 @@
         "prioritize_tip": true,
         "layers": [
             {
-                "height": 1024,
+                "height": 2,
                 "provider": {
                     "type": "minecraft:weighted_state_provider",
                     "entries": [
@@ -43,21 +62,61 @@
                             }
                         },
                         {
-                            "weight": 4,
+                            "weight": 3,
                             "data": {
                                 "Name": "minecraft:cracked_polished_blackstone_bricks"
                             }
                         },
                         {
+                            "weight": 1,
                             "data": {
                                 "Name": "minecraft:blackstone"
-                            },
-                            "weight": 2
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "height": 1024,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 6,
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_brick_wall"
+                            }
                         },
                         {
                             "weight": 2,
                             "data": {
                                 "Name": "minecraft:blackstone_wall"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 6,
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 3,
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:blackstone"
                             }
                         }
                     ]

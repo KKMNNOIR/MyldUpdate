@@ -40,7 +40,7 @@
                             }
                         ],
                         "direct_entity": {
-                            "type": "minecraft:wind_charge"
+                            "minecraft:entity_type": "minecraft:wind_charge"
                         }
                     }
                 }

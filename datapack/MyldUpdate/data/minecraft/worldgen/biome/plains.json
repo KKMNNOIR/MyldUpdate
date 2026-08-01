@@ -1,15 +1,11 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "water_color": 4501493,
-    "water_fog_color": 4501493,
-    "sky_color": 7907327,
-    "fog_color": 12638463
+    "water_color": 4501493
+  },
+  "attributes": {
+    "minecraft:visual/sky_color": 7907327,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 4501493
   },
   "carvers": [
     "minecraft:cave",
@@ -19,6 +15,7 @@
   "features": [
     [],
     [
+      "vanilla_plus:lake_water_surface",
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],

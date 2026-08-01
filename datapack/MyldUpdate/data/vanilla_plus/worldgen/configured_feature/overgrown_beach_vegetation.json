@@ -8,7 +8,7 @@
             "state": {
                 "Name": "minecraft:grass_block",
                 "Properties": {
-                    "snowed": "false"
+                    "snowy": "false"
                 }
             }
         },

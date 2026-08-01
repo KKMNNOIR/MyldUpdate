@@ -7,11 +7,14 @@
             "upper_size": 1,
             "limit": 64
         },
-        "force_dirt": false,
-        "dirt_provider": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:rooted_dirt"
+        "below_trunk_provider": {
+            "type": "minecraft:rule_based_state_provider",
+            "rules": [],
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:rooted_dirt"
+                }
             }
         },
         "trunk_placer": {

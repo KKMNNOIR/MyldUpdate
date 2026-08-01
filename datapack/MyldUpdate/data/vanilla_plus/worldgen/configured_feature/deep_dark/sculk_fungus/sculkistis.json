@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:sequence",
+    "config": {
+        "features": [
+            "vanilla_plus:deep_dark/sculk_plexus",
+            "vanilla_plus:deep_dark/sculkystis_main"
+        ]
+    }
+}

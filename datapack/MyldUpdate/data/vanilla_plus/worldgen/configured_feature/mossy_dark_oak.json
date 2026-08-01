@@ -2,7 +2,6 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": false,
-    "force_dirt": false,
     "minimum_size": {
       "type": "minecraft:three_layers_feature_size",
       "limit": 1,
@@ -10,21 +9,6 @@
       "lower_size": 0,
       "middle_size": 1,
       "upper_size": 2
-    },
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:dirt"
-      }
-    },
-    "sapling_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:dark_oak_sapling",
-        "Properties": {
-          "stage": "0"
-        }
-      }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",

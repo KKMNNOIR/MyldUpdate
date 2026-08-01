@@ -1,26 +1,20 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.overworld.jagged_peaks",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
-        },
-        "weight": 1
+    "water_color": 4159204
+  },
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.overworld.jagged_peaks",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
       }
-    ],
-    "sky_color": 7044812,
-    "fog_color": 7572144,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    },
+    "minecraft:visual/sky_color": 7044812,
+    "minecraft:visual/fog_color": 7572144,
+    "minecraft:visual/water_fog_color": 329011,
+    "minecraft:gameplay/increased_fire_burnout": true
   },
   "carvers": [
     "minecraft:cave",

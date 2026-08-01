@@ -1,37 +1,46 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.warped_forest.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.warped_forest.additions",
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.warped_forest",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
-        },
-        "weight": 1
-      }
-    ],
-    "particle": {
-      "options": {
-        "type": "minecraft:warped_spore"
+    "water_color": 61620
+  },
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.warped_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
       },
-      "probability": 0.01428
+      "creative": {
+        "sound": "minecraft:music.nether.warped_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
     },
-    "ambient_sound": "minecraft:ambient.warped_forest.loop",
-    "sky_color": 1705242,
-    "fog_color": 1705242,
-    "water_color": 61620,
-    "water_fog_color": 61620
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.warped_forest.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": "minecraft:ambient.warped_forest.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.warped_forest.loop"
+    },
+    "minecraft:visual/sky_color": 1705242,
+    "minecraft:visual/fog_color": 1705242,
+    "minecraft:visual/water_fog_color": 61620,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:warped_spore"
+        },
+        "probability": 0.01428
+      }
+    ]
   },
   "carvers": [
     "vanilla_plus:nether_cave"

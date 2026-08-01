@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "down",
+        "allowed_placement": {
+            "type": "minecraft:any_of",
+            "predicates": [
+                {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:has_sturdy_face",
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "direction": "up"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "prioritize_tip": true,
+        "layers": [
+            {
+                "height": 1024,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 6,
+                            "data": {
+                                "Name": "minecraft:polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "weight": 4,
+                            "data": {
+                                "Name": "minecraft:cracked_polished_blackstone_bricks"
+                            }
+                        },
+                        {
+                            "data": {
+                                "Name": "minecraft:blackstone"
+                            },
+                            "weight": 2
+                        },
+                        {
+                            "weight": 2,
+                            "data": {
+                                "Name": "minecraft:blackstone_wall"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

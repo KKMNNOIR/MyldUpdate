@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1.0,
+                "max": 4.0
+            },
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_armor"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_weapons"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:chests/basalt_deltas/entrance_vault/enchanted/enchanted_book"
+                }
+            ]
+        }
+    ]
+}

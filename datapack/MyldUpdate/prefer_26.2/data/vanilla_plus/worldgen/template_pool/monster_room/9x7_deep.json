@@ -1,0 +1,14 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:monster_room/floor_mossify",
+                "location": "vanilla_plus:monster_rooms/9x9_deep_floor"
+            }
+        }
+    ]
+}

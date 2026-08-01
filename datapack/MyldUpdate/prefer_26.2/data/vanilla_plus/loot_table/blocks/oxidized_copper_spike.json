@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:armor_stand",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_model_data",
+                            "value": 10000
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:entity_data": {
+                                    "id": "minecraft:armor_stand",
+                                    "Invisible": true,
+                                    "Tags": ["vpOxidizedCopperSpikeBase"]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "target": "custom_name",
+                            "entity": "this",
+                            "name": {
+                                "translate": "block.minecraft.oxidized_copper_spike",
+                                "fallback": "錆びた銅の刺",
+                                "italic": false,
+                                "color": "#6EC59F"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

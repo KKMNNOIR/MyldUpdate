@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": "vanilla_plus:patch_amethyst_buds_floor",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": [
+                                        "minecraft:amethyst_block"
+                                    ],
+                                    "offset": [
+                                        0,
+                                        -1,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:replaceable"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "feature": "vanilla_plus:patch_amethyst_buds_ceiling",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": [
+                                        "minecraft:amethyst_block"
+                                    ],
+                                    "offset": [
+                                        0,
+                                        -1,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:replaceable"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "feature": "vanilla_plus:patch_budding_amethyst_floor",
+                "placement": []
+            },
+            {
+                "feature": "vanilla_plus:patch_budding_amethyst_ceiling",
+                "placement": []
+            }
+        ]
+    }
+}

@@ -3,29 +3,22 @@
     "downfall": 0.5,
     "has_precipitation": true,
     "effects": {
-        "sky_color": 7907327,
-        "fog_color": 12638463,
         "water_color": 4159204,
-        "water_fog_color": 329011,
         "grass_color": 6109850,
-        "foliage_color": 9267916,
-        "mood_sound": {
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
-        },
-        "music": [
-            {
-                "data": {
-                    "sound": "minecraft:music.overworld.dripstone_caves",
-                    "min_delay": 12000,
-                    "max_delay": 24000,
-                    "replace_current_music": false
-                },
-                "weight": 1
+        "foliage_color": 9267916
+    },
+    "attributes": {
+        "minecraft:visual/sky_color": 7907327,
+        "minecraft:visual/fog_color": 12638463,
+        "minecraft:visual/water_fog_color": 329011,
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.overworld.dripstone_caves",
+                "min_delay": 12000,
+                "max_delay": 24000,
+                "replace_current_music": false
             }
-        ]
+        }
     },
     "spawners": {
         "ambient": [
@@ -167,10 +160,15 @@
         ],
         [
             "minecraft:glow_lichen",
-            "vanilla_plus:cristeria_tree",
+            "minecraft:patch_tall_grass_2",
+            "minecraft:trees_plains",
+            "minecraft:flower_plains",
             "minecraft:patch_grass_plain",
             "minecraft:brown_mushroom_normal",
-            "minecraft:red_mushroom_normal"
+            "minecraft:red_mushroom_normal",
+            "minecraft:patch_pumpkin",
+            "minecraft:patch_sugar_cane",
+            "vanilla_plus:cristeria_tree"
         ],
         [
             "minecraft:freeze_top_layer"

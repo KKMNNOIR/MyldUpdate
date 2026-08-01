@@ -1,15 +1,21 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "sky_color": 7842047,
-    "fog_color": 12638463,
-    "water_color": 9079191,
-    "water_fog_color": 9079191
+    "water_color": 9079191
+  },
+  "attributes": {
+    "minecraft:visual/sky_color": 7842047,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 9079191,
+    "minecraft:gameplay/can_pillager_patrol_spawn": false,
+    "minecraft:gameplay/increased_fire_burnout": true,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:mycelium"
+        },
+        "probability": 0.00111
+      }
+    ]
   },
   "carvers": [
     "minecraft:cave",

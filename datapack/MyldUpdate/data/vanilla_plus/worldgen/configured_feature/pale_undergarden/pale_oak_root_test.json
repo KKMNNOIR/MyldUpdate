@@ -19,7 +19,7 @@
             "state": {
                 "Name": "minecraft:creaking_heart",
                 "Properties": {
-                    "creaking": "dormant"
+                    "creaking_heart_state": "dormant"
                 }
             }
         },

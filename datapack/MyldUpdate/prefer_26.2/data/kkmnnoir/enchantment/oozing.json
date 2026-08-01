@@ -1,0 +1,45 @@
+{
+    "description": {
+        "translate": "enchantment.kkmnnoir.oozing",
+        "fallback": "滲出",
+        "color": "green"
+    },
+    "slots": [
+        "chest"
+    ],
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "anvil_cost": 0,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_level": 3,
+    "weight": 1,
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:oozing/summon_slime"
+                },
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.25,
+                            "per_level_above_first": 0.1
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

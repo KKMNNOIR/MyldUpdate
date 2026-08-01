@@ -56,6 +56,7 @@
             ]
         },
         "state_provider": {
+            "type": "minecraft:rule_based_state_provider",
             "rules": [
                 {
                     "if_true": {

@@ -65,6 +65,7 @@
             ]
         },
         "state_provider": {
+            "type": "minecraft:rule_based_state_provider",
             "fallback": {
                 "type": "minecraft:randomized_int_state_provider",
                 "property": "layers",

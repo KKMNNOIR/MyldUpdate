@@ -1,0 +1,15 @@
+{
+    "asset_id": "minecraft:entity/cow/dairy_cow",
+    "model": "normal",
+    "spawn_conditions": [
+        {
+            "priority": 0,
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "minecraft:meadow"
+                ]
+            }
+        }
+    ]
+}

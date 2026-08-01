@@ -4,10 +4,14 @@
         {
             "weight": 1,
             "element": {
-                "element_type": "minecraft:single_pool_element",
+                "element_type": "minecraft:legacy_single_pool_element",
                 "location": "vanilla_plus:test_cross",
                 "projection": "rigid",
                 "processors": [
+                    {
+                        "processor_type": "minecraft:protected_blocks",
+                        "value": "#minecraft:overworld_carver_replaceables"
+                    },
                     {
                         "processor_type": "minecraft:rule",
                         "rules": [

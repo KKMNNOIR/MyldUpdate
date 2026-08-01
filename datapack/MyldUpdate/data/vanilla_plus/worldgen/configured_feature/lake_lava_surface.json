@@ -1,41 +1,55 @@
 {
-    "type": "minecraft:lake",
-    "config": {
-        "fluid": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:lava",
-                "Properties": {
-                    "level": "0"
-                }
-            }
-        },
-        "barrier": {
-            "type": "minecraft:noise_threshold_provider",
-            "seed": 0,
-            "noise": {
-                "firstOctave": -2,
-                "amplitudes": [
-                    1,
-                    1
-                ]
-            },
-            "scale": 1,
-            "threshold": 0,
-            "high_chance": 1,
-            "default_state": {
-                "Name": "minecraft:smooth_basalt"
-            },
-            "low_states": [
-                {
-                    "Name": "minecraft:smooth_basalt"
-                }
-            ],
-            "high_states": [
-                {
-                    "Name": "minecraft:smooth_basalt"
-                }
-            ]
-        }
-    }
+	"type": "minecraft:lake",
+	"config": {
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:lava",
+				"Properties": {
+					"level": "0"
+				}
+			}
+		},
+		"barrier": {
+			"type": "minecraft:noise_threshold_provider",
+			"seed": 0,
+			"noise": {
+				"firstOctave": -2,
+				"amplitudes": [1, 1]
+			},
+			"scale": 1,
+			"threshold": 0,
+			"high_chance": 1,
+			"default_state": {
+				"Name": "minecraft:smooth_basalt"
+			},
+			"low_states": [
+				{
+					"Name": "minecraft:smooth_basalt"
+				}
+			],
+			"high_states": [
+				{
+					"Name": "minecraft:smooth_basalt"
+				}
+			]
+		},
+		"can_place_feature": {
+			"type": "minecraft:true"
+		},
+		"can_replace_with_air_or_fluid": {
+			"type": "minecraft:not",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"tag": "minecraft:features_cannot_replace"
+			}
+		},
+		"can_replace_with_barrier": {
+			"type": "minecraft:not",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"tag": "minecraft:lava_pool_stone_cannot_replace"
+			}
+		}
+	}
 }

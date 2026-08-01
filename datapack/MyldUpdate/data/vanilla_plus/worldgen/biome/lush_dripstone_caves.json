@@ -1,35 +1,21 @@
 {
     "effects": {
-      "mood_sound": {
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000,
-        "block_search_extent": 8,
-        "offset": 2
-      },
-      "music": [
-        {
-          "data": {
-            "sound": "minecraft:music.overworld.lush_caves",
-            "min_delay": 12000,
-            "max_delay": 24000,
-            "replace_current_music": false
+      "water_color": 4159204
+    },
+    "attributes": {
+      "minecraft:audio/background_music": {
+        "default": {
+          "sound": {
+            "sound_id": "minecraft:music.cave.lush_dripstone_caves"
           },
-          "weight": 1
-        },
-        {
-          "data": {
-            "sound": "minecraft:music.overworld.dripstone_caves",
-            "replace_current_music": false,
-            "min_delay": 12000,
-            "max_delay": 24000
-          },
-          "weight": 1
+          "min_delay": 1200,
+          "max_delay": 2400,
+          "replace_current_music": false
         }
-      ],
-      "sky_color": 7907327,
-      "fog_color": 12638463,
-      "water_color": 4159204,
-      "water_fog_color": 329011
+      },
+      "minecraft:visual/sky_color": 7907327,
+      "minecraft:visual/fog_color": 12638463,
+      "minecraft:visual/water_fog_color": 329011
     },
     "carvers": [
     "minecraft:cave",

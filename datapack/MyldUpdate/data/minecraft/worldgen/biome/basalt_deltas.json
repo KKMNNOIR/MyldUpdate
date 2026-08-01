@@ -1,40 +1,49 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.basalt_deltas.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.basalt_deltas.additions",
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.basalt_deltas",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
-        },
-        "weight": 1
-      }
-    ],
-    "particle": {
-      "options": {
-        "type": "minecraft:white_ash"
+    "water_color": 9460055
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.basalt_deltas.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
       },
-      "probability": 0.118093334
+      "additions": {
+        "sound": "minecraft:ambient.basalt_deltas.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.basalt_deltas.loop"
     },
-    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
-    "sky_color": 6840176,
-    "fog_color": 6840176,
-    "water_color": 9460055,
-    "water_fog_color": 9460055
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.basalt_deltas",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.nether.basalt_deltas",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:visual/sky_color": 6840176,
+    "minecraft:visual/fog_color": 6840176,
+    "minecraft:visual/water_fog_color": 9460055,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:white_ash"
+        },
+        "probability": 0.118093334
+      }
+    ]
   },
   "carvers": [
-    "minecraft:nether_cave"
+    "vanilla_plus:nether_cave"
   ],
   "features": [
     [],
@@ -44,8 +53,7 @@
     [
       "minecraft:delta",
       "minecraft:small_basalt_columns",
-      "minecraft:large_basalt_columns",
-      "vanilla_plus:basalt_ceiling_columns"
+      "minecraft:large_basalt_columns"
     ],
     [],
     [

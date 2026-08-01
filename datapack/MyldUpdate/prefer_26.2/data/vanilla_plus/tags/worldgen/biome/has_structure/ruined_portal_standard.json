@@ -1,0 +1,26 @@
+{
+    "values": [
+      "minecraft:beach",
+      "vanilla_plus:grassy_beach",
+      "minecraft:river",
+      "minecraft:taiga",
+      "minecraft:old_growth_pine_taiga",
+      "minecraft:old_growth_spruce_taiga",
+      "minecraft:forest",
+      "minecraft:flower_forest",
+      "minecraft:birch_forest",
+      "minecraft:old_growth_birch_forest",
+      "minecraft:dark_forest",
+      "minecraft:mushroom_fields",
+      "minecraft:dripstone_caves",
+      "minecraft:lush_caves",
+      "minecraft:savanna",
+      "minecraft:plains",
+      "minecraft:sunflower_plains",
+      "vanilla_plus:steppe",
+      "vanilla_plus:wastes",
+      "vanilla_plus:hills",
+      "vanilla_plus:steppe",
+      "vanilla_plus:lush_dripstone_caves"
+    ]
+  }

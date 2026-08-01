@@ -1,0 +1,5 @@
+{
+	"type": "minecraft:add",
+	"argument1": "vanilla_plus:nether/inland/depth",
+	"argument2": "vanilla_plus:nether/ocean/depth"
+}

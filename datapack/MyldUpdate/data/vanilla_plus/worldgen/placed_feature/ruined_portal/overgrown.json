@@ -9,6 +9,43 @@
             "type": "minecraft:random_offset",
             "xz_spread": 0,
             "y_spread": 1
-        }
+        },
+        {
+            "type": "minecraft:count",
+            "count": 300
+        },
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:trapezoid",
+				"min": -12,
+				"max": 12,
+				"plateau": 0
+			},
+			"y_spread": 0
+		},
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 16
+        },
+		{
+			"type": "minecraft:environment_scan",
+			"max_steps": 32,
+			"direction_of_search": "down",
+			"target_condition": {
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+                        "type": "minecraft:replaceable"
+                    },
+					{
+						"type": "minecraft:matching_blocks",
+						"offset": [0, -1, 0],
+						"blocks": ["minecraft:netherrack"]
+					}
+				]
+			}
+		}
     ]
 }

@@ -1,0 +1,20 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/lamp_post",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 8,
+            "element": {
+                "element_type": "minecraft:empty_pool_element"
+            }
+        }
+    ]
+}

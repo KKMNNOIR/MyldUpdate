@@ -9,7 +9,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
                 "block": {
-                    "tag": "vanilla_plus:fortress_monster_spawnables_on"
+                    "blocks": "#vanilla_plus:fortress_monster_spawnables_on"
                 }
             },
             "offsetY": -1

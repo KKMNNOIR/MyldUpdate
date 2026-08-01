@@ -4,8 +4,12 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:interaction",
-                    "nbt": "{Tags:[\"vpOxidizedCopperSpikeInteraction\"]}"
+                    "minecraft:entity_type": "minecraft:interaction",
+                    "minecraft:entity_tags": {
+                        "any_of": [
+                            "vpOxidizedCopperSpikeInteraction"
+                        ]
+                    }
                 }
             }
         }

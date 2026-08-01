@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 83,
+                    "data": {
+                        "Name": "minecraft:obsidian"
+                    }
+                },
+                {
+                    "weight": 17,
+                    "data": {
+                        "Name": "minecraft:magma_block"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:max",
+  "argument1": {
+      "type": "minecraft:squeeze",
+      "argument": {
+          "type": "minecraft:mul",
+          "argument1": 0.64,
+          "argument2": {
+              "type": "minecraft:interpolated",
+              "argument": {
+                  "type": "minecraft:blend_density",
+                  "argument": {
+                      "type": "minecraft:add",
+                      "argument1": 2.5,
+                      "argument2": {
+                          "type": "minecraft:mul",
+                          "argument1": {
+                              "type": "minecraft:add",
+                              "argument1": {
+                                "type": "minecraft:y_clamped_gradient",
+                                "from_y": -8,
+                                "to_y": 24,
+                                "from_value": 0,
+                                "to_value": 1
+                              },
+                            "argument2": 0
+                          },
+                          "argument2": {
+                            "type": "minecraft:add",
+                            "argument1": -2.5,
+                            "argument2": {
+                              "type": "minecraft:max",
+                              "argument1": {
+                                "type": "minecraft:add",
+                                "argument1": {
+                                  "type": "minecraft:y_clamped_gradient",
+                                  "from_y": 300,
+                                  "to_y": 384,
+                                  "from_value": -1,
+                                  "to_value": 1
+                                },
+                                "argument2": {
+                                  "type": "minecraft:noise",
+                                  "noise": "vanilla_plus:nether/ceiling_spine",
+                                  "xz_scale": 8,
+                                  "y_scale": 0
+                                }
+                              },
+                              "argument2": "vanilla_plus:nether/depth"
+                            }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  },
+  "argument2": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 374,
+      "to_y": 384,
+      "from_value": 0,
+      "to_value": 1
+  }
+}

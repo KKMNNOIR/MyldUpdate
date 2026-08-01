@@ -9,6 +9,6 @@
             },
             "absolute": 0.0
         },
-        "type": "interaction"
+        "minecraft:entity_type": "interaction"
     }
 }

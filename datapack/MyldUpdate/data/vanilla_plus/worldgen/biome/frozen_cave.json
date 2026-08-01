@@ -4,28 +4,21 @@
     "temperature": -2,
     "effects": {
         "water_color": 3750089,
-        "water_fog_color": 329011,
         "grass_color": 12564309,
-        "foliage_color": 11445290,
-        "sky_color": 13557994,
-        "fog_color": 12239814,
-        "music": [
-            {
-                "data": {
-                    "sound": "minecraft:music.overworld.lush_caves",
-                    "min_delay": 1200,
-                    "max_delay": 2400,
-                    "replace_current_music": false
-                },
-                "weight": 1
+        "foliage_color": 11445290
+    },
+    "attributes": {
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.overworld.lush_caves",
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
             }
-        ],
-        "mood_sound": {
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
-        }
+        },
+        "minecraft:visual/sky_color": 13557994,
+        "minecraft:visual/fog_color": 12239814,
+        "minecraft:visual/water_fog_color": 329011
     },
     "carvers": [
     "minecraft:cave",

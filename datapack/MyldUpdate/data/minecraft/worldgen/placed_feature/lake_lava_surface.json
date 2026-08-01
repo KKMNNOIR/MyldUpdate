@@ -1,5 +1,5 @@
 {
-  "feature": "vanilla_plus:lake_lava_surface",
+  "feature": "vanilla_plus:lake_lava_surface_complex",
   "placement": [
     {
       "type": "minecraft:rarity_filter",

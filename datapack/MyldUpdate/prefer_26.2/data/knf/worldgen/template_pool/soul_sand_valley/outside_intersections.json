@@ -1,0 +1,29 @@
+{
+    
+    "fallback": "knf:soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 12,
+            "element": {
+                "element_type": "minecraft:list_pool_element",
+                "projection": "rigid",
+                "elements": [
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": "knf:soul_sand_valley/cracking_bridge",
+                        "location": "knf:soul_sand_valley/bridges/intersection_1"
+                    },
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": {
+                            "processors": []
+                        },
+                        "location": "knf:soul_sand_valley/bridges/intersection_1_fossils"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -61,7 +61,7 @@
                                 "provider": {
                                     "type": "minecraft:simple_state_provider",
                                     "state": {
-                                        "Name": "minecraft:chain",
+                                        "Name": "minecraft:iron_chain",
                                         "Properties": {
                                             "waterlogged": "false",
                                             "axis": "y"

@@ -1,0 +1,17 @@
+{
+  "config": {
+    "fluid": {
+      "state": {
+        "Name": "minecraft:magma_block"
+      },
+      "type": "minecraft:simple_state_provider"
+    },
+    "barrier": {
+      "state": {
+        "Name": "minecraft:smooth_basalt"
+      },
+      "type": "minecraft:simple_state_provider"
+    }
+  },
+  "type": "minecraft:lake"
+}

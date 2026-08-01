@@ -1,19 +1,10 @@
 {
-    "ultrawarm": true,
-    "natural": false,
     "coordinate_scale": 8,
     "has_skylight": false,
     "has_ceiling": true,
-    "piglin_safe": true,
-    "respawn_anchor_works": true,
-    "bed_works": true,
     "logical_height": 255,
-    "has_raids": false,
     "infiniburn": "#minecraft:infiniburn_nether",
     "ambient_light": 0.1,
-    "fixed_time": 1000,
-    "name": "the_nether",
-    "effects": "minecraft:the_nether",
     "height": 512,
     "min_y": -32,
     "monster_spawn_block_light_limit": 0,
@@ -21,5 +12,41 @@
         "type": "minecraft:uniform",
         "min_inclusive": 0,
         "max_inclusive": 7
-    }
+    },
+    "attributes": {
+        "minecraft:audio/background_music": {
+            "creative": {
+                "sound": {
+                    "sound_id": "minecraft:music.nether.creative"
+                },
+                "min_delay": 12000,
+                "max_delay": 24000,
+                "replace_current_music": false
+            }
+        },
+        "minecraft:gameplay/fast_lava": true,
+        "minecraft:gameplay/water_evaporates": true,
+        "minecraft:gameplay/respawn_anchor_works": true,
+        "minecraft:gameplay/bed_rule": {
+            "can_sleep": "never",
+            "can_set_spawn": "never",
+            "explodes": true
+        },
+        "minecraft:gameplay/nether_portal_spawns_piglin": false,
+        "minecraft:gameplay/piglins_zombify": false,
+        "minecraft:gameplay/snow_golem_melts": true,
+        "minecraft:visual/default_dripstone_particle": {
+            "type": "minecraft:dripping_dripstone_lava"
+        },
+        "minecraft:visual/sky_light_color": "#7a7aff",
+        "minecraft:visual/sky_light_factor": 0.0,
+        "minecraft:visual/fog_start_distance": 10.0,
+        "minecraft:visual/fog_end_distance": 96.0,
+        "minecraft:gameplay/sky_light_level": 4.0,
+        "minecraft:gameplay/can_start_raid": false
+    },
+    "cardinal_light": "nether",
+    "skybox": "none",
+    "timelines": "#in_nether",
+    "has_fixed_time": true
 }

@@ -1,10 +1,37 @@
 {
-    "feature": "knf:basalt_deltas/wart_chamber/patch_weeping_vines",
-    "placement": [
-        {
-            "type": "minecraft:random_offset",
-            "xz_spread": 0,
-            "y_spread": -1
-        }
-    ]
+	"feature": "knf:basalt_deltas/wart_chamber/weeping_vines",
+	"placement": [
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": -1
+		},
+		{
+			"type": "minecraft:count",
+			"count": 25
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:trapezoid",
+				"min": -5,
+				"max": 5,
+				"plateau": 0
+			},
+			"y_spread": {
+				"type": "minecraft:trapezoid",
+				"min": -1,
+				"max": 1,
+				"plateau": 0
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"blocks": ["minecraft:nether_wart_block"],
+				"offset": [0, 1, 0]
+			}
+		}
+	]
 }

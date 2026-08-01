@@ -1,0 +1,23 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 9,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/terminators/hall_1",
+                "processors": "knf:basalt_deltas/degradation/hall_end",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/terminators/hall_2",
+                "processors": "knf:basalt_deltas/degradation/hall_end",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

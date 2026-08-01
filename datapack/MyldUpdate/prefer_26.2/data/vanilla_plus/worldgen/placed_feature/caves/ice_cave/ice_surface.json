@@ -1,0 +1,54 @@
+{
+    "feature": "vanilla_plus:caves/ice_cave/ice_surface",
+    "placement": [
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": 0
+          },
+          "max_inclusive": {
+            "below_top": 0
+          }
+        }
+      },
+      {
+        "type": "minecraft:count",
+        "count": 32
+      },
+      {
+        "type": "minecraft:count",
+        "count": 20
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:block_predicate_filter",
+        "predicate": {
+          "type": "minecraft:all_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:water"
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:air"
+              ],
+              "offset": [
+                0,
+                1,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+}

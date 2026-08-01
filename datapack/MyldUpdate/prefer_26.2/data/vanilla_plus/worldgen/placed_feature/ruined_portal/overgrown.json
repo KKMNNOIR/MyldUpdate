@@ -1,0 +1,14 @@
+{
+    "feature": "vanilla_plus:ruined_portal/overgrown",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 100
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 1
+        }
+    ]
+}

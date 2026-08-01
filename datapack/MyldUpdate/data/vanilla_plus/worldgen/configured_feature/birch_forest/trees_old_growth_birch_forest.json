@@ -29,7 +29,21 @@
         },
         {
             "chance": 0.125,
-            "feature": "minecraft:fallen_super_birch_tree"
+            "feature": {
+                "feature": "vanilla_plus:birch_forest/fallen_birch_old_growth",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "Name": "minecraft:birch_sapling",
+                                "Properties": {"stage": "0"}
+                            }
+                        }
+                    }
+                ]
+            }
         }
       ]
     }

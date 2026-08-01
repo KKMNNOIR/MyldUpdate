@@ -4,45 +4,56 @@
     "temperature": 2,
     "spawn_costs": {},
     "effects": {
-        "fog_color": 9,
-        "sky_color": 1053205,
         "water_color": 1707284,
-        "water_fog_color": 1707284,
         "grass_color": 12564309,
-        "foliage_color": 11445290,
-        "music": [
-            {
-                "data": {
-                    "sound": {
-                        "sound_id": "minecraft:music.nether.charred_wastes"
-                    },
-                    "min_delay": 1200,
-                    "max_delay": 2400,
-                    "replace_current_music": false
+        "foliage_color": 11445290
+    },
+    "attributes": {
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.nether_wastes.mood",
+                "offset": 2,
+                "block_search_extent": 8,
+                "tick_delay": 6000
+            },
+            "additions": {
+                "sound": "minecraft:ambient.nether_wastes.additions",
+                "tick_chance": 0.0111
+            },
+            "loop": "minecraft:ambient.nether_wastes.loop"
+        },
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": {
+                    "sound_id": "minecraft:music.nether.charred_waste"
                 },
-                "weight": 1
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            },
+            "creative": {
+                "sound": {
+                    "sound_id": "minecraft:music.nether.charred_waste"
+                },
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            }
+        },
+        "minecraft:visual/ambient_particles": [
+            {
+                "particle": {
+                    "type": "minecraft:smoke"
+                },
+                "probability": 0.025
             }
         ],
-        "ambient_sound": "minecraft:ambient.nether_wastes.loop",
-        "mood_sound": {
-            "sound": "minecraft:ambient.nether_wastes.mood",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
-        },
-        "additions_sound": {
-            "sound": "minecraft:ambient.nether_wastes.additions",
-            "tick_chance": 0.0111
-        },
-        "particle": {
-            "options": {
-                "type": "minecraft:smoke"
-            },
-            "probability": 0.025
-        }
+        "minecraft:visual/sky_color": 1053205,
+        "minecraft:visual/fog_color": 9,
+        "minecraft:visual/water_fog_color": 1707284
     },
     "carvers": [
-            "vanilla_plus:nether_cave"
+        "vanilla_plus:nether_cave"
     ],
     "features": [
         [],

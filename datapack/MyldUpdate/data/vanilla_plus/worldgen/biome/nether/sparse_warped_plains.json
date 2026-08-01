@@ -1,40 +1,49 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.nether_wastes.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
+    "water_color": 9460055
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.nether_wastes.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": "minecraft:ambient.nether_wastes.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.nether_wastes.loop"
     },
-    "additions_sound": {
-      "sound": "minecraft:ambient.nether_wastes.additions",
-      "tick_chance": 0.0111
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.nether_wastes",
+        "min_delay": 1200,
+        "max_delay": 2400,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.nether.nether_wastes",
+        "min_delay": 1200,
+        "max_delay": 2400,
+        "replace_current_music": false
+      }
     },
-    "music": [
+    "minecraft:visual/ambient_particles": [
       {
-        "data": {
-          "sound": "minecraft:music.nether.nether_wastes",
-          "min_delay": 1200,
-          "max_delay": 2400,
-          "replace_current_music": false
+        "particle": {
+          "type": "minecraft:warped_spore"
         },
-        "weight": 1
+        "probability": 0.0025
       }
     ],
-    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
-    "sky_color": 3344392,
-    "fog_color": 3344392,
-    "water_color": 9460055,
-    "water_fog_color": 9460055,
-    "particle": {
-      "options": {
-        "type": "minecraft:crimson_spore"
-      },
-      "probability": 0.0025
-    }
+    "minecraft:visual/sky_color": 3344392,
+    "minecraft:visual/fog_color": 3344392,
+    "minecraft:visual/water_fog_color": 9460055
   },
   "carvers": [
-            "vanilla_plus:nether_cave"
+    "vanilla_plus:nether_cave"
   ],
   "features": [
     [],

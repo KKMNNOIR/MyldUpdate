@@ -1,0 +1,79 @@
+{
+    "type": "minecraft:fallen_tree",
+    "config": {
+        "log_length": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 5,
+            "max_inclusive": 15
+        },
+        "trunk_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 2,
+                    "data": {
+                        "Name": "minecraft:birch_log",
+                        "Properties": {"axis": "y"}
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "Name": "minecraft:stripped_birch_log",
+                        "Properties": {"axis": "y"}
+                    }
+                }
+            ]
+        },
+        "stump_decorators": [
+            {
+                "type": "minecraft:trunk_vine"
+            },
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "probability": 0.375,
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 4,
+                            "data": {"Name": "minecraft:moss_carpet"}
+                        },
+                        {
+                            "weight": 1,
+                            "data": {"Name": "minecraft:red_mushroom"}
+                        }
+                    ]
+                }
+            }
+        ],
+        "log_decorators": [
+            {
+                "type": "minecraft:trunk_vine"
+            },
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "probability": 0.375,
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 4,
+                            "data": {"Name": "minecraft:moss_carpet"}
+                        },
+                        {
+                            "weight": 1,
+                            "data": {"Name": "minecraft:red_mushroom"}
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

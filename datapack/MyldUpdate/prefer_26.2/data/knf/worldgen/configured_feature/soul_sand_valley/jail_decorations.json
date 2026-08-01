@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            "knf:soul_sand_valley/jail_decorations/lantern",
+            "knf:soul_sand_valley/jail_decorations/blackstone_pile",
+            "knf:soul_sand_valley/jail_decorations/skull"
+        ]
+    }
+}

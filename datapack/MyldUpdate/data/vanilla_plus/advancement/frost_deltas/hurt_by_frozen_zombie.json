@@ -6,8 +6,12 @@
                 "damage": {
                     "type": {
                         "source_entity": {
-                            "type": "zombie",
-                            "nbt": "{Tags:[\"FrozenZombie\"]}"
+                            "minecraft:entity_type": "zombie",
+                            "minecraft:entity_tags": {
+                                "any_of": [
+                                    "FrozenZombie"
+                                ]
+                            }
                         }
                     }
                 }

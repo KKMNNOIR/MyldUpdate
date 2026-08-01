@@ -6,40 +6,49 @@
             "vanilla_plus:nether_cave"
   ],
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.crimson_forest.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.crimson_forest.additions",
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.crimson_forest",
-          "min_delay": 1200,
-          "max_delay": 2400,
-          "replace_current_music": false
-        },
-        "weight": 1
-      }
-    ],
-    "particle": {
-      "options": {
-        "type": "minecraft:crimson_spore"
-      },
-      "probability": 0.0125
-    },
-    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
-    "sky_color": 3343107,
-    "fog_color": 3343107,
     "water_color": 9460055,
-    "water_fog_color": 9460055,
     "grass_color": 12564309,
     "foliage_color": 11445290
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.crimson_forest.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": "minecraft:ambient.crimson_forest.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.crimson_forest.loop"
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.crimson_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.nether.crimson_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:crimson_spore"
+        },
+        "probability": 0.0125
+      }
+    ],
+    "minecraft:visual/sky_color": 3343107,
+    "minecraft:visual/fog_color": 3343107,
+    "minecraft:visual/water_fog_color": 9460055
   },
   "features": [
     [],

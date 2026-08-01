@@ -3,40 +3,44 @@
     "downfall": 0,
     "has_precipitation": false,
     "effects": {
-        "sky_color": 7430240,
-        "fog_color": 7430240,
         "water_color": 4143941,
-        "water_fog_color": 4340809,
         "grass_color": 13746882,
-        "foliage_color": 12629172,
-        "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
-        "mood_sound": {
-            "sound": "minecraft:ambient.basalt_deltas.mood",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
+        "foliage_color": 12629172
+    },
+    "attributes": {
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.basalt_deltas.mood",
+                "offset": 2,
+                "block_search_extent": 8,
+                "tick_delay": 6000
+            }
         },
-        "additions_sound": {
-            "sound": "minecraft:ambient.basalt_deltas.additions",
-            "tick_chance": 0.0111
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.nether.basalt_deltas",
+                "min_delay": 12000,
+                "max_delay": 24000,
+                "replace_current_music": false
+            },
+            "creative": {
+                "sound": "minecraft:music.nether.basalt_deltas",
+                "min_delay": 12000,
+                "max_delay": 24000,
+                "replace_current_music": false
+            }
         },
-        "music": [
+        "minecraft:visual/ambient_particles": [
             {
-                "data": {
-                    "sound": "minecraft:music.nether.basalt_deltas",
-                    "min_delay": 12000,
-                    "max_delay": 24000,
-                    "replace_current_music": false
+                "particle": {
+                    "type": "minecraft:white_ash"
                 },
-                "weight": 1
+                "probability": 0.118093334
             }
         ],
-        "particle": {
-            "options": {
-                "type": "minecraft:white_ash"
-            },
-            "probability": 0.118093334
-        }
+        "minecraft:visual/sky_color": 7430240,
+        "minecraft:visual/fog_color": 7430240,
+        "minecraft:visual/water_fog_color": 4340809
     },
     "spawners": {
         "ambient": [],

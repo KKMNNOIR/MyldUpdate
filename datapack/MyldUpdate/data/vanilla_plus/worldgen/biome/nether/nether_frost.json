@@ -4,47 +4,58 @@
     "temperature": -2,
     "effects": {
         "water_color": 9460055,
-        "water_fog_color": 9460055,
         "grass_color": 12564309,
-        "foliage_color": 11445290,
-        "sky_color": 13557994,
-        "fog_color": 12239814,
-        "music": [
-            {
-                "data": {
-                    "sound": {
-                        "sound_id": "minecraft:music.nether.nether_frost"
-                    },
-                    "min_delay": 1200,
-                    "max_delay": 2400,
-                    "replace_current_music": false
+        "foliage_color": 11445290
+    },
+    "attributes": {
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": {
+                    "sound_id": "minecraft:ambient.nether_frost.mood"
                 },
-                "weight": 1
+                "offset": 2,
+                "block_search_extent": 8,
+                "tick_delay": 6000
+            },
+            "additions": {
+                "sound": {
+                    "sound_id": "minecraft:ambient.nether_frost.additions"
+                },
+                "tick_chance": 0.0111
+            },
+            "loop": {
+                "sound_id": "minecraft:ambient.nether_frost.loop"
+            }
+        },
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": {
+                    "sound_id": "minecraft:music.nether.nether_frost"
+                },
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            },
+            "creative": {
+                "sound": {
+                    "sound_id": "minecraft:music.nether.nether_frost"
+                },
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            }
+        },
+        "minecraft:visual/ambient_particles": [
+            {
+                "particle": {
+                    "type": "minecraft:white_ash"
+                },
+                "probability": 0.118093334
             }
         ],
-        "ambient_sound": {
-            "sound_id": "minecraft:ambient.nether_frost.loop"
-        },
-        "mood_sound": {
-            "sound": {
-                "sound_id": "minecraft:ambient.nether_frost.mood"
-            },
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
-        },
-        "additions_sound": {
-            "sound": {
-                "sound_id": "minecraft:ambient.nether_frost.additions"
-            },
-            "tick_chance": 0.0111
-        },
-        "particle": {
-            "options": {
-                "type": "minecraft:white_ash"
-            },
-            "probability": 0.118093334
-        }
+        "minecraft:visual/sky_color": 13557994,
+        "minecraft:visual/fog_color": 12239814,
+        "minecraft:visual/water_fog_color": 9460055
     },
     "carvers": [
             "vanilla_plus:nether_cave"

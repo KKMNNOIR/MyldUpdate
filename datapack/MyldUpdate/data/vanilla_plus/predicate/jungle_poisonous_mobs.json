@@ -5,8 +5,12 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "type": "minecraft:zombie",
-                "nbt": "{Tags:[\"JungleZombie\"]}"
+                "minecraft:entity_type": "minecraft:zombie",
+                "minecraft:entity_tags": {
+                    "any_of": [
+                        "JungleZombie"
+                    ]
+                }
             }
         }
     ]

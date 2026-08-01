@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:empty"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.minecraft.basalt_shield",
+                                "fallback": "玄武岩風の盾",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:base_color": "black",
+                                "minecraft:banner_patterns": [
+                                    {
+                                        "color": "light_gray",
+                                        "pattern": "minecraft:gradient_up"
+                                    },
+                                    {
+                                        "color": "orange",
+                                        "pattern": "minecraft:stripe_bottom"
+                                    },
+                                    {
+                                        "color": "gray",
+                                        "pattern": "minecraft:rhombus"
+                                    },
+                                    {
+                                        "color": "gray",
+                                        "pattern": "minecraft:triangle_bottom"
+                                    },
+                                    {
+                                        "color": "gray",
+                                        "pattern": "minecraft:curly_border"
+                                    },
+                                    {
+                                        "color": "black",
+                                        "pattern": "minecraft:triangle_bottom"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

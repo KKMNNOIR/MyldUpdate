@@ -16,13 +16,6 @@
       }
     ],
     "ignore_vines": true,
-    "force_dirt": false,
-    "dirt_provider": {
-      "state": {
-        "Name": "minecraft:dirt"
-      },
-      "type": "minecraft:simple_state_provider"
-    },
     "minimum_size": {
       "limit": 0,
       "lower_size": 0,

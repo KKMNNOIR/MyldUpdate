@@ -1,0 +1,23 @@
+{
+    "fallback": "knf:soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/intersection_1"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/intersection_2"
+            }
+        }
+    ]
+}

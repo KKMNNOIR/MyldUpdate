@@ -1,0 +1,1 @@
+$execute facing entity @e[tag=keAttacked] eyes positioned ~ ~1 ~ positioned ^ ^ ^1 summon $(type) run function kkmnnoir:shoot_back/spawn_projectile

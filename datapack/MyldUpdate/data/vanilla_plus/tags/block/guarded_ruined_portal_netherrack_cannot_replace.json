@@ -1,0 +1,25 @@
+{
+	"values": [
+		"minecraft:netherrack",
+		"minecraft:lava",
+		"minecraft:magma_block",
+		"minecraft:stone_bricks",
+		"minecraft:stone_brick_slab",
+		"minecraft:stone_brick_stairs",
+		"minecraft:obsidian",
+		"minecraft:crying_obsidian",
+		"minecraft:mossy_stone_bricks",
+		"minecraft:mossy_stone_brick_slab",
+		"minecraft:mossy_stone_brick_stairs",
+		"minecraft:chiseled_stone_bricks",
+		"minecraft:stone_brick_wall",
+		"minecraft:mossy_stone_brick_wall",
+		"minecraft:iron_bars",
+		"minecraft:gold_block",
+		"minecraft:chest",
+		"minecraft:smooth_stone_slab",
+		"minecraft:cracked_stone_bricks",
+		"minecraft:air",
+		"minecraft:blackstone"
+	]
+}

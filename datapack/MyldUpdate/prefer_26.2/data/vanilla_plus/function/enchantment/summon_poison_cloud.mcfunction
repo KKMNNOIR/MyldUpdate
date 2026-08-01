@@ -1,0 +1,1 @@
+$summon minecraft:area_effect_cloud ~ ~ ~ {potion_contents:{custom_effects:[{id:"minecraft:poison",amplifier:$(poison_cloud_amplifier),duration:60}]},Particle:{type:"entity_effect",color:[0.071,0.129,0.012,1.00]},Radius:$(poison_cloud_radius)f,Duration:120}

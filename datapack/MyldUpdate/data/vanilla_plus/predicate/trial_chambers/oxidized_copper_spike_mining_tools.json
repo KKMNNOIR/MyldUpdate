@@ -15,8 +15,7 @@
                         ]
                     }
                 },
-                "type_specific": {
-                    "type": "minecraft:player",
+                "minecraft:type_specific/player": {
                     "gamemode": [
                         "survival",
                         "adventure"

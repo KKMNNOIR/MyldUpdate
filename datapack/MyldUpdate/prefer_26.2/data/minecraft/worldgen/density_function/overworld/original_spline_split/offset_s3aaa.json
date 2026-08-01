@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/ridges_folded",
+    "points": [
+      {
+        "location": -1,
+        "value": 0.2,
+        "derivative": 0
+      },
+      {
+        "location": -0.007718053755705778,
+        "value": 0.6164923990472985,
+        "derivative": 0.5522727528409096
+      },
+      {
+        "location": 1.0013078577632264,
+        "value": 1.1563119265354167,
+        "derivative": 0.6226164368070937
+      }
+    ]
+  }
+}

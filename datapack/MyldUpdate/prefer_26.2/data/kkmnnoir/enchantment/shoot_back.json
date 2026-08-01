@@ -1,0 +1,79 @@
+{
+    "weight": 1,
+    "description": {
+        "translate": "enchantments.kkmnnoir.back_shoot",
+        "fallback": "撃ち返し",
+        "color": "light_purple"
+    },
+    "max_level": 3,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "damaging_entity",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:shoot_back/hit_projectile"
+                }
+            },
+            {
+                "enchanted": "victim",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "kkmnnoir:shoot_back/victim"
+                        }
+                    ]
+                }
+            }
+        ],
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:set",
+                    "value": 25.0
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "direct_entity": {
+                            "type": "#kkmnnoir:projectiles"
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:attributes": [
+            {
+                "id": "kkmnnoir:shoot_back_fire_resistance",
+                "attribute": "minecraft:burning_time",
+                "amount": 0.0,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:shoot_back/victim/clear_bad_status"
+                }
+            }
+        ]
+    }
+}

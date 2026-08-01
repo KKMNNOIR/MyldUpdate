@@ -1,0 +1,22 @@
+{
+    "feature": "vanilla_plus:polyporaceae",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 2
+            }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 0,
+                "max_inclusive": 2
+            }
+        }
+    ]
+}

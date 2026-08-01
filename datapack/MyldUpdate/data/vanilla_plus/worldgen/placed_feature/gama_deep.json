@@ -14,6 +14,50 @@
         },
         {
             "type": "minecraft:biome"
+        },
+        {
+            "type": "minecraft:count",
+            "count": 64
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            },
+            "y_spread": 0
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:would_survive",
+                        "state": {
+                            "Name": "minecraft:mangrove_propagule",
+                            "Properties": {
+                                "age": "4",
+                                "hanging": "false",
+                                "stage": "0",
+                                "waterlogged": "true"
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:water"],
+                        "offset": [0,1,0]
+                    },
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:air"],
+                        "offset": [0,2,0]
+                    }
+                ]
+            }
         }
     ]
 }

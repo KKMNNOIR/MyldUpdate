@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:true"
+                }
+            ]
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 2,
+                    "max_inclusive": 9
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "minecraft:polished_basalt",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            },
+                            "weight": 4
+                        },
+                        {
+                            "data": {
+                                "Name": "minecraft:basalt",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            },
+                            "weight": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

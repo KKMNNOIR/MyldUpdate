@@ -1,0 +1,27 @@
+{
+  "feature": "minecraft:large_basalt_columns",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 2
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+          "type": "minecraft:not",
+          "predicate": {
+              "type": "minecraft:matching_block_tag",
+              "tag": "vanilla_plus:fortress_monster_spawnables_on",
+              "offset": [
+                  0,
+                  -1,
+                  0
+              ]
+          }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

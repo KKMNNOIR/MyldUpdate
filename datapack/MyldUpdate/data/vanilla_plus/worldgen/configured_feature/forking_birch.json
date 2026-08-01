@@ -32,12 +32,6 @@
                 }
             }
         },
-        "dirt_provider": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:dirt"
-            }
-        },
         "minimum_size": {
             "type": "minecraft:two_layers_feature_size",
             "lower_size": 0,
@@ -50,7 +44,6 @@
                 "probability": 0.05
             }
         ],
-        "force_dirt": false,
         "ignore_vines": false
     }
 }

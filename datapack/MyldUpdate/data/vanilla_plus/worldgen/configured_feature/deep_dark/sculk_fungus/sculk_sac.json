@@ -7,11 +7,12 @@
             "upper_size": 1,
             "limit": 6
         },
-        "force_dirt": false,
-        "dirt_provider": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:sculk_catalyst"
+        "below_trunk_provider": {
+            "type": "minecraft:rule_based_state_provider",
+            "rules": [],
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {"Name": "minecraft:sculk_catalyst"}
             }
         },
         "ignore_vines": false,

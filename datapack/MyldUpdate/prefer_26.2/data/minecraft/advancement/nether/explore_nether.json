@@ -1,0 +1,320 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_boots",
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "kkmnnoir:advancements_explor_nether"
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.nether.explore_nether.title"
+    },
+    "description": {
+      "translate": "advancements.nether.explore_nether.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/ride_strider",
+  "criteria": {
+    "minecraft:basalt_deltas": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:basalt_deltas"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:crimson_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:crimson_forest"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:nether_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:nether_wastes"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:soul_sand_valley": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:soul_sand_valley"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:warped_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "minecraft:warped_forest"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:black_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/charred_forest"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:blackstone_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/withered_barrens"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:crimson_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/crimson_plains"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:diamond_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/diamond_forest"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:mixed_fungi_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/mixed_fungi_forest"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:nether_frost": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/nether_frost"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:nether_gold_mine": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/nether_gold_mine"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:moldy_nether_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/crimson_barrens"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:white_sands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/white_sands"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:withering_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/withered_barrens_edge"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:warped_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/warped_plains"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:warped_barrens": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/warped_barrens"
+            }
+          }
+        ]
+      }
+    },
+    "vanilla_plus:volcanic_peaks": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "vanilla_plus:nether/volcanic_peaks"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:nether_wastes"
+    ],
+    [
+      "minecraft:soul_sand_valley"
+    ],
+    [
+      "minecraft:crimson_forest"
+    ],
+    [
+      "minecraft:warped_forest"
+    ],
+    [
+      "minecraft:basalt_deltas"
+    ],
+    [
+      "vanilla_plus:black_forest"
+    ],
+    [
+      "vanilla_plus:blackstone_wastes"
+    ],
+    [
+      "vanilla_plus:crimson_plains"
+    ],
+    [
+      "vanilla_plus:diamond_forest"
+    ],
+    [
+      "vanilla_plus:mixed_fungi_forest"
+    ],
+    [
+      "vanilla_plus:moldy_nether_wastes"
+    ],
+    [
+      "vanilla_plus:nether_gold_mine"
+    ],
+    [
+      "vanilla_plus:nether_frost"
+    ],
+    [
+      "vanilla_plus:white_sands"
+    ],
+    [
+      "vanilla_plus:warped_plains"
+    ],
+    [
+      "vanilla_plus:withering_wastes"
+    ],
+    [
+      "vanilla_plus:warped_barrens"
+    ],
+    [
+      "vanilla_plus:volcanic_peaks"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

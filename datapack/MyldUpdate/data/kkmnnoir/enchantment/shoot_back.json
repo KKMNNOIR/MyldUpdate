@@ -53,7 +53,7 @@
                     "condition": "minecraft:damage_source_properties",
                     "predicate": {
                         "direct_entity": {
-                            "type": "#kkmnnoir:projectiles"
+                            "minecraft:entity_type": "#kkmnnoir:projectiles"
                         }
                     }
                 }

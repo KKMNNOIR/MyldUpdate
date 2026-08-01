@@ -1,0 +1,10 @@
+{
+    "feature": "knf:basalt_deltas/hall/solar/patch_wart_block",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -1
+        }
+    ]
+}

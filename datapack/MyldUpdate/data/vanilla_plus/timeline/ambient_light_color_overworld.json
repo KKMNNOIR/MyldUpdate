@@ -1,0 +1,34 @@
+{
+    "clock": "minecraft:overworld",
+    "period_ticks": 24000,
+    "tracks": {
+        "minecraft:visual/ambient_light_color": {
+          "keyframes": [
+            {
+              "ticks": 0,
+              "value": "#000000"
+            },
+            {
+              "ticks": 12000,
+              "value": "#000000"
+            },
+            {
+              "ticks": 12500,
+              "value": "#e35933"
+            },
+            {
+              "ticks": 13000,
+              "value": "#000000"
+            },
+            {
+              "ticks": 23000,
+              "value": "#000000"
+            },
+            {
+              "ticks": 23500,
+              "value": "#e39133"
+            }
+          ]
+        }
+    }
+}

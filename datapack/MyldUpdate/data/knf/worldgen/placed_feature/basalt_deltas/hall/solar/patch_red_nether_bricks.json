@@ -1,10 +1,24 @@
 {
-    "feature": "knf:basalt_deltas/hall/solar/patch_red_nether_bricks",
+    "feature": "knf:basalt_deltas/hall/solar/red_nether_bricks",
     "placement": [
         {
             "type": "minecraft:random_offset",
             "xz_spread": 0,
             "y_spread": -1
+        },
+        {
+            "type": "minecraft:count",
+            "count": 16
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            },
+            "y_spread": 0
         }
     ]
 }

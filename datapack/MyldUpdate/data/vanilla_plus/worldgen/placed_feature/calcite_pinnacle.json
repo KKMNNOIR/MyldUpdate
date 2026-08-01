@@ -2,19 +2,42 @@
     "feature": "vanilla_plus:calcite_pinnacle",
     "placement": [
         {
-            "type": "minecraft:count",
-            "count": 1
+            "type": "minecraft:rarity_filter",
+            "chance": 7
+        },
+        {
+            "type": "minecraft:in_square"
         },
         {
             "type": "minecraft:heightmap",
             "heightmap": "MOTION_BLOCKING"
         },
         {
-            "type": "minecraft:in_square"
+            "type": "minecraft:count",
+            "count": 128
         },
         {
-            "type": "minecraft:rarity_filter",
-            "chance": 7
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -1,
+                "max": 1,
+                "plateau": 0
+            },
+            "y_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -1,
+                "max": 1,
+                "plateau": 0
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": ["minecraft:grass_block","minecraft:dirt","minecraft:stone"],
+                "offset": [0,-1,0]
+            }
         }
     ]
 }

@@ -1,0 +1,49 @@
+{
+    "description": {
+        "translate": "enchantment.kkmnnoir.poison_proof",
+        "fallback": "耐毒",
+        "color": "light_purple"
+    },
+    "anvil_cost": 1,
+    "min_cost": {
+        "base": 4,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 1
+    },
+    "max_level": 1,
+    "slots": [
+        "body",
+        "chest"
+    ],
+    "weight": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "effect": {},
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:bypasses_armor",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:effect_proof/clear_effect"
+                }
+            }
+        ]
+    }
+}

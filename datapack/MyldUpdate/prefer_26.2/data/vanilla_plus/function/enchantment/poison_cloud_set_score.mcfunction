@@ -1,0 +1,1 @@
+scoreboard objectives add enchTestPoisonCloudRadius dummy

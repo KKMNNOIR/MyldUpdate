@@ -7,10 +7,10 @@
                 {
                     "type": "minecraft:any_of",
                     "predicates": [
-                        { //フェンス
+                        {
                             "type": "minecraft:any_of",
                             "predicates": [
-                                { //東西
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -19,7 +19,7 @@
                                                 "minecraft:nether_brick_fence"
                                             ]
                                         },
-                                        { //東/西
+                                        {
                                             "type": "minecraft:any_of",
                                             "predicates": [
                                                 {
@@ -42,7 +42,7 @@
                                                 }
                                             ]
                                         },
-                                        { // 南/北に接続していない
+                                        {
                                             "type": "minecraft:not",
                                             "predicate": {
                                                 "type": "minecraft:any_of",
@@ -79,7 +79,7 @@
                                                 "minecraft:nether_brick_fence"
                                             ]
                                         },
-                                        { //南/北も接続
+                                        {
                                             "type": "minecraft:any_of",
                                             "predicates": [
                                                 {
@@ -102,7 +102,7 @@
                                                 }
                                             ]
                                         },
-                                        { // 東/西に接続していない
+                                        {
                                             "type": "minecraft:not",
                                             "predicate": {
                                                 "type": "minecraft:any_of",
@@ -130,7 +130,7 @@
                                         }
                                     ]
                                 },
-                                { //東
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -185,7 +185,7 @@
                                         }
                                     ]
                                 },
-                                { //西
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -240,7 +240,7 @@
                                         }
                                     ]
                                 },
-                                { //南
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -295,7 +295,7 @@
                                         }
                                     ]
                                 },
-                                { //北
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -350,7 +350,7 @@
                                         }
                                     ]
                                 },
-                                { //南、西
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -410,7 +410,7 @@
                                         }
                                     ]
                                 },
-                                { //北、西
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -470,7 +470,7 @@
                                         }
                                     ]
                                 },
-                                { //南、東
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -530,7 +530,7 @@
                                         }
                                     ]
                                 },
-                                { //北、東
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -590,7 +590,7 @@
                                         }
                                     ]
                                 },
-                                { //独立
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -647,10 +647,10 @@
                                 }
                             ]
                         },
-                        { //塀
+                        { 
                             "type": "minecraft:any_of",
                             "predicates": [
-                                { //東西に接続
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -720,7 +720,7 @@
                                         }
                                     ]
                                 },
-                                { //南北に接続
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -790,7 +790,7 @@
                                         }
                                     ]
                                 },
-                                { //東
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -846,7 +846,7 @@
                                         }
                                     ]
                                 },
-                                { //西
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -902,7 +902,7 @@
                                         }
                                     ]
                                 },
-                                { //南
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -958,7 +958,7 @@
                                         }
                                     ]
                                 },
-                                { //北
+                                {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -1014,7 +1014,7 @@
                                         }
                                     ]
                                 },
-                                { // 隣接なし
+                                { 
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                         {
@@ -1086,6 +1086,7 @@
             ]
         },
         "state_provider": {
+            "type": "minecraft:rule_based_state_provider",
             "fallback": {
                 "type": "minecraft:simple_state_provider",
                 "state": {
@@ -1100,7 +1101,7 @@
                 }
             },
             "rules": [
-                { //フェンスの下がブラックストーンレンガの塀=>空気
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1130,7 +1131,7 @@
                         }
                     }
                 },
-                { //フェンス：東西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1205,7 +1206,7 @@
                         }
                     }
                 },
-                { //フェンス:南北
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1280,7 +1281,7 @@
                         }
                     }
                 },
-                { //フェンス:東
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1350,7 +1351,7 @@
                         }
                     }
                 },
-                { //フェンス:西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1420,7 +1421,7 @@
                         }
                     }
                 },
-                { //フェンス:南
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1490,7 +1491,7 @@
                         }
                     }
                 },
-                { //フェンス:北
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1560,7 +1561,7 @@
                         }
                     }
                 },
-                { //フェンス:南東
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1635,7 +1636,7 @@
                         }
                     }
                 },
-                { //フェンス:北東
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1710,7 +1711,7 @@
                         }
                     }
                 },
-                { //フェンス:南西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1785,7 +1786,7 @@
                         }
                     }
                 },
-                { //フェンス:北西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1860,7 +1861,7 @@
                         }
                     }
                 },
-                { //フェンス:孤立
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -1930,7 +1931,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:東西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2015,7 +2016,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:南北
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2100,7 +2101,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:東
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2171,7 +2172,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:西
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2242,7 +2243,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:南
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2313,7 +2314,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:北
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2384,7 +2385,7 @@
                         }
                     }
                 },
-                { //ネザーレンガ塀:孤立
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2455,7 +2456,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:東西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2540,7 +2541,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:南北
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2625,7 +2626,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:東
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2696,7 +2697,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:西
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2767,7 +2768,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:南
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2838,7 +2839,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:北
+                { 
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -2909,7 +2910,7 @@
                         }
                     }
                 },
-                { //ブラックストーンレンガ塀:孤立
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [

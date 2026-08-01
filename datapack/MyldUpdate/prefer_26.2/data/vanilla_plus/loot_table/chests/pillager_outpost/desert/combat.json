@@ -1,0 +1,176 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 4,
+          "max": 6
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:crossbow",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:crossbow",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 12,
+                  "max": 30
+                },
+                "treasure": true
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:banner_patterns": [
+                    {
+                      "pattern": "minecraft:rhombus",
+                      "color": "cyan"
+                    },
+                    {
+                      "pattern": "minecraft:stripe_bottom",
+                      "color": "light_gray"
+                    },
+                    {
+                      "pattern": "minecraft:stripe_center",
+                      "color": "gray"
+                    },
+                    {
+                      "pattern": "minecraft:border",
+                      "color": "light_gray"
+                    },
+                    {
+                      "pattern": "minecraft:stripe_middle",
+                      "color": "black"
+                    },
+                    {
+                      "pattern": "minecraft:half_horizontal",
+                      "color": "light_gray"
+                    },
+                    {
+                      "pattern": "minecraft:circle",
+                      "color": "light_gray"
+                    },
+                    {
+                      "pattern": "minecraft:border",
+                      "color": "black"
+                    }
+                  ],
+                  "minecraft:base_color": "white"
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "custom_name",
+                "name": {
+                  "text": "不吉な盾",
+                  "italic": false
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_sword",
+            "weight": 8
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_sword",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_sword",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 12,
+                  "max": 30
+                },
+                "treasure": true
+              }
+            ]
+          },
+          {
+            "type": "minecraft:tag",
+            "name": "vanilla_plus:iron_equipments",
+            "expand": true,
+            "weight": 8
+          },
+          {
+            "type": "minecraft:tag",
+            "name": "vanilla_plus:chainmails",
+            "expand": true,
+            "weight": 10
+          },
+          {
+            "type": "minecraft:tag",
+            "name": "vanilla_plus:diamond_equipments",
+            "expand": true,
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 5,
+                  "max": 30
+                },
+                "treasure": true
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 32
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}  

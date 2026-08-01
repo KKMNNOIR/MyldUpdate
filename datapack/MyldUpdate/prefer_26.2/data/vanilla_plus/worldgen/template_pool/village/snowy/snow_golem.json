@@ -1,0 +1,29 @@
+{
+    
+    "fallback": "minecraft:village/snowy/terminators",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": {
+                    "processors": [
+                        {
+                            "processor_type": "minecraft:block_ignore",
+                            "blocks": [
+                                {
+                                    "Name": "minecraft:snow",
+                                    "Properties": {
+                                        "layers": "1"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "location": "vanilla_plus:snowy_village/common/animals/snow_golem"
+            }
+        }
+    ]
+}

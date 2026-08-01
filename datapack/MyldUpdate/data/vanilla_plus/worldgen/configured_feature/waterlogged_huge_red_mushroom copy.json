@@ -1,0 +1,77 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 0,
+        "y_spread": 16,
+        "tries": 720,
+        "feature": {
+            "feature": {
+                "type": "minecraft:simple_random_selector",
+                "config": {
+                    "features": [
+                        {
+                            "feature": {
+                                "type": "minecraft:simple_block",
+                                "config": {
+                                    "to_place": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                            "Name": "minecraft:mushroom_stem",
+                                            "Properties": {
+                                                "up": "false",
+                                                "down": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "placement": [
+                                {
+                                    "type": "minecraft:heightmap",
+                                    "heightmap": "OCEAN_FLOOR"
+                                },
+                                {
+                                    "type": "minecraft:surface_water_depth_filter",
+                                    "max_water_depth": 1
+                                },
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:matching_fluids",
+                                        "fluids": [
+                                            "minecraft:water"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "feature": "minecraft:huge_red_mushroom",
+                            "placement": [
+                                {
+                                    "type": "minecraft:heightmap",
+                                    "heightmap": "MOTION_BLOCKING"
+                                },
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                            "minecraft:mushroom_stem"
+                                        ],
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "placement": []
+        }
+    }
+}

@@ -1,28 +1,26 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
     "grass_color_modifier": "swamp",
     "water_color": 6388580,
-    "water_fog_color": 2302743,
-    "foliage_color": 6975545,
-    "sky_color": 7907327,
-    "fog_color": 7246218,
-    "music": [
-      {
-        "data": {
-          "max_delay": 24000,
-          "min_delay": 12000,
-          "replace_current_music": false,
-          "sound": "minecraft:music.overworld.swamp"
-        },
-        "weight": 1
+    "foliage_color": 6975545
+  },
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.overworld.swamp",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
       }
-    ]
+    },
+    "minecraft:visual/sky_color": "#78a7ff",
+    "minecraft:visual/fog_color": 7246218,
+    "minecraft:visual/water_fog_color": "#232317",
+    "minecraft:visual/water_fog_start_distance": {
+      "argument": 0.85,
+      "modifier": "multiply"
+    },
+    "minecraft:gameplay/increased_fire_burnout": true
   },
   "carvers": [
     "minecraft:cave",
@@ -102,8 +100,7 @@
       "minecraft:patch_firefly_bush_swamp",
       "minecraft:patch_firefly_bush_near_water_swamp",
       "minecraft:seagrass_swamp",
-      "vanilla_plus:gama",
-      "vanilla_plus:moss_patch_on_swamp"
+      "vanilla_plus:gama"
     ],
     [
       "vanilla_plus:frogspawn",

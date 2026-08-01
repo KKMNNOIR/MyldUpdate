@@ -66,10 +66,12 @@
           }
         }
       ],
-      "dirt_provider": {
-        "type": "minecraft:simple_state_provider",
-        "state": {
-          "Name": "minecraft:warped_nylium"
+      "below_trunk_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "rules": [],
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {"Name": "minecraft:warped_nylium"}
         }
       },
       "foliage_placer": {
@@ -99,7 +101,6 @@
             }
         ]
       },
-      "force_dirt": false,
       "ignore_vines": true,
       "minimum_size": {
         "type": "minecraft:two_layers_feature_size",

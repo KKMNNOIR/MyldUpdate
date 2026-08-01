@@ -1,19 +1,10 @@
 {
-    "bed_works": false,
     "infiniburn": "#minecraft:infiniburn_end",
     "has_ceiling": false,
-    "respawn_anchor_works": false,
-    "ultrawarm": false,
-    "piglin_safe": false,
-    "has_raids": true,
-    "ambient_light": 0,
+    "ambient_light": 0.25,
     "logical_height": 128,
-    "natural": false,
-    "fixed_time": 6000,
     "coordinate_scale": 1,
     "has_skylight": false,
-    "effects": "minecraft:the_end",
-    "name": "the_end",
     "height": 256,
     "min_y": 0,
     "monster_spawn_block_light_limit": 0,
@@ -21,5 +12,40 @@
         "type": "minecraft:uniform",
         "min_inclusive": 0,
         "max_inclusive": 7
+    },
+    "has_fixed_time": true,
+    "skybox": "end",
+    "timelines": "#minecraft:in_end",
+    "attributes": {
+        "minecraft:gameplay/bed_rule": {
+            "can_set_spawn": "never",
+            "can_sleep": "never",
+            "explodes": true
+        },
+        "minecraft:gameplay/respawn_anchor_works": false,
+        "minecraft:gameplay/fast_lava": false,
+        "minecraft:gameplay/water_evaporates": false,
+        "minecraft:gameplay/piglins_zombify": true,
+        "minecraft:gameplay/nether_portal_spawns_piglin": false,
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.end",
+                "min_delay": 6000,
+                "max_delay": 24000,
+                "replace_current_music": true
+            }
+        },
+        "audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.cave",
+                "offset": 2,
+                "block_search_extent": 8,
+                "tick_delay": 6000
+            }
+        },
+        "minecraft:visual/fog_color": "#181318",
+        "minecraft:visual/sky_color": "#000000",
+        "minecraft:visual/sky_light_color": "#e580ff",
+        "minecraft:visual/sky_light_factor": 0.0
     }
 }

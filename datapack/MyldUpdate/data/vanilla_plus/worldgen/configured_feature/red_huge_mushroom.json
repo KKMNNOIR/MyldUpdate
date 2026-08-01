@@ -1,6 +1,9 @@
 {
     "type": "minecraft:huge_brown_mushroom",
     "config": {
+        "can_place_on": {
+            "type": "minecraft:true"
+        },
         "cap_provider": {
             "state": {
                 "Name": "minecraft:red_mushroom_block",

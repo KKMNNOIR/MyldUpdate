@@ -1,0 +1,450 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "xz_spread": 6,
+        "y_spread": 12,
+        "tries": 128,
+        "feature": {
+            "feature": {
+                "type": "minecraft:simple_random_selector",
+                "config": {
+                    "features": [
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "config": {
+                                    "direction": "east",
+                                    "allowed_placement": {
+                                        "type": "minecraft:replaceable"
+                                    },
+                                    "prioritize_tip": false,
+                                    "layers": [
+                                        {
+                                            "height": {
+                                                "type": "minecraft:uniform",
+                                                "min_inclusive": 1,
+                                                "max_inclusive": 3
+                                            },
+                                            "provider": {
+                                                "type": "minecraft:weighted_state_provider",
+                                                "entries": [
+                                                    {
+                                                        "weight": 3,
+                                                        "data": {
+                                                            "Name": "minecraft:crying_obsidian"
+                                                        }
+                                                    },
+                                                    {
+                                                        "weight": 7,
+                                                        "data": {
+                                                            "Name": "minecraft:obsidian"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "placement": [
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:all_of",
+                                        "predicates": [
+                                            {
+                                                "type": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_blocks",
+                                                "offset": [
+                                                    -1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "blocks": [
+                                                    "minecraft:crying_obsidian",
+                                                    "minecraft:obsidian"
+                                                ]
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    -1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    -1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "config": {
+                                    "direction": "west",
+                                    "allowed_placement": {
+                                        "type": "minecraft:replaceable"
+                                    },
+                                    "prioritize_tip": false,
+                                    "layers": [
+                                        {
+                                            "height": {
+                                                "type": "minecraft:uniform",
+                                                "min_inclusive": 1,
+                                                "max_inclusive": 3
+                                            },
+                                            "provider": {
+                                                "type": "minecraft:weighted_state_provider",
+                                                "entries": [
+                                                    {
+                                                        "weight": 3,
+                                                        "data": {
+                                                            "Name": "minecraft:crying_obsidian"
+                                                        }
+                                                    },
+                                                    {
+                                                        "weight": 7,
+                                                        "data": {
+                                                            "Name": "minecraft:obsidian"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "placement": [
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:all_of",
+                                        "predicates": [
+                                            {
+                                                "type": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_blocks",
+                                                "offset": [
+                                                    1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "blocks": [
+                                                    "minecraft:crying_obsidian",
+                                                    "minecraft:obsidian"
+                                                ]
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    -1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    -1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    -1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "config": {
+                                    "direction": "north",
+                                    "allowed_placement": {
+                                        "type": "minecraft:replaceable"
+                                    },
+                                    "prioritize_tip": false,
+                                    "layers": [
+                                        {
+                                            "height": {
+                                                "type": "minecraft:uniform",
+                                                "min_inclusive": 1,
+                                                "max_inclusive": 3
+                                            },
+                                            "provider": {
+                                                "type": "minecraft:weighted_state_provider",
+                                                "entries": [
+                                                    {
+                                                        "weight": 3,
+                                                        "data": {
+                                                            "Name": "minecraft:crying_obsidian"
+                                                        }
+                                                    },
+                                                    {
+                                                        "weight": 7,
+                                                        "data": {
+                                                            "Name": "minecraft:obsidian"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "placement": [
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:all_of",
+                                        "predicates": [
+                                            {
+                                                "type": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_blocks",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                                                "blocks": [
+                                                    "minecraft:crying_obsidian",
+                                                    "minecraft:obsidian"
+                                                ]
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    -1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    -1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    -1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "config": {
+                                    "direction": "south",
+                                    "allowed_placement": {
+                                        "type": "minecraft:replaceable"
+                                    },
+                                    "prioritize_tip": false,
+                                    "layers": [
+                                        {
+                                            "height": {
+                                                "type": "minecraft:uniform",
+                                                "min_inclusive": 1,
+                                                "max_inclusive": 3
+                                            },
+                                            "provider": {
+                                                "type": "minecraft:weighted_state_provider",
+                                                "entries": [
+                                                    {
+                                                        "weight": 3,
+                                                        "data": {
+                                                            "Name": "minecraft:crying_obsidian"
+                                                        }
+                                                    },
+                                                    {
+                                                        "weight": 7,
+                                                        "data": {
+                                                            "Name": "minecraft:obsidian"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "placement": [
+                                {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                        "type": "minecraft:all_of",
+                                        "predicates": [
+                                            {
+                                                "type": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_blocks",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    -1
+                                                ],
+                                                "blocks": [
+                                                    "minecraft:crying_obsidian",
+                                                    "minecraft:obsidian"
+                                                ]
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    0,
+                                                    -1,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            },
+                                            {
+                                                "type": "minecraft:matching_block_tag",
+                                                "offset": [
+                                                    -1,
+                                                    0,
+                                                    0
+                                                ],
+                                                "tag": "minecraft:replaceable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "placement": []
+        }
+    }
+}

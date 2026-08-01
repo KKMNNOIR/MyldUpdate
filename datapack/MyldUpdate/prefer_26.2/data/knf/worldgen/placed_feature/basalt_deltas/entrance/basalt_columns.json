@@ -1,0 +1,10 @@
+{
+    "feature": "knf:basalt_deltas/entrance/basalt_columns",
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -16
+        }
+    ]
+}

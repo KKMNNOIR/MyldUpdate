@@ -5,11 +5,20 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "type": "creeper",
-                        "nbt": "{Tags:[\"IcyCreeper\"]}"
+                        "minecraft:entity_type": "creeper",
+                        "entity_tags": {
+                            "any_of": [
+                                "IcyCreeper"
+                            ]
+                        }
                     },
                     "type": {
-                        "is_explosion": true
+                        "tags": [
+                            {
+                                "id": "minecraft:is_explosion",
+                                "expected": true
+                            }
+                        ]
                     }
                 }
             }

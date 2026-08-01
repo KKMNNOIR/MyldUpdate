@@ -1,39 +1,54 @@
 {
   "effects": {
-    "mood_sound": {
-      "sound": "minecraft:ambient.soul_sand_valley.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.soul_sand_valley.additions",
-      "tick_chance": 0.0111
-    },
-    "music": [
-      {
-        "data": {
-          "sound": "minecraft:music.nether.soul_sand_valley",
-          "min_delay": 12000,
-          "max_delay": 24000,
-          "replace_current_music": false
-        },
-        "weight": 1
-      }
-    ],
-    "particle": {
-      "options": {
-        "type": "minecraft:ash"
-      },
-      "probability": 0.00625
-    },
-    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
     "water_color": 9460055,
-    "water_fog_color": 9460055,
     "grass_color": 12564309,
-    "foliage_color": 11445290,
-    "sky_color": 1787717,
-    "fog_color": 1787717
+    "foliage_color": 11445290
+  },
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.soul_sand_valley",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.nether.soul_sand_valley",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.soul_sand_valley.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": "minecraft:ambient.soul_sand_valley.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.soul_sand_valley.loop"
+    },
+    "minecraft:visual/sky_color": 1787717,
+    "minecraft:visual/fog_color": 1787717,
+    "minecraft:visual/water_fog_color": 9460055,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:ash"
+        },
+        "probability": 0.00625
+      },
+      {
+        "particle": {
+          "type": "minecraft:soul"
+        },
+        "probability": 0.001525
+      }
+    ]
   },
   "carvers": [
     "minecraft:nether_cave"

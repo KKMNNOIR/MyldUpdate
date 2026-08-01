@@ -1,15 +1,8 @@
 {
     "logical_height": 1024,
     "infiniburn": "#minecraft:infiniburn_overworld",
-    "effects": "minecraft:overworld",
     "ambient_light": 0,
-    "bed_works": true,
-    "respawn_anchor_works": true,
-    "has_raids": true,
-    "ultrawarm": false,
-    "natural": true,
     "coordinate_scale": 1,
-    "piglin_safe": false,
     "has_skylight": true,
     "has_ceiling": false,
     "min_y": 0,
@@ -20,5 +13,34 @@
         "min_inclusive": 0,
         "max_inclusive": 7
     },
-    "fixed_time": 1000
+    "has_fixed_time": true,
+    "attributes": {
+        "minecraft:gameplay/monsters_burn": false,
+        "minecraft:gameplay/respawn_anchor_works": false,
+        "minecraft:gameplay/bed_rule": {
+            "can_set_spawn": "never",
+            "can_sleep": "never",
+            "explodes": false
+        },
+        "minecraft:gameplay/fast_lava": false,
+        "minecraft:gameplay/water_evaporates": false,
+        "minecraft:gameplay/piglins_zombify": false,
+        "minecraft:gameplay/can_pillager_patrol_spawn": false,
+        "minecraft:gameplay/can_start_raid": false,
+        "minecraft:gameplay/nether_portal_spawns_piglin": false,
+        "minecraft:visual/cloud_height": -64.0,
+        "minecraft:visual/sky_color": "#ffffff",
+        "minecraft:visual/fog_color": "#ffffff",
+        "minecraft:visual/cloud_color": "#ccffffff",
+        "minecraft:visual/sun_angle": 90.0,
+        "minecraft:visual/star_angle": 270.0,
+        "minecraft:visual/star_brightness": 0.0,
+        "minecraft:visual/moon_angle": 270.0,
+        "minecraft:visual/moon_phase": "new_moon",
+        "minecraft:visual/sky_light_color": "#ffffff",
+        "minecraft:visual/sky_light_factor": 1.0
+
+    },
+    "skybox": "overworld",
+    "timelines": "#minecraft:in_nether"
 }

@@ -22,9 +22,6 @@
             "count": 128
         },
         {
-            "type": "minecraft:in_square"
-        },
-        {
             "type": "minecraft:height_range",
             "height": {
                 "type": "minecraft:trapezoid",
@@ -36,6 +33,9 @@
                 },
                 "plateau": 16
             }
+        },
+        {
+            "type": "minecraft:in_square"
         },
         {
             "type": "minecraft:biome"

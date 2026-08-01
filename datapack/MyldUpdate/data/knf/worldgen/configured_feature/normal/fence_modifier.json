@@ -2,6 +2,7 @@
     "type": "minecraft:disk",
     "config": {
         "state_provider": {
+            "type": "minecraft:rule_based_state_provider",
             "fallback": {
                 "type": "minecraft:simple_state_provider",
                 "state": {
@@ -16,7 +17,7 @@
                 }
             },
             "rules": [
-                { // east=true,west=true
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -54,7 +55,7 @@
                         }
                     }
                 },
-                { //north-south=true
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [
@@ -92,7 +93,7 @@
                         }
                     }
                 },
-                {// east=true,west=false
+                {
                     "if_true": {
                         "type": "minecraft:all_of",
                         "predicates": [

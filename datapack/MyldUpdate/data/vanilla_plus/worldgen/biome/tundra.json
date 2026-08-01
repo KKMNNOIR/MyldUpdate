@@ -4,18 +4,14 @@
     "has_precipitation": true,
     "creature_spawn_probability": 0.07,
     "effects": {
-        "sky_color": 3041023,
-        "fog_color": 7377351,
         "water_color": 1332635,
-        "water_fog_color": 1847365,
         "grass_color": 10981227,
-        "foliage_color": 9532231,
-        "mood_sound": {
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2
-        }
+        "foliage_color": 9532231
+    },
+    "attributes": {
+        "minecraft:visual/sky_color": 3041023,
+        "minecraft:visual/fog_color": 7377351,
+        "minecraft:visual/water_fog_color": 1847365
     },
     "spawners": {
         "ambient": [

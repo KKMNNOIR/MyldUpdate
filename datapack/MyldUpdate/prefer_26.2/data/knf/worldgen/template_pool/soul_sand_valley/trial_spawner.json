@@ -1,0 +1,41 @@
+{
+    "fallback": "knf:soul_sand_valley/trial_spawner_fallback",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_trial_spawner_wither_skeleton",
+                "location": "knf:soul_sand_valley/trial_spawner/wither_skeleton"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_trial_spawner_blaze",
+                "location": "knf:soul_sand_valley/trial_spawner/blaze"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_pillar",
+                "location": "knf:soul_sand_valley/bridges/stair_pillar"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_pillar",
+                "location": "knf:soul_sand_valley/bridges/stair_fire_post"
+            }
+        }
+    ]
+}

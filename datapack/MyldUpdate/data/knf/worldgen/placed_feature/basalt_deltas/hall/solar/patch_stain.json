@@ -4,7 +4,42 @@
         {
             "type": "minecraft:random_offset",
             "xz_spread": 0,
-            "y_spread": -1
+            "y_spread": 0
+        },
+        {
+            "type": "minecraft:count",
+            "count": 7
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -2,
+                "max": 2,
+                "plateau": 0
+            },
+            "y_spread": 0
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks",
+                            "minecraft:cobbled_deepslate"
+                        ],
+                        "offset": [
+                            0,
+                            -1,
+                            0
+                        ]
+                    }
+                ]
+            }
         }
     ]
 }

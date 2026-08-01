@@ -19,6 +19,42 @@
                     "below_top": 0
                 }
             }
+        },
+        {
+            "type": "minecraft:count",
+            "count": 128
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            },
+            "y_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:air"]
+                    },
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:soul_sand"],
+                        "offset": [0,-1,0]
+                    }
+                ]
+            }
         }
     ]
 }

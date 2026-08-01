@@ -1,0 +1,11 @@
+{
+    "feature": {
+        "type": "minecraft:freeze_top_layer",
+        "config": {}
+    },
+    "placement": [
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}
