@@ -87,7 +87,7 @@
                                 "min": 30,
                                 "max": 50
                             },
-                            "treasure": true
+                            "options": "#minecraft:on_random_loot"
                         }
                     ]
                 },
@@ -149,7 +149,7 @@
                                 "min": 30,
                                 "max": 50
                             },
-                            "treasure": true
+                           "options": "#minecraft:on_random_loot"
                         }
                     ]
                 },
@@ -160,9 +160,7 @@
                     "functions": [
                         {
                             "function": "minecraft:enchant_randomly",
-                            "enchantments": [
-                                "minecraft:swift_sneak"
-                            ]
+                            "options": ["minecraft:swift_sneak"]
                         }
                     ]
                 },
@@ -274,7 +272,7 @@
                                 "min": 20,
                                 "max": 39
                             },
-                            "treasure": true
+                            "options": "#minecraft:on_random_loot"
                         }
                     ]
                 },

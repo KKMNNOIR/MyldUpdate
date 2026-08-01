@@ -18,7 +18,10 @@
               },
               {
                 "function": "minecraft:set_custom_model_data",
-                "value": 20210224
+                "strings": {
+                  "values": ["#vanilla_plus:wither_snake"],
+                  "mode": "append"
+                }
               },
               {
                 "function": "minecraft:set_name",
