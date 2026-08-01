@@ -3,7 +3,7 @@
   "config": {
     "column_radius": {
       "type": "minecraft:uniform",
-      "max_inclusive": 19,
+      "max_inclusive": 16,
       "min_inclusive": 3
     },
     "floor_to_ceiling_search_range": 180,
@@ -25,6 +25,7 @@
       "max_exclusive": 2.0,
       "min_inclusive": 0.9
     },
-    "wind_speed": 0
+    "wind_speed": 0,
+    "replaceable_blocks": "#minecraft:dripstone_replaceable_blocks"
   }
 }

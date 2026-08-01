@@ -1,5 +1,5 @@
 {
-    "feature": "vanilla_plus:birch_forest/fancy_tall_birch_main",
+    "feature": "vanilla_plus:birch_forest/fancy_tall_birch",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",

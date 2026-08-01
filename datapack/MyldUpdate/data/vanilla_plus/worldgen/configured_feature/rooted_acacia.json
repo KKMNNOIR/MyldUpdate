@@ -59,6 +59,8 @@
       "state": {
         "Name": "minecraft:rooted_dirt"
       }
-    }
+    },
+    "max_level_deviation": 0,
+    "level_test_distance": 0
   }
 }

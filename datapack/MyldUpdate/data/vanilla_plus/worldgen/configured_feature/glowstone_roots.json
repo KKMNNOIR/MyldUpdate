@@ -1,411 +1,114 @@
 {
-	"type": "minecraft:simple_random_selector",
+	"type": "minecraft:sequence",
 	"config": {
 		"features": [
 			{
-				"feature": {
-					"type": "minecraft:random_selector",
-					"config": {
-						"default": {
-							"feature": {
-								"type": "minecraft:no_op",
-								"config": {}
-							},
-							"placement": []
-						},
-						"features": [
-							{
-								"chance": 0.3,
-								"feature": {
-									"feature": "vanilla_plus:glowstone_roots/first",
-									"placement": [
-										{
-											"type": "minecraft:block_predicate_filter",
-											"predicate": {
-												"type": "minecraft:all_of",
-												"predicates": [
-													{
-														"type": "minecraft:replaceable"
-													},
-													{
-														"type": "minecraft:matching_block_tag",
-														"tag": "minecraft:nether_carver_replaceables",
-														"offset": [0, 1, 0]
-													}
-												]
-											}
-										}
-									]
-								}
-							},
-							{
-								"chance": 0.3,
-								"feature": {
-									"feature": "vanilla_plus:glowstone_roots/second",
-									"placement": [
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": 0,
-											"y_spread": -4
-										},
-										{
-											"type": "minecraft:environment_scan",
-											"max_steps": 32,
-											"direction_of_search": "up",
-											"target_condition": {
-												"type": "minecraft:matching_blocks",
-												"blocks": ["minecraft:glowstone"],
-												"offset": [0, 1, 0]
-											}
-										},
-										{
-											"type": "minecraft:count",
-											"count": 100
-										},
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -6,
-												"max": 6,
-												"plateau": 0
-											},
-											"y_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -12,
-												"max": 12,
-												"plateau": 0
-											}
-										},
-										{
-											"type": "minecraft:environment_scan",
-											"max_steps": 12,
-											"direction_of_search": "up",
-											"target_condition": {
-												"type": "minecraft:any_of",
-												"predicates": [
-													{
-														"type": "minecraft:replaceable"
-													},
-													{
-														"type": "minecraft:any_of",
-														"predicates": [
-															{
-																"type": "minecraft:all_of",
-																"predicates": [
-																	{
-																		"type": "minecraft:matching_blocks",
-																		"blocks": ["minecraft:glowstone"],
-																		"offset": [1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 1, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, -1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, -1, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, -1]
-																	}
-																]
-															},
-															{
-																"type": "minecraft:all_of",
-																"predicates": [
-																	{
-																		"type": "minecraft:matching_blocks",
-																		"offset": [-1, 0, 0],
-																		"blocks": "minecraft:glowstone"
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, -1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, -1, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, -1]
-																	}
-																]
-															},
-															{
-																"type": "minecraft:all_of",
-																"predicates": [
-																	{
-																		"type": "minecraft:matching_blocks",
-																		"offset": [0, 0, 1],
-																		"blocks": "minecraft:glowstone"
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 1, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, -1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, -1, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, -1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, -1]
-																	}
-																]
-															},
-															{
-																"type": "minecraft:all_of",
-																"predicates": [
-																	{
-																		"type": "minecraft:matching_blocks",
-																		"offset": [0, 0, -1],
-																		"blocks": "minecraft:glowstone"
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, 1, 0]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [0, -1, -1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [1, 0, 1]
-																	},
-																	{
-																		"type": "minecraft:replaceable",
-																		"offset": [-1, 0, 1]
-																	}
-																]
-															}
-														]
-													}
-												]
-											}
-										}
-									]
-								}
-							},
-							{
-								"chance": 0.3,
-								"feature": {
-									"feature": "vanilla_plus:glowstone_roots/third",
-									"placement": [
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": 0,
-											"y_spread": -4
-										},
-										{
-											"type": "minecraft:environment_scan",
-											"max_steps": 32,
-											"direction_of_search": "up",
-											"target_condition": {
-												"type": "minecraft:matching_blocks",
-												"blocks": ["minecraft:glowstone"],
-												"offset": [0, 1, 0]
-											}
-										},
-										{
-											"type": "minecraft:count",
-											"count": 100
-										},
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -6,
-												"max": 6,
-												"plateau": 0
-											},
-											"y_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -12,
-												"max": 12,
-												"plateau": 0
-											}
-										},
-										{
-											"type": "minecraft:environment_scan",
-											"direction_of_search": "up",
-											"max_steps": 32,
-											"target_condition": {
-												"type": "minecraft:all_of",
-												"predicates": [
-													{
-														"type": "minecraft:replaceable"
-													},
-													{
-														"type": "minecraft:replaceable",
-														"offset": [1, 0, 0]
-													},
-													{
-														"type": "minecraft:replaceable",
-														"offset": [-1, 0, 0]
-													},
-													{
-														"type": "minecraft:replaceable",
-														"offset": [0, 0, 1]
-													},
-													{
-														"type": "minecraft:replaceable",
-														"offset": [0, 0, -1]
-													},
-													{
-														"type": "minecraft:any_of",
-														"predicates": [
-															{
-																"type": "minecraft:matching_blocks",
-																"offset": [1, 1, 0],
-																"blocks": "minecraft:glowstone"
-															},
-															{
-																"type": "minecraft:matching_blocks",
-																"offset": [-1, 1, 0],
-																"blocks": "minecraft:glowstone"
-															},
-															{
-																"type": "minecraft:matching_blocks",
-																"offset": [0, 1, 1],
-																"blocks": "minecraft:glowstone"
-															},
-															{
-																"type": "minecraft:matching_blocks",
-																"offset": [0, 1, -1],
-																"blocks": "minecraft:glowstone"
-															}
-														]
-													}
-												]
-											}
-										}
-									]
-								}
-							},
-							{
-								"chance": 0.1,
-								"feature": {
-									"feature": "vanilla_plus:glowstone_roots/horizontal",
-									"placement": [
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": 0,
-											"y_spread": -16
-										},
-										{
-											"type": "minecraft:environment_scan",
-											"direction_of_search": "up",
-											"max_steps": 32,
-											"target_condition": {
-												"type": "minecraft:all_of",
-												"predicates": [
-													{
-														"type": "minecraft:matching_blocks",
-														"blocks": ["minecraft:glowstone"],
-														"offset": [0, 1, 0]
-													},
-													{
-														"type": "minecraft:matching_blocks",
-														"blocks": ["minecraft:glowstone"],
-														"offset": [0, -1, 0]
-													},
-													{
-														"type": "minecraft:matching_blocks",
-														"blocks": ["minecraft:glowstone"]
-													}
-												]
-											}
-										},
-										{
-											"type": "minecraft:count",
-											"count": 128
-										},
-										{
-											"type": "minecraft:random_offset",
-											"xz_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -6,
-												"max": 6,
-												"plateau": 0
-											},
-											"y_spread": {
-												"type": "minecraft:trapezoid",
-												"min": -12,
-												"max": 12,
-												"plateau": 0
-											}
-										}
-									]
-								}
-							}
-						]
-					}
-				},
+				"feature": "vanilla_plus:glowstone_roots/first",
+				"placement": []
+			},
+			{
+				"feature": "vanilla_plus:glowstone_roots/second",
 				"placement": [
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": 0,
+						"y_spread": -2
+					},
+					{
+						"type": "minecraft:environment_scan",
+						"direction_of_search": "down",
+						"max_steps": 4,
+						"target_condition": {
+							"type": "minecraft:matching_blocks",
+							"blocks": ["minecraft:glowstone"],
+							"offset": [0,1,0]
+						}
+					},
+					{
+						"type": "minecraft:count",
+						"count": 32
+					},
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": {
+							"type": "minecraft:trapezoid",
+							"min": -1,
+							"max": 1,
+							"plateau": 0
+						},
+						"y_spread": 0
+					}
+				]
+			},
+			{
+				"feature": "vanilla_plus:glowstone_roots/third",
+				"placement": [
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": 0,
+						"y_spread": -4
+					},
+					{
+						"type": "minecraft:count",
+						"count": 32
+					},
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": {
+							"type": "minecraft:trapezoid",
+							"min": -1,
+							"max": 1,
+							"plateau": 0
+						},
+						"y_spread": 0
+					},
+					{
+						"type": "minecraft:environment_scan",
+						"direction_of_search": "down",
+						"max_steps": 8,
+						"target_condition": {
+							"type": "minecraft:matching_blocks",
+							"blocks": ["minecraft:glowstone"],
+							"offset": [0,1,0]
+						}
+					},
+					{
+						"type": "minecraft:count",
+						"count": 32
+					},
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": {
+							"type": "minecraft:trapezoid",
+							"min": -1,
+							"max": 1,
+							"plateau": 0
+						},
+						"y_spread": 0
+					}
+				]
+			},
+			{
+				"feature": "vanilla_plus:glowstone_roots/horizontal",
+				"placement": [
+					{
+						"type": "minecraft:count",
+						"count": 150
+					},
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": {
+							"type": "minecraft:trapezoid",
+							"min": -7,
+							"max": 7,
+							"plateau": 0
+						},
+						"y_spread": {
+							"type": "minecraft:uniform",
+							"max_inclusive": -3,
+							"min_inclusive": -16
+						}
+					},
 					{
 						"type": "minecraft:block_predicate_filter",
 						"predicate": {
@@ -415,25 +118,31 @@
 									"type": "minecraft:replaceable"
 								},
 								{
-									"type": "minecraft:matching_block_tag",
-									"tag": "vanilla_plus:glowstone_roots_valid_blocks",
-									"offset": [0, 1, 0]
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": ["minecraft:glowstone"],
+											"offset": [1,0,0]
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": ["minecraft:glowstone"],
+											"offset": [-1,0,0]
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": ["minecraft:glowstone"],
+											"offset": [0,0,1]
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": ["minecraft:glowstone"],
+											"offset": [0,0,-1]
+										}
+									]
 								}
 							]
-						}
-					},
-					{
-						"type": "minecraft:count",
-						"count": 300
-					},
-					{
-						"type": "minecraft:random_offset",
-						"xz_spread": 0,
-						"y_spread": {
-							"type": "minecraft:trapezoid",
-							"min": -6,
-							"max": 0,
-							"plateau": 3
 						}
 					}
 				]
