@@ -4,4 +4,5 @@
  #
  # Created by .
 ##
-execute as @e[type=minecraft:splash_potion,predicate=vanilla_plus:linger_chance] at @s if entity @e[type=witch,tag=OutpostWarrior,distance=..3] run data modify entity @s Item.id set value "minecraft:lingering_potion"
+data modify entity @s {} set from entity @n[dx=0,type=minecraft:splash_potion] {}
+kill @n[dx=0,type=minecraft:splash_potion]
