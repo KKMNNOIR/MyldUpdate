@@ -1,0 +1,88 @@
+{
+    "weight": 1,
+    "description": {
+        "translate": "enchantment.kkmnnoir.freezing",
+        "fallback": "凍結攻撃"
+    },
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#kkmnnoir:enchantable/freezing",
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "vanilla_plus:nether_frost/freeze_damage_effect"
+                        },
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:slowness",
+                            "min_amplifier": 0,
+                            "max_amplifier": 0,
+                            "min_duration": {
+                                "type": "minecraft:linear",
+                                "base": 5.0,
+                                "per_level_above_first": 0.5
+                            },
+                            "max_duration": {
+                                "type": "minecraft:linear",
+                                "base": 5.0,
+                                "per_level_above_first": 1.0
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "direct_attacker",
+                    "predicate": {
+                        "minecraft:entity_type": "minecraft:snowball"
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "vanilla_plus:frozen_snowball",
+                            "min_damage": {
+                                "type": "minecraft:linear",
+                                "base": 4.0,
+                                "per_level_above_first": 0.5
+                            },
+                            "max_damage": {
+                                "type": "minecraft:linear",
+                                "base": 4.0,
+                                "per_level_above_first": 1.0
+                            }
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "vanilla_plus:nether_frost/freeze_damage_effect"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
