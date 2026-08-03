@@ -9,7 +9,7 @@ execute if entity @s[tag=!changeDone] if biome ~ ~ ~ #minecraft:is_jungle run fu
 
 # in Desert
 # spawn Husk
-execute if entity @s[tag=!changeDone] if biome ~ ~ ~ vanilla_plus:desert_cave run function vanilla_plus:entities/zombie/desert_caves/replace_husk
+execute if entity @s[tag=!Done] if biome ~ ~ ~ vanilla_plus:desert_cave run function vanilla_plus:entities/zombie/desert_caves/replace_husk
 
 # 各行動
 # Frozen Zombie
