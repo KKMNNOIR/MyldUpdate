@@ -50,5 +50,6 @@
         "minecraft:visual/sky_color": "#78a7ff",
         "minecraft:visual/fog_color": "#c0d8ff"
     },
-    "timelines": "#minecraft:in_overworld"
+    "timelines": "#minecraft:in_overworld",
+    "has_ender_dragon_fight": false
 }
