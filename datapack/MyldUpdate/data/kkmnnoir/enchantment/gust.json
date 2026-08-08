@@ -10,17 +10,9 @@
             "block_interaction": "trigger",
             "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
             "knockback_multiplier": {
-              "type": "minecraft:lookup",
-              "fallback": {
-                "type": "minecraft:linear",
-                "base": 0.5,
-                "per_level_above_first": 0.35
-              },
-              "values": [
-                1.2,
-                1.75,
-                2.2
-              ]
+              "type": "minecraft:linear",
+              "base": 1.2,
+              "per_level_above_first": 0.55
             },
             "large_particle": {
               "type": "minecraft:gust_emitter_large"
