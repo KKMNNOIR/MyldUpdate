@@ -1,5 +1,5 @@
 {
-    "feature": "vanilla_plus:fallen_jungle_aged",
+    "feature": "vanilla_plus:fallen_jungle",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",

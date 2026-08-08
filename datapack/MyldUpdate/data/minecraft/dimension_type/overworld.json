@@ -51,5 +51,6 @@
         "minecraft:visual/fog_color": "#c0d8ff"
     },
     "timelines": "#minecraft:in_overworld",
-    "has_ender_dragon_fight": false
+    "has_ender_dragon_fight": false,
+    "default_clock": "minecraft:overworld"
 }

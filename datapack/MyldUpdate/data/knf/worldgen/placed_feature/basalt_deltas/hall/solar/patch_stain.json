@@ -1,5 +1,5 @@
 {
-    "feature": "knf:basalt_deltas/hall/solar/patch_stains",
+    "feature": "knf:basalt_deltas/hall/solar/stain",
     "placement": [
         {
             "type": "minecraft:random_offset",

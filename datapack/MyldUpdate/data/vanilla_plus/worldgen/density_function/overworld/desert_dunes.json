@@ -1,17 +1,17 @@
 {
     "type": "minecraft:mul",
     "argument1": {
-        "type": "minecraft:spline", //Weirdness > Continentallness vs Erosion > Temperature vs Vegetation
+        "type": "minecraft:spline",
         "spline": {
             "coordinate": "vanilla_plus:overworld/ridges_folded",
             "points": [
                 {
-                    "location": -1.0, //Valley
+                    "location": -1.0,
                     "derivative": 0,
                     "value": 0
                 },
                 {
-                    "location": -0.4, //Low slice
+                    "location": -0.4,
                     "derivative": 0,
                     "value": {
                         "coordinate": "vanilla_plus:overworld/continents",
@@ -521,7 +521,7 @@
                     }
                 },
                 {
-                    "location": 0, //Mid slice
+                    "location": 0,
                     "derivative": 0,
                     "value": {
                         "coordinate": "vanilla_plus:overworld/continents",
@@ -1135,7 +1135,7 @@
                     }
                 },
                 {
-                    "location": 0.4, //High slice
+                    "location": 0.4,
                     "derivative": 0,
                     "value": {
                         "coordinate": "vanilla_plus:overworld/continents",
@@ -1520,7 +1520,7 @@
                     }
                 },
                 {
-                    "location": 1, //Peaks
+                    "location": 1,
                     "derivative": 0,
                     "value": {
                         "coordinate": "vanilla_plus:overworld/continents",

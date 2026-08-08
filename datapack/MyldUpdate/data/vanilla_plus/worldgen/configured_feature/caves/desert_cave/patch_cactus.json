@@ -14,7 +14,7 @@
         "surface": "floor",
         "vegetation_chance": 0.015625,
         "vegetation_feature": {
-            "feature": "minecraft:patch_cactus",
+            "feature": "minecraft:cactus",
             "placement": []
         },
         "vertical_range": 1,

@@ -1,0 +1,100 @@
+{
+    "type": "minecraft:fallen_tree",
+    "config": {
+        "trunk_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 4,
+                    "data": {
+                        "Name": "minecraft:oak_log",
+                        "Properties": {"axis": "y"}
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "Name": "minecraft:stripped_oak_log",
+                        "Properties": {"axis": "y"}
+                    }
+                }
+            ]
+        },
+        "log_length": {
+            "type": "minecraft:trapezoid",
+            "min": 2,
+            "max": 4,
+            "plateau": 0
+        },
+        "stump_decorators": [
+            {
+                "type": "minecraft:trunk_vine"
+            },
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "probability": 0.5,
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:moss_carpet"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:red_mushroom"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:brown_mushroom"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "log_decorators": [
+            {
+                "type": "minecraft:trunk_vine"
+            },
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "probability": 0.75,
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 8,
+                            "data": {
+                                "Name": "minecraft:moss_carpet"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:red_mushroom"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:brown_mushroom"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

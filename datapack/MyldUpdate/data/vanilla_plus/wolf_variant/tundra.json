@@ -4,6 +4,11 @@
         "angry": "minecraft:entity/wolf/wolf_tundra_angry",
         "tame": "minecraft:entity/wolf/wolf_tame"
     },
+    "baby_assets": {
+        "wild": "minecraft:entity/wolf/wolf_tundra_baby",
+        "angry": "minecraft:entity/wolf/wolf_tundra_angry_baby",
+        "tame": "minecraft:entity/wolf/wolf_tundra_tame_baby"
+    },
     "spawn_conditions": [
         {
             "priority": 1,

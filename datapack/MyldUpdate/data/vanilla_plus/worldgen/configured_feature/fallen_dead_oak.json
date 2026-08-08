@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:fallen_tree",
+    "config": {
+        "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "minecraft:stripped_oak_log",
+                "Properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "log_length": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 4
+        },
+        "stump_decorators": [
+            {
+                "type": "minecraft:trunk_vine"
+            },
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 6,
+                            "data": {
+                                "Name": "minecraft:moss_carpet"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:brown_mushroom"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:red_mushroom"
+                            }
+                        }
+                    ]
+                },
+                "probability": 0.8
+            }
+        ],
+        "log_decorators": [
+            {
+                "type": "minecraft:attached_to_logs",
+                "directions": [
+                    "up"
+                ],
+                "block_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 6,
+                            "data": {
+                                "Name": "minecraft:moss_carpet"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:brown_mushroom"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "minecraft:red_mushroom"
+                            }
+                        }
+                    ]
+                },
+                "probability": 0.8
+            }
+        ]
+    }
+}

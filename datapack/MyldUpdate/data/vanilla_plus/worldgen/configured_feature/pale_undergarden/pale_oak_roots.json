@@ -31,6 +31,8 @@
         "feature": {
             "feature": "vanilla_plus:pale_undergarden/creaking_pole",
             "placement": []
-        }
+        },
+        "level_test_distance": 0,
+        "max_level_deviation": 1
     }
 }

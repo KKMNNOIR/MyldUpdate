@@ -42,5 +42,6 @@
 
     },
     "skybox": "overworld",
-    "timelines": "#minecraft:in_nether"
+    "timelines": "#minecraft:in_nether",
+    "has_ender_dragon_fight": false
 }

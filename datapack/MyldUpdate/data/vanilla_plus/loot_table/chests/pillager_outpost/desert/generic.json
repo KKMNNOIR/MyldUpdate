@@ -65,7 +65,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "chain",
+                    "name": "minecraft:iron_chain",
                     "weight": 16,
                     "functions": [
                         {
