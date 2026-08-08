@@ -1,0 +1,16 @@
+{
+    "asset_id": "minecraft:entity/pig/pale",
+    "baby_asset_id": "minecraft:entity/pig/pale_baby",
+    "spawn_conditions": [
+        {
+            "priority": 0.7,
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "minecraft:pale_garden",
+                    "vanilla_plus:pale_undergarden"
+                ]
+            }
+        }
+    ]
+}
