@@ -14,38 +14,8 @@
         "supported_formats": [
             18,
             82
-        ]
-	},
-    "overlays": {
-        "entries": [
-            {
-                "formats": [
-                    18,
-                    36
-                ],
-                "directory": "prefer_1.20.5"
-            },
-            {
-                "formats": [
-                    37,
-                    41
-                ],
-                "directory": "1.20.5"
-            },
-            {
-                "formats": [
-                    42,
-                    48
-                ],
-                "directory": "1.21.x"
-            },
-            {
-                "formats": [
-                    49,
-                    70
-                ],
-                "directory": "1.21.4"
-            }
-        ]
-    }
+        ],
+        "min_format": 107,
+        "max_format": 110
+	}
 }
