@@ -1,5 +1,6 @@
 {
     "asset_id": "minecraft:entity/pig/muddy",
+    "baby_asset_id": "minecraft:entity/pig/muddy_baby",
     "model": "cold",
     "spawn_conditions": [
         {

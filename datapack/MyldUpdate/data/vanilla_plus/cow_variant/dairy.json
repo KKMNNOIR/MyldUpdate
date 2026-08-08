@@ -1,5 +1,6 @@
 {
     "asset_id": "minecraft:entity/cow/dairy_cow",
+    "baby_asset_id": "minecraft:entity/cow/dairy_cow_baby",
     "model": "normal",
     "spawn_conditions": [
         {

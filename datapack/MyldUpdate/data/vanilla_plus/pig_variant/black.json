@@ -1,5 +1,6 @@
 {
     "asset_id": "minecraft:entity/pig/black",
+    "baby_asset_id": "minecraft:entity/pig/black_baby",
     "model": "normal",
     "spawn_conditions": [
         {
