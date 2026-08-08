@@ -1,5 +1,6 @@
 {
   "asset_id": "minecraft:entity/chicken/diamond_chicken",
+  "baby_asset_id": "minecraft:entity/chicken/diamond_baby",
   "spawn_conditions": [
     {
       "condition": {
