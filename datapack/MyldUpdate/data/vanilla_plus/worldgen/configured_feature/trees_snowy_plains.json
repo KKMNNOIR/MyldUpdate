@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "vanilla_plus:snowed_spruce_plains_checked",
+    "features": [
+      {
+        "chance": 0.0125,
+        "feature": "minecraft:fallen_spruce_tree"
+      }
+    ]
+  }
+}
