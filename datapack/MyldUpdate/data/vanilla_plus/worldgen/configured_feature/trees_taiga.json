@@ -6,6 +6,10 @@
           "feature": "minecraft:fallen_spruce_tree"
         },
         {
+          "chance": 0.0625,
+          "feature": "minecraft:spruce_checked"
+        },
+        {
           "feature": "vanilla_plus:tall_pines_checked",
           "chance": 0.33333334
         }
