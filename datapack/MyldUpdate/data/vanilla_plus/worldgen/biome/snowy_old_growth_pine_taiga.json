@@ -79,7 +79,7 @@
       [
         "minecraft:glow_lichen",
         "minecraft:patch_large_fern",
-        "minecraft:trees_old_growth_spruce_taiga",
+        "vanilla_plus:trees_snowy_old_growth_pine_taiga",
         "vanilla_plus:moss_snowy_old_growth_taiga",
         "minecraft:flower_default",
         "minecraft:patch_grass_taiga",
