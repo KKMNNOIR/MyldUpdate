@@ -1,7 +1,7 @@
 {
     "xz_scale": 0.25,
     "y_scale": 0,
-    "noise": "minecraft:temperature",
+    "noise": "vanilla_plus:overworld/temperature",
     "shift_x": "minecraft:shift_x",
     "shift_y": 0,
     "shift_z": "minecraft:shift_z",
