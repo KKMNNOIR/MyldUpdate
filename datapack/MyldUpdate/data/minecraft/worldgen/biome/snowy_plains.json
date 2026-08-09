@@ -70,7 +70,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_snowy",
+      "vanilla_plus:trees_snowy_plains",
       "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
