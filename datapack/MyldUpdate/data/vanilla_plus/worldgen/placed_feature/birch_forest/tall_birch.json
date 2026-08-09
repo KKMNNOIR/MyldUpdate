@@ -1,5 +1,5 @@
 {
-    "feature": "vanilla_plus:birch_forest/tall_birch_stem",
+    "feature": "vanilla_plus:birch_forest/tall_birch",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",
