@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:sequence",
+    "config": {
+        "features": [
+            {
+                "feature": "vanilla_plus:sulfur_geode_outer",
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:template",
+                    "config": {
+                        "templates": [
+                            {
+                                "weight": 1,
+                                "data": {
+                                    "id": "vanilla_plus:sulfur_geode/hydro_sulfur_cube"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:count",
+                        "count": 200
+                    },
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": {
+                            "type": "minecraft:trapezoid",
+                            "min": -16,
+                            "max": 16,
+                            "plateau": 0
+                        },
+                        "y_spread": {
+                            "type": "minecraft:trapezoid",
+                            "min": -16,
+                            "max": 16,
+                            "plateau": 0
+                        }
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:replaceable"
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:sulfur","minecraft:potent_sulfur","minecraft:raw_gold_block"],
+                                    "offset": [0,-1,0]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

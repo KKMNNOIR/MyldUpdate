@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "kkmnnoir:sulphurous": {
+                                    "min": 1,
+                                    "max": 3
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:potent_sulfur",
+                                "minecraft:unbreakable": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

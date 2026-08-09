@@ -1,0 +1,88 @@
+{
+    "type": "minecraft:geode",
+    "config": {
+        "min_gen_offset": -16,
+        "max_gen_offset": 16,
+        "noise_multiplier": 0.05,
+        "outer_wall_distance": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 3,
+            "max_inclusive": 4
+        },
+        "distribution_points": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 3,
+            "max_inclusive": 4
+        },
+        "point_offset": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 2
+        },
+        "blocks": {
+            "filling_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:air"
+                }
+            },
+            "inner_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:sulfur"
+                }
+            },
+            "alternate_inner_layer_provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "weight": 2,
+                        "data": {
+                            "Name": "minecraft:raw_gold_block"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:potent_sulfur"
+                        }
+                    }
+                ]
+            },
+            "middle_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:calcite"
+                }
+            },
+            "outer_layer_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "minecraft:smooth_basalt"
+                }
+            },
+            "inner_placements": [
+                {
+                    "Name": "minecraft:gravel"
+                }
+            ],
+            "cannot_replace": "#minecraft:features_cannot_replace",
+            "invalid_blocks": "#minecraft:geode_invalid_blocks"
+        },
+        "invalid_blocks_threshold": 2,
+        "layers": {
+            "filling": 1.7,
+            "inner_layer": 2.2,
+            "middle_layer": 3.2,
+            "outer_layer": 4.2
+        },
+        "crack": {
+            "base_crack_size": 1,
+            "crack_point_offset": 1,
+            "generate_crack_chance": 0.8
+        },
+        "use_alternate_layer0_chance": 0.5,
+        "use_potential_placements_chance": 0.125,
+        "placements_require_layer0_alternate": false
+    }
+}

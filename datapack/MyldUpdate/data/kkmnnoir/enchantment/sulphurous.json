@@ -1,0 +1,104 @@
+{
+	"weight": 1,
+	"description": {
+		"translate": "enchantment.abyss_volcano.sulphurous",
+		"fallback": "硫黄臭",
+        "color": "yellow"
+	},
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 128,
+    "supported_items": "#minecraft:enchantable/armor",
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:damage_entity",
+                    "damage_type": "minecraft:sulfur_cube_hot",
+                    "min_damage": {
+                        "type": "minecraft:linear",
+                        "base": 4.0,
+                        "per_level_above_first": 0.5
+                    },
+                    "max_damage": {
+                        "type": "minecraft:linear",
+                        "base": 4.0,
+                        "per_level_above_first": 1.0
+                    }
+                }
+            },
+            {
+                "enchanted": "victim",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:noxious_gas"
+                    },
+                    "horizontal_position": {
+                        "type": "in_bounding_box",
+                        "scale": 2.0
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box",
+                        "scale": 2.0
+                    },
+                    "horizontal_velocity": {
+                        "base": 1.0,
+                        "movement_scale": 1.0
+                    },
+                    "vertical_velocity": {
+                        "base": 1.0,
+                        "movement_scale": 1.0
+                    },
+                    "speed": 0.1
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:noxious_gas"
+                    },
+                    "horizontal_position": {
+                        "type": "in_bounding_box",
+                        "scale": 1.2
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box",
+                        "scale": 1.2
+                    },
+                    "horizontal_velocity": {
+                        "base": 0.1,
+                        "movement_scale": 1.0
+                    },
+                    "vertical_velocity": {
+                        "base": 0.1,
+                        "movement_scale": 1.0
+                    },
+                    "speed": 0.1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kkmnnoir:sulphurous/nausea"
+                }
+            }
+        ]
+    }
+}
