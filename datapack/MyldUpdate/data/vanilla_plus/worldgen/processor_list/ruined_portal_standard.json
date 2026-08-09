@@ -1,6 +1,6 @@
 {
     "processors": [
-        { // Common
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -57,7 +57,7 @@
                 }
             ]
         },
-        { // Stone -> Not mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -88,7 +88,7 @@
                 }
             ]
         },
-        { // Stone Bricks -> Not mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -119,7 +119,7 @@
                 }
             ]
         },
-        { // Chiseled Stone Bricks -> Not mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -150,7 +150,7 @@
                 }
             ]
         },
-        { // Stone -> Mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -181,7 +181,7 @@
                 }
             ]
         },
-        { // Stone bricks -> Mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -212,7 +212,7 @@
                 }
             ]
         },
-        { // Stone bricks -> Mossy stone bricks
+        {
             "processor_type": "minecraft:rule",
             "rules": [
                 {
@@ -1393,10 +1393,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "south"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1420,10 +1418,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "north"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1447,10 +1443,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "east"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1474,10 +1468,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "west"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1501,10 +1493,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "top",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "south"
+                            "type": "top",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1528,10 +1518,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "top",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "north"
+                            "type": "top",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1555,10 +1543,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "top",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "east"
+                            "type": "top",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1582,10 +1568,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "top",
-                            "waterlogged": "false",
-                            "shape": "straight",
-                            "facing": "west"
+                            "type": "top",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1609,10 +1593,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "outer_right",
-                            "facing": "south"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1636,10 +1618,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "outer_right",
-                            "facing": "north"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1663,10 +1643,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "outer_right",
-                            "facing": "east"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 },
@@ -1690,10 +1668,8 @@
                     "output_state": {
                         "Name": "minecraft:mossy_stone_brick_slab",
                         "Properties": {
-                            "half": "bottom",
-                            "waterlogged": "false",
-                            "shape": "outer_right",
-                            "facing": "west"
+                            "type": "bottom",
+                            "waterlogged": "false"
                         }
                     }
                 }
