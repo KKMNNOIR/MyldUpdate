@@ -2,12 +2,8 @@
     "feature": "vanilla_plus:rock_pinnacle",
     "placement": [
         {
-            "type": "minecraft:count",
-            "count": {
-                "type": "minecraft:uniform",
-                "min_inclusive": 2,
-                "max_inclusive": 3
-            }
+            "type": "minecraft:rarity_filter",
+            "chance": 2
         },
         {
             "type": "minecraft:in_square"
