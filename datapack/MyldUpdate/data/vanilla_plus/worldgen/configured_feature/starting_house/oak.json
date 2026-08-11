@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:template",
+    "config": {
+        "templates": [
+            {
+                "data": {
+                    "id": "vanilla_plus:starting_house/oak"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

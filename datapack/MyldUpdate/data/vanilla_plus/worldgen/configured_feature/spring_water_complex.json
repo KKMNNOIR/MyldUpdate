@@ -1,0 +1,143 @@
+{
+	"type": "minecraft:sequence",
+	"config": {
+		"features": [
+			{
+				"feature": "minecraft:spring_water",
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "minecraft:block_column",
+					"config": {
+						"direction": "down",
+						"allowed_placement": {
+							"type": "minecraft:all_of",
+							"predicates": [
+								{
+									"type": "minecraft:matching_blocks",
+									"blocks": [
+										"minecraft:stone",
+										"minecraft:granite",
+										"minecraft:diorite",
+										"minecraft:andesite",
+										"minecraft:deepslate",
+										"minecraft:tuff"
+									]
+								}
+							]
+						},
+                        "prioritize_tip": false,
+                        "layers": [
+                            {
+                                "height": {
+                                    "type": "minecraft:biased_to_bottom",
+                                    "min_inclusive": 2,
+                                    "max_inclusive": 4
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "minecraft:mossy_cobblestone"
+                                    }
+                                }
+                            }
+                        ]
+					}
+				},
+                "placement": [
+                    {
+                        "type": "minecraft:count",
+                        "count": 64
+                    },
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": {
+                            "type": "minecraft:trapezoid",
+                            "min": -1,
+                            "max": 1,
+                            "plateau": 0
+                        },
+                        "y_spread": {
+                            "type": "minecraft:trapezoid",
+                            "min": -1,
+                            "max": 1,
+                            "plateau": 0
+                        }
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [1,0,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [-1,0,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [0,1,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [0,-1,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [0,0,1]
+                                },
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [0,0,-1]
+                                }
+                            ]
+                        }
+                    }
+                ]
+			},
+			{
+				"feature": {
+					"type": "minecraft:simple_block",
+					"config": {
+                        "to_place": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                                "Name": "minecraft:mossy_cobblestone"
+                            }
+                        }
+                    }
+				},
+                "placement": [
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": 0,
+                        "y_spread": 1
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_fluids",
+                                    "fluids": "#minecraft:water",
+                                    "offset": [0,-1,0]
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		]
+	}
+}

@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:sequence",
+    "config": {
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:template",
+                    "config": {
+                        "templates": [
+                            {
+                                "data": {
+                                    "id": "vanilla_plus:starting_house/mossy_frozen"
+                                },
+                                "weight": 1
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            },
+            {
+                "placement": [
+                    {
+                        "type": "minecraft:count",
+                        "count": 48
+                    },
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": {
+                            "type": "minecraft:trapezoid",
+                            "min": -3,
+                            "max": 3,
+                            "plateau": 0
+                        },
+                        "y_spread": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 0,
+                            "max_inclusive": 5
+                        }
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:mossy_cobblestone"
+                            ]
+                        }
+                    }
+                ],
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                        "to_place": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                                "Name": "minecraft:packed_ice"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

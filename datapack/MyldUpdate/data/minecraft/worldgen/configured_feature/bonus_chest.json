@@ -1,21 +1,222 @@
 {
-  "type": "minecraft:random_selector",
-  "config": {
-    "default": {
-      "feature": {
-        "type": "minecraft:bonus_chest",
-        "config": {}
-      },
-      "placement": []
-    },
-    "features": [
-      {
-        "chance": 1.0,
-        "feature": {
-          "feature": "vanilla_plus:starting_house_starter",
-          "placement": []
-        }
-      }
-    ]
-  }
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": {
+					"type": "minecraft:simple_random_selector",
+					"config": {
+						"features": [
+							{
+								"feature": "vanilla_plus:starting_house/acacia",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/acacia"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/birch",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/birch"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/cherry",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/cherry"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/dark_oak",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/dark_oak"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/mangrove",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/mangrove"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/mesa_high",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/mesa"
+                    }
+                  },
+                  {
+                    "type": "minecraft:height_range",
+                    "height": {
+                      "type": "minecraft:uniform",
+                      "min_inclusive": {
+                        "absolute": 74
+                      },
+                      "max_inclusive": {
+                        "below_top": 5
+                      }
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/mesa_low",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/mesa"
+                    }
+                  },
+                  {
+                    "type": "minecraft:height_range",
+                    "height": {
+                      "type": "minecraft:uniform",
+                      "min_inclusive": {
+                        "above_bottom": 5
+                      },
+                      "max_inclusive": {
+                        "absolute": 74
+                      }
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/mossy",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/stony"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/mossy_frozen",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/stony_frozen"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/oak",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/oak"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/sandstone",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/desert"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/spruce",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/spruce"
+                    }
+                  }
+                ]
+							},
+							{
+								"feature": "vanilla_plus:starting_house/pale_oak",
+								"placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_biomes",
+                      "biomes": "#vanilla_plus:has_structure/starting_house/pale_oak"
+                    }
+                  }
+                ]
+							}
+						]
+					}
+				},
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 400
+          },
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -1
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:not",
+              "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:chiseled_stone_bricks",
+                  "minecraft:waxed_chiseled_copper",
+                  "minecraft:ochre_froglight",
+                  "minecraft:quartz_pillar"
+                ]
+              }
+            }
+          }
+        ]
+			}
+		]
+	}
 }
