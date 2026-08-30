@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:vex,tag=evwEvokedByPlayer,distance=..128] on owner if entity @s[dx=0] run return 1

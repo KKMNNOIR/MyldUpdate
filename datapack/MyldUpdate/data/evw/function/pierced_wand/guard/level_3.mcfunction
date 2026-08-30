@@ -1,0 +1,25 @@
+# 円 3
+execute positioned ^0 ^ ^-4 run place feature evw:evoker_fang_3
+execute positioned ^1.03528 ^ ^-3.8637 run place feature evw:evoker_fang_3
+execute positioned ^2 ^ ^-3.4641 run place feature evw:evoker_fang_3
+execute positioned ^2.82843 ^ ^-2.82843 run place feature evw:evoker_fang_3
+execute positioned ^3.4641 ^ ^-2 run place feature evw:evoker_fang_3
+execute positioned ^3.8637 ^ ^-1.03528 run place feature evw:evoker_fang_3
+execute positioned ^4 ^ ^ run place feature evw:evoker_fang_3
+execute positioned ^3.8637 ^ ^1.03528 run place feature evw:evoker_fang_3
+execute positioned ^3.4641 ^ ^2 run place feature evw:evoker_fang_3
+execute positioned ^2.82843 ^ ^2.82843 run place feature evw:evoker_fang_3
+execute positioned ^2 ^ ^3.4641 run place feature evw:evoker_fang_3
+execute positioned ^1.03528 ^ ^3.8637 run place feature evw:evoker_fang_3
+execute positioned ^ ^ ^4 run place feature evw:evoker_fang_3
+execute positioned ^-1.03528 ^ ^3.8637 run place feature evw:evoker_fang_3
+execute positioned ^-2 ^ ^3.46417 run place feature evw:evoker_fang_3
+execute positioned ^-2.82843 ^ ^2.82843 run place feature evw:evoker_fang_3
+execute positioned ^-3.4641 ^ ^2 run place feature evw:evoker_fang_3
+execute positioned ^-3.8637 ^ ^1.03528 run place feature evw:evoker_fang_3
+execute positioned ^-4 ^ ^ run place feature evw:evoker_fang_3
+execute positioned ^-3.8637 ^ ^-1.03528 run place feature evw:evoker_fang_3
+execute positioned ^-3.4641 ^ ^-2 run place feature evw:evoker_fang_3
+execute positioned ^-2.82843 ^ ^-2.82843 run place feature evw:evoker_fang_3
+execute positioned ^-2 ^ ^-3.4641 run place feature evw:evoker_fang_3
+execute positioned ^-1.03528 ^ ^-3.8637 run place feature evw:evoker_fang_3

@@ -3,6 +3,7 @@
     "values": [
         "vanilla_plus:load",
         "kkmnnoir:load",
-        "knf:load"
+        "knf:load",
+        "evw:load"
     ]
 }

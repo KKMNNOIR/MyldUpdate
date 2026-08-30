@@ -1,0 +1,6 @@
+team join EvocationFriend @s
+execute rotated ~ 0 positioned ^ ^ ^-0.1 run summon minecraft:vex ~ ~ ~ {Team:"EvocationFriend",Tags:["evwEvokedByPlayer"],life_ticks:1500,equipment:{mainhand:{id:"minecraft:mace",components:{"minecraft:enchantments":{"minecraft:sharpness":5,"minecraft:breach":4}}}}}
+execute if predicate evw:ench_level_more_than_2 rotated ~ 0 positioned ^0.0866 ^ ^0.05 run summon minecraft:vex ~ ~ ~ {Team:"EvocationFriend",Tags:["evwEvokedByPlayer"],life_ticks:1500,equipment:{mainhand:{id:"minecraft:mace",components:{"minecraft:enchantments":{"minecraft:sharpness":5,"minecraft:breach":4}}}}}
+execute if predicate evw:ench_level_more_than_2 if predicate evw:ench_level_more_than_3 rotated ~ 0 positioned ^-0.0866 ^ ^0.05 run summon minecraft:vex ~ ~ ~ {Team:"EvocationFriend",Tags:["evwEvokedByPlayer"],life_ticks:1500,equipment:{mainhand:{id:"minecraft:mace",components:{"minecraft:enchantments":{"minecraft:sharpness":5,"minecraft:breach":4}}}}}
+playsound minecraft:entity.evoker.prepare_summon player @s ~ ~ ~ 1 1
+execute positioned ~ ~-2 ~ as @e[tag=evwEvokedByPlayer] run data modify entity @s owner set from entity @n[dx=0] UUID

@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:evoker_fangs,tag=evwEvokedByPlayer] at @s run particle minecraft:dust_color_transition{from_color:[0.588,0.412,0.145],to_color:[1.000,0.929,0.651],scale:1} ~ ~-0.25 ~ 0.25 0.25 0.25 0 30 force
+# execute as @e[type=minecraft:evoker_fangs,tag=evwEvokedByPlayer] at @s run particle minecraft:crit ~ ~ ~ 0.125 0.125 0.125 0 10 force

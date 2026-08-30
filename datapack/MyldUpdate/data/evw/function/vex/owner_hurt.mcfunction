@@ -1,0 +1,1 @@
+execute on owner if data entity @s {HurtTime:9s} run function evw:vex/hostile_owner_attacker

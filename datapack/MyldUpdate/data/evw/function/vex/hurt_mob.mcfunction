@@ -1,0 +1,1 @@
+damage @s 0.0000000001 minecraft:generic by @n[tag=evwVexTarget]

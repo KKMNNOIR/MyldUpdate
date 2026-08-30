@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "placement": [
+                    {
+                        "type": "minecraft:environment_scan",
+                        "direction_of_search": "down",
+                        "max_steps": 32,
+                        "target_condition": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:any_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:replaceable"
+                                        },
+                                        {
+                                            "type": "minecraft:not",
+                                            "predicate": {
+                                                "type": "minecraft:has_sturdy_face",
+                                                "direction": "up"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:has_sturdy_face",
+                                    "offset": [0,-1,0],
+                                    "direction": "up"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "feature": {
+                    "type": "minecraft:template",
+                    "config": {
+                        "templates": [
+                            {
+                                "weight": 1,
+                                "data": {
+                                    "id": "evw:evoker_fang_15"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "weight": 1,
+    "description": {
+        "translate": "enchantment.evw.evocation",
+        "fallback": "降霊術"
+    },
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 32,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 1,
+    "max_level": 3,
+    "supported_items": [
+        "minecraft:blaze_rod",
+        "minecraft:breeze_rod",
+        "minecraft:wooden_sword",
+        "minecraft:stone_sword",
+        "minecraft:iron_sword",
+        "minecraft:golden_sword",
+        "minecraft:diamond_sword",
+        "minecraft:netherite_sword"
+    ],
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:post_piercing_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "evw:pierced_wand/init"
+                },
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "evwPierceCoolTime": {
+                                "min": 1
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
