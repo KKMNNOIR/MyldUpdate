@@ -1,0 +1,51 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:display_context",
+		"cases": [
+			{
+				"when": [
+					"firstperson_lefthand",
+					"firstperson_righthand",
+					"thirdperson_lefthand",
+					"thirdperson_righthand",
+					"head"
+				],
+				"model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:using_item",
+                    "on_true": {
+                        "type": "minecraft:composite",
+                        "models": [
+                            {
+                                "type": "minecraft:model",
+                                "model": "evw:item/evocation_wand_casting"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "evw:item/evocation_wand_in_hand_orb_casting"
+                            }
+                        ]
+                    },
+                    "on_false": {
+                        "type": "minecraft:composite",
+                        "models": [
+                            {
+                                "type": "minecraft:model",
+                                "model": "evw:item/evocation_wand_in_hand"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "evw:item/evocation_wand_in_hand_orb"
+                            }
+                        ]
+                    }
+                }
+			}
+		],
+		"fallback": {
+            "type": "minecraft:model",
+            "model": "evw:item/evocation_wand"
+        }
+	}
+}
