@@ -1,0 +1,43 @@
+{
+    "simultaneous_mobs": 4.0,
+    "simultaneous_mobs_added_per_player": 2.0,
+    "ticks_between_spawn": 20,
+    "total_mobs": 24.0,
+    "total_mobs_added_per_player": 1.0,
+    "spawn_range": 5,
+    "items_to_drop_when_ominous": "vanilla_plus:trial_chambers/ominous_gale_drops",
+    "spawn_potentials": [
+        {
+            "weight": 1,
+            "data": {
+                "entity": {
+                    "id": "minecraft:skeleton",
+                    "Tags": ["vpGaleBowman","vpCopperSpikeImmune"],
+                    "equipment": {
+                        "mainhand": {
+                            "id": "minecraft:bow"
+                        }
+                    }
+                },
+                "equipment": {
+                    "loot_table": "vanilla_plus:equipment/trial_chambers/gale_archer",
+                    "slot_drop_chances": 0.0
+                }
+            }
+        }
+    ],
+    "loot_tables_to_eject": [
+        {
+            "weight": 3,
+            "data": "minecraft:spawners/ominous/trial_chamber/key"
+        },
+        {
+            "weight": 7,
+            "data": "minecraft:spawners/ominous/trial_chamber/consumables"
+        },
+        {
+            "weight": 2,
+            "data": "vanilla_plus:spawners/ominous/trial_chamber/enchanted"
+        }
+    ]
+}

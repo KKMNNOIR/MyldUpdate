@@ -1,0 +1,52 @@
+{
+    "simultaneous_mobs": 1.0,
+    "simultaneous_mobs_added_per_player": 0.0,
+    "total_mobs": 1.0,
+    "total_mobs_added_per_player": 0.0,
+    "spawn_range": 21,
+    "spawn_potentials": [
+        {
+            "weight": 1,
+            "data": {
+                "entity": {
+                    "id": "minecraft:bogged",
+                    "Tags": ["vpBurstingMiasma","vpCopperSpikeImmune"],
+                    "attributes": [
+                        {
+                            "id": "minecraft:max_health",
+                            "base": 64
+                        },
+                        {
+                            "id": "minecraft:follow_range",
+                            "base": 64
+                        }
+                    ],
+                    "equipment": {
+                        "mainhand": {
+                            "id": "minecraft:bow"
+                        }
+                    }
+                },
+                "equipment": {
+                    "loot_table": "vanilla_plus:equipment/trial_chambers/bursting_miasma",
+                    "slot_drop_chances": 0.0
+                }
+            }
+        }
+    ],
+    "loot_tables_to_eject": [
+        {
+            "weight": 7,
+            "data": "minecraft:spawners/ominous/trial_chamber/consumables"
+        },
+        {
+            "weight": 3,
+            "data": "minecraft:spawners/ominous/trial_chamber/key"
+        },
+        {
+            "weight": 2,
+            "data": "vanilla_plus:spawners/ominous/trial_chamber/enchanted"
+        }
+    ],
+    "items_to_drop_when_ominous": "vanilla_plus:trial_chambers/ominous_gale_drops"
+}
