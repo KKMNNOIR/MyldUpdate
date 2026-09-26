@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:snowy_beach",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_slopes",
+        "minecraft:snowy_taiga",
+        "vanilla_plus:snowy_cave",
+        "vanilla_plus:snowy_dead_forest",
+        "vanilla_plus:snowy_old_growth_pine_taiga",
+        "vanilla_plus:snowy_old_growth_spruce_taiga"
+    ]
+}

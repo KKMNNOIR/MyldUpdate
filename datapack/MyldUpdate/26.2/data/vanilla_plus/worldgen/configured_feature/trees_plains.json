@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": "vanilla_plus:oak_bees_005_plains",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": {
+          "feature": "vanilla_plus:fancy_oak_bees_005_plains",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.0125,
+        "feature": "minecraft:fallen_oak_tree"
+      }
+    ]
+  }
+}

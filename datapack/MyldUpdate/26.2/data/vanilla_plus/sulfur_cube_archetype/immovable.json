@@ -1,0 +1,48 @@
+{
+    "items": [
+        "minecraft:heavy_core"
+    ],
+    "buoyant": false,
+    "attribute_modifiers": [
+        {
+            "attribute": "minecraft:friction_modifier",
+            "amount": 1.0,
+            "operation": "add_value",
+            "id": "vanilla_plus:sulfur_cube_immovable"
+        },
+        {
+            "attribute": "minecraft:bounciness",
+            "amount": -1.0,
+            "operation": "add_value",
+            "id": "vanilla_plus:sulfur_cube_immovable"
+        },
+        {
+            "attribute": "minecraft:knockback_resistance",
+            "amount": 2.0,
+            "id": "vanilla_plus:sulfur_cube_immovable",
+            "operation": "add_value"
+        },
+        {
+            "attribute": "minecraft:air_drag_modifier",
+            "amount": 1.0,
+            "id": "vanilla_plus:sulfur_cube_immovable",
+            "operation": "add_value"
+        },
+        {
+            "attribute": "minecraft:explosion_knockback_resistance",
+            "id": "vanilla_plus:sulfur_cube_immovable",
+            "amount": 1.0,
+            "operation": "add_value"
+        }
+    ],
+    "knockback_modifiers": {
+        "vertical_power": 0.0,
+        "horizontal_power": 0.0
+    },
+    "sound_settings": {
+        "hit_sound": "minecraft:block.heavy_core.hit",
+        "push_sound": "minecraft:block.heavy_core.step",
+        "push_sound_cooldown": 4,
+        "push_sound_impulse_threshold": 1
+    }
+}

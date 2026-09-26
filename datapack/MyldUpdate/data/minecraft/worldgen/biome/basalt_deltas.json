@@ -1,115 +1,115 @@
 {
-  "effects": {
-    "water_color": 9460055
-  },
-  "attributes": {
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "sound": "minecraft:ambient.basalt_deltas.mood",
-        "offset": 2,
-        "block_search_extent": 8,
-        "tick_delay": 6000
-      },
-      "additions": {
-        "sound": "minecraft:ambient.basalt_deltas.additions",
-        "tick_chance": 0.0111
-      },
-      "loop": "minecraft:ambient.basalt_deltas.loop"
-    },
-    "minecraft:audio/background_music": {
-      "default": {
-        "sound": "minecraft:music.nether.basalt_deltas",
-        "min_delay": 12000,
-        "max_delay": 24000,
-        "replace_current_music": false
-      },
-      "creative": {
-        "sound": "minecraft:music.nether.basalt_deltas",
-        "min_delay": 12000,
-        "max_delay": 24000,
-        "replace_current_music": false
-      }
-    },
-    "minecraft:visual/sky_color": 6840176,
-    "minecraft:visual/fog_color": 6840176,
-    "minecraft:visual/water_fog_color": 9460055,
-    "minecraft:visual/ambient_particles": [
-      {
-        "particle": {
-          "type": "minecraft:white_ash"
-        },
-        "probability": 0.118093334
-      }
-    ]
-  },
-  "carvers": [
-    "vanilla_plus:nether_cave"
-  ],
-  "features": [
-    [],
-    [],
-    [],
-    [],
-    [
-      "minecraft:delta",
-      "minecraft:small_basalt_columns",
-      "minecraft:large_basalt_columns"
-    ],
-    [],
-    [
-      "vanilla_plus:tuff_pile"
-    ],
-    [
-      "minecraft:basalt_blobs",
-      "minecraft:blackstone_blobs",
-      "minecraft:spring_delta",
-      "minecraft:patch_fire",
-      "minecraft:patch_soul_fire",
-      "minecraft:glowstone_extra",
-      "vanilla_plus:glowstone_roots",
-      "minecraft:brown_mushroom_nether",
-      "minecraft:red_mushroom_nether",
-      "minecraft:ore_magma",
-      "minecraft:spring_closed_double",
-      "minecraft:ore_gold_deltas",
-      "minecraft:ore_quartz_deltas",
-      "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small",
-      "vanilla_plus:ore_gilded_blackstone"
-    ]
-  ],
-  "spawners": {
-    "monster": [
-      {
-        "type": "minecraft:ghast",
-        "weight": 40,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:magma_cube",
-        "weight": 100,
-        "minCount": 2,
-        "maxCount": 5
-      }
-    ],
-    "creature": [
-      {
-        "type": "minecraft:strider",
-        "weight": 60,
-        "minCount": 1,
-        "maxCount": 2
-      }
-    ],
-    "ambient": [],
-    "axolotls": [],
-    "underground_water_creature": [],
-    "water_creature": [],
-    "water_ambient": [],
-    "misc": []
-  },
-  "spawn_costs": {},
-  "has_precipitation": false,
-  "temperature": 2,
-  "downfall": 0
+	"effects": {
+		"water_color": 9460055
+	},
+	"attributes": {
+		"minecraft:audio/ambient_sounds": {
+			"mood": {
+				"sound": "minecraft:ambient.basalt_deltas.mood",
+				"offset": 2,
+				"block_search_extent": 8,
+				"tick_delay": 6000
+			},
+			"additions": {
+				"sound": "minecraft:ambient.basalt_deltas.additions",
+				"tick_chance": 0.0111
+			},
+			"loop": "minecraft:ambient.basalt_deltas.loop"
+		},
+		"minecraft:audio/background_music": {
+			"default": {
+				"sound": "minecraft:music.nether.basalt_deltas",
+				"min_delay": 12000,
+				"max_delay": 24000,
+				"replace_current_music": false
+			},
+			"creative": {
+				"sound": "minecraft:music.nether.basalt_deltas",
+				"min_delay": 12000,
+				"max_delay": 24000,
+				"replace_current_music": false
+			}
+		},
+		"minecraft:visual/sky_color": 6840176,
+		"minecraft:visual/fog_color": 6840176,
+		"minecraft:visual/water_fog_color": 9460055,
+		"minecraft:visual/ambient_particles": [
+			{
+				"particle": {
+					"type": "minecraft:white_ash"
+				},
+				"probability": 0.118093334
+			}
+		],
+		"minecraft:gameplay/natural_mob_spawns": {
+			"argument": {
+				"spawns_by_category": {
+					"monster": [
+						{
+							"type": "minecraft:ghast",
+							"weight": 40,
+							"count": 1
+						},
+						{
+							"type": "minecraft:magma_cube",
+							"weight": 100,
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 2,
+								"max_inclusive": 5
+							}
+						}
+					],
+					"creature": [
+						{
+							"type": "minecraft:strider",
+							"weight": 60,
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 1,
+								"max_inclusive": 2
+							}
+						}
+					]
+				},
+				"spawn_costs": {}
+			},
+      "modifier": "overlay"
+		}
+	},
+	"carvers": ["myld:nether_cave"],
+	"features": [
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:delta",
+			"minecraft:small_basalt_columns",
+			"minecraft:large_basalt_columns"
+		],
+		[],
+		["vanilla_plus:tuff_pile"],
+		[
+			"minecraft:basalt_blobs",
+			"minecraft:blackstone_blobs",
+			"minecraft:spring_delta",
+			"minecraft:patch_fire",
+			"minecraft:patch_soul_fire",
+			"minecraft:glowstone_extra",
+			"vanilla_plus:glowstone_roots",
+			"minecraft:brown_mushroom_nether",
+			"minecraft:red_mushroom_nether",
+			"minecraft:ore_magma",
+			"minecraft:spring_closed_double",
+			"minecraft:ore_gold_deltas",
+			"minecraft:ore_quartz_deltas",
+			"minecraft:ore_ancient_debris_large",
+			"minecraft:ore_debris_small",
+			"vanilla_plus:ore_gilded_blackstone"
+		]
+	],
+	"has_precipitation": false,
+	"temperature": 2,
+	"downfall": 0
 }

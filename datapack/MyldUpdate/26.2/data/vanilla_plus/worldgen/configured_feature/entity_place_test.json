@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "placement": [
+                    {
+                        "type": "minecraft:count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 2
+                        }
+                    },
+                    {
+                        "type": "minecraft:random_offset",
+                        "xz_spread": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": -4,
+                            "max_inclusive": 4
+                        },
+                        "y_spread": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": -2,
+                            "max_inclusive": 2
+                        }
+                    }
+                ],
+                "feature": {
+                    "type": "minecraft:template",
+                    "config": {
+                        "templates": [
+                            {
+                                "weight": 1,
+                                "data": {
+                                    "id": "vanilla_plus:entity_place_test"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

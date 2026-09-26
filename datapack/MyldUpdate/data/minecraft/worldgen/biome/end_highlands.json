@@ -5,7 +5,22 @@
   "attributes": {
     "minecraft:visual/sky_color": 0,
     "minecraft:visual/fog_color": 10518688,
-    "minecraft:visual/water_fog_color": 6443678
+    "minecraft:visual/water_fog_color": 6443678,
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawns_by_category": {
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "weight": 10,
+              "count": 4
+            }
+          ]
+        },
+        "spawn_costs": {}
+      },
+      "modifier": "overlay"
+    }
   },
   "carvers": [],
   "features": [
@@ -24,24 +39,6 @@
       "minecraft:chorus_plant"
     ]
   ],
-  "spawners": {
-    "monster": [
-      {
-        "type": "minecraft:enderman",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      }
-    ],
-    "creature": [],
-    "ambient": [],
-    "axolotls": [],
-    "underground_water_creature": [],
-    "water_creature": [],
-    "water_ambient": [],
-    "misc": []
-  },
-  "spawn_costs": {},
   "has_precipitation": false,
   "temperature": 0.5,
   "downfall": 0.5
