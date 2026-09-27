@@ -1,0 +1,148 @@
+{
+	"effects": {
+		"water_color": 9460055,
+		"grass_color": 12564309,
+		"foliage_color": 11445290
+	},
+	"attributes": {
+		"minecraft:audio/background_music": {
+			"default": {
+				"sound": "minecraft:music.nether.soul_sand_valley",
+				"min_delay": 12000,
+				"max_delay": 24000,
+				"replace_current_music": false
+			},
+			"creative": {
+				"sound": "minecraft:music.nether.soul_sand_valley",
+				"min_delay": 12000,
+				"max_delay": 24000,
+				"replace_current_music": false
+			}
+		},
+		"minecraft:audio/ambient_sounds": {
+			"mood": {
+				"sound": "minecraft:ambient.soul_sand_valley.mood",
+				"offset": 2,
+				"block_search_extent": 8,
+				"tick_delay": 6000
+			},
+			"additions": {
+				"sound": "minecraft:ambient.soul_sand_valley.additions",
+				"tick_chance": 0.0111
+			},
+			"loop": "minecraft:ambient.soul_sand_valley.loop"
+		},
+		"minecraft:visual/sky_color": 1787717,
+		"minecraft:visual/fog_color": 1787717,
+		"minecraft:visual/water_fog_color": 9460055,
+		"minecraft:visual/ambient_particles": [
+			{
+				"particle": {
+					"type": "minecraft:ash"
+				},
+				"probability": 0.00625
+			},
+			{
+				"particle": {
+					"type": "minecraft:soul"
+				},
+				"probability": 0.001525
+			}
+		],
+		"minecraft:gameplay/natural_mob_spawns": {
+			"argument": {
+				"spawns_by_category": {
+					"monster": [
+						{
+							"type": "minecraft:skeleton",
+							"weight": 20,
+							"count": 5
+						},
+						{
+							"type": "minecraft:ghast",
+							"weight": 50,
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 1,
+								"max_inclusive": 2
+							}
+						},
+						{
+							"type": "minecraft:enderman",
+							"weight": 1,
+							"count": 4
+						}
+					],
+					"creature": [
+						{
+							"type": "minecraft:strider",
+							"weight": 60,
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 1,
+								"max_inclusive": 2
+							}
+						}
+					]
+				},
+				"spawn_costs": {
+					"minecraft:skeleton": {
+						"energy_budget": 0.15,
+						"charge": 0.7
+					},
+					"minecraft:ghast": {
+						"energy_budget": 0.15,
+						"charge": 0.7
+					},
+					"minecraft:enderman": {
+						"energy_budget": 0.15,
+						"charge": 0.7
+					},
+					"minecraft:strider": {
+						"energy_budget": 0.15,
+						"charge": 0.7
+					}
+				}
+			},
+      "modifier": "overlay"
+		}
+	},
+	"carvers": ["myld:nether_cave"],
+	"features": [
+		[],
+		[],
+		["minecraft:basalt_pillar"],
+		[],
+		[],
+		[],
+		[],
+		[
+			"minecraft:spring_open",
+			"minecraft:patch_fire",
+			"minecraft:patch_soul_fire",
+			"minecraft:glowstone_extra",
+			"minecraft:glowstone",
+			"vanilla_plus:glowstone_roots_soul_sand_valley",
+			"minecraft:patch_crimson_roots",
+			"minecraft:ore_magma",
+			"minecraft:spring_closed",
+			"minecraft:ore_soul_sand",
+			"minecraft:ore_gravel_nether",
+			"minecraft:ore_blackstone",
+			"minecraft:ore_gold_nether",
+			"minecraft:ore_quartz_nether",
+			"minecraft:ore_ancient_debris_large",
+			"minecraft:ore_debris_small",
+			"vanilla_plus:skull_nether_decorator"
+		],
+		[],
+		[
+			"minecraft:spring_lava",
+			"vanilla_plus:wither_rose",
+			"vanilla_plus:nether_wart"
+		]
+	],
+	"has_precipitation": false,
+	"temperature": 2,
+	"downfall": 0
+}
