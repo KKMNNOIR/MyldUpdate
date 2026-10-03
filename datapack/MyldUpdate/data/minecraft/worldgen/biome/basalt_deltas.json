@@ -89,7 +89,9 @@
 			"minecraft:large_basalt_columns"
 		],
 		[],
-		["vanilla_plus:tuff_pile"],
+		[
+			"myld:tuff_pile"
+		],
 		[
 			"minecraft:basalt_blobs",
 			"minecraft:blackstone_blobs",
@@ -97,7 +99,6 @@
 			"minecraft:patch_fire",
 			"minecraft:patch_soul_fire",
 			"minecraft:glowstone_extra",
-			"vanilla_plus:glowstone_roots",
 			"minecraft:brown_mushroom_nether",
 			"minecraft:red_mushroom_nether",
 			"minecraft:ore_magma",
@@ -106,7 +107,7 @@
 			"minecraft:ore_quartz_deltas",
 			"minecraft:ore_ancient_debris_large",
 			"minecraft:ore_debris_small",
-			"vanilla_plus:ore_gilded_blackstone"
+			"myld:ore_gilded_blackstone"
 		]
 	],
 	"has_precipitation": false,

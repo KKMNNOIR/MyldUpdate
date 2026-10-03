@@ -67,26 +67,26 @@
 						}
 					],
 					"creature": [
-            {
-              "type": "minecraft:sheep",
-              "count": 4,
-              "weight": 12
-            },
-            {
-              "type": "minecraft:pig",
-              "count": 4,
-              "weight": 10
-            },
-            {
-              "type": "minecraft:chicken",
-              "count": 4,
-              "weight": 10
-            },
-            {
-              "type": "minecraft:cow",
-              "count": 4,
-              "weight": 8
-            },
+						{
+							"type": "minecraft:sheep",
+							"count": 4,
+							"weight": 12
+						},
+						{
+							"type": "minecraft:pig",
+							"count": 4,
+							"weight": 10
+						},
+						{
+							"type": "minecraft:chicken",
+							"count": 4,
+							"weight": 10
+						},
+						{
+							"type": "minecraft:cow",
+							"count": 4,
+							"weight": 8
+						},
 						{
 							"type": "minecraft:armadillo",
 							"weight": 6,
@@ -118,7 +118,7 @@
 				},
 				"spawn_costs": {}
 			},
-      "modifier": "overlay"
+			"modifier": "overlay"
 		}
 	},
 	"carvers": [
@@ -129,12 +129,17 @@
 	"features": [
 		[],
 		[
-			"vanilla_plus:badlands_lava_lake_upper",
-			"vanilla_plus:badlands_lava_lake_lower",
+			"myld:badlands_lava_lake_upper",
+			"myld:badlands_lava_lake_upper",
 			"minecraft:lake_lava_surface"
 		],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -149,7 +154,7 @@
 			"minecraft:ore_tuff",
 			"minecraft:ore_coal_upper",
 			"minecraft:ore_coal_lower",
-			"vanilla_plus:ore_coal_deep",
+			"myld:ore_coal_deep",
 			"minecraft:ore_iron_upper",
 			"minecraft:ore_iron_middle",
 			"minecraft:ore_iron_small",
@@ -169,10 +174,15 @@
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
 			"minecraft:ore_emerald",
-			"vanilla_plus:ore_emerald_deep"
+			"myld:ore_emerald_deep"
 		],
-		["vanilla_plus:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:patch_grass_badlands",
@@ -185,7 +195,9 @@
 			"minecraft:patch_cactus_decorated",
 			"minecraft:patch_firefly_bush_near_water"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	],
 	"has_precipitation": false,
 	"temperature": 2,

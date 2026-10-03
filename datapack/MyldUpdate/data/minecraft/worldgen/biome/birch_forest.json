@@ -122,9 +122,16 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:lake_lava_underground"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -139,7 +146,7 @@
 			"minecraft:ore_tuff",
 			"minecraft:ore_coal_upper",
 			"minecraft:ore_coal_lower",
-			"vanilla_plus:ore_coal_deep",
+			"myld:ore_coal_deep",
 			"minecraft:ore_iron_upper",
 			"minecraft:ore_iron_middle",
 			"minecraft:ore_iron_small",
@@ -158,24 +165,31 @@
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
 			"minecraft:ore_emerald",
-			"vanilla_plus:ore_emerald_deep"
+			"myld:ore_emerald_deep"
 		],
-		["vanilla_plus:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:wildflowers_birch_forest",
-			"vanilla_plus:birch_forest_flowers",
-			"vanilla_plus:birch_forest/trees_birch_forest",
+			"myld:flower_birch_forest",
+			"myld:birch_forest/trees_birch_forest",
 			"minecraft:patch_bush",
-			"vanilla_plus:patch_grass_forest",
-			"vanilla_plus:brown_mushroom_forest",
-			"vanilla_plus:red_mushroom_forest",
+			"myld:patch_grass_forest",
+			"myld:brown_mushroom_forest",
+			"myld:red_mushroom_forest",
 			"minecraft:patch_pumpkin",
 			"minecraft:patch_sugar_cane",
 			"minecraft:patch_firefly_bush_near_water"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	],
 	"has_precipitation": true,
 	"temperature": 0.6,
