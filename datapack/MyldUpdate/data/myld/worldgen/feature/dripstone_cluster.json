@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "minecraft:dripstone_cluster",
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.2,
+            "feature": {
+                "feature": "myld:dripstone_cluster_larger",
+                "placement": []
+            }
+        }
+    ]
+}

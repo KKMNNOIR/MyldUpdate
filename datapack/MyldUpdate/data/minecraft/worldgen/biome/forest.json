@@ -123,7 +123,7 @@
     [],
     [
       "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "myld:lake_water_surface_mossy"
     ],
     [
       "minecraft:amethyst_geode"
@@ -146,7 +146,7 @@
       "minecraft:ore_tuff",
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "vanilla_plus:ore_coal_deep",
+      "myld:ore_coal_deep",
       "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
@@ -165,10 +165,10 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
       "minecraft:ore_emerald",
-      "vanilla_plus:ore_emerald_deep"
+      "myld:ore_emerald_deep"
     ],
     [
-      "vanilla_plus:deep_dark/sculkystis"
+      "myld:deep_dark/sculkystis"
     ],
     [
       "minecraft:spring_water",
@@ -176,19 +176,18 @@
     ],
     [
       "minecraft:glow_lichen",
-      "vanilla_plus:forest_flowers",
-      "vanilla_plus:trees_forest",
+      "myld:forest_flowers",
+      "myld:trees_forest",
       "minecraft:patch_bush",
-      "vanilla_plus:flower_default",
-      "vanilla_plus:patch_grass_forest",
-      "vanilla_plus:brown_mushroom_forest",
-      "vanilla_plus:red_mushroom_forest",
-      "vanilla_plus:patch_pumpkin",
+      "myld:flower_default",
+      "myld:patch_grass_forest",
+      "myld:brown_mushroom_forest",
+      "myld:red_mushroom_forest",
+      "myld:patch_pumpkin",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "vanilla_plus:trees_forest",
       "minecraft:freeze_top_layer"
     ]
   ],

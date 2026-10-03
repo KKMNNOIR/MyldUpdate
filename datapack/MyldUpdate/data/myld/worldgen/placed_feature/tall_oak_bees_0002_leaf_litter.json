@@ -1,0 +1,32 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "default": {
+            "feature": "myld:tall_oak_bees_0002_leaf_litter",
+            "placement": []
+        },
+        "features": [
+            {
+                "chance": 0.5,
+                "feature": {
+                    "feature": "myld:tall_oak_bees_0002_leaf_litter_vines",
+                    "placement": []
+                }
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "id": "minecraft:oak_sapling",
+                    "properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

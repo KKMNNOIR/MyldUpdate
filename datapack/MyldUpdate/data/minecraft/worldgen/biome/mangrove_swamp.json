@@ -131,9 +131,9 @@
   "features": [
     [],
     [
-      "vanilla_plus:marsh_mangrove",      
+      "myld:marsh_mangrove",      
       "minecraft:lake_lava_underground",
-      "vanilla_plus:lake_lava_swamp_surface"
+      "myld:lake_lava_swamp_surface"
     ],
     [
       "minecraft:amethyst_geode"
@@ -175,11 +175,11 @@
       "minecraft:disk_grass",
       "minecraft:disk_clay",
       "minecraft:ore_emerald",
-      "vanilla_plus:ore_emerald_deep"
+      "myld:ore_emerald_deep"
 
     ],
     [
-      "vanilla_plus:deep_dark/sculkystis"
+      "myld:deep_dark/sculkystis"
     ],
     [
       "minecraft:spring_water",
@@ -195,7 +195,7 @@
       "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "vanilla_plus:frogspawn",
+      "myld:frogspawn",
       "minecraft:freeze_top_layer"
     ]
   ],

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "feature": "myld:dead_tree_fancy_trunk",
+            "placement": []
+        },
+        {
+            "feature": "myld:dead_tree_upwards_branching_trunk",
+            "placement": []
+        }
+    ]
+}

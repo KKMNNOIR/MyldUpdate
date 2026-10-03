@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": {
+            "type": "minecraft:simple_block",
+            "to_place": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 2,
+                        "data": {
+                            "id": "minecraft:poppy"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:dandelion"
+                        }
+                    },
+                    {
+                        "weight": 3,
+                        "data": {
+                            "id": "minecraft:pitcher_plant",
+                            "properties": {
+                                "half": "lower"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.334,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:template",
+                    "templates": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "myld:jungle_flower"
+                            }
+                        }
+                    ]
+                },
+                "placement": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:jungle_tree",
+    "features": [
+        {
+            "chance": 0.075,
+            "feature": "minecraft:fallen_oak_tree"
+        },
+        {
+            "chance": 0.1,
+            "feature": "myld:tall_fancy_oak_bees_0002_vines"
+        },
+        {
+            "chance": 0.15,
+            "feature": "minecraft:fallen_jungle_tree"
+        },
+        {
+            "chance": 0.33333334,
+            "feature": "myld:mega_jungle_tree"
+        },
+        {
+            "chance": 0.33333334,
+            "feature": "minecraft:jungle_tree"
+        },
+        {
+            "chance": 0.5,
+            "feature": "minecraft:jungle_bush"
+        },
+        {
+            "chance": 0.6667,
+            "feature": "myld:fancy_jungle_tree"
+        }
+    ]
+}

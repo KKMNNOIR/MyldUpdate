@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "minecraft:large_dripstone",
+        "placement": []
+    },
+    "features": [
+        {
+            "feature": {
+                "feature": "myld:large_dripstone_larger",
+                "placement": []
+            },
+            "chance": 0.2
+        }
+    ]
+}

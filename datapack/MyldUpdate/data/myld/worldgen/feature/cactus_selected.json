@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:weighted_random_selector",
+	"features": [
+		{
+			"weight": 9,
+			"data": {
+				"feature": "minecraft:cactus",
+				"placement": []
+			}
+		},
+		{
+			"weight": 1,
+			"data": {
+				"feature": "myld:tall_cactus",
+				"placement": []
+			}
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 1
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:fancy_trunk_placer",
+        "base_height": 16,
+        "height_rand_a": 8,
+        "height_rand_b": 24
+    },
+    "trunk_provider": "myld:trees/jungle/log",
+    "ignore_vines": true,
+    "foliage_placer": {
+        "type": "minecraft:jungle_foliage_placer",
+        "radius": {
+            "type": "minecraft:weighted_list",
+            "distribution": [
+                {
+                    "weight": 1,
+                    "data": 3
+                },
+                {
+                    "weight": 4,
+                    "data": 4
+                }
+            ]
+        },
+        "height": 5,
+        "offset": 0
+    },
+    "foliage_provider": "myld:trees/jungle/foliage",
+    "decorators": [
+        {
+            "type": "minecraft:cocoa",
+            "probability": 0.2
+        },
+        {
+            "type": "minecraft:trunk_vine"
+        },
+        {
+            "type": "minecraft:leave_vine",
+            "probability": 0.25
+        },
+        {
+            "type": "minecraft:beehive",
+            "probability": 0.005
+        },
+        {
+            "type": "minecraft:alter_ground",
+            "provider": {
+                "type": "minecraft:dual_noise",
+                "slow_noise": {
+                    "base_octave": -1,
+                    "amplitude_modifiers": [1,2,2,1,1],
+                    "normalize": "legacy"
+                },
+                "slow_scale": 1,
+                "variety": {
+                    "min_inclusive": 1,
+                    "max_inclusive": 2
+                },
+                "noise": {
+                    "base_octave": -3,
+                    "amplitude_modifiers": [1,1,1],
+                    "normalize": "legacy"
+                },
+                "scale": 1,
+                "seed": 0,
+                "states": [
+                    {
+                        "id": "minecraft:jungle_wood",
+                        "properties": {
+                            "axis": "x"
+                        }
+                    },
+                    {
+                        "id": "minecraft:jungle_wood",
+                        "properties": {
+                            "axis": "z"
+                        }
+                    },
+                    {
+                        "id": "minecraft:rooted_dirt"
+                    },
+                    {
+                        "id": "minecraft:rooted_dirt"
+                    },
+                    {
+                        "id": "minecraft:moss_block"
+                    },
+                    {
+                        "id": "minecraft:grass_block"
+                    }
+                ]
+            }
+        }
+    ]
+}

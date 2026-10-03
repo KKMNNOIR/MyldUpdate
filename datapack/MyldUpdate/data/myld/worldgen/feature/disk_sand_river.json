@@ -1,0 +1,53 @@
+{
+    "type": "minecraft:disk",
+    "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 6
+    },
+    "half_height": 2,
+    "target": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+            "minecraft:dirt",
+            "minecraft:grass_block",
+            "minecraft:gravel"
+        ]
+    },
+    "state_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [
+            {
+                "if_true": {
+                    "type": "minecraft:matching_fluids",
+                    "fluids": ["minecraft:water"]
+                },
+                "then": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:moss_block"
+                    }
+                }
+            },
+            {
+                "if_true": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:air"],
+                    "offset": [0,-1,0]
+                },
+                "then": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:sandstone"
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:sand"
+            }
+        }
+    }
+}

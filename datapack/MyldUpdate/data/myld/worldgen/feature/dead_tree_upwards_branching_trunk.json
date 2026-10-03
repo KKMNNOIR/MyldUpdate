@@ -1,0 +1,84 @@
+{
+	"type": "minecraft:tree",
+	"minimum_size": {
+		"type": "minecraft:two_layers_feature_size",
+		"lower_size": 0,
+		"upper_size": 0,
+		"limit": 0,
+		"min_clipped_height": 4
+	},
+	"below_trunk_provider": {
+		"type": "minecraft:rule_based",
+		"rules": [
+			{
+				"if_true": {
+					"type": "minecraft:not",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": ["minecraft:sand"]
+					}
+				},
+				"then": {
+					"type": "minecraft:simple",
+					"state": {
+						"id": "minecraft:sand"
+					}
+				}
+			}
+		]
+	},
+	"trunk_placer": {
+		"type": "minecraft:upwards_branching_trunk_placer",
+		"base_height": 8,
+		"height_rand_a": 11,
+		"height_rand_b": 4,
+		"extra_branch_length": {
+			"type": "minecraft:uniform",
+			"min_inclusive": 0,
+			"max_inclusive": 4
+		},
+		"extra_branch_steps": {
+			"type": "minecraft:uniform",
+			"min_inclusive": 1,
+			"max_inclusive": 6
+		},
+		"place_branch_per_log_probability": 0.5,
+		"can_grow_through": "#minecraft:mangrove_logs_can_grow_through"
+	},
+	"trunk_provider": {
+		"type": "minecraft:weighted",
+		"entries": [
+			{
+				"weight": 1,
+				"data": {
+					"id": "minecraft:dark_oak_log",
+					"properties": {
+						"axis": "y"
+					}
+				}
+			},
+			{
+				"weight": 4,
+				"data": {
+					"id": "minecraft:stripped_dark_oak_log",
+					"properties": {
+						"axis": "y"
+					}
+				}
+			}
+		]
+	},
+    "foliage_placer": {
+        "type": "minecraft:fancy_foliage_placer",
+        "height": 0,
+        "offset": 0,
+        "radius": 0
+    },
+    "foliage_provider": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:air"
+        }
+    },
+    "decorators": []
+}

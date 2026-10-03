@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "xz_radius": 1,
+    "depth": 1,
+    "vertical_range": 5,
+    "surface": "floor",
+    "replaceable": "#minecraft:moss_replaceable",
+    "extra_bottom_block_chance": 0.0,
+    "extra_edge_column_chance": 0.0,
+    "ground_state": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:moss_block"
+        }
+    },
+    "vegetation_chance": 0.8,
+    "vegetation_feature": {
+        "feature": {
+            "type": "minecraft:random_selector",
+            "default": {
+                "feature": "minecraft:grass_jungle",
+                "placement": []
+            },
+            "features": [
+                {
+                    "chance": 0.3334,
+                    "feature": "myld:moss_vegetation_jungle"
+                }
+            ]
+        },
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:replaceable"
+                }
+            }
+        ]
+    }
+}
