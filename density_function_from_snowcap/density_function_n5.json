@@ -1,0 +1,25 @@
+//[df-editor]:{"pos":[900,400],"collapsed":false}
+{
+  //[df-editor]:{"pos":[536,212],"collapsed":false}
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/ridges_folded", //[df-editor]:{"pos":[449.9678955078125,84.283203125],"collapsed":false}
+    "points": [
+      {
+        "location": -1,
+        "value": -0.5043047701622598,
+        "derivative": 0.5572883517066214
+      },
+      {
+        "location": -0.004458729016363572,
+        "value": -0.00010110946128150111,
+        "derivative": 0.4218750000000028
+      },
+      {
+        "location": -0.0012003125138592141,
+        "value": -0.002054609681592545,
+        "derivative": 1
+      }
+    ]
+  }
+}

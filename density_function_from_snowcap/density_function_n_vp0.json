@@ -1,0 +1,30 @@
+//[df-editor]:{"pos":[900,400],"collapsed":false}
+{
+  //[df-editor]:{"pos":[388,399],"collapsed":false}
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/continents", //[df-editor]:{"pos":[180,192],"collapsed":false}
+    "points": [
+      {
+        "location": -0.9909940609262039,
+        "value": -0.0063254891935958235,
+        "derivative": 0
+      },
+      {
+        "location": 0.16603073246222522,
+        "value": 0.1764988011405757,
+        "derivative": 0.5252557544757028
+      },
+      {
+        "location": 0.5495018068423905,
+        "value": 0.48882363046145205,
+        "derivative": 1.1229746572496904
+      },
+      {
+        "location": 0.7412373440324735,
+        "value": -0.002516649811634075,
+        "derivative": 0
+      }
+    ]
+  }
+}
