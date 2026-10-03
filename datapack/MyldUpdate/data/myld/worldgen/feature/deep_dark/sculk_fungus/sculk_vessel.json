@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:multiface_growth",
+    "block": "minecraft:sculk_vein",
+    "can_place_on_wall": true,
+    "can_place_on_ceiling": false,
+    "can_place_on_floor": false,
+    "can_be_placed_on": [
+        "minecraft:mushroom_stem"
+    ],
+    "search_range": 2,
+    "chance_of_spreading": 0.4
+}

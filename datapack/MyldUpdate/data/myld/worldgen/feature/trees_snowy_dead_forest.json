@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:oak_snowy_dead_forest_checked",
+    "features": [
+        {
+            "feature": "myld:fancy_oak_snowy_dead_forest_checked",
+            "chance": 0.1
+        },
+        {
+            "feature": "myld:birch_snowy_dead_forest_checked",
+            "chance": 0.2
+        },
+        {
+            "feature": "myld:fallen_dead_oak",
+            "chance": 0.1
+        }
+    ]
+}

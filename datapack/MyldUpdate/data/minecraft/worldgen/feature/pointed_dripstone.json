@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "feature": {
+                "type": "minecraft:speleothem",
+                "replaceable_blocks": "#minecraft:dripstone_replaceable_blocks",
+                "base_block": {
+                    "id": "minecraft:dripstone_block"
+                },
+                "pointed_block": {
+                    "id": "minecraft:pointed_dripstone"
+                },
+                "chance_of_directional_spread": 0.7,
+                "chance_of_spread_radius2": 0.75,
+                "chance_of_spread_radius3": 0.75,
+                "chance_of_taller_generation": 0.5
+            },
+            "placement": [
+                {
+                    "type": "minecraft:environment_scan",
+                    "direction_of_search": "down",
+                    "max_steps": 12,
+                    "target_condition": {
+                        "type": "minecraft:solid"
+                    },
+                    "allowed_search_condition": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:air",
+                            "minecraft:water"
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 0,
+                    "y": 1
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:speleothem",
+                "replaceable_blocks": "#minecraft:dripstone_replaceable_blocks",
+                "base_block": {
+                    "id": "minecraft:dripstone_block"
+                },
+                "pointed_block": {
+                    "id": "minecraft:pointed_dripstone"
+                },
+                "chance_of_directional_spread": 0.7,
+                "chance_of_spread_radius2": 0.75,
+                "chance_of_spread_radius3": 0.75,
+                "chance_of_taller_generation": 0.5
+            },
+            "placement": [
+                {
+                    "type": "minecraft:environment_scan",
+                    "direction_of_search": "up",
+                    "max_steps": 12,
+                    "target_condition": {
+                        "type": "minecraft:solid"
+                    },
+                    "allowed_search_condition": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:air",
+                            "minecraft:water"
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 0,
+                    "y": -1
+                }
+            ]
+        }
+    ]
+}

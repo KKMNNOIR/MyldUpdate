@@ -1,0 +1,17 @@
+{
+    "feature": "myld:fancy_oak_snowy_dead_forest",
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "id": "minecraft:oak_sapling",
+                    "properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": "minecraft:spring_water",
+            "placement": []
+        },
+        {
+            "feature": {
+                "type": "minecraft:random_neighbor_spread",
+                "xz_offset": {
+                    "type": "minecraft:trapezoid",
+                    "min": -1,
+                    "max": 1,
+                    "plateau": 0
+                },
+                "y_offset": {
+                    "type": "minecraft:trapezoid",
+                    "min": -4,
+                    "max": 4,
+                    "plateau": 0
+                },
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:mossy_cobblestone"
+                    }
+                },
+                "can_replace": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                        "minecraft:stone",
+                        "minecraft:granite",
+                        "minecraft:diorite",
+                        "minecraft:andesite",
+                        "minecraft:deepslate",
+                        "minecraft:tuff"
+                    ]
+                },
+                "attempts": 64,
+                "accepted_neighbors": [
+                    "minecraft:mossy_cobblestone",
+                    "minecraft:water"
+                ]
+            },
+            "placement": []
+        }
+    ]
+}

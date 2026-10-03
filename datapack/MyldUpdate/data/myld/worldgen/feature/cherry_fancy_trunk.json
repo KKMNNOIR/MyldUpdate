@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 64
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:fancy_trunk_placer",
+        "base_height": 10,
+        "height_rand_a": 4,
+        "height_rand_b": 1
+    },
+    "trunk_provider": "myld:trees/cherry/log",
+    "ignore_vines": false,
+    "foliage_placer": {
+        "type": "minecraft:cherry_foliage_placer",
+        "height": 5,
+        "offset": 0,
+        "radius": 4,
+        "hanging_leaves_chance": 0.16666667,
+        "hanging_leaves_extension_chance": 0.33333334,
+        "corner_hole_chance": 0.25,
+        "wide_bottom_layer_hole_chance": 0.25
+    },
+    "foliage_provider": "myld:trees/cherry/foliage",
+    "decorators": [
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "up"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:moss_carpet"
+                }
+            },
+            "probability": 0.1
+        }
+    ],
+    "root_placer": {
+        "type": "minecraft:mangrove_root_placer",
+        "root_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:cherry_wood",
+                "properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "trunk_offset_y": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 4
+        },
+        "mangrove_root_placement": {
+            "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+            "muddy_roots_in": "#minecraft:substrate_overworld",
+            "muddy_roots_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:rooted_dirt"
+                }
+            },
+            "max_root_length": 24,
+            "max_root_width": 1,
+            "random_skew_chance": 0.001
+        },
+        "above_root_placement": {
+            "above_root_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:moss_carpet"
+                }
+            },
+            "above_root_placement_chance": 0.1
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "type": "minecraft:geode",
+    "min_gen_offset": -16,
+    "max_gen_offset": 16,
+    "blocks": {
+        "filling_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:cave_air"
+            }
+        },
+        "inner_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:sculk"
+            }
+        },
+        "alternate_inner_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:sculk_catalyst"
+            }
+        },
+        "middle_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:mushroom_stem",
+                "properties": {
+                    "down": "true",
+                    "east": "true",
+                    "north": "true",
+                    "south": "true",
+                    "west": "true",
+                    "up": "true"
+                }
+            }
+        },
+        "outer_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:cobbled_deepslate"
+            }
+        },
+        "inner_placements": [
+            {
+                "id": "minecraft:sculk_vein",
+                "properties": {
+                    "down": "true",
+                    "east": "true",
+                    "north": "true",
+                    "south": "true",
+                    "west": "true",
+                    "up": "true",
+                    "waterlogged": "true"
+                }
+            }
+        ],
+        "cannot_replace": "#minecraft:features_cannot_replace",
+        "invalid_blocks": "#minecraft:geode_invalid_blocks"
+    },
+    "crack": {
+        "base_crack_size": 2.0,
+        "crack_point_offset": 2,
+        "generate_crack_chance": 0.95
+    },
+    "invalid_blocks_threshold": 1,
+    "noise_multiplier": 0.05,
+    "use_alternate_layer0_chance": 0.0325,
+    "use_potential_placements_chance": 0.925,
+    "layers": {
+        "filling": 1.7,
+        "inner_layer": 2.2,
+        "middle_layer": 3.2,
+        "outer_layer": 4.2
+    }
+}

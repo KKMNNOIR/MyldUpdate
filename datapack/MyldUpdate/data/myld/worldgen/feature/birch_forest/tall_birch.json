@@ -1,0 +1,73 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 1
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 16,
+        "height_rand_a": 6,
+        "height_rand_b": 6
+    },
+    "trunk_provider": "myld:trees/birch/log",
+    "ignore_vines": true,
+    "foliage_placer": {
+        "type": "minecraft:pine_foliage_placer",
+        "radius": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 3
+        },
+        "height": 5,
+        "offset": 1
+    },
+    "foliage_provider": "myld:trees/birch/foliage",
+    "decorators": [
+        {
+            "type": "minecraft:beehive",
+            "probability": 0.002
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "east",
+                "west"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:birch_log",
+                    "properties": {
+                        "axis": "x"
+                    }
+                }
+            },
+            "probability": 0.075
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "north",
+                "south"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:birch_log",
+                    "properties": {
+                        "axis": "z"
+                    }
+                }
+            },
+            "probability": 0.075
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.1
+        }
+    ]
+}

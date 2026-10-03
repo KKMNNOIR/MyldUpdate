@@ -1,0 +1,29 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "default": "myld:mega_spruce_tall",
+        "features": [
+            {
+                "chance": 0.33334,
+                "feature": {
+                    "feature": "myld:mega_spruce_tall_vine",
+                    "placement": []
+                }
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "id": "minecraft:spruce_sapling",
+                    "properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

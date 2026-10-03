@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:weighted",
+    "entries": [
+        {
+            "weight": 2,
+            "data": "minecraft:red_mushroom"
+        },
+        {
+            "weight": 2,
+            "data": {
+                "id": "minecraft:brown_mushroom"
+            }
+        },
+        {
+            "weight": 1,
+            "data": {
+                "id": "minecraft:moss_carpet"
+            }
+        }
+    ]
+}

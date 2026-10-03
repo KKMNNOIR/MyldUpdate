@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+            "minecraft:air",
+            "minecraft:cave_air",
+            "minecraft:lava"
+        ]
+    },
+    "prioritize_tip": false,
+    "layers": [
+        {
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 4,
+                "max_inclusive": 7
+            },
+            "provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 20,
+                        "data": {
+                            "id": "minecraft:warped_wart_block"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:shroomlight"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

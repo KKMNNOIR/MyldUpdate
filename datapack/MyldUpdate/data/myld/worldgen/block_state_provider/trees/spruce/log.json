@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:simple",
+    "state": {
+        "id": "minecraft:spruce_log",
+        "properties": {
+            "axis": "y"
+        }
+    }
+}

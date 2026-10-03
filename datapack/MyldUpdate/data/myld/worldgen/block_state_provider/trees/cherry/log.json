@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:simple",
+    "state": {
+        "id": "minecraft:cherry_log",
+        "properties": {
+            "axis": "y"
+        }
+    }
+}

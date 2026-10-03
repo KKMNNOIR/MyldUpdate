@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:simple",
+    "state": {
+        "id": "minecraft:cherry_leaves",
+        "properties": {
+            "distance": "7",
+            "persistent": "false",
+            "waterlogged": "false"
+        }
+    }
+}

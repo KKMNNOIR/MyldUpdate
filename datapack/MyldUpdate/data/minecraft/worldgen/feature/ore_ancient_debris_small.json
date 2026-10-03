@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:ore",
+    "size": 4,
+    "targets": [
+        {
+            "target": {
+                "predicate_type": "minecraft:tag_match",
+                "tag": "minecraft:base_stone_nether"
+            },
+            "state": {
+                "id": "minecraft:ancient_debris"
+            }
+        }
+    ],
+    "discard_chance_on_air_exposure": 0.75
+}

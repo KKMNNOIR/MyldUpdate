@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:lake",
+    "fluid": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:water",
+            "properties": {
+                "level": "0"
+            }
+        }
+    },
+    "barrier": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:mossy_cobblestone"
+        }
+    },
+    "can_place_feature": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "myld:overworld_carver_replaceables"
+    },
+    "can_replace_with_air_or_fluid": {
+        "type": "minecraft:not",
+        "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:features_cannot_replace"
+        }
+    },
+    "can_replace_with_barrier": {
+        "type": "minecraft:not",
+        "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:lava_pool_stone_cannot_replace"
+        }
+    }
+}

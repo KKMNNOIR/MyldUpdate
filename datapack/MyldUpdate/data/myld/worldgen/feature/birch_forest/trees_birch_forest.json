@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:birch_forest/birch_checked",
+    "features": [
+        {
+            "feature": "myld:birch_forest/fancy_birch_checked",
+            "chance": 0.334
+        },
+        {
+            "feature": "minecraft:fallen_birch_tree",
+            "chance": 0.125
+        }
+    ]
+}

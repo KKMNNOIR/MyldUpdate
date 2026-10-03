@@ -1,0 +1,168 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 2,
+        "limit": 1
+    },
+    "below_trunk_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [],
+        "fallback": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:warped_nylium"
+            }
+        }
+    },
+    "trunk_placer": {
+        "type": "minecraft:cherry_trunk_placer",
+        "base_height": 10,
+        "branch_count": {
+            "type": "minecraft:weighted_list",
+            "distribution": [
+                {
+                    "data": 1,
+                    "weight": 1
+                },
+                {
+                    "data": 2,
+                    "weight": 1
+                },
+                {
+                    "data": 3,
+                    "weight": 1
+                }
+            ]
+        },
+        "branch_start_offset_from_top": {
+            "min_inclusive": -4,
+            "max_inclusive": -3
+        },
+        "branch_end_offset_from_top": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 0,
+            "min_inclusive": -1
+        },
+        "branch_horizontal_length": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 4
+        },
+        "height_rand_a": 3,
+        "height_rand_b": 5
+    },
+    "trunk_provider": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:warped_stem",
+            "properties": {
+                "axis": "y"
+            }
+        }
+    },
+    "ignore_vines": true,
+    "foliage_placer": {
+        "type": "minecraft:cherry_foliage_placer",
+        "height": 8,
+        "offset": 0,
+        "radius": 6,
+        "hanging_leaves_chance": 0.5,
+        "hanging_leaves_extension_chance": 0.33333334,
+        "corner_hole_chance": 0.25,
+        "wide_bottom_layer_hole_chance": 0.25
+    },
+    "foliage_provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 15,
+                "data": {
+                    "id": "minecraft:warped_wart_block"
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:shroomlight"
+                }
+            }
+        ]
+    },
+    "root_placer": {
+        "type": "minecraft:mangrove_root_placer",
+        "root_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:warped_hyphae",
+                "properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "trunk_offset_y": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0,
+            "max_inclusive": 4
+        },
+        "mangrove_root_placement": {
+            "can_grow_through": [],
+            "muddy_roots_in": [],
+            "muddy_roots_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:warped_wart_block"
+                }
+            },
+            "max_root_length": 15,
+            "max_root_width": 3,
+            "random_skew_chance": 0.2
+        }
+    },
+    "decorators": [
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "down"
+            ],
+            "block_provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 8,
+                        "data": {
+                            "id": "minecraft:warped_wart_block"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:shroomlight"
+                        }
+                    }
+                ]
+            },
+            "probability": 0.375,
+            "exclusion_radius_xz": 0,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "up"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:torchflower"
+                }
+            },
+            "probability": 0.1,
+            "exclusion_radius_y": 0,
+            "exclusion_radius_xz": 1,
+            "required_empty_blocks": 1
+        }
+    ]
+}

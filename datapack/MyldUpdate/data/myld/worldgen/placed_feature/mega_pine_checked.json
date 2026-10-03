@@ -1,0 +1,32 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "default": {
+            "feature": "myld:mega_pine",
+            "placement": []
+        },
+        "features": [
+            {
+                "feature": {
+                    "feature": "myld:mega_pine_vine",
+                    "placement": []
+                },
+                "chance": 0.3334
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "id": "minecraft:spruce_sapling",
+                    "properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

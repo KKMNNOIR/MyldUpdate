@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "minecraft:spruce_checked",
+    "features": [
+        {
+            "feature": "myld:mega_spruce_tall",
+            "chance": 0.025641026
+        },
+        {
+            "chance": 0.30769232,
+            "feature": "myld:mega_pine_checked"
+        },
+        {
+            "chance": 0.33333334,
+            "feature": "minecraft:pine_checked"
+        },
+        {
+            "chance": 0.03,
+            "feature": "minecraft:fallen_spruce_tree"
+        },
+        {
+            "chance": 0.03,
+            "feature": "myld:mossy_spruce"
+        }
+    ]
+}

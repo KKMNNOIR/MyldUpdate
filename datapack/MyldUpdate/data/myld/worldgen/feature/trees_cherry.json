@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "myld:cherry_bees_005",
+        "placement": []
+    },
+    "features": [
+        {
+            "feature": {
+                "feature": "myld:cherry_fancy_trunk",
+                "placement": []
+            },
+            "chance": 0.1
+        }
+    ]
+}

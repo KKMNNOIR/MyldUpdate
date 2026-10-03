@@ -1,0 +1,223 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 400
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 0,
+                    "y": -1
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:not",
+                        "predicate": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:chiseled_stone_bricks",
+                                "minecraft:waxed_chiseled_copper",
+                                "minecraft:ochre_froglight",
+                                "minecraft:quartz_pillar"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "feature": {
+                "type": "minecraft:simple_random_selector",
+                "features": [
+                    {
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/acacia"
+                                }
+                            }
+                        ],
+                        "feature": "myld:starting_house/acacia"
+                    },
+                    {
+                        "feature": "myld:starting_house/birch",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/birch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/cherry",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/cherry"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/dark_oak",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/dark_oak"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/jungle",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/jungle"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/mangrove",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/mangrove"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/mesa_high",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_biomes",
+                                            "biomes": "#myld:has_structure/starting_house/mesa"
+                                        },
+                                        {
+                                            "type": "minecraft:height_range",
+                                            "min_inclusive": {
+                                                "absolute": 74
+                                            },
+                                            "max_inclusive": {
+                                                "below_top": 5
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/mesa_low",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_biomes",
+                                            "biomes": "#myld:has_structure/starting_house/mesa"
+                                        },
+                                        {
+                                            "type": "minecraft:height_range",
+                                            "min_inclusive": {
+                                                "above_bottom": 5
+                                            },
+                                            "max_inclusive": {
+                                                "absolute": 74
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/mossy",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/stony"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/oak",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/oak"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/pale_oak",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/pale_oak"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/sandstone",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/desert"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "feature": "myld:starting_house/spruce",
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:matching_biomes",
+                                    "biomes": "#myld:has_structure/starting_house/spruce"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

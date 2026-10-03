@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "myld:oak_bees_005_plains",
+        "placement": []
+    },
+    "features": [
+        {
+            "feature": {
+                "feature": "myld:fancy_oak_bees_005_plains",
+                "placement": []
+            },
+            "chance": 0.33333334
+        },
+        {
+            "feature": "minecraft:fallen_oak_tree",
+            "chance": 0.0125
+        }
+    ]
+}
