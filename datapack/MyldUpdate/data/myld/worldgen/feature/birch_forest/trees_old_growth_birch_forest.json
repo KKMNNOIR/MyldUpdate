@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:birch_forest/tall_birch_checked",
+    "features": [
+        {
+            "chance": 0.5,
+            "feature": "myld:birch_forest/fancy_birch_checked"
+        },
+        {
+            "chance": 0.334,
+            "feature": {
+                "feature": "minecraft:birch_tall",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "id": "minecraft:birch_sapling",
+                                "properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "chance": 0.125,
+            "feature": "myld:birch_forest/fallen_birch_old_growth"
+        }
+    ]
+}

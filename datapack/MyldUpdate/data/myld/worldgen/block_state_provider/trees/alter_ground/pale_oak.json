@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:noise",
+    "noise": {
+        "base_octave": -2,
+        "amplitude_modifiers": [1,1],
+        "normalize": "legacy"
+    },
+    "scale": 1.0,
+    "seed": 1,
+    "states": [
+        {
+            "id": "minecraft:dead_fire_coral_block"
+        },
+        {
+            "id": "minecraft:pale_moss_block"
+        },
+        {
+            "id": "minecraft:pale_moss_block"
+        },
+        {
+            "id": "minecraft:grass_block"
+        }
+    ]
+}

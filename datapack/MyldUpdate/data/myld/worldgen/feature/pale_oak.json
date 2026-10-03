@@ -1,0 +1,265 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 64
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:cherry_trunk_placer",
+        "base_height": 7,
+        "height_rand_a": 1,
+        "height_rand_b": 2,
+        "branch_count": {
+            "type": "minecraft:weighted_list",
+            "distribution": [
+                {
+                    "data": 1,
+                    "weight": 1
+                },
+                {
+                    "data": 2,
+                    "weight": 2
+                },
+                {
+                    "weight": 2,
+                    "data": 3
+                }
+            ]
+        },
+        "branch_start_offset_from_top": {
+            "min_inclusive": -4,
+            "max_inclusive": -3
+        },
+        "branch_end_offset_from_top": {
+            "type": "minecraft:uniform",
+            "min_inclusive": -1,
+            "max_inclusive": 0
+        },
+        "branch_horizontal_length": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 4
+        }
+    },
+    "trunk_provider": "myld:trees/pale_oak/log",
+    "ignore_vines": true,
+    "foliage_placer": {
+        "type": "minecraft:cherry_foliage_placer",
+        "radius": 4,
+        "offset": 0,
+        "height": 5,
+        "hanging_leaves_chance": 0.16666667,
+        "hanging_leaves_extension_chance": 0.33333334,
+        "corner_hole_chance": 0.25,
+        "wide_bottom_layer_hole_chance": 0.25
+    },
+    "foliage_provider": "myld:trees/pale_oak/foliage",
+    "root_placer": {
+        "type": "minecraft:mangrove_root_placer",
+        "root_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:pale_oak_wood",
+                "properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "trunk_offset_y": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 3,
+            "min_inclusive": 0
+        },
+        "mangrove_root_placement": {
+            "can_grow_through": "#minecraft:azalea_root_replaceable",
+            "muddy_roots_in": [
+                "minecraft:dirt",
+                "minecraft:stone"
+            ],
+            "muddy_roots_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:rooted_dirt"
+                }
+            },
+            "max_root_width": 1,
+            "max_root_length": 12,
+            "random_skew_chance": 0.0
+        }
+    },
+    "decorators": [
+        {
+            "type": "minecraft:pale_moss",
+            "ground_probability": 0.8,
+            "leaves_probability": 0.15,
+            "trunk_probability": 0.4
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "down"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:shroomlight"
+                }
+            },
+            "probability": 0.1,
+            "exclusion_radius_xz": 0,
+            "exclusion_radius_y": 0,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:alter_ground",
+            "provider": "myld:trees/alter_ground/pale_oak"
+        },
+        {
+            "type": "minecraft:place_on_ground",
+            "radius": 4,
+            "height": 2,
+            "tries": 16,
+            "block_state_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:closed_eyeblossom"
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "east"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "false",
+                        "east": "false",
+                        "north": "false",
+                        "south": "false",
+                        "up": "false",
+                        "west": "true",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "north"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "false",
+                        "east": "false",
+                        "north": "false",
+                        "south": "true",
+                        "up": "false",
+                        "west": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "south"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "false",
+                        "east": "false",
+                        "north": "true",
+                        "south": "false",
+                        "up": "false",
+                        "west": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "west"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "false",
+                        "east": "true",
+                        "north": "false",
+                        "south": "false",
+                        "up": "false",
+                        "west": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "up"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "true",
+                        "east": "false",
+                        "north": "false",
+                        "south": "false",
+                        "up": "false",
+                        "west": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "down"
+            ],
+            "probability": 0.05,
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:resin_clump",
+                    "properties": {
+                        "down": "false",
+                        "east": "false",
+                        "north": "false",
+                        "south": "false",
+                        "up": "true",
+                        "west": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        }
+    ]
+}

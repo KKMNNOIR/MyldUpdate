@@ -1,0 +1,26 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "default": {
+            "feature": "myld:glowstone_roots",
+            "placement": []
+        },
+        "features": [
+            {
+                "chance": 0.15,
+                "feature": {
+                    "feature": "myld:crying_obsidian_roots",
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.5,
+                "feature": {
+                    "feature": "myld:blackstone_roots",
+                    "placement": []
+                }
+            }
+        ]
+    },
+    "placement": []
+}

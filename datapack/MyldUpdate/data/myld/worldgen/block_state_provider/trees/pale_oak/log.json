@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:simple",
+    "state": {
+        "id": "minecraft:pale_oak_log",
+        "properties": {
+            "axis": "y"
+        }
+    }
+}

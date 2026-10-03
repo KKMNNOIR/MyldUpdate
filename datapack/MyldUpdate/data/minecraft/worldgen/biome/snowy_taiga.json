@@ -161,7 +161,7 @@
       "minecraft:ore_tuff",
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "vanilla_plus:ore_coal_deep",
+      "myld:ore_coal_deep",
       "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
@@ -180,10 +180,10 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
       "minecraft:ore_emerald",
-      "vanilla_plus:ore_emerald_deep"
+      "myld:ore_emerald_deep"
     ],
     [
-      "vanilla_plus:deep_dark/sculkystis"
+      "myld:deep_dark/sculkystis"
     ],
     [
       "minecraft:spring_water",
@@ -192,8 +192,8 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_large_fern",
-      "vanilla_plus:trees_snowy_taiga",
-      "vanilla_plus:moss_snowy_taiga",
+      "myld:trees_snowy_taiga",
+      "myld:moss_taiga",
       "minecraft:flower_default",
       "minecraft:patch_grass_taiga_2",
       "minecraft:brown_mushroom_taiga",
@@ -205,7 +205,7 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "vanilla_plus:snowy_top_layer"
+      "myld:snowy_top_layer"
     ]
   ],
   "has_precipitation": true,
