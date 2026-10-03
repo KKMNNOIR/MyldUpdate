@@ -1,0 +1,109 @@
+{
+    "type": "minecraft:fallen_tree",
+    "trunk_provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 2,
+                "data": {
+                    "id": "minecraft:birch_log",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:stripped_birch_log",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            }
+        ]
+    },
+    "log_length": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": 5,
+        "max_inclusive": 15
+    },
+    "stump_decorators": [
+        {
+            "type": "minecraft:trunk_vine"
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "up"
+            ],
+            "block_provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "id": "minecraft:moss_carpet"
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "data": {
+                            "id": "minecraft:red_mushroom"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:brown_mushroom"
+                        }
+                    }
+                ]
+            },
+            "probability": 0.375
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.5
+        }
+    ],
+    "log_decorators": [
+        {
+            "type": "minecraft:trunk_vine"
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "up"
+            ],
+            "block_provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "id": "minecraft:moss_carpet"
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "data": {
+                            "id": "minecraft:red_mushroom"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:brown_mushroom"
+                        }
+                    }
+                ]
+            },
+            "probability": 0.375
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.5
+        }
+    ]
+}

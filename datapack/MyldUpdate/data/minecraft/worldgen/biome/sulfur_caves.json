@@ -148,10 +148,10 @@
     ],
     [
       "minecraft:amethyst_geode",
-      "vanilla_plus:sulfur_geode"
+      "myld:sulfur_geode"
     ],
     [
-      "vanilla_plus:fossil_pyrite",
+      "myld:fossil_pyrite",
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],

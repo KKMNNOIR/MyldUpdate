@@ -1,0 +1,257 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "east",
+                "allowed_placement": {
+                    "type": "minecraft:replaceable"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:blackstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:blackstone"],
+                                "offset": [-1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,-1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,-1]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "west",
+                "allowed_placement": {
+                    "type": "minecraft:replaceable"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:blackstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:blackstone"],
+                                "offset": [1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,-1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [-1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,-1]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "north",
+                "allowed_placement": {
+                    "type": "minecraft:replaceable"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:blackstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:blackstone"],
+                                "offset": [0,0,1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,-1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,-1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [-1,0,0]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "south",
+                "allowed_placement": {
+                    "type": "minecraft:replaceable"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:blackstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:blackstone"],
+                                "offset": [0,0,-1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,0,1]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [0,-1,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [1,0,0]
+                            },
+                            {
+                                "type": "minecraft:replaceable",
+                                "offset": [-1,0,0]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -122,7 +122,7 @@
 			"minecraft:patch_soul_fire",
 			"minecraft:glowstone_extra",
 			"minecraft:glowstone",
-			"vanilla_plus:glowstone_roots_soul_sand_valley",
+			"myld:glowstone_roots_soul_sand_valley",
 			"minecraft:patch_crimson_roots",
 			"minecraft:ore_magma",
 			"minecraft:spring_closed",
@@ -133,13 +133,13 @@
 			"minecraft:ore_quartz_nether",
 			"minecraft:ore_ancient_debris_large",
 			"minecraft:ore_debris_small",
-			"vanilla_plus:skull_nether_decorator"
+			"myld:patch_skull_nether"
 		],
 		[],
 		[
 			"minecraft:spring_lava",
-			"vanilla_plus:wither_rose",
-			"vanilla_plus:nether_wart"
+			"myld:patch_wither_rose",
+			"myld:patch_nether_wart"
 		]
 	],
 	"has_precipitation": false,

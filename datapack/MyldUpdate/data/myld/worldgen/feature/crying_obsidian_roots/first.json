@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+        "type": "minecraft:replaceable"
+    },
+    "prioritize_tip": false,
+    "layers": [
+        {
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 4
+            },
+            "provider": "myld:nether_roots/crying_obsidian"
+        }
+    ]
+}

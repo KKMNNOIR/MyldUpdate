@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:simple_block",
+    "to_place": {
+        "type": "minecraft:randomized_int",
+        "source": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 29,
+                    "data": {
+                        "id": "minecraft:skeleton_skull",
+                        "properties": {
+                            "rotation": "0"
+                        }
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:wither_skeleton_skull",
+                        "properties": {
+                            "rotation": "0"
+                        }
+                    }
+                }
+            ]
+        },
+        "property": "rotation",
+        "values": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0,
+            "max_inclusive": 15
+        }
+    }
+}

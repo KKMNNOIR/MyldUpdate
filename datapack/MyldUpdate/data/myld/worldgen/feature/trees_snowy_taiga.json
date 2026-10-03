@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:snowed_spruce_checked",
+    "features": [
+        {
+            "chance": 0.05,
+            "feature": "minecraft:fallen_spruce_tree"
+        },
+        {
+            "chance": 0.33333334,
+            "feature": "myld:snowed_pine_checked"
+        }
+    ]
+}

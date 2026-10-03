@@ -1,0 +1,85 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:component",
+        "component": "minecraft:custom_data",
+        "cases": [
+            {
+                "when": {
+                    "north": 0.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_n0"
+                }
+            },
+            {
+                "when": {
+                    "north": 1.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_n1"
+                }
+            },
+            {
+                "when": {
+                    "north": 2.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_n2"
+                }
+            },
+            {
+                "when": {
+                    "south": 0.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_s0"
+                }
+            },
+            {
+                "when": {
+                    "south": 1.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_s1"
+                }
+            },
+            {
+                "when": {
+                    "south": 2.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_s2"
+                }
+            },
+            {
+                "when": {
+                    "south": 3.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_s3"
+                }
+            },
+            {
+                "when": {
+                    "south": 4.0
+                },
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vanilla_plus:block/polyporaceae_s4"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "vanilla_plus:block/polyporaceae_n0"
+        }
+    }
+}

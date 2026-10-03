@@ -97,7 +97,7 @@
     [],
     [
       "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "myld:lake_water_surface_pale_garden"
     ],
     [
       "minecraft:amethyst_geode"
@@ -146,7 +146,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "vanilla_plus:pale_garden_vegetation",
+      "myld:pale_garden_vegetation",
       "minecraft:pale_moss_patch",
       "minecraft:pale_garden_flowers",
       "minecraft:flower_pale_garden",

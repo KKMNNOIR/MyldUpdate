@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:pale_oak_checked",
+    "features": [
+        {
+            "chance": 0.1,
+            "feature": "myld:pale_oak_creaking_checked"
+        }
+    ]
+}
