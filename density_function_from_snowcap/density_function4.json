@@ -1,0 +1,30 @@
+//[df-editor]:{"pos":[1168,432],"collapsed":true}
+{
+  //[df-editor]:{"pos":[706,477],"collapsed":false}
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "minecraft:overworld/depth", //[df-editor]:{"pos":[444,305],"collapsed":false}
+    "points": [
+      {
+        "location": -1,
+        "value": -0.004546338093430968,
+        "derivative": 0.002142216909939686
+      },
+      {
+        "location": 0.0017776485547746912,
+        "value": -0.0010101912563394988,
+        "derivative": 0
+      },
+      {
+        "location": 1.4999768047893798,
+        "value": 0.003557931865473485,
+        "derivative": -0.006245890861276429
+      },
+      {
+        "location": 1.9999104529376188,
+        "value": -1.495296290863118,
+        "derivative": -3.7891737891738098
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+//[df-editor]:{"pos":[900,400],"collapsed":false}
+{
+  //[df-editor]:{"pos":[581,258],"collapsed":false}
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "", //[df-editor]:{"pos":[310,324],"collapsed":false}
+    "points": [
+      {
+        "location": -0.999797018931842,
+        "value": 1.0009711300862336,
+        "derivative": -0.009191176470589434
+      },
+      {
+        "location": -0.0005740803628100366,
+        "value": 0.9996704389393928,
+        "derivative": -0.0021515211379155713
+      },
+      {
+        "location": 0.1997716977653221,
+        "value": 0.003236324542748803,
+        "derivative": 0
+      },
+      {
+        "location": 1.0022720129503857,
+        "value": -0.0007591691882405938,
+        "derivative": 0
+      },
+      {
+        "location": 1.2186765923261333,
+        "value": 0.15506508632034388,
+        "derivative": 0
+      },
+      {
+        "location": 1.8498566155053955,
+        "value": 0.01522280573571666,
+        "derivative": 0
+      },
+      {
+        "location": 2.300000000000001,
+        "value": 0.1965761990105352,
+        "derivative": 0
+      }
+    ]
+  }
+}
