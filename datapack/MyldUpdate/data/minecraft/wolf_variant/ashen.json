@@ -1,0 +1,25 @@
+{
+  "assets": {
+    "wild": "minecraft:entity/wolf/wolf_ashen",
+    "angry": "minecraft:entity/wolf/wolf_ashen_angry",
+    "tame": "minecraft:entity/wolf/wolf_ashen_tame"
+  },
+  "baby_assets": {
+    "angry": "minecraft:entity/wolf/wolf_ashen_angry_baby",
+    "tame": "minecraft:entity/wolf/wolf_ashen_tame_baby",
+    "wild": "minecraft:entity/wolf/wolf_ashen_baby"
+  },
+  "spawn_conditions": [
+    {
+      "priority": 1,
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "minecraft:snowy_taiga",
+          "vanilla_plus:snowy_old_growth_pine_taiga",
+          "vanilla_plus:snowy_old_growth_spruce_taiga"
+        ]
+      }
+    }
+  ]
+}

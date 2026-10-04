@@ -1,0 +1,67 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:phantom_membrane",
+            "weight": 5,
+            "modifier": {
+              "type": "minecraft:sequence",
+              "functions": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 1,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "type": "minecraft:enchanted_count_increase",
+                  "enchantment": "minecraft:looting",
+                  "count": {
+                    "min": 0,
+                    "max": 1,
+                    "type": "minecraft:uniform"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "condition": 
+        {
+          "type": "minecraft:random_chance_with_enchanted_bonus",
+          "enchantment": "minecraft:looting",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.3,
+            "per_level_above_first": 0.15
+          },
+          "unenchanted_chance": 0.15
+        }
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather",
+            "condition": 
+            {
+              "type": "minecraft:random_chance_with_enchanted_bonus",
+              "enchantment": "minecraft:looting",
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.4,
+                "per_level_above_first": 0.1
+              },
+              "unenchanted_chance": 0.1
+            }
+          }
+        ]
+      }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "asset_id": "minecraft:entity/cow/umbra",
+    "baby_asset_id": "minecraft:entity/cow/umbra_baby",
+    "model": "cold",
+    "spawn_conditions": [
+        {
+            "priority": 0.5,
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "minecraft:dark_forest"
+                ]
+            }
+        }
+    ]
+}

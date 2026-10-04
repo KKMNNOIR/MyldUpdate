@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_ingot",
+              "weight": 5,
+              "modifier": {
+                "type": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1,
+                  "type": "minecraft:uniform"
+                }
+              },
+              "condition": {
+                "type": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.05,
+                  "per_level_above_first": 0.15
+                },
+                "unenchanted_chance": 0.05
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:quartz",
+              "condition": {
+                "type": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.2,
+                  "per_level_above_first": 0.05
+                },
+                "unenchanted_chance": 0.1
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gold_block",
+              "modifier": {
+                "type": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1,
+                  "type": "minecraft:uniform"
+                }
+              },
+              "condition": {
+                "type": "minecraft:random_chance_with_enchanted_bonus",
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.035,
+                  "per_level_above_first": 0.01
+                },
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.025
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "condition": {
+            "type": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.5,
+              "per_level_above_first": 0.1
+            },
+            "unenchanted_chance": 0.05
+          }
+        }
+      ]
+    }
+  ]
+}
