@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:trial_spawner/basalt_deltas/items_to_drop/wind_charge"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:trial_spawner/basalt_deltas/items_to_drop/magma_launcher"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "knf:trial_spawner/basalt_deltas/items_to_drop/fire_charge"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_sword",
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "type": "minecraft:enchant_randomly",
+                                "options": [
+                                    "kkmnnoir:wither_edge"
+                                ]
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "minecraft:sharpness": 10
+                                },
+                                "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "kkmnnoir:unbreakable": 1
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "type": "minecraft:enchant_randomly",
+                                "options": [
+                                    "kkmnnoir:fuse_shot",
+                                    "kkmnnoir:tempo_theft",
+                                    "kkmnnoir:poison_cloud",
+                                    "minecraft:flame",
+                                    "minecraft:punch",
+                                    "minecraft:multishot"
+                                ],
+                                "only_compatible": true
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "minecraft:power": 10
+                                },
+                                "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.2
+                                }
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "kkmnnoir:unbreakable": 1
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

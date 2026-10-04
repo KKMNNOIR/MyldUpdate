@@ -1,0 +1,114 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "weight": 80,
+            "modifier": [
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:sharpness": {
+                    "min": 1,
+                    "max": 5,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_aspect": {
+                    "min": 1,
+                    "max": 2,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:knockback": {
+                    "min": 1,
+                    "max": 2,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_sword",
+            "weight": 20,
+            "modifier": [
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:sharpness": {
+                    "min": 1,
+                    "max": 5,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_aspect": {
+                    "min": 1,
+                    "max": 2,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:knockback": {
+                    "min": 1,
+                    "max": 2,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                "add": true,
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "values": [
+        "#knf:nether_bricks",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:nether_brick_fence",
+        "minecraft:nether_brick_slab",
+        "minecraft:nether_brick_stairs",
+        "minecraft:nether_brick_wall",
+        "minecraft:polished_blackstone_brick_wall"
+    ]
+}

@@ -1,0 +1,323 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "weight": 9,
+            "modifier": {
+              "type": "minecraft:sequence",
+              "functions": [
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:sharpness": {
+                      "min": 3,
+                      "max": 5,
+                      "type": "minecraft:uniform"
+                    }
+                  },
+                  "add": true
+                },
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:fire_aspect": {
+                      "min": 1,
+                      "max": 2,
+                      "type": "minecraft:uniform"
+                    }
+                  },
+                  "add": true
+                },
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:knockback": {
+                      "min": 1,
+                      "max": 2,
+                      "type": "minecraft:uniform"
+                    }
+                  },
+                  "add": true,
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_sword",
+            "weight": 1,
+            "modifier": {
+              "type": "minecraft:sequence",
+              "functions": [
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:sharpness": 5
+                  },
+                  "add": true
+                },
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:fire_aspect": {
+                      "min": 1,
+                      "max": 2,
+                      "type": "minecraft:uniform"
+                    }
+                  },
+                  "add": true
+                },
+                {
+                  "type": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:knockback": {
+                      "min": 1,
+                      "max": 2,
+                      "type": "minecraft:uniform"
+                    }
+                  },
+                  "add": true,
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_boots",
+              "modifier": {
+                "type": "minecraft:sequence",
+                "functions": [
+                  {
+                    "type": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:protection": 4
+                    },
+                    "condition": {
+                      "type": "minecraft:random_chance",
+                      "chance": 0.3
+                    }
+                  },
+                  {
+                    "type": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:blast_protection": 4
+                    },
+                    "condition": {
+                      "type": "minecraft:random_chance",
+                      "chance": 0.3
+                    }
+                  },
+                  {
+                    "type": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:blast_protection": 4
+                    },
+                    "condition": {
+                      "type": "minecraft:random_chance",
+                      "chance": 0.3
+                    }
+                  },
+                  {
+                    "type": "minecraft:set_enchantments",
+                    "enchantments": {
+                      "minecraft:unbreaking": 3
+                    },
+                    "condition": {
+                      "type": "minecraft:random_chance",
+                      "chance": 0.375
+                    }
+                  }
+                ]
+              },
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": 0.25
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_boots",
+              "modifier": {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "kkmnnoir:falling_immunity": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:blast_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:projectile_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:thorns": 2
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": 3
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              }
+            ]
+          },
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.375
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.25
+      }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "modifier": {
+            "type": "minecraft:sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:blast_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:projectile_protection": 4
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.375
+                }
+              },
+              {
+                "type": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": 3
+                },
+                "condition": {
+                  "type": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.25
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:reference",
+            "name": "vanilla_plus:in_fortress"
+        },
+        {
+            "type": "minecraft:location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#knf:fortress_monster_spawnables_on"
+                }
+            },
+            "offsetY": -1
+        }
+    ]
+}

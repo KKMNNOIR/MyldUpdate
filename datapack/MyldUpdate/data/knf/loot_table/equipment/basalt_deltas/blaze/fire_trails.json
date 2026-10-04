@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_boots",
+            "modifier": 
+            {
+              "type": "minecraft:set_enchantments",
+              "enchantments": {
+                "kkmnnoir:fire_trails": 1,
+                "minecraft:binding_curse": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+}

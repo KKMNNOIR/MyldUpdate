@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:enchant_with_levels",
+    "levels": {
+        "type": "minecraft:uniform",
+        "min": 10,
+        "max": 30
+    },
+    "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.1
+    }
+}

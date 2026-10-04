@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "kkmnnoir:wither_shot": 2
+                                }
+                            },
+                            {
+                                "type": "minecraft:set_name",
+                                "entity": "this",
+                                "name": {
+                                  "text": "ウィザースネーク",
+                                  "color": "dark_gray",
+                                  "italic": false
+                                }
+                            },
+                            {
+                              "type": "minecraft:set_custom_model_data",
+                              "strings": {
+                                  "values": [
+                                      "vanilla_plus:wither_snake"
+                                  ],
+                                  "mode": "replace_section"
+                              }
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "minecraft:power": {
+                                        "type": "minecraft:uniform",
+                                        "min": 2,
+                                        "max": 5
+                                    }
+                                },
+                                "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.334
+                                }
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "minecraft:multishot": {
+                                        "type": "minecraft:uniform",
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                },
+                                "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            },
+                            {
+                                "type": "minecraft:set_enchantments",
+                                "enchantments": {
+                                    "minecraft:punch": {
+                                        "type": "minecraft:uniform",
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                },
+                                "condition": {
+                                    "type": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
