@@ -1,0 +1,62 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "myld:swamp_oak",
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:would_survive",
+                    "state": {
+                        "id": "minecraft:oak_sapling",
+                        "properties": {
+                            "stage": "0"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "features": [
+        {
+            "chance": 0.4,
+            "feature": {
+                "feature": "myld:swamp_fancy_oak",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "id": "minecraft:oak_sapling",
+                                "properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "chance": 0.1,
+            "feature": {
+                "feature": "myld:fallen_oak_swamp",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "id": "minecraft:oak_sapling",
+                                "properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

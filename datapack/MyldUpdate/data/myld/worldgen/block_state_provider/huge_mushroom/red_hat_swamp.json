@@ -1,0 +1,2110 @@
+{
+    "type": "minecraft:rule_based",
+    "rules": [
+        {
+            "if_true": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:red_mushroom_block","minecraft:mushroom_stem"],
+                        "offset": [0,1,0]
+                    }
+                ]
+            },
+            "then": {
+                "type": "minecraft:rule_based",
+                "rules": [
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [1,0,1]
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [1,-1,1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "true",
+                                    "south": "false",
+                                    "west": "true",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [0,0,1]
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [0,-1,1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "true",
+                                    "south": "false",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,0,1]
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [-1,-1,1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "true",
+                                    "north": "true",
+                                    "south": "false",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [1,0,0]
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [1,-1,0]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "false",
+                                    "south": "false",
+                                    "west": "true",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [0,-1,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [-1,0,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [0,0,-1]
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "false",
+                                    "south": "false",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [-1,0,0]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [-1,-1,0]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "true",
+                                    "north": "false",
+                                    "south": "false",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [1,0,-1]
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [1,-1,-1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "false",
+                                    "south": "true",
+                                    "west": "true",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [0,0,-1]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [0,-1,-1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "false",
+                                    "north": "false",
+                                    "south": "true",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:red_mushroom_block"],
+                                    "offset": [-1,0,-1]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:mushroom_stem"],
+                                    "offset": [-1,-1,-1]
+                                },
+                                {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                        "type": "minecraft:volume_match",
+                                        "min": [0,2,0],
+                                        "max": [0,4,0],
+                                        "match": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:red_mushroom_block",
+                                "properties": {
+                                    "down": "false",
+                                    "east": "true",
+                                    "north": "false",
+                                    "south": "true",
+                                    "west": "false",
+                                    "up": "true"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [1,0,2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [1,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [1,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [0,0,2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [0,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [0,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [-1,0,2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-1,1,2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [2,0,1]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [2,1,1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [2,1,1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [-2,0,1]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-2,1,1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-2,1,1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [2,0,0]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [2,1,0]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [2,1,0]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "false",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [-2,0,0]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-2,1,0]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-2,1,0]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "true",
+                                                "south": "false",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [2,0,-1]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [2,1,-1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "true",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [2,1,-1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [-2,0,-1]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-2,1,-1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-2,1,-1]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [1,0,-2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [1,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "true",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [1,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "true",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [0,0,-2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [0,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [0,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "false",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:mushroom_stem"],
+                            "offset": [-1,0,-2]
+                        },
+                        "then": {
+                            "type": "minecraft:rule_based",
+                            "rules": [
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "true"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-1,1,-2]
+                                    },
+                                    "then": {
+                                        "type": "minecraft:simple",
+                                        "state": {
+                                            "id": "minecraft:red_mushroom_block",
+                                            "properties": {
+                                                "down": "false",
+                                                "east": "true",
+                                                "north": "false",
+                                                "south": "true",
+                                                "west": "false",
+                                                "up": "false"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:rule_based",
+                    "rules": [
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [1,0,1]
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [1,-1,1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "true",
+                                        "south": "false",
+                                        "west": "true",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [0,0,1]
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [0,-1,1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "true",
+                                        "south": "false",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,0,1]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-1,-1,1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "true",
+                                        "north": "true",
+                                        "south": "false",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [1,0,0]
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [1,-1,0]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "false",
+                                        "south": "false",
+                                        "west": "true",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [0,-1,0]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,0,0]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [0,0,-1]
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "false",
+                                        "south": "false",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,0,0]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-1,-1,0]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "true",
+                                        "north": "false",
+                                        "south": "false",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [1,0,-1]
+                                        }
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [1,-1,-1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "false",
+                                        "south": "true",
+                                        "west": "true",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [0,0,-1]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [0,-1,-1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "false",
+                                        "north": "false",
+                                        "south": "true",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:all_of",
+                                "predicates": [
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:red_mushroom_block"],
+                                        "offset": [-1,0,-1]
+                                    },
+                                    {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": ["minecraft:mushroom_stem"],
+                                        "offset": [-1,-1,-1]
+                                    },
+                                    {
+                                        "type": "minecraft:not",
+                                        "predicate": {
+                                            "type": "minecraft:volume_match",
+                                            "min": [0,2,0],
+                                            "max": [0,4,0],
+                                            "match": {
+                                                "type": "minecraft:matching_blocks",
+                                                "blocks": ["minecraft:red_mushroom_block"]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "then": {
+                                "type": "minecraft:simple",
+                                "state": {
+                                    "id": "minecraft:red_mushroom_block",
+                                    "properties": {
+                                        "down": "false",
+                                        "east": "true",
+                                        "north": "false",
+                                        "south": "true",
+                                        "west": "false",
+                                        "up": "true"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [1,0,2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [1,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [1,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [0,0,2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [0,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [0,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [-1,0,2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [-1,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [-1,1,2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [2,0,1]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [2,1,1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [2,1,1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [-2,0,1]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [-2,1,1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [-2,1,1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [2,0,0]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [2,1,0]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [2,1,0]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "false",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [-2,0,0]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [-2,1,0]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [-2,1,0]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "true",
+                                                    "south": "false",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [2,0,-1]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [2,1,-1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [2,1,-1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "true",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [-2,0,-1]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [-2,1,-1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [-2,1,-1]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [1,0,-2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [1,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "true",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [1,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "true",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [0,0,-2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [0,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [0,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "false",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": ["minecraft:mushroom_stem"],
+                                "offset": [-1,0,-2]
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:red_mushroom_block"],
+                                            "offset": [-1,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "true"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:mushroom_stem"],
+                                            "offset": [-1,1,-2]
+                                        },
+                                        "then": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:red_mushroom_block",
+                                                "properties": {
+                                                    "down": "false",
+                                                    "east": "true",
+                                                    "north": "false",
+                                                    "south": "true",
+                                                    "west": "false",
+                                                    "up": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

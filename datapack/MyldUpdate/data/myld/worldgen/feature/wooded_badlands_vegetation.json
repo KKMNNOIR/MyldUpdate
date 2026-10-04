@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "myld:grass_wooded_badlands",
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.25,
+            "feature": {
+                "feature": "myld:badlands_bush",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "id": "minecraft:dark_oak_sapling",
+                                "properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

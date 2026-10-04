@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 1
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 5,
+        "height_rand_a": 3,
+        "height_rand_b": 6
+    },
+    "trunk_provider": "myld:trees/oak/log",
+    "ignore_vines": false,
+    "foliage_placer": {
+        "type": "minecraft:blob_foliage_placer",
+        "height": 3,
+        "offset": 0,
+        "radius": 3
+    },
+    "foliage_provider": "myld:trees/oak/foliage",
+    "decorators": [
+        {
+            "type": "minecraft:leave_vine",
+            "probability": 0.25
+        },
+        {
+            "type": "minecraft:attached_to_logs",
+            "directions": [
+                "up"
+            ],
+            "block_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:moss_carpet"
+                }
+            },
+            "probability": 0.5
+        }
+    ]
+}
