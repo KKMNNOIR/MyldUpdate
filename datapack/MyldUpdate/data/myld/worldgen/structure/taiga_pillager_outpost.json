@@ -1,5 +1,5 @@
 {
-  "biomes": "#vanilla_plus:is_savanna",
+  "type": "minecraft:jigsaw",
   "spawn_overrides": {
     "monster": {
       "bounding_box": "full",
@@ -12,8 +12,8 @@
       ]
     }
   },
-  "type": "minecraft:jigsaw",
-  "start_pool": "vanilla_plus:savanna_pillager_outpost",
+  "biomes": "#minecraft:is_taiga",
+  "start_pool": "vanilla_plus:taiga_pillager_outpost",
   "size": 7,
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
