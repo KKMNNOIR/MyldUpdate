@@ -17,7 +17,7 @@
       "weight": 1
     },
     {
-      "structure": "vanilla_plus:desert_pillager_outpost",
+      "structure": "myld:desert_pillager_outpost",
       "weight": 1
     },
     {
@@ -25,7 +25,7 @@
       "weight": 1
     },
     {
-      "structure": "vanilla_plus:taiga_pillager_outpost",
+      "structure": "myld:taiga_pillager_outpost",
       "weight": 1
     }
   ]
