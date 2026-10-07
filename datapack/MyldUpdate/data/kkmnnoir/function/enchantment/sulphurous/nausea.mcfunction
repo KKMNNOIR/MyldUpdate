@@ -1,0 +1,1 @@
+effect give @e[distance=0.01..2] minecraft:nausea 5 0

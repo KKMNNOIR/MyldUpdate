@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:add",
+    "inputs": [
+        {
+            "type": "minecraft:storage",
+            "storage": "kkmnnoir:enchantments",
+            "path": "poison_cloud.amplifier"
+        },
+        {
+            "type": "minecraft:constant",
+            "value": 2
+        }
+    ]
+}
