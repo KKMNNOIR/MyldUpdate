@@ -8,7 +8,7 @@ execute store result entity @s data.enchantments.oozing.level int 1 run scoreboa
 # Sizeを決める
 # 一回り小さいものを召喚する
 # 自身のSizeをスコア化
-execute store result score @s kkmnOozingSlimeSize run data get entity @s Size 5
+execute store result score @s kkmnOozingSlimeSize run data get entity @s Size 0.5
 
 # dataに保存
 execute store result entity @s data.enchantments.oozing.size int 1 run scoreboard players get @s kkmnOozingSlimeSize
