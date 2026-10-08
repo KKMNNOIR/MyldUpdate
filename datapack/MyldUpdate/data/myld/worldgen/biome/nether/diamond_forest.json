@@ -1,0 +1,136 @@
+{
+    "has_precipitation": false,
+    "temperature": 2,
+    "downfall": 0,
+    "effects": {
+        "water_color": 9460055,
+        "grass_color": 12564309,
+        "foliage_color": 11445290
+    },
+    "attributes": {
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.crimson_forest.mood",
+                "offset": 2,
+                "block_search_extent": 8,
+                "tick_delay": 6000
+            },
+            "additions": {
+                "sound": "minecraft:ambient.crimson_forest.additions",
+                "tick_chance": 0.0111
+            },
+            "loop": "minecraft:ambient.crimson_forest.loop"
+        },
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.nether.crimson_forest",
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            },
+            "creative": {
+                "sound": "minecraft:music.nether.crimson_forest",
+                "min_delay": 1200,
+                "max_delay": 2400,
+                "replace_current_music": false
+            }
+        },
+        "minecraft:visual/sky_color": 7907327,
+        "minecraft:visual/fog_color": 1787717,
+        "minecraft:visual/water_fog_color": 9460055,
+        "minecraft:gameplay/natural_mob_spawns": {
+            "argument": {
+                "spawns_by_category": {
+                    "monster": [
+                        {
+                            "type": "minecraft:hoglin",
+                            "weight": 60,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 1,
+                                "max_inclusive": 2
+                            }
+                        },
+                        {
+                            "type": "minecraft:zombified_piglin",
+                            "weight": 40,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 2,
+                                "max_inclusive": 4
+                            }
+                        },
+                        {
+                            "type": "minecraft:skeleton",
+                            "weight": 30,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 1,
+                                "max_inclusive": 4
+                            }
+                        },
+                        {
+                            "type": "minecraft:enderman",
+                            "weight": 3,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 1,
+                                "max_inclusive": 2
+                            }
+                        },
+                        {
+                            "type": "minecraft:piglin",
+                            "weight": 24,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 1,
+                                "max_inclusive": 4
+                            }
+                        }
+                    ],
+                    "creature": [
+                        {
+                            "type": "minecraft:strider",
+                            "weight": 10,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min_inclusive": 1,
+                                "max_inclusive": 2
+                            }
+                        }
+                    ]
+                },
+                "spawn_costs": {}
+            },
+            "modifier": "overlay"
+        }
+    },
+    "carvers": [
+        "myld:nether_cave"
+    ],
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "vanilla_plus:spring_open_diamond",
+            "vanilla_plus:patch_soul_fire_diamond",
+            "minecraft:glowstone_extra",
+            "minecraft:glowstone",
+            "minecraft:brown_mushroom_nether",
+            "minecraft:red_mushroom_nether",
+            "vanilla_plus:spring_closed_diamond",
+            "minecraft:ore_ancient_debris_large"
+        ],
+        [],
+        [
+            "vanilla_plus:lava_lake_diamond",
+            "vanilla_plus:diamond_tree",
+            "vanilla_plus:diamond_tree_on_prismarine"
+        ]
+    ]
+}

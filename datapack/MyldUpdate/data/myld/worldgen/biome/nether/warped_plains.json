@@ -1,0 +1,125 @@
+{
+  "effects": {
+    "water_color": 61620
+  },
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.warped_forest.mood",
+        "offset": 2,
+        "block_search_extent": 8,
+        "tick_delay": 6000
+      },
+      "additions": {
+        "sound": "minecraft:ambient.warped_forest.additions",
+        "tick_chance": 0.0111
+      },
+      "loop": "minecraft:ambient.warped_forest.loop"
+    },
+    "minecraft:audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.nether.warped_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "creative": {
+        "sound": "minecraft:music.nether.warped_forest",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:warped_spore"
+        },
+        "probability": 0.01428
+      }
+    ],
+    "minecraft:visual/sky_color": 1705242,
+    "visual/fog_color": 1705242,
+    "minecraft:visual/water_fog_color": 61620,
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawns_by_category": {
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "weight": 20,
+              "count": 4
+            },
+            {
+              "type": "minecraft:cave_spider",
+              "weight": 1,
+              "count": 1
+            },
+            {
+              "type": "minecraft:endermite",
+              "weight": 1,
+              "count": 1
+            }
+          ],
+          "creature": [
+            {
+              "type": "minecraft:strider",
+              "weight": 60,
+              "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 2
+              }
+            }
+          ]
+        },
+        "spawn_costs": {
+          "minecraft:enderman": {
+            "energy_budget": 0.12,
+            "charge": 1.0
+          }
+        }
+      },
+      "modifier": "overlay"
+    }
+  },
+  "carvers": [
+    "myld:nether_cave"
+  ],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:spring_open",
+      "minecraft:patch_fire",
+      "minecraft:patch_soul_fire",
+      "minecraft:glowstone_extra",
+      "minecraft:glowstone",
+      "minecraft:ore_magma",
+      "minecraft:spring_closed",
+      "minecraft:ore_gravel_nether",
+      "minecraft:ore_blackstone",
+      "minecraft:ore_gold_nether",
+      "minecraft:ore_quartz_nether",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small"
+    ],
+    [],
+    [
+      "minecraft:spring_lava",
+      "vanilla_plus:warped_fungi_plains",
+      "vanilla_plus:warped_fungus_deco",
+      "vanilla_plus:warped_plains_vegetation",
+      "minecraft:nether_sprouts",
+      "vanilla_plus:twisting_vines_plains"
+    ]
+  ],
+  "has_precipitation": false,
+  "temperature": 2,
+  "downfall": 0
+}
