@@ -117,20 +117,20 @@
         [],
         [],
         [
-            "vanilla_plus:spring_open_diamond",
-            "vanilla_plus:patch_soul_fire_diamond",
-            "minecraft:glowstone_extra",
-            "minecraft:glowstone",
+            "myld:spring_open_diamond",
+            "myld:patch_soul_fire_diamond",
+            "myld:glowstone_diamond",
+            "myld:glowstone_extra_diamond",
             "minecraft:brown_mushroom_nether",
             "minecraft:red_mushroom_nether",
-            "vanilla_plus:spring_closed_diamond",
+            "myld:spring_closed_diamond",
             "minecraft:ore_ancient_debris_large"
         ],
         [],
         [
-            "vanilla_plus:lava_lake_diamond",
-            "vanilla_plus:diamond_tree",
-            "vanilla_plus:diamond_tree_on_prismarine"
-        ]
+            "myld:deltas_diamond",
+            "myld:diamond_tree"
+        ],
+        []
     ]
 }

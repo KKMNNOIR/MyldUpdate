@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:replaceable"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:glowstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": {
+                        "type": "minecraft:trapezoid",
+                        "min": -1,
+                        "max": 1,
+                        "plateau": 0
+                    },
+                    "z": {
+                        "type": "minecraft:trapezoid",
+                        "min": -1,
+                        "max": 1,
+                        "plateau": 0
+                    },
+                    "y": 0
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 5,
+                            "max_inclusive": 7
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:glowstone"
+                            }
+                        }
+                    }
+                ]
+            },
+            "placement": []
+        },
+        {
+            "feature": {
+                "type": "minecraft:projected_random_patchy_square",
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:glowstone"
+                    }
+                },
+                "size": 3,
+                "max_projection_height": 3,
+                "project_through": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:air"
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 0,
+                    "y": -1
+                }
+            ]
+        }
+    ]
+}

@@ -108,7 +108,6 @@
       "minecraft:red_mushroom_nether",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
-      "vanilla_plus:ore_blackstone",
       "minecraft:ore_gravel_nether",
       "minecraft:ore_blackstone",
       "minecraft:ore_gold_nether",
@@ -119,8 +118,8 @@
     [],
     [
       "minecraft:spring_lava",
-      "vanilla_plus:twisting_vines_plains",
-      "vanilla_plus:sparse_warped_flora"
+      "myld:twisting_vines_plains",
+      "myld:sparse_warped_flora"
     ]
   ],
   "has_precipitation": false,

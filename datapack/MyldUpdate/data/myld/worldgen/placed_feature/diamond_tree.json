@@ -1,0 +1,27 @@
+{
+    "feature": {
+        "type": "minecraft:random_selector",
+        "default": {
+            "feature": "myld:diamond_tree",
+            "placement": []
+        },
+        "features": [
+            {
+                "chance": 0.4,
+                "feature": {
+                    "feature": "myld:diamond_tree_on_prismarine",
+                    "placement": []
+                }
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 8
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

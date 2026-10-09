@@ -123,8 +123,10 @@
     [],
     [
       "minecraft:spring_lava",
-      "vanilla_plus:weeping_vines_plains",
-      "vanilla_plus:crimson_plains_vegetation"
-    ]
+      "myld:weeping_vines_plains",
+      "myld:crimson_plains_vegetation",
+      "myld:crimson_plains_vegetation_bonemeal"
+    ],
+    []
   ]
 }

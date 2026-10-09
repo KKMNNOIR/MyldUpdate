@@ -1,0 +1,107 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "minecraft:crimson_roots",
+        "placement": [
+            {
+                "type": "minecraft:count",
+                "count": 96
+            },
+            {
+                "type": "minecraft:offset",
+                "x": {
+                    "type": "minecraft:trapezoid",
+                    "min": -7,
+                    "max": 7,
+                    "plateau": 0
+                },
+                "z": {
+                    "type": "minecraft:trapezoid",
+                    "min": -7,
+                    "max": 7,
+                    "plateau": 0
+                },
+                "y": {
+                    "type": "minecraft:trapezoid",
+                    "min": -3,
+                    "max": 3,
+                    "plateau": 0
+                }
+            },
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:air"]
+                }
+            }
+        ]
+    },
+    "features": [
+        {
+            "chance": 0.099,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:simple",
+                        "state": {
+                            "id": "minecraft:warped_roots"
+                        }
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:count",
+                        "count": 32
+                    },
+                    {
+                        "type": "minecraft:offset",
+                        "x": {
+                            "type": "minecraft:trapezoid",
+                            "min": -7,
+                            "max": 7,
+                            "plateau": 0
+                        },
+                        "z": {
+                            "type": "minecraft:trapezoid",
+                            "min": -7,
+                            "max": 7,
+                            "plateau": 0
+                        },
+                        "y": {
+                            "type": "minecraft:trapezoid",
+                            "min": -3,
+                            "max": 3,
+                            "plateau": 0
+                        }
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:air"]
+                                },
+                                {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:crimson_nylium"],
+                                    "offset": [0,-1,0]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "chance": 0.1,
+            "feature": {
+                "feature": "minecraft:crimson_fungus",
+                "placement": []
+            }
+        }
+    ]
+}

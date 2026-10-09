@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:ore",
+    "size": 8,
+    "targets": [
+        {
+            "target": {
+                "predicate_type": "minecraft:random_block_match",
+                "block": "minecraft:blackstone",
+                "probability": 0.5
+            },
+            "state": {
+                "id": "minecraft:crying_obsidian"
+            }
+        },
+        {
+            "target": {
+                "predicate_type": "minecraft:block_match",
+                "block": "minecraft:blackstone"
+            },
+            "state": {
+                "id": "minecraft:obsidian"
+            }
+        }
+    ],
+    "discard_chance_on_air_exposure": 0.0
+}

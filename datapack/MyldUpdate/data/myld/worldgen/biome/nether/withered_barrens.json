@@ -48,7 +48,7 @@
             }
         ],
         "minecraft:visual/sky_color": 1053205,
-        "minecraft:visual/fog_color": 9,
+        "minecraft:visual/fog_color": "#151414",
         "minecraft:visual/water_fog_color": 1707284,
         "gameplay/natural_mob_spawns": {
             "argument": {
@@ -120,7 +120,7 @@
         [
             "minecraft:basalt_pillar",
             "vanilla_plus:magma_stalactite",
-            "vanilla_plus:glowstone_stalagmite"
+            "myld:glowstone_stalagmite"
         ],
         [],
         [],
@@ -139,12 +139,12 @@
             "minecraft:ore_gravel_nether",
             "minecraft:ore_ancient_debris_large",
             "minecraft:ore_debris_small",
-            "vanilla_plus:ore_gilded_blackstone",
-            "vanilla_plus:ore_quartz_blackstone",
-            "vanilla_plus:ore_obsidians",
-            "vanilla_plus:brown_mushroom_blackstone",
-            "vanilla_plus:red_mushroom_blackstone",
-            "vanilla_plus:patch_soul_fire_blackstone"
+            "myld:ore_gilded_blackstone",
+            "myld:ore_quartz_blackstone",
+            "myld:ore_obsidian",
+            "myld:brown_mushroom_blackstone",
+            "myld:red_mushroom_blackstone",
+            "myld:patch_soul_fire_blackstone"
         ],
         [],
         [

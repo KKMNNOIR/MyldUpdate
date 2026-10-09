@@ -1,0 +1,56 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "surface": "ceiling",
+    "xz_radius": 2,
+    "depth": 1,
+    "vertical_range": 20,
+    "replaceable": "#minecraft:base_stone_nether",
+    "ground_state": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:nether_wart_block"
+        }
+    },
+    "extra_edge_column_chance": 0.4,
+    "extra_bottom_block_chance": 0.05,
+    "vegetation_feature": {
+        "feature": {
+            "type": "minecraft:single_block_pillar",
+            "block": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:weeping_vines_plant"
+                }
+            },
+            "direction": "down",
+            "can_replace": {
+                "type": "minecraft:matching_blocks",
+                "blocks": ["minecraft:air"]
+            },
+            "chance_to_continue": 0.625,
+            "cap_feature": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:randomized_int",
+                        "source": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:weeping_vines"
+                            }
+                        },
+                        "property": "age",
+                        "values": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 23,
+                            "max_inclusive": 25
+                        }
+                    }
+                },
+                "placement": []
+            }
+        },
+        "placement": []
+    },
+    "vegetation_chance": 0.2
+}

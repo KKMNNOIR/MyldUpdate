@@ -130,7 +130,7 @@
       "minecraft:patch_fire",
       "minecraft:glowstone_extra",
       "minecraft:glowstone",
-      "vanilla_plus:glowstone_roots",
+      "myld:glowstone_roots",
       "minecraft:ore_magma",
       "minecraft:spring_closed",
       "minecraft:ore_gravel_nether",
@@ -145,8 +145,8 @@
       "minecraft:spring_lava",
       "minecraft:weeping_vines",
       "minecraft:crimson_fungi",
-      "vanilla_plus:crimson_plains_vegetation",
-      "vanilla_plus:warped_flora"
+      "myld:crimson_plains_vegetation",
+      "myld:warped_flora"
     ]
   ]
 }

@@ -1,0 +1,12 @@
+{
+    "feature": "myld:deltas_withered",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 25
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

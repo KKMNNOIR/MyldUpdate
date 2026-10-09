@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:spring_feature",
+    "valid_blocks": [
+        "minecraft:diamond_block",
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:prismarine"
+    ],
+    "state": {
+        "id": "minecraft:lava",
+        "properties": {
+            "falling": "false"
+        }
+    },
+    "rock_count": 5,
+    "hole_count": 1,
+    "requires_block_below": false
+}
