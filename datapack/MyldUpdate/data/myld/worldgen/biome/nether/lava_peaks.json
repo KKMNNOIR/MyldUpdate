@@ -97,11 +97,11 @@
         [],
         [],
         [
-            "vanilla_plus:spring_open_volcanic_peaks"
+            "myld:spring_open_lava_peaks"
         ],
         [
-            "vanilla_plus:basalt_blob",
-            "vanilla_plus:tuff_blob",
+            "myld:basalt_blob",
+            "myld:tuff_blob",
             "minecraft:spring_delta",
             "minecraft:patch_fire",
             "minecraft:patch_soul_fire",
@@ -110,13 +110,13 @@
             "minecraft:brown_mushroom_nether",
             "minecraft:red_mushroom_nether",
             "minecraft:ore_magma",
-            "vanilla_plus:spring_closed_soul_sand_valley_double",
+            "myld:spring_closed_soul_sand_valley_double",
             "minecraft:ore_gold_deltas",
             "minecraft:ore_quartz_deltas",
-            "vanilla_plus:scattered_ore_ancient_debris",
-            "vanilla_plus:ore_gilded_blackstone",
-            "vanilla_plus:ore_quartz_blackstone",
-            "vanilla_plus:volcanic_bomb"
+            "myld:scattered_ore_ancient_debris",
+            "myld:ore_gilded_blackstone",
+            "myld:ore_quartz_blackstone",
+            "myld:volcanic_bomb"
         ]
     ]
 }
