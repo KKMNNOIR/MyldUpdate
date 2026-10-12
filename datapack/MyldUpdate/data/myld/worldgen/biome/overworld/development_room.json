@@ -1,0 +1,32 @@
+{
+    "carvers": [],
+    "downfall": 0,
+    "effects": {
+        "water_color": 4501493,
+        "grass_color": 9551193,
+        "foliage_color": 7842607
+    },
+    "attributes": {
+        "minecraft:visual/sky_color": 7907327,
+        "minecraft:visual/fog_color": 12638463,
+        "minecraft:audio/background_music": {},
+        "minecraft:gameplay/natural_mob_spawns": {
+            "spawns_by_category": {},
+            "spawn_costs": {}
+        }
+    },
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "has_precipitation": false,
+    "temperature": 2
+}
