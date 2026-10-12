@@ -24,7 +24,7 @@
         },
         "height": 4
     },
-    "foliage_provider": "myld:trees/spruce/foliage",
+    "foliage_provider": "myld:trees/pale_oak/foliage",
     "decorators": [
         {
             "type": "minecraft:place_on_ground",

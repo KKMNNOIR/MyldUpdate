@@ -201,8 +201,8 @@
       [
         "minecraft:glow_lichen",
         "minecraft:patch_large_fern",
-        "vanilla_plus:trees_snowy_old_growth_spruce_taiga",
-        "vanilla_plus:moss_snowy_old_growth_taiga",
+        "myld:trees_snowy_old_growth_spruce_taiga",
+        "myld:patch_moss_snowy_old_growth_taiga",
         "minecraft:flower_default",
         "minecraft:patch_grass_taiga",
         "minecraft:patch_dead_bush",
@@ -217,7 +217,7 @@
       ],
       [
         "minecraft:freeze_top_layer",
-        "vanilla_plus:snowy_top_layer"
+        "myld:snowy_top_layer"
       ]
     ],
     "has_precipitation": true,

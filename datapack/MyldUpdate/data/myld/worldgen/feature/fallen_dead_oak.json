@@ -47,6 +47,10 @@
                 ]
             },
             "probability": 0.8
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.5
         }
     ],
     "log_decorators": [
@@ -79,6 +83,10 @@
                 ]
             },
             "probability": 0.8
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.125
         }
     ]
 }

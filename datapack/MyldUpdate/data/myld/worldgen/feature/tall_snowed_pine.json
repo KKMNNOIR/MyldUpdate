@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 64
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 12,
+        "height_rand_a": 12,
+        "height_rand_b": 20
+    },
+    "trunk_provider": "myld:trees/spruce/log",
+    "ignore_vines": false,
+    "foliage_placer": {
+        "type": "minecraft:pine_foliage_placer",
+        "radius": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 3
+        },
+        "height": 5,
+        "offset": 0
+    },
+    "foliage_provider": "myld:trees/pale_oak/foliage",
+    "decorators": [
+		{
+			"type": "minecraft:place_on_ground",
+			"block_state_provider": {
+				"type": "minecraft:randomized_int",
+				"source": {
+					"type": "minecraft:simple",
+					"state": {
+						"id": "minecraft:snow",
+						"properties": {
+							"layers": "1"
+						}
+					}
+				},
+				"property": "layers",
+				"values": {
+					"type": "minecraft:biased_to_bottom",
+					"min_inclusive": 1,
+					"max_inclusive": 4
+				}
+			},
+			"height": 1,
+			"radius": 3,
+			"tries": 160
+		}
+	]
+}

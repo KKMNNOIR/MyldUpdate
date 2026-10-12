@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "xz_radius": 1,
+    "depth": 1,
+    "vertical_range": 4,
+    "surface": "floor",
+    "ground_state": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:grass_block"
+        }
+    },
+    "extra_edge_column_chance": 0.6,
+    "extra_bottom_block_chance": 0.0,
+    "replaceable": "#minecraft:sand",
+    "vegetation_chance": 0.5,
+    "vegetation_feature": {
+        "feature": "myld:grass_patch_overgrown_beach",
+        "placement": []
+    }
+}

@@ -42,8 +42,23 @@
             "provider": "myld:trees/alter_ground/dead_snowy_forest"
         },
         {
+            "type": "minecraft:place_on_ground",
+            "radius": 2,
+            "height": 1,
+            "tries": 128,
+            "block_state_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:red_mushroom"
+                }
+            }
+        },
+        {
             "type": "minecraft:shelf_mushroom",
             "probability": 0.25
+        },
+        {
+            "type": "minecraft:trunk_vine"
         }
     ]
 }

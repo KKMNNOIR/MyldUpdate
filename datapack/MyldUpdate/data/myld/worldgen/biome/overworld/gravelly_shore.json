@@ -92,7 +92,7 @@
 		[],
 		[],
 		[
-			"vanilla_plus:ore_gravel_surface",
+			"myld:ore_gravel_surface",
 			"minecraft:ore_dirt",
 			"minecraft:ore_gravel",
 			"minecraft:ore_granite_upper",

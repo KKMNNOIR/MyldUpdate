@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:coniferous_tree_checked",
+    "features": [
+        {
+            "chance": 0.2,
+            "feature": "minecraft:spruce_checked"
+        },
+        {
+            "chance": 0.1,
+            "feature": "minecraft:pine_checked"
+        }
+    ]
+}

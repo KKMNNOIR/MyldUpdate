@@ -157,7 +157,7 @@
 		["minecraft:spring_water", "minecraft:spring_lava"],
 		[
 			"minecraft:glow_lichen",
-			"vanilla_plus:trees_snowy_forest",
+			"myld:trees_snowy_dead_forest",
 			"minecraft:patch_grass_forest",
 			"minecraft:patch_dead_bush_2",
 			"minecraft:brown_mushroom_normal",

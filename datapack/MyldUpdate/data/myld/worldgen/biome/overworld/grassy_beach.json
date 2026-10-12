@@ -146,7 +146,7 @@
 			"minecraft:red_mushroom_normal",
 			"minecraft:patch_pumpkin",
 			"minecraft:patch_sugar_cane",
-			"vanilla_plus:overgrown_beach_patch"
+			"myld:overgrown_beach_vegetation"
 		],
 		["minecraft:freeze_top_layer"]
 	],

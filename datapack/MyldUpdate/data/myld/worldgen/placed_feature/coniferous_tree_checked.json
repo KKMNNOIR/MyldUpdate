@@ -1,0 +1,29 @@
+{
+    "feature": {
+        "type": "minecraft:simple_random_selector",
+        "features": [
+            {
+                "feature": "myld:coniferous_tree",
+                "placement": []
+            },
+            {
+                "feature": "myld:coniferous_tree_vine",
+                "placement": []
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "id": "minecraft:spruce_sapling",
+                    "properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

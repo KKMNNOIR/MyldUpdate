@@ -157,7 +157,7 @@
 		["minecraft:spring_water", "minecraft:spring_lava"],
 		[
 			"minecraft:glow_lichen",
-			"vanilla_plus:ice_tree",
+			"myld:ice_tree",
 			"minecraft:flower_default",
 			"minecraft:patch_grass_badlands",
 			"minecraft:brown_mushroom_normal",

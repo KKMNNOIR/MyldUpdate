@@ -4,38 +4,118 @@
         "type": "minecraft:two_layers_feature_size",
         "lower_size": 0,
         "upper_size": 1,
-        "limit": 64,
+        "limit": 32,
         "min_clipped_height": 8
     },
-    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "below_trunk_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [
+            {
+                "if_true": {
+                    "type": "minecraft:not",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:cannot_replace_below_tree_trunk"
+                    }
+                },
+                "then": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:snow_block"
+                    }
+                }
+            }
+        ]
+    },
     "trunk_placer": {
         "type": "minecraft:fancy_trunk_placer",
         "base_height": 8,
         "height_rand_a": 4,
-        "height_rand_b": 2
+        "height_rand_b": 6
     },
-    "trunk_provider": "myld:trees/oak/log",
-    "ignore_vines": true,
+    "trunk_provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 2,
+                "data": {
+                    "id": "minecraft:oak_log",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:stripped_oak_log",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            }
+        ]
+    },
+    "ignore_vines": false,
     "foliage_placer": {
         "type": "minecraft:random_spread_foliage_placer",
-        "radius": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 2,
-            "max_inclusive": 3
-        },
-        "offset": 0,
-        "foliage_height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 2
-        },
-        "leaf_placement_attempts": 50
+        "radius": 2,
+        "offset": 4,
+        "foliage_height": 4,
+        "leaf_placement_attempts": 10
     },
-    "foliage_provider": "myld:trees/oak/foliage",
+    "foliage_provider": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:mangrove_roots",
+            "properties": {
+                "waterlogged": "false"
+            }
+        }
+    },
     "decorators": [
         {
+            "type": "minecraft:beehive",
+            "probability": 0.002
+        },
+        {
             "type": "minecraft:alter_ground",
-            "provider": "myld:trees/alter_ground/dead_snowy_forest"
+            "provider": {
+                "type": "minecraft:rule_based",
+                "rules": [
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:beneath_tree_podzol_replaceable"
+                        },
+                        "then": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:snow_block"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:shelf_mushroom",
+            "probability": 0.4
+        },
+        {
+            "type": "minecraft:place_on_ground",
+            "radius": 2,
+            "height": 1,
+            "tries": 127,
+            "block_state_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:brown_mushroom"
+                }
+            }
+        },
+        {
+            "type": "minecraft:trunk_vine"
         }
     ]
 }

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:random_selector",
+    "default": "myld:coniferous_tree_checked",
+    "features": [
+        {
+            "chance": 0.0125,
+            "feature": "minecraft:cherry_bees_005"
+        },
+        {
+            "chance": 0.02,
+            "feature": {
+                "feature": "myld:birch_wooded_slopes",
+                "placement": [
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:would_survive",
+                            "state": {
+                                "id": "minecraft:birch_sapling",
+                                "properties": {
+                                    "stage": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "chance": 0.1,
+            "feature": "minecraft:oak_bees_0002_leaf_litter"
+        }
+    ]
+}

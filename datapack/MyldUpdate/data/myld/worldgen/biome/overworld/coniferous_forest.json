@@ -186,9 +186,9 @@
 		["myld:deep_dark/sculkystis"],
 		["minecraft:spring_water", "minecraft:spring_lava"],
 		[
-			"vanilla_plus:coniferous_tree",
+			"myld:trees_coniferous_forest",
 			"minecraft:glow_lichen",
-			"vanilla_plus:patch_large_fern",
+			"myld:patch_large_fern",
 			"minecraft:patch_bush",
 			"minecraft:flower_default",
 			"minecraft:patch_grass_taiga",
