@@ -1,0 +1,53 @@
+{
+    "type": "minecraft:stepped_column_cluster",
+    "block": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:blue_ice"
+        }
+    },
+    "can_replace": {
+        "type": "minecraft:any_of",
+        "predicates": [
+            {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:air"
+            },
+            {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:lava"
+                    },
+                    {
+                        "type": "minecraft:height_range",
+                        "min_inclusive": {
+                            "above_bottom": 0
+                        },
+                        "max_inclusive": {
+                            "relative_to_sea_level": 0
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "cannot_place_on": "#minecraft:cannot_place_basalt_pillar_on",
+    "cluster_reach": 5,
+    "column_count": 50,
+    "column_reach": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 3
+    },
+    "continue_through": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:blue_ice"
+    },
+    "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 5,
+        "max_inclusive": 10
+    }
+}

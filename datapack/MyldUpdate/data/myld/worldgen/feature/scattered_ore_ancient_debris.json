@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:scattered_ore",
+	"size": 64,
+	"discard_chance_on_air_exposure": 0.125,
+	"targets": [
+		{
+			"target": {
+				"predicate_type": "minecraft:tag_match",
+				"tag": "minecraft:base_stone_nether"
+			},
+			"state": {
+				"id": "minecraft:ancient_debris"
+			}
+		}
+	]
+}

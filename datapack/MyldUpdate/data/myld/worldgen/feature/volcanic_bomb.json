@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "myld:volcanic_bomb_basalt",
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.075,
+            "feature": {
+                "feature": "myld:volcanic_bomb_crying_obsidian",
+                "placement": []
+            }
+        },
+        {
+            "chance": 0.3,
+            "feature": {
+                "feature": "myld:volcanic_bomb_obsidian",
+                "placement": []
+            }
+        }
+    ]
+}

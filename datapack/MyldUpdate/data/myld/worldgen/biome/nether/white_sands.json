@@ -112,14 +112,14 @@
             "minecraft:red_mushroom_nether",
             "minecraft:ore_magma",
             "minecraft:spring_closed",
-            "vanilla_plus:lava_lake_white_sands",
+            "myld:deltas_white_sands",
             "minecraft:ore_gravel_nether",
             "minecraft:ore_blackstone",
             "minecraft:ore_gold_nether",
             "minecraft:ore_quartz_nether",
             "minecraft:ore_ancient_debris_large",
             "minecraft:ore_debris_small",
-            "vanilla_plus:diorite_pinnacle"
+            "myld:gloestone_pinnacle"
         ],
         [],
         [

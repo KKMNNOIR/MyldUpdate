@@ -119,7 +119,7 @@
         [],
         [
             "minecraft:basalt_pillar",
-            "vanilla_plus:magma_stalactite",
+            "myld:magma_stalactite",
             "myld:glowstone_stalagmite"
         ],
         [],
@@ -144,7 +144,8 @@
             "myld:ore_obsidian",
             "myld:brown_mushroom_blackstone",
             "myld:red_mushroom_blackstone",
-            "myld:patch_soul_fire_blackstone"
+            "myld:patch_soul_fire_blackstone",
+			"myld:ore_debris_blackstone"
         ],
         [],
         [

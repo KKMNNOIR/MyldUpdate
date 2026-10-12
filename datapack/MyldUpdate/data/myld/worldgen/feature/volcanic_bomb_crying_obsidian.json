@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:block_blob",
+    "state": {
+        "id": "minecraft:crying_obsidian"
+    },
+    "can_place_on": {
+        "type": "minecraft:solid"
+    }
+}

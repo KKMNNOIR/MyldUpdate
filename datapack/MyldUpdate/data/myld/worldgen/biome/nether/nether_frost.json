@@ -111,12 +111,12 @@
         [],
         [
             "minecraft:basalt_pillar",
-            "vanilla_plus:ice_spikes_nether",
-            "vanilla_plus:icicles"
+            "myld:ice_columns",
+            "myld:icycle_nether"
         ],
         [],
         [
-            "vanilla_plus:basalt_lake"
+            "myld:basalt_lake"
         ],
         [],
         [],
@@ -132,8 +132,7 @@
             "minecraft:ore_quartz_nether",
             "minecraft:ore_ancient_debris_large",
             "minecraft:ore_debris_small",
-            "vanilla_plus:frozen_surface",
-            "vanilla_plus:ore_snow"
+            "myld:ore_snow"
         ],
         [],
         []

@@ -1,0 +1,84 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": {
+                "type": "minecraft:single_block_pillar",
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:magma_block"
+                    }
+                },
+                "direction": "down",
+                "can_replace": {
+                    "type": "minecraft:replaceable"
+                },
+                "chance_to_continue": 0.625
+            },
+            "placement": []
+        },
+        {
+            "feature": {
+                "type": "minecraft:single_block_pillar",
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:magma_block"
+                    }
+                },
+                "direction": "down",
+                "can_replace": {
+                    "type": "minecraft:replaceable"
+                },
+                "chance_to_continue": 0.25
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": {
+                        "type": "minecraft:trapezoid",
+                        "min": -1,
+                        "max": 1,
+                        "plateau": 0
+                    },
+                    "z": {
+                        "type": "minecraft:trapezoid",
+                        "min": -1,
+                        "max": 1,
+                        "plateau": 0
+                    },
+                    "y": 0
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:projected_random_patchy_square",
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:magma_block"
+                    }
+                },
+                "size": 5,
+                "max_projection_height": 1,
+                "project_through": {
+                    "type": "minecraft:solid"
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 0,
+                    "y": 1
+                }
+            ]
+        }
+    ]
+}
