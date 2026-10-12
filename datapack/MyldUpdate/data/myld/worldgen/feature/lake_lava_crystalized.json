@@ -1,0 +1,152 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": "myld:lake_lava_surface_main",
+            "placement": []
+        },
+        {
+            "feature": {
+                "type": "minecraft:simple_block",
+                "to_place": {
+                    "type": "minecraft:weighted",
+                    "entries": [
+                        {
+                            "weight": 9,
+                            "data": {
+                                "id": "minecraft:amethyst_block"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "minecraft:budding_amethyst"
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": [
+				{
+					"type": "minecraft:count",
+					"count": 100
+				},
+                {
+                    "type": "minecraft:offset",
+                    "x": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    },
+                    "z": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    },
+                    "y": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    }
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:smooth_basalt",
+                            "minecraft:lava"
+                        ]
+                    }
+                }
+			]
+        },
+        {
+            "feature": {
+                "type": "minecraft:simple_block",
+                "to_place": {
+                    "type": "minecraft:weighted",
+                    "entries": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "minecraft:small_amethyst_bud",
+                                "properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "minecraft:medium_amethyst_bud",
+                                "properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "minecraft:large_amethyst_bud",
+                                "properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "id": "minecraft:amethyst_cluster",
+                                "properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": [
+				{
+					"type": "minecraft:count",
+					"count": 100
+				},
+                {
+                    "type": "minecraft:offset",
+                    "x": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    },
+                    "z": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    },
+                    "y": {
+                        "type": "minecraft:trapezoid",
+                        "min": -6,
+                        "max": 6,
+                        "plateau": 0
+                    }
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                            "minecraft:amethyst_block",
+                            "minecraft:budding_amethyst"
+                        ],
+                        "offset": [0,-1,0]
+                    }
+                }
+			]
+        }
+    ]
+}

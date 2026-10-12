@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:weighted",
+	"entries": [
+		{
+			"weight": 1,
+			"data": {
+				"id": "minecraft:small_amethyst_bud",
+				"properties": {
+					"facing": "west"
+				}
+			}
+		},
+		{
+			"weight": 1,
+			"data": {
+				"id": "minecraft:medium_amethyst_bud",
+				"properties": {
+					"facing": "west"
+				}
+			}
+		},
+		{
+			"weight": 1,
+			"data": {
+				"id": "minecraft:large_amethyst_bud",
+				"properties": {
+					"facing": "west"
+				}
+			}
+		},
+		{
+			"weight": 1,
+			"data": {
+				"id": "minecraft:amethyst_cluster",
+				"properties": {
+					"facing": "west"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,237 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 1,
+        "limit": 64
+    },
+    "below_trunk_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [],
+        "fallback": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:calcite"
+            }
+        }
+    },
+    "trunk_placer": {
+        "type": "minecraft:cherry_trunk_placer",
+        "base_height": 4,
+        "height_rand_a": 2,
+        "height_rand_b": 4,
+        "branch_count": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 2
+        },
+        "branch_horizontal_length": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 3,
+            "max_inclusive": 5
+        },
+        "branch_start_offset_from_top": {
+            "max_inclusive": -4,
+            "min_inclusive": -5
+        },
+        "branch_end_offset_from_top": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0,
+            "max_inclusive": 4
+        }
+    },
+    "trunk_provider": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:pale_oak_log",
+            "properties": {
+                "axis": "y"
+            }
+        }
+    },
+    "ignore_vines": false,
+    "foliage_placer": {
+        "type": "minecraft:cherry_foliage_placer",
+        "radius": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 4,
+            "max_inclusive": 5
+        },
+        "height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 4,
+            "max_inclusive": 6
+        },
+        "offset": 0,
+        "hanging_leaves_chance": 0.75,
+        "hanging_leaves_extension_chance": 0.75,
+        "corner_hole_chance": 0.5,
+        "wide_bottom_layer_hole_chance": 0.5
+    },
+    "foliage_provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 3,
+                "data": {
+                    "id": "minecraft:amethyst_block"
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:budding_amethyst"
+                }
+            }
+        ]
+    },
+    "root_placer": {
+        "type": "minecraft:mangrove_root_placer",
+        "root_provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 5,
+                    "data": {
+                        "id": "minecraft:amethyst_block"
+                    }
+                },
+                {
+                    "weight": 3,
+                    "data": {
+                        "id": "minecraft:budding_amethyst"
+                    }
+                }
+            ]
+        },
+        "trunk_offset_y": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 5,
+            "min_inclusive": 2
+        },
+        "mangrove_root_placement": {
+            "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+            "muddy_roots_in": "#myld:overworld_carver_replaceables",
+            "muddy_roots_provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:calcite"
+                }
+            },
+            "max_root_length": 64,
+            "max_root_width": 1,
+            "random_skew_chance": 0.0
+        },
+        "above_root_placement": {
+            "above_root_placement_chance": 0.375,
+            "above_root_provider": "myld:amethst_buds_up"
+        }
+    },
+    "decorators": [
+        {
+            "type": "minecraft:alter_ground",
+            "provider": {
+                "type": "minecraft:rule_based",
+                "rules": [
+                    {
+                        "if_true": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:beneath_tree_podzol_replaceable"
+                        },
+                        "then": {
+                            "type": "minecraft:weighted",
+                            "entries": [
+                                {
+                                    "weight": 5,
+                                    "data": {
+                                        "id": "minecraft:amethyst_block"
+                                    }
+                                },
+                                {
+                                    "weight": 3,
+                                    "data": {
+                                        "id": "minecraft:budding_amethyst"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:place_on_ground",
+            "radius": 6,
+            "height": 1,
+            "tries": 128,
+            "block_state_provider": "myld:amethst_buds_up"
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "up"
+            ],
+            "block_provider": "myld:amethst_buds_up",
+            "probability": 0.3,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "down"
+            ],
+            "block_provider": "myld:amethst_buds_down",
+            "probability": 0.33,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "east"
+            ],
+            "block_provider": "myld:amethst_buds_east",
+            "probability": 0.33,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "north"
+            ],
+            "block_provider": "myld:amethst_buds_north",
+            "probability": 0.33,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "south"
+            ],
+            "block_provider": "myld:amethst_buds_south",
+            "probability": 0.33,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        },
+        {
+            "type": "minecraft:attached_to_leaves",
+            "directions": [
+                "west"
+            ],
+            "block_provider": "myld:amethst_buds_west",
+            "probability": 0.33,
+            "exclusion_radius_xz": 1,
+            "exclusion_radius_y": 1,
+            "required_empty_blocks": 1
+        }
+    ]
+}
