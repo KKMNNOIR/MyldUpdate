@@ -139,9 +139,12 @@
 		[
 			"minecraft:lake_lava_underground",
 			"minecraft:lake_lava_surface",
-			"vanilla_plus:frozen_lake"
+			"myld:frozen_puddle"
 		],
-		["minecraft:amethyst_geode", "vanilla_plus:mossy_rock_tundra"],
+		[
+			"minecraft:amethyst_geode",
+			"myld:mossy_rock_tundra"
+		],
 		[
 			"minecraft:fossil_upper",
 			"minecraft:fossil_lower",
@@ -184,16 +187,24 @@
 			"minecraft:ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		["myld:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
 		[
-			"vanilla_plus:glow_lichen_tundra",
-			"vanilla_plus:trees_tundra",
-			"vanilla_plus:flower_tundra",
-			"vanilla_plus:patch_grass_tundra",
-			"vanilla_plus:brown_mushroom_tundra",
-			"vanilla_plus:red_mushroom_tundra"
+			"myld:deep_dark/sculkystis"
 		],
-		["minecraft:freeze_top_layer", "vanilla_plus:snow_top_layer_decay"]
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
+		[
+			"myld:glow_lichen_tundra",
+			"myld:trees_tundra",
+			"myld:flower_tundra",
+			"myld:patch_grass_tundra",
+			"myld:brown_mushroom_tundra",
+			"myld:red_mushroom_tundra"
+		],
+		[
+			"minecraft:freeze_top_layer",
+			"myld:snow_top_layer_decay"
+		]
 	]
 }

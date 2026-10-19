@@ -1,0 +1,92 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": {
+            "type": "minecraft:simple_block",
+            "to_place": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "id": "minecraft:fern"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:short_grass"
+                        }
+                    }
+                ]
+            }
+        },
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:air"
+                }
+            }
+        ]
+    },
+    "features": [
+        {
+            "chance": 0.6,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:simple",
+                        "state": {
+                            "id": "minecraft:moss_block"
+                        }
+                    }
+                },
+                "placement": [
+                    {
+                        "type": "minecraft:offset",
+                        "x": 0,
+                        "z": 0,
+                        "y": -1
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:moss_replaceable"
+                        }
+                    },
+                    {
+                        "type": "minecraft:count",
+                        "count": 10
+                    },
+                    {
+                        "type": "minecraft:offset",
+                        "x": {
+                            "type": "minecraft:trapezoid",
+                            "min": -3,
+                            "max": 3,
+                            "plateau": 0
+                        },
+                        "z": {
+                            "type": "minecraft:trapezoid",
+                            "min": -3,
+                            "max": 3,
+                            "plateau": 0
+                        },
+                        "y": 0
+                    },
+                    {
+                        "type": "minecraft:block_predicate_filter",
+                        "predicate": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:moss_replaceable"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
