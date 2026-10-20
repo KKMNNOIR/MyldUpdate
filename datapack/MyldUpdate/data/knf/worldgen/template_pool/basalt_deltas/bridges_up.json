@@ -1,0 +1,23 @@
+{
+    "fallback": "knf:basalt_deltas/bridge_end",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_1",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/stairs_2",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

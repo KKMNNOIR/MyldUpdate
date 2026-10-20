@@ -1,0 +1,27 @@
+{
+    "fallback": "knf:soul_sand_valley/bridge_staircase/fire_post_fire",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "knf:soul_sand_valley/bridge_staircase/fire_post_soul_fire"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "projection": "rigid",
+                "feature": "knf:soul_sand_valley/bridge_staircase/fire_post_empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:empty_pool_element"
+            }
+        }
+    ]
+}

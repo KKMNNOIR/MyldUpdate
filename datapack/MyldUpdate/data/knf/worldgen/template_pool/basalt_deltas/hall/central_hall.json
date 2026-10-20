@@ -1,0 +1,77 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/central_hall",
+                "processors": "knf:basalt_deltas/degradation/central_hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/fireplace_wall",
+                "processors": "knf:basalt_deltas/fireplace_wall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/pillar_1",
+                "processors": "knf:basalt_deltas/degradation/central_hall_pillar",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/pillar_2",
+                "processors": "knf:basalt_deltas/degradation/central_hall_pillar",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/battlement_side",
+                "processors": "knf:basalt_deltas/degradation/central_hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/battlement_back_left",
+                "processors": "knf:basalt_deltas/degradation/central_hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/battlement_back_right",
+                "processors": "knf:basalt_deltas/degradation/central_hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/central_hall/fireplace_floor_heated",
+                "processors": "knf:basalt_deltas/fireplace_floor_heated_rot",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

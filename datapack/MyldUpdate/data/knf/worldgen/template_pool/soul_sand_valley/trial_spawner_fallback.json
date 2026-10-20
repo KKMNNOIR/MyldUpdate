@@ -1,0 +1,47 @@
+{
+    "fallback": "knf:soul_sand_valley/trial_spawner_fallback",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:list_pool_element",
+                "projection": "rigid",
+                "elements": [
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": "knf:soul_sand_valley/cracking_trial_spawner_wither_skeleton",
+                        "location": "knf:soul_sand_valley/trial_spawner/wither_skeleton"
+                    },
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": "knf:soul_sand_valley/stair_floor_rot",
+                        "location": "knf:soul_sand_valley/trial_spawner/wither_skeleton_blackstone_floor"
+                    }
+                ]
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:list_pool_element",
+                "projection": "rigid",
+                "elements": [
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": "knf:soul_sand_valley/cracking_trial_spawner_blaze",
+                        "location": "knf:soul_sand_valley/trial_spawner/blaze"
+                    },
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "processors": "knf:soul_sand_valley/stair_floor_rot",
+                        "location": "knf:soul_sand_valley/trial_spawner/blaze_magma_block_floor"
+                    }
+                ]
+            }
+        }
+    ]
+}

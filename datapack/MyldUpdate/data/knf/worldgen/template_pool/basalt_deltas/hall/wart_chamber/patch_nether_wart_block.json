@@ -1,0 +1,13 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:feature_pool_element",
+                "feature": "knf:basalt_deltas/wart_chamber/patch_nether_wart_block",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

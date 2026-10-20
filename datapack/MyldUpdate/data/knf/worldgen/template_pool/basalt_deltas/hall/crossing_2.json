@@ -1,0 +1,32 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/crossing_2/battlement",
+                "processors": "knf:basalt_deltas/degradation/hall",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/crossing_2/window_1",
+                "processors": "knf:basalt_deltas/degradation/hall_window",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/hallway/crossing_2/window_2",
+                "processors": "knf:basalt_deltas/degradation/hall_window",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

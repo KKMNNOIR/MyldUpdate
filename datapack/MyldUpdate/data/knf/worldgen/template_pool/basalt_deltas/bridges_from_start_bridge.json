@@ -1,0 +1,14 @@
+{
+    "fallback": "knf:basalt_deltas/bridges_up",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "knf:basalt_deltas/bridges/crossing_middle",
+                "processors": "knf:basalt_deltas/degradation/bridge",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

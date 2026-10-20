@@ -1,0 +1,78 @@
+{
+    
+    "fallback": "knf:soul_sand_valley/terminator",
+    "elements": [
+        {
+            "weight": 7,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/straight_1"
+            }
+        },
+        {
+            "weight": 12,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/intersection_1"
+            }
+        },
+        {
+            "weight": 6,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/intersection_2"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/balcony_blaze"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/balcony_wither_skeleton"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_ghast_spawner",
+                "location": "knf:soul_sand_valley/bridges/staircase_1"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "knf:soul_sand_valley/cracking_ghast_spawner",
+                "location": "knf:soul_sand_valley/bridges/staircase_1_mirror"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_bridge",
+                "location": "knf:soul_sand_valley/bridges/entrance_bridge"
+            }
+        }
+    ]
+}
