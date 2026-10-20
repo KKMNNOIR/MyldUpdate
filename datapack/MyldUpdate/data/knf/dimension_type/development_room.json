@@ -22,6 +22,11 @@
             "can_sleep": "never",
             "destroy_on_use": false
         },
+        "minecraft:gameplay/straw_bed_rule": {
+            "can_sleep": "never",
+            "can_set_spawn": "never",
+            "destroy_on_leave": true
+        },
         "minecraft:gameplay/fast_lava": false,
         "minecraft:gameplay/water_evaporates": false,
         "minecraft:gameplay/piglins_zombify": false,
