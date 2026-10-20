@@ -1,0 +1,11 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:block_rot",
+            "integrity": 0.33333333334,
+            "rottable_blocks": [
+                "minecraft:player_head"
+            ]
+        }
+    ]
+}

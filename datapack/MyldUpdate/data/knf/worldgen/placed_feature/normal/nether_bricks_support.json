@@ -1,0 +1,11 @@
+{
+    "feature": "knf:normal/nether_bricks_support",
+    "placement": [
+        {
+            "type": "minecraft:offset",
+            "x": 0,
+            "z": 0,
+            "y": -2
+        }
+    ]
+}

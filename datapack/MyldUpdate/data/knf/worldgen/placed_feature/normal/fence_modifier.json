@@ -1,0 +1,11 @@
+{
+    "feature": "knf:normal/fence_modifier",
+    "placement": [
+        {
+            "type": "minecraft:offset",
+            "x": 0,
+            "z": 0,
+            "y": -2
+        }
+    ]
+}

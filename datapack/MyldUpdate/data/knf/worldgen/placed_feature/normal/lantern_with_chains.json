@@ -1,0 +1,50 @@
+{
+    "feature": {
+        "type": "minecraft:block_column",
+        "direction": "down",
+        "prioritize_tip": false,
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "layers": [
+            {
+                "provider": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:iron_chain",
+                        "properties": {
+                            "axis": "y",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": 4,
+                    "max_inclusive": 7
+                }
+            },
+            {
+                "provider": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:lantern",
+                        "properties": {
+                            "hanging": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                "height": 1
+            }
+        ]
+    },
+    "placement": [
+        {
+            "type": "minecraft:offset",
+            "x": 0,
+            "z": 0,
+            "y": -2
+        }
+    ]
+}
