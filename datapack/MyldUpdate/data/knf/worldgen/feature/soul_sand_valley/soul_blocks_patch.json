@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "depth": 1,
+    "vertical_range": 32,
+    "xz_radius": 0,
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0,
+    "surface": "floor",
+    "replaceable": "#knf:soul_blocks_replaceables",
+    "ground_state": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "data": {
+                    "id": "minecraft:soul_sand"
+                },
+                "weight": 3
+            },
+            {
+                "data": {
+                    "id": "minecraft:soul_soil"
+                },
+                "weight": 8
+            }
+        ]
+    },
+    "vegetation_chance": 0.625,
+    "vegetation_feature": {
+        "feature": "knf:soul_sand_valley/soul_blocks_patch_vegetation",
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:replaceable"
+                }
+            }
+        ]
+    }
+}

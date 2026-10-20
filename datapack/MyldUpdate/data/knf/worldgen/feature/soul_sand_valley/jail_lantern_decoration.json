@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "up",
+    "prioritize_tip": false,
+    "allowed_placement": {
+        "type": "minecraft:true"
+    },
+    "layers": [
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:chiseled_polished_blackstone"
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:soul_lantern",
+                    "properties": {
+                        "hanging": "false",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,24 +1,22 @@
 {
     "feature": {
         "type": "minecraft:block_pile",
-        "config": {
-            "state_provider": {
-                "type": "minecraft:weighted_state_provider",
-                "entries": [
-                    {
-                        "weight": 5,
-                        "data": {
-                            "Name": "minecraft:blackstone"
-                        }
-                    },
-                    {
-                        "weight": 1,
-                        "data": {
-                            "Name": "minecraft:gilded_blackstone"
-                        }
+        "state_provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 5,
+                    "data": {
+                        "id": "minecraft:blackstone"
                     }
-                ]
-            }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:gilded_blackstone"
+                    }
+                }
+            ]
         }
     },
     "placement": [

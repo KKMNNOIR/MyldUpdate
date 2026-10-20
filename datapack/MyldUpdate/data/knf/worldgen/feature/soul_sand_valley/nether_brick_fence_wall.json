@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "up",
+    "prioritize_tip": false,
+    "allowed_placement": {
+        "type": "minecraft:true"
+    },
+    "layers": [
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:nether_brick_wall"
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:nether_brick_fence"
+                }
+            }
+        }
+    ]
+}
