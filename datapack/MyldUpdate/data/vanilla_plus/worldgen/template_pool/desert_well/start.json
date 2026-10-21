@@ -1,0 +1,23 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:desert_well/well_rot",
+                "location": "vanilla_plus:desert_well_2/well"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "vanilla_plus:desert_well/well_rot",
+                "location": "vanilla_plus:desert_well_2/well_dried"
+            }
+        }
+    ]
+}

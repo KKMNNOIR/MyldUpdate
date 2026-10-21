@@ -1,0 +1,30 @@
+{
+    "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:end_stone_bricks"
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:air"
+                    }
+                }
+            ]
+        }
+    },
+    "placement": [
+        {
+            "type": "minecraft:offset",
+            "x": 0,
+            "y": -1,
+            "z": 0
+        }
+    ]
+}
