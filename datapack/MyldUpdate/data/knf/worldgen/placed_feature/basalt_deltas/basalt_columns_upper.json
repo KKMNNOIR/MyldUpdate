@@ -2,9 +2,10 @@
 	"feature": "knf:basalt_deltas/basalt_columns_upper",
 	"placement": [
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": 0,
-			"y_spread": {
+			"type": "minecraft:offset",
+			"x": 0,
+			"z": 0,
+			"y": {
 				"type": "minecraft:uniform",
 				"min_inclusive": 0,
 				"max_inclusive": 1
@@ -15,14 +16,20 @@
 			"count": 72
 		},
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": {
+			"type": "minecraft:offset",
+			"x": {
 				"type": "minecraft:trapezoid",
 				"min": -2,
 				"max": 2,
 				"plateau": 0
 			},
-			"y_spread": 0
+			"z": {
+				"type": "minecraft:trapezoid",
+				"min": -2,
+				"max": 2,
+				"plateau": 0
+			},
+			"y": 0
 		},
 		{
 			"type": "minecraft:block_predicate_filter",

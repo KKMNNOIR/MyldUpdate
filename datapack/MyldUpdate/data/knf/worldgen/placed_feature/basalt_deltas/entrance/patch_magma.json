@@ -1,24 +1,31 @@
 {
-	"feature": "knf:basalt_deltas/entrance/patch_magma",
+	"feature": "knf:basalt_deltas/entrance/magma",
 	"placement": [
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": 0,
-			"y_spread": -16
+			"type": "minecraft:offset",
+			"x": 0,
+			"y": -16,
+			"z": 0
 		},
 		{
 			"type": "minecraft:count",
 			"count": 1600
 		},
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": {
+			"type": "minecraft:offset",
+			"x": {
 				"type": "minecraft:trapezoid",
 				"min": -14,
 				"max": 14,
 				"plateau": 0
 			},
-			"y_spread": {
+			"z": {
+				"type": "minecraft:trapezoid",
+				"min": -14,
+				"max": 14,
+				"plateau": 0
+			},
+			"y": {
 				"type": "minecraft:trapezoid",
 				"min": -1,
 				"max": 1,
@@ -26,14 +33,20 @@
 			}
 		},
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": {
+			"type": "minecraft:offset",
+			"x": {
 				"type": "minecraft:trapezoid",
 				"min": -14,
 				"max": 14,
 				"plateau": 0
 			},
-			"y_spread": 0
+			"z": {
+				"type": "minecraft:trapezoid",
+				"min": -14,
+				"max": 14,
+				"plateau": 0
+			},
+			"y": 0
 		},
 		{
 			"type": "minecraft:block_predicate_filter",

@@ -2,9 +2,10 @@
     "feature": "knf:basalt_deltas/bridges/pier",
     "placement": [
         {
-            "type": "minecraft:random_offset",
-            "xz_spread": 0,
-            "y_spread": -2
+            "type": "minecraft:offset",
+            "x": 0,
+            "y": -2,
+            "z": 0
         }
     ]
 }

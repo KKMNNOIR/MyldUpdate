@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+        "type": "minecraft:any_of",
+        "predicates": [
+            {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:has_sturdy_face",
+                                    "offset": [
+                                        0,
+                                        1,
+                                        0
+                                    ],
+                                    "direction": "up"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+        {
+            "height": 1024,
+            "provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "id": "minecraft:polished_blackstone_brick_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "id": "minecraft:blackstone_wall",
+                            "properties": {
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none",
+                                "up": "true",
+                                "waterlogged": "false"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "data": {
+                            "id": "minecraft:polished_blackstone_bricks"
+                        },
+                        "weight": 4
+                    },
+                    {
+                        "data": {
+                            "id": "minecraft:cracked_polished_blackstone_bricks"
+                        },
+                        "weight": 4
+                    },
+                    {
+                        "data": {
+                            "id": "minecraft:blackstone"
+                        },
+                        "weight": 2
+                    }
+                ]
+            }
+        }
+    ]
+}

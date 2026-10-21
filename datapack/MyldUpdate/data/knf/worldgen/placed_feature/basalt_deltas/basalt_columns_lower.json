@@ -2,23 +2,30 @@
 	"feature": "knf:basalt_deltas/basalt_columns_lower",
 	"placement": [
 		{
-			"type": "minecraft:random_offset",
-			"y_spread": -1,
-			"xz_spread": 0
+			"type": "minecraft:offset",
+			"y": -1,
+			"x": 0,
+			"z": 0
 		},
 		{
 			"type": "minecraft:count",
 			"count": 144
 		},
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": {
+			"type": "minecraft:offset",
+			"x": {
 				"type": "minecraft:trapezoid",
 				"min": -2,
 				"max": 2,
 				"plateau": 0
 			},
-			"y_spread": {
+			"z": {
+				"type": "minecraft:trapezoid",
+				"min": -2,
+				"max": 2,
+				"plateau": 0
+			},
+			"y": {
 				"type": "minecraft:trapezoid",
 				"min": -1,
 				"max": 1,

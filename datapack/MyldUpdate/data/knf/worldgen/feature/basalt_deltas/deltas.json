@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": "knf:basalt_deltas/solidified_deltas",
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.3,
+            "feature": {
+                "feature": "knf:basalt_deltas/delta",
+                "placement": []
+            }
+        }
+    ]
+}

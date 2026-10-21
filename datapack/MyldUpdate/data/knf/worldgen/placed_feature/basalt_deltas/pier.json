@@ -2,9 +2,10 @@
     "feature": "knf:basalt_deltas/pier",
     "placement": [
         {
-            "type": "minecraft:random_offset",
-            "y_spread": -2,
-            "xz_spread": 0
+            "type": "minecraft:offset",
+            "y": -2,
+            "x": 0,
+            "z": 0
         }
     ]
 }

@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+        "type": "minecraft:replaceable"
+    },
+    "prioritize_tip": false,
+    "layers": [
+        {
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 10,
+                "max_inclusive": 16
+            },
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:weeping_vines_plant"
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:weeping_vines"
+                }
+            }
+        }
+    ]
+}

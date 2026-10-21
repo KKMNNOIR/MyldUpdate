@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:disk",
+    "radius": 1,
+    "half_height": 0,
+    "target": {
+        "type": "minecraft:any_of",
+        "predicates": [
+            {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                    "minecraft:lava"
+                ]
+            }
+        ]
+    },
+    "state_provider": {
+        "type": "minecraft:rule_based",
+        "fallback": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "data": {
+                        "id": "minecraft:polished_blackstone_bricks"
+                    },
+                    "weight": 9
+                },
+                {
+                    "data": {
+                        "id": "minecraft:cracked_polished_blackstone_bricks"
+                    },
+                    "weight": 4
+                },
+                {
+                    "data": {
+                        "id": "minecraft:blackstone"
+                    },
+                    "weight": 2
+                }
+            ]
+        },
+        "rules": []
+    }
+}

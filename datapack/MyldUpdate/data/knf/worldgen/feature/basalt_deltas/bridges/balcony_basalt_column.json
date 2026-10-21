@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "up",
+    "allowed_placement": {
+        "type": "minecraft:true"
+    },
+    "prioritize_tip": false,
+    "layers": [
+        {
+            "height": 1,
+            "provider": "knf:basalt_deltas/pier_opaque"
+        },
+        {
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 5
+            },
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:basalt"
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:tuff_slab",
+                    "properties": {
+                        "type": "bottom",
+                        "waterlogged": "false"
+                    }
+                }
+            }
+        }
+    ]
+}

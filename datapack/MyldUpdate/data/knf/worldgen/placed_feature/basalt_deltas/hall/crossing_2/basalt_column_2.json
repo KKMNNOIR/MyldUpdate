@@ -2,13 +2,18 @@
     "feature": "knf:basalt_deltas/short_basalt_column",
     "placement": [
         {
-            "type": "minecraft:random_offset",
-            "xz_spread": {
+            "type": "minecraft:offset",
+            "x": {
                 "type": "minecraft:uniform",
                 "min_inclusive": -1,
                 "max_inclusive": 1
             },
-            "y_spread": 0
+            "z": {
+                "type": "minecraft:uniform",
+                "min_inclusive": -1,
+                "max_inclusive": 1
+            },
+            "y": 0
         }
     ]
 }

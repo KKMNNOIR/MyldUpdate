@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": {
+            "type": "minecraft:delta_feature",
+            "contents": {
+                "id": "minecraft:magma_block"
+            },
+            "rim": {
+                "id": "minecraft:basalt",
+                "properties": {
+                    "axis": "y"
+                }
+            },
+            "size": {
+                "type": "minecraft:biased_to_bottom",
+                "min_inclusive": 1,
+                "max_inclusive": 2
+            },
+            "rim_size": 1
+        },
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.2,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:delta_feature",
+                    "contents": {
+                        "id": "minecraft:lava",
+                        "properties": {
+                            "level": "0"
+                        }
+                    },
+                    "rim": {
+                        "id": "minecraft:magma_block"
+                    },
+                    "size": {
+                        "type": "minecraft:uniform",
+                        "min_inclusive": 1,
+                        "max_inclusive": 2
+                    },
+                    "rim_size": 1
+                },
+                "placement": []
+            }
+        }
+    ]
+}

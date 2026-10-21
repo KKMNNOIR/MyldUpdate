@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:simple_block",
+    "to_place": {
+        "type": "minecraft:noise",
+        "noise": {
+            "base_octave": -3,
+            "amplitude_modifiers": [
+                1,
+                1
+            ],
+            "normalize": "legacy"
+        },
+        "states": [
+            {
+                "id": "minecraft:lava",
+                "properties": {
+                    "level": "0"
+                }
+            },
+            {
+                "id": "minecraft:lava",
+                "properties": {
+                    "level": "0"
+                }
+            },
+            {
+                "id": "minecraft:magma_block"
+            },
+            {
+                "id": "minecraft:magma_block"
+            },
+            {
+                "id": "minecraft:lava",
+                "properties": {
+                    "level": "0"
+                }
+            },
+            {
+                "id": "minecraft:magma_block"
+            }
+        ],
+        "scale": 1.2,
+        "seed": 0
+    }
+}
