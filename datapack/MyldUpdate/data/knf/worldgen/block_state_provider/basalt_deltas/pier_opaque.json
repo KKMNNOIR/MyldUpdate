@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:weighted",
+	"entries": [
+		{
+			"weight": 6,
+			"data": {
+				"id": "minecraft:polished_blackstone_bricks"
+			}
+		},
+		{
+			"weight": 3,
+			"data": {
+				"id": "minecraft:cracked_polished_blackstone_bricks"
+			}
+		},
+		{
+			"weight": 1,
+			"data": {
+				"id": "minecraft:blackstone"
+			}
+		}
+	]
+}
