@@ -101,10 +101,21 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
-		["minecraft:amethyst_geode", "myld:large_dripstone"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
-		["myld:calcite_pinnacle"],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode",
+			"myld:large_dripstone"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
+		[
+			"myld:calcite_pinnacle"
+		],
 		[],
 		[
 			"minecraft:ore_dirt",
@@ -144,7 +155,10 @@
 			"minecraft:pointed_dripstone",
 			"myld:dripstone_terrace"
 		],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:patch_tall_grass_2",
@@ -163,7 +177,9 @@
 			"minecraft:patch_pumpkin",
 			"minecraft:patch_sugar_cane"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	],
 	"has_precipitation": true,
 	"temperature": 0.8,
