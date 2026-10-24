@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#myld:nether_plains",
+        "myld:nether/diamond_forest",
+        "myld:nether/mixed_fungi_forest",
+        "myld:nether/nether_gold_mine",
+        "#myld:is_nether_wastes",
+        "myld:nether/lava_peaks",
+        "myld:nether/nether_frost",
+        "#myld:is_blackstone_biomes"
+    ]
+}

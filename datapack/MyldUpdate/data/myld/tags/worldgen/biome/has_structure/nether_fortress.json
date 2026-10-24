@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:nether_wastes",
+        "minecraft:crimson_forest",
+        "minecraft:warped_forest",
+        "minecraft:basalt_deltas",
+        "myld:nether/crimson_plains",
+        "myld:nether/warped_plains",
+        "myld:nether/white_sands",
+        "myld:nether/diamond_forest",
+        "myld:nether/nether_frost",
+        "#myld:is_nether_wastes",
+        "#myld:is_blackstone_biomes",
+        "myld:nether/mixed_fungi_forest",
+        "myld:nether/nether_gold_mine",
+        "#myld:nether_plains"
+    ],
+    "replace": true
+}

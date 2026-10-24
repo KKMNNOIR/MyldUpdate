@@ -1,0 +1,14 @@
+{
+    "values": [
+        "myld:overworld/coniferous_forest",
+        "myld:overworld/deep_warm_ocean",
+        "myld:overworld/desert_cave",
+        "myld:overworld/grassy_beach",
+        "myld:overworld/frozen_cave",
+        "myld:overworld/icy_grove",
+        "myld:overworld/snowy_cave",
+        "myld:overworld/snowy_dead_forest",
+        "myld:overworld/steppe",
+        "myld:overworld/wastes"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    "myld:nether/nether_frost",
+    "myld:overworld/frozen_cave",
+    "myld:overworld/icy_grove",
+    "myld:overworld/snowy_dead_forest",
+    "myld:overworld/snowy_old_growth_pine_taiga",
+    "myld:overworld/snowy_old_growth_spruce_taiga",
+    "myld:overworld/snowy_cave",
+    "myld:overworld/tundra"
+  ]
+}

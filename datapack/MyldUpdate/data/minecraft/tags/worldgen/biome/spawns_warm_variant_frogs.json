@@ -1,0 +1,16 @@
+{
+  "values": [
+    "minecraft:desert",
+    "minecraft:warm_ocean",
+    "#minecraft:is_jungle",
+    "#minecraft:is_savanna",
+    "#myld:is_nether_hot",
+    "#minecraft:is_badlands",
+    "minecraft:mangrove_swamp",
+    "myld:overworld/lush_desert",
+    "myld:overworld/steppe",
+    "myld:overworld/wastes",
+    "myld:overworld/deep_warm_ocean"
+  ],
+  "replace": true
+}
