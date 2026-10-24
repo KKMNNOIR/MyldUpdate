@@ -1,6 +1,0 @@
-##
- # loot.mcfunction
- # 
- #
- # Created by .
-##
