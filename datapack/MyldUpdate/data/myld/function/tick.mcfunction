@@ -41,13 +41,13 @@ execute as @e[tag=vpJungleFlowerInteraction] at @s if data entity @s attack on a
 execute as @e[type=minecraft:splash_potion] if predicate myld:linger_chance at @s on origin if entity @s[type=witch,tag=OutpostWarrior] summon minecraft:lingering_potion run function myld:pillager_outpost/desert/change_lingering
 
 
-execute as @e[type=#vanilla_plus:soul_sand_nether_fortress_monsters,predicate=vanilla_plus:in_nether,tag=!vpNetherSpawned] at @s run tag @s add vpNetherSpawned
+execute as @e[type=#myld:soul_sand_nether_fortress_monsters,predicate=myld:in_nether,tag=!vpNetherSpawned] at @s run tag @s add vpNetherSpawned
 
 execute as @e[type=#knf:soul_sand_nether_fortress_monsters,tag=vpFortressSpawned] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:effects":{"minecraft:wither":{duration:{min:1}}}}} at @s run effect clear @s minecraft:wither
 
 
 ## Oxidized Copper Spike
-execute as @e[type=minecraft:item_display,tag=vpOxidizedCopperSpike] at @s run function vanilla_plus:trial_chambers/oxidized_copper_spike/main
-execute as @e[type=#vanilla_plus:can_hurt_by_spike,tag=!vpCopperSpikeImmune] at @s if entity @e[distance=0..2,dx=0,dz=0,tag=vpOxidizedCopperSpikeInteraction] run function vanilla_plus:trial_chambers/oxidized_copper_spike/damage_entity/detect_falling
-execute as @e[type=minecraft:item] at @s if entity @n[type=minecraft:item_display,tag=vpOxidizedCopperSpike,distance=..0.5,nbt={item:{components:{"minecraft:custom_data":{blockstates:{damage_item:true}}}}}] run damage @s 5.0 vanilla_plus:copper_spike
-execute as @e[tag=vpOxidizedCopperSpikeInteraction] at @s if block ~ ~-1 ~ #minecraft:replaceable run function vanilla_plus:trial_chambers/oxidized_copper_spike/break
+execute as @e[type=minecraft:item_display,tag=vpOxidizedCopperSpike] at @s run function myld:trial_chambers/oxidized_copper_spike/main
+execute as @e[type=#myld:can_hurt_by_spike,tag=!vpCopperSpikeImmune] at @s if entity @e[distance=0..2,dx=0,dz=0,tag=vpOxidizedCopperSpikeInteraction] run function myld:trial_chambers/oxidized_copper_spike/damage_entity/detect_falling
+execute as @e[type=minecraft:item] at @s if entity @n[type=minecraft:item_display,tag=vpOxidizedCopperSpike,distance=..0.5,nbt={item:{components:{"minecraft:custom_data":{blockstates:{damage_item:true}}}}}] run damage @s 5.0 myld:copper_spike
+execute as @e[tag=vpOxidizedCopperSpikeInteraction] at @s if block ~ ~-1 ~ #minecraft:replaceable run function myld:trial_chambers/oxidized_copper_spike/break
