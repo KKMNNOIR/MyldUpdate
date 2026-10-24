@@ -1,1 +1,0 @@
-execute on attacker run function kkmnnoir:enchantment/poison_cloud/summon_ready
