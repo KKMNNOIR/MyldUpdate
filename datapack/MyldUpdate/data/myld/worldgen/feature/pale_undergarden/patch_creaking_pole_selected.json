@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:random_boolean_selector",
+    "feature_false": {
+        "feature": "myld:pale_undergarden/patch_creaking_pole_waterlogged",
+        "placement": []
+    },
+    "feature_true": {
+        "feature": "myld:pale_undergarden/patch_creaking_pole",
+        "placement": []
+    }
+}

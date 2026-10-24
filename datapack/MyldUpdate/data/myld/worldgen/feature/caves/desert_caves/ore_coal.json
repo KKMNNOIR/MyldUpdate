@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:ore",
+    "size": 17,
+    "targets": [
+        {
+            "target": {
+                "predicate_type": "minecraft:tag_match",
+                "tag": "myld:desert_cave_replaceables"
+            },
+            "state": {
+                "id": "minecraft:coal_ore"
+            }
+        },
+        {
+            "target": {
+                "predicate_type": "minecraft:tag_match",
+                "tag": "minecraft:deepslate_ore_replaceables"
+            },
+            "state": {
+                "id": "minecraft:deepslate_coal_ore"
+            }
+        }
+    ],
+    "discard_chance_on_air_exposure": 0.0
+}

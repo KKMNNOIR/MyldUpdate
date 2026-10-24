@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "up",
+    "allowed_placement": {
+        "type": "minecraft:replaceable"
+    },
+    "prioritize_tip": false,
+    "layers": [
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:pale_oak_wood",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:creaking_heart",
+                    "properties": {
+                        "axis": "y",
+                        "creaking_heart_state": "dormant"
+                    }
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:pale_oak_wood",
+                    "properties": {
+                        "axis": "y"
+                    }
+                }
+            }
+        }
+    ]
+}

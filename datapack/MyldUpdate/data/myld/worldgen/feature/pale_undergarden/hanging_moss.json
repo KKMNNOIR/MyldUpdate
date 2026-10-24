@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+    },
+    "prioritize_tip": true,
+    "layers": [
+        {
+            "height": {
+                "type": "minecraft:clamped_normal",
+                "min_inclusive": 5,
+                "max_inclusive": 12,
+                "mean": 5,
+                "deviation": 7
+            },
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:pale_hanging_moss",
+                    "properties": {
+                        "tip": "false"
+                    }
+                }
+            }
+        },
+        {
+            "height": 1,
+            "provider": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:pale_hanging_moss",
+                    "properties": {
+                        "tip": "true"
+                    }
+                }
+            }
+        }
+    ]
+}

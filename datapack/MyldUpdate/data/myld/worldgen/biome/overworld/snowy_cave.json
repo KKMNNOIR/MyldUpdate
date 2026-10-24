@@ -105,9 +105,16 @@
 	],
 	"features": [
 		[],
-		["vanilla_plus:caves/snowy_cave/lake_lava"],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"myld:caves/snowy_cave/lake_lava"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -148,14 +155,17 @@
 		[
 			"minecraft:ore_infested",
 			"myld:deep_dark/sculkystis",
-			"vanilla_plus:caves/snowy_cave/patch_snow"
+			"myld:caves/snowy_cave/patch_snow"
 		],
 		[
 			"minecraft:spring_water",
 			"minecraft:spring_lava",
 			"minecraft:spring_lava_frozen"
 		],
-		["minecraft:glow_lichen", "vanilla_plus:caves/ice_cave/glow_lichen"],
+		[
+			"minecraft:glow_lichen",
+			"myld:caves/ice_cave/glow_lichen"
+		],
 		[]
 	],
 	"has_precipitation": true,

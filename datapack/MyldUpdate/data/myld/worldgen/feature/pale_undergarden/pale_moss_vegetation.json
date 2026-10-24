@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": {
+            "type": "minecraft:simple_block",
+            "to_place": {
+                "type": "minecraft:weighted",
+                "entries": [
+                    {
+                        "weight": 4,
+                        "data": {
+                            "id": "minecraft:pale_oak_sapling"
+                        }
+                    },
+                    {
+                        "weight": 25,
+                        "data": {
+                            "id": "minecraft:pale_moss_carpet",
+                            "properties": {
+                                "bottom": "true",
+                                "east": "none",
+                                "north": "none",
+                                "south": "none",
+                                "west": "none"
+                            }
+                        }
+                    },
+                    {
+                        "weight": 50,
+                        "data": {
+                            "id": "minecraft:short_grass"
+                        }
+                    },
+                    {
+                        "weight": 10,
+                        "data": {
+                            "id": "minecraft:tall_grass",
+                            "properties": {
+                                "half": "lower"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.25,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:simple",
+                        "state": {
+                            "id": "minecraft:closed_eyeblossom"
+                        }
+                    },
+                    "schedule_tick": true
+                },
+                "placement": []
+            }
+        }
+    ]
+}

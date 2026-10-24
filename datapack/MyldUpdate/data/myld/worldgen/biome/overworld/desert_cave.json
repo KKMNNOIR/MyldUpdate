@@ -108,10 +108,12 @@
 	},
 	"features": [
 		[],
-		["minecraft:lake_lava_underground"],
 		[
-			"vanilla_plus:caves/desert_cave/sandstone_geodes",
-			"vanilla_plus:caves/desert_cave/amethyst_geode_deep"
+			"minecraft:lake_lava_underground"
+		],
+		[
+			"myld:caves/desert_cave/sandstone_geodes",
+			"myld:caves/desert_cave/amethyst_geode_deep"
 		],
 		[
 			"minecraft:fossil_upper",
@@ -119,7 +121,9 @@
 			"minecraft:monster_room",
 			"minecraft:monster_room_deep"
 		],
-		["minecraft:desert_well"],
+		[
+			"minecraft:desert_well"
+		],
 		[],
 		[
 			"minecraft:ore_dirt",
@@ -131,39 +135,46 @@
 			"minecraft:ore_andesite_upper",
 			"minecraft:ore_andesite_lower",
 			"minecraft:ore_tuff",
-			"vanilla_plus:caves/desert_cave/ore_coal_upper",
+			"myld:caves/desert_cave/ore_coal_upper",
 			"minecraft:ore_coal_lower",
-			"vanilla_plus:ore_coal_deep",
+			"myld:ore_coal_deep",
 			"minecraft:ore_iron_upper",
-			"vanilla_plus:caves/desert_cave/ore_iron_middle",
-			"vanilla_plus:caves/desert_cave/ore_iron",
-			"vanilla_plus:caves/desert_cave/ore_gold",
+			"myld:caves/desert_cave/ore_iron_middle",
+			"myld:caves/desert_cave/ore_iron",
+			"myld:caves/desert_cave/ore_gold",
 			"minecraft:ore_gold_lower",
-			"vanilla_plus:caves/desert_cave/ore_redstone",
+			"myld:caves/desert_cave/ore_redstone",
 			"minecraft:ore_redstone_lower",
-			"vanilla_plus:caves/desert_cave/ore_diamond",
-			"vanilla_plus:caves/desert_cave/ore_lapis",
-			"vanilla_plus:caves/desert_cave/ore_copper",
+			"myld:caves/desert_cave/ore_diamond",
+			"myld:caves/desert_cave/ore_lapis",
+			"myld:caves/desert_cave/ore_copper",
 			"minecraft:underwater_magma",
 			"minecraft:disk_sand",
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
-			"vanilla_plus:caves/desert_cave/ore_emerald",
+			"myld:caves/desert_cave/ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		["myld:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
 		[
-			"vanilla_plus:caves/desert_cave/glow_lichen",
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
+		[
+			"myld:caves/desert_cave/glow_lichen",
 			"minecraft:flower_default",
 			"minecraft:patch_grass_badlands",
-			"vanilla_plus:caves/desert_cave/patch_cactus",
+			"myld:caves/desert_cave/patch_cactus",
 			"minecraft:brown_mushroom_normal",
 			"minecraft:red_mushroom_normal",
 			"minecraft:patch_sugar_cane_desert",
 			"minecraft:patch_pumpkin",
-			"vanilla_plus:caves/desert_cave/patch_dead_bush"
+			"myld:caves/desert_cave/patch_dead_bush"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	]
 }

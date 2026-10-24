@@ -81,9 +81,17 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -113,7 +121,7 @@
 			"minecraft:ore_lapis_buried",
 			"minecraft:ore_copper",
 			"minecraft:underwater_magma",
-			"vanilla_plus:ore_tuff_upper",
+			"myld:ore_tuff_upper",
 			"minecraft:disk_sand",
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
@@ -121,15 +129,17 @@
 			"myld:ore_emerald_deep"
 		],
 		[],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:patch_tall_grass_2",
-			"vanilla_plus:pale_undergarden/creaking_pole_ceiling",
-			"vanilla_plus:pale_undergarden/pale_undergarden_clay",
-			"vanilla_plus:pale_undergarden/pale_undegarden_vegetation",
-			"vanilla_plus:pale_undergarden/pale_undergarden_ceiling_vegetation",
-			"vanilla_plus:pale_undergarden/hanging_moss",
+			"myld:pale_undergarden/patch_creaking_pole",
+			"myld:pale_undergarden/pale_undegarden_vegetation",
+			"myld:pale_undergarden/pale_undergarden_ceiling_vegetation",
+			"myld:pale_undergarden/hanging_moss",
 			"minecraft:classic_vines_cave_feature"
 		],
 		["minecraft:freeze_top_layer"]

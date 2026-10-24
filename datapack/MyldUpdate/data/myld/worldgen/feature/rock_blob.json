@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:block_blob",
+    "state": {
+        "id": "minecraft:packed_mud"
+    },
+    "can_place_on": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+            "minecraft:packed_mud",
+            "minecraft:coarse_dirt",
+            "minecraft:sand",
+            "minecraft:terracotta"
+        ]
+    }
+}

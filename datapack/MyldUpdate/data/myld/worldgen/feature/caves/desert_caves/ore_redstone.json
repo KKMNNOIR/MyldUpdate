@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:ore",
+    "size": 8,
+    "targets": [
+        {
+            "target": {
+                "predicate_type": "minecraft:tag_match",
+                "tag": "myld:desert_cave_replaceables"
+            },
+            "state": {
+                "id": "minecraft:redstone_ore",
+                "properties": {
+                    "lit": "false"
+                }
+            }
+        },
+        {
+            "target": {
+                "predicate_type": "minecraft:tag_match",
+                "tag": "minecraft:deepslate_ore_replaceables"
+            },
+            "state": {
+                "id": "minecraft:deepslate_redstone_ore",
+                "properties": {
+                    "lit": "false"
+                }
+            }
+        }
+    ],
+    "discard_chance_on_air_exposure": 0.0
+}

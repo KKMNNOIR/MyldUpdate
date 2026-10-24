@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:waterlogged_vegetation_patch",
+    "surface": "floor",
+    "vertical_range": 5,
+    "xz_radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 4,
+        "max_inclusive": 7
+    },
+    "depth": 3,
+    "replaceable": "#minecraft:lush_ground_replaceable",
+    "ground_state": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "weight": 9,
+                "data": {
+                    "id": "minecraft:tuff"
+                }
+            },
+            {
+                "weight": 1,
+                "data": {
+                    "id": "minecraft:pale_moss_block"
+                }
+            }
+        ]
+    },
+    "extra_edge_column_chance": 0.7,
+    "extra_bottom_block_chance": 0.8,
+    "vegetation_chance": 0.001,
+    "vegetation_feature": {
+        "feature": {
+            "type": "minecraft:random_selector",
+            "default": {
+                "feature": "myld:pale_undergarden/creaking_pole",
+                "placement": []
+            },
+            "features": [
+                {
+                    "chance": 0.075,
+                    "feature": {
+                        "feature": {
+                            "type": "minecraft:simple_block",
+                            "to_place": {
+                                "type": "minecraft:weighted",
+                                "entries": [
+                                    {
+                                        "weight": 9,
+                                        "data": {
+                                            "id": "minecraft:pale_moss_carpet",
+                                            "properties": {
+                                                "bottom": "true",
+                                                "east": "none",
+                                                "north": "none",
+                                                "south": "none",
+                                                "west": "none"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "data": {
+                                            "id": "minecraft:pale_oak_sapling"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "placement": [
+                            {
+                                "type": "minecraft:block_predicate_filter",
+                                "predicate": {
+                                    "type": "minecraft:all_of",
+                                    "predicates": [
+                                        {
+                                            "type": "minecraft:matching_block_tag",
+                                            "tag": "minecraft:air"
+                                        },
+                                        {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": ["minecraft:pale_moss_block"],
+                                            "offset": [0,-1,0]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "placement": []
+    }
+}

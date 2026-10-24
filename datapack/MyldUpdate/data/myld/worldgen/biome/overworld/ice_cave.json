@@ -64,15 +64,21 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
 		[
 			"minecraft:amethyst_geode",
-			"vanilla_plus:caves/ice_cave/ice_spike",
-			"vanilla_plus:caves/ice_cave/packed_ice_spike",
-			"vanilla_plus:caves/ice_cave/icicles",
-			"vanilla_plus:caves/ice_cave/packed_icicles"
+			"myld:caves/ice_cave/ice_spike",
+			"myld:caves/ice_cave/packed_ice_spike",
+			"myld:caves/ice_cave/icicles",
+			"myld:caves/ice_cave/packed_icicles"
 		],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -109,16 +115,18 @@
 			"myld:ore_emerald_deep",
 			"myld:ore_emerald_extra",
 			"myld:ore_emerald_extra_deep",
-			"vanilla_plus:caves/ice_cave/ore_snow_upper",
-			"vanilla_plus:caves/ice_cave/ore_snow_lower"
+			"myld:caves/ice_cave/ore_snow_upper",
+			"myld:caves/ice_cave/ore_snow_lower"
 		],
 		[],
 		[],
 		[
-			"vanilla_plus:caves/ice_cave/glow_lichen",
+			"myld:caves/ice_cave/glow_lichen",
 			"minecraft:brown_mushroom_normal",
 			"minecraft:red_mushroom_normal"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	]
 }

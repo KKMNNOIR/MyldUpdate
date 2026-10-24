@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:random_boolean_selector",
+    "feature_false": {
+        "feature": "myld:caves/desert_caves/sandstone_amethyst_geode",
+        "placement": []
+    },
+    "feature_true": {
+        "feature": "myld:caves/desert_caves/sandstone_calcite_geode",
+        "placement": []
+    }
+}
