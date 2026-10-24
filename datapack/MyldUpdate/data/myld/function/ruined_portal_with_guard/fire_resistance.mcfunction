@@ -1,0 +1,2 @@
+execute unless data entity @s active_effects[{id:"minecraft:fire_resistance"}] run effect give @s minecraft:fire_resistance 1 2 true
+advancement revoke @s only vanilla_plus:ruined_portal/equip_portal_armor

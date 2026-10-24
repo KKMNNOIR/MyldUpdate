@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "items": [
+                            "minecraft:stone_pickaxe",
+                            "minecraft:iron_pickaxe",
+                            "minecraft:diamond_pickaxe",
+                            "minecraft:netherite_pickaxe"
+                        ]
+                    }
+                },
+                "minecraft:type_specific/player": {
+                    "gamemode": [
+                        "survival",
+                        "adventure"
+                    ]
+                }
+            }
+        }
+    ]
+}

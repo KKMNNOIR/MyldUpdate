@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:all_of",
+    "terms": [
+        {
+            "type": "minecraft:any_of",
+            "terms": [
+                {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": [
+                                "minecraft:fire",
+                                "minecraft:soul_fire",
+                                "minecraft:lava"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                        "block": {
+                            "blocks": [
+                                "minecraft:magma_block"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_fire": true
+                        }
+                    }
+                }
+            ]
+        },
+        "myld:blaze_not_damaged"
+    ]
+}

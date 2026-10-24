@@ -1,0 +1,14 @@
+{
+    "asset_id": "minecraft:entity/pig/muddy",
+    "baby_asset_id": "minecraft:entity/pig/muddy_baby",
+    "model": "cold",
+    "spawn_conditions": [
+        {
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": "#vanilla_plus:spawn_muddy_pigs"
+            },
+            "priority": 0
+        }
+    ]
+}

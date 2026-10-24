@@ -1,0 +1,16 @@
+{
+    "asset_id": "minecraft:entity/pig/black",
+    "baby_asset_id": "minecraft:entity/pig/black_baby",
+    "model": "normal",
+    "spawn_conditions": [
+        {
+            "condition": {
+                "type": "minecraft:biome",
+                "biomes": [
+                    "minecraft:dark_forest"
+                ]
+            },
+            "priority": 1
+        }
+    ]
+}

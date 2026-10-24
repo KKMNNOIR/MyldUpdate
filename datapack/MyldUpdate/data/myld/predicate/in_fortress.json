@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:location_check",
+            "predicate": {
+                "structures": ["minecraft:fortress","knf:soul_sand_nether_fortress","knf:ruins_nether_fortress"]
+            }
+        }
+    ]
+}
