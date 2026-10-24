@@ -55,8 +55,8 @@
                 }
             }
         ],
-        "cannot_replace": "#minecraft:features_cannot_replace",
-        "invalid_blocks": "#minecraft:geode_invalid_blocks"
+        "cannot_replace": "#myld:sculk_gleba_cannot_replace",
+        "invalid_blocks": "#myld:sculk_gleba_invalid_blocks"
     },
     "crack": {
         "base_crack_size": 2.0,
