@@ -1,0 +1,4 @@
+{
+    "type": "minecraft:from_int",
+    "input": "myld:trial_chambers/oxidized_copper_spike/damage"
+}

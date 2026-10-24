@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:add",
+    "inputs": [
+        {
+            "type": "minecraft:mul",
+            "inputs": [
+                {
+                    "type": "minecraft:storage",
+                    "storage": "myld:falling_distance",
+                    "path": "FinalDamage"
+                },
+                {
+                    "type": "minecraft:constant",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "type": "minecraft:constant",
+            "value": 2
+        }
+    ]
+}

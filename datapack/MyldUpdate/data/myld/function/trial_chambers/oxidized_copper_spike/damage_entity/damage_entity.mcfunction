@@ -4,5 +4,5 @@
  #
  # Created by .
 ##
-$damage @s $(FinalDamage) vanilla_plus:copper_spike by @s
-data merge storage vanilla_plus:falling_distance {}
+$damage @s $(FinalDamage) myld:copper_spike by @s
+data merge storage myld:falling_distance {}
