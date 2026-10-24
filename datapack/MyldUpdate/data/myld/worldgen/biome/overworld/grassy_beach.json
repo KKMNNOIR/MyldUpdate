@@ -135,8 +135,13 @@
 			"minecraft:ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		["myld:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:patch_bush",
@@ -148,7 +153,9 @@
 			"minecraft:patch_sugar_cane",
 			"myld:overgrown_beach_vegetation"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	],
 	"has_precipitation": true,
 	"temperature": 1.4,

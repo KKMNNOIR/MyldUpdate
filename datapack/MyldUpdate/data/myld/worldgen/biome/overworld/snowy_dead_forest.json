@@ -115,9 +115,17 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -153,8 +161,13 @@
 			"minecraft:ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		["myld:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"myld:trees_snowy_dead_forest",
@@ -165,7 +178,10 @@
 			"minecraft:patch_pumpkin",
 			"minecraft:patch_sugar_cane"
 		],
-		["minecraft:freeze_top_layer", "vanilla_plus:random_snow_cover"]
+		[
+			"minecraft:freeze_top_layer",
+			"vanilla_plus:random_snow_cover"
+		]
 	],
 	"has_precipitation": true,
 	"temperature": 0.05,

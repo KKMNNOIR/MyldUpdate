@@ -13,70 +13,70 @@
 						{
 							"type": "minecraft:spider",
 							"weight": 100,
-              "count": 4
+							"count": 4
 						},
 						{
 							"type": "minecraft:zombie",
 							"weight": 95,
-              "count": 4
+							"count": 4
 						},
 						{
 							"type": "minecraft:zombie_villager",
 							"weight": 5,
-              "count": 1
+							"count": 1
 						},
 						{
 							"type": "minecraft:skeleton",
 							"weight": 100,
-              "count": 4
+							"count": 4
 						},
 						{
 							"type": "minecraft:creeper",
 							"weight": 100,
-              "count": 4
+							"count": 4
 						},
 						{
 							"type": "minecraft:slime",
 							"weight": 100,
-              "count": 4
+							"count": 4
 						},
 						{
 							"type": "minecraft:enderman",
-							"weight": 10, 
-              "count": {
-                "type": "minecraft:uniform",
-                "min_inclusive": 1,
-                "max_inclusive": 4
-              }
+							"weight": 10,
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 1,
+								"max_inclusive": 4
+							}
 						},
 						{
 							"type": "minecraft:witch",
 							"weight": 5,
-              "count": 1
+							"count": 1
 						}
 					],
 					"ambient": [
 						{
 							"type": "minecraft:bat",
 							"weight": 10,
-              "count": 8
+							"count": 8
 						}
 					],
 					"underground_water_creature": [
 						{
 							"type": "minecraft:glow_squid",
 							"weight": 10,
-              "count": {
-                "type": "minecraft:uniform",
-                "min_inclusive": 4,
-                "max_inclusive": 6
-              }
+							"count": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 4,
+								"max_inclusive": 6
+							}
 						}
 					]
 				},
-        "spawn_costs": {}
+				"spawn_costs": {}
 			},
-      "modifier": "overlay"
+			"modifier": "overlay"
 		}
 	},
 	"carvers": [
@@ -86,9 +86,18 @@
 	],
 	"features": [
 		[],
-		["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
-		["minecraft:amethyst_geode"],
-		["minecraft:monster_room", "minecraft:monster_room_deep"],
+		[
+			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_surface"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		
+		[
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep"
+		],
 		[],
 		[],
 		[
@@ -125,8 +134,13 @@
 			"minecraft:ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		["myld:deep_dark/sculkystis"],
-		["minecraft:spring_water", "minecraft:spring_lava"],
+		[
+			"myld:deep_dark/sculkystis"
+		],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:glow_lichen",
 			"minecraft:flower_default",
@@ -137,7 +151,9 @@
 			"minecraft:patch_sugar_cane",
 			"minecraft:patch_firefly_bush_near_water"
 		],
-		["minecraft:freeze_top_layer"]
+		[
+			"minecraft:freeze_top_layer"
+		]
 	],
 	"has_precipitation": true,
 	"temperature": 0.2,
