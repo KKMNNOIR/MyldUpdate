@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "explode": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "minecraft:entity_type": "creeper",
+                        "entity_tags": {
+                            "any_of": [
+                                "IcyCreeper"
+                            ]
+                        }
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "#minecraft:is_explosion",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "myld:nether_frost/freeze_damage_effect"
+    }
+}

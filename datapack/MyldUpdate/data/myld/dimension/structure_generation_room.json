@@ -1,0 +1,11 @@
+{
+  "type": "myld:development_room",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "myld:development_room",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "myld:development_room"
+    }
+  }
+}

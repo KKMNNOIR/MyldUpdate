@@ -4,5 +4,5 @@
  #
  # Created by .
 ##
-advancement revoke @s only vanilla_plus:trial_chambers/function/attack_spike
-execute as @e[tag=vpOxidizedCopperSpikeInteraction] at @s if data entity @s attack run function vanilla_plus:trial_chambers/oxidized_copper_spike/break
+advancement revoke @s only myld:trial_chambers/function/attack_spike
+execute as @e[tag=vpOxidizedCopperSpikeInteraction] at @s if data entity @s attack run function myld:trial_chambers/oxidized_copper_spike/break

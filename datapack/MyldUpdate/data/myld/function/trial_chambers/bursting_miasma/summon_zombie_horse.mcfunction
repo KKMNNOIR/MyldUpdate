@@ -1,3 +1,3 @@
-summon minecraft:zombie_horse ~ ~ ~ {body_armor_item:{id:"minecraft:leather_horse_armor",components:{"minecraft:dyed_color":6192150,"minecraft:enchantments":{levels:{"kkmnnoir:sanitize":1}}}},body_armor_drop_chance:0.0f,attributes:[{id:"minecraft:generic.movement_speed",base:0.334},{id:"minecraft:generic.max_health",base:60}],Tame:1b,SaddleItem:{id:"minecraft:saddle"},Tags:["vpBurstingMiasmaHorse"]}
+summon minecraft:zombie_horse ~ ~ ~ {drop_chances:{body:0.0f},attributes:[{id:"minecraft:movement_speed",base:0.334},{id:"minecraft:max_health",base:60}],Tame:1b,equipment:{saddle:{id:"minecraft:saddle"},body:{id:"minecraft:leather_horse_armor",count:1,components:{"minecraft:enchantments":{"kkmnnoir:sanitize":1},"minecraft:dyed_color":6192150}}},Tags:["vpBurstingMiasmaHorse"]}
 ride @s mount @n[tag=vpBurstingMiasmaHorse,dx=0]
 tag @s add vpMiasmaRided

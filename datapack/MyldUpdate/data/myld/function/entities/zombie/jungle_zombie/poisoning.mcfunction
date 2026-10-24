@@ -6,4 +6,4 @@ tag @s add JungleZombie
 # execute if predicate vanilla_plus:jungle/is_equiped_zombie/chest run item modify entity @s armor.head vanilla_plus:zombie_poisoning
 # execute if predicate vanilla_plus:jungle/is_equiped_zombie/legs run item modify entity @s armor.head vanilla_plus:zombie_poisoning
 # execute if predicate vanilla_plus:jungle/is_equiped_zombie/head run item modify entity @s armor.head vanilla_plus:zombie_poisoning
-execute unless predicate vanilla_plus:jungle/is_equiped_jungle run item replace entity @s armor.head with minecraft:stone_button[minecraft:enchantments={"kkmnnoir:poison_touch":2}]
+execute unless predicate myld:jungle/is_equiped_jungle run item replace entity @s armor.head with minecraft:stone_button[minecraft:enchantments={"kkmnnoir:poison_touch":2}]

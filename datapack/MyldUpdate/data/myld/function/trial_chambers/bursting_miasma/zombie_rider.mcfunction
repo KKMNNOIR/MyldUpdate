@@ -1,1 +1,1 @@
-execute as @s[type=minecraft:bogged,tag=vpBurstingMiasma,tag=!vpMiasmaRided] at @s run function vanilla_plus:trial_chambers/bursting_miasma/summon_zombie_horse
+execute as @s[type=minecraft:bogged,tag=vpBurstingMiasma,tag=!vpMiasmaRided] at @s run function myld:trial_chambers/bursting_miasma/summon_zombie_horse
