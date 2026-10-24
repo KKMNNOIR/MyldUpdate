@@ -25,7 +25,7 @@
             "effects": [
               {
                 "type": "minecraft:run_function",
-                "function": "kkmnnoir:enchantment/poison_cloud/init"
+                "function": "kkmnnoir:enchantment/poison_cloud/summon_ready"
               }
             ]
           }
@@ -35,7 +35,7 @@
         {
           "effect": {
             "type": "minecraft:run_function",
-            "function": "kkmnnoir:enchantment/poison_cloud/init"
+            "function": "kkmnnoir:enchantment/poison_cloud/summon_ready"
           }
         }
       ]
