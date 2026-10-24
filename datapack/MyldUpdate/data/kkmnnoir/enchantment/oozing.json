@@ -26,7 +26,7 @@
                 "affected": "victim",
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "kkmnnoir:oozing/summon_slime"
+                    "function": "kkmnnoir:oozing/size_to_score"
                 },
                 "requirements": {
                     "type": "minecraft:random_chance",
