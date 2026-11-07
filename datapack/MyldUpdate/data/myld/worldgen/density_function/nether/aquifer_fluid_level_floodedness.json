@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:add",
+    "left": {
+        "type": "minecraft:add",
+        "left": {
+            "type": "minecraft:noise",
+            "noise": "myld:nether/aquifer_fluid_level_floodedness",
+            "xz_scale": 1.0,
+            "y_scale": 0.67
+        },
+        "right": {
+            "type": "minecraft:mul",
+            "left": {
+                "type": "minecraft:spline",
+                "spline": {
+                    "coordinate": "myld:nether/ridges_folded",
+                    "points": [
+                        {
+                            "location": -0.4,
+                            "derivative": 0,
+                            "value": 0.5
+                        },
+                        {
+                            "location": 0,
+                            "derivative": 0,
+                            "value": -0.1
+                        },
+                        {
+                            "location": 1,
+                            "derivative": 0,
+                            "value": -0.5
+                        }
+                    ]
+                }
+            },
+            "right": {
+                "type": "minecraft:add",
+                "left": {
+                    "type": "minecraft:gradient",
+                    "axis": "y",
+                    "from_coordinate": 32,
+                    "to_coordinate": 48,
+                    "from_value": -1,
+                    "to_value": 0
+                },
+                "right": {
+                    "type": "minecraft:gradient",
+                    "axis": "y",
+                    "from_coordinate": 48,
+                    "to_coordinate": 256,
+                    "from_value": 0,
+                    "to_value": 1
+                }
+            }
+        }
+    },
+    "right": {
+        "type": "minecraft:cube",
+        "input": "myld:nether/depth"
+    }
+}

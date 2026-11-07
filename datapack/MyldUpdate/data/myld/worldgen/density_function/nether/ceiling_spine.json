@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:mul",
+	"left": {
+		"type": "minecraft:add",
+		"left": {
+			"type": "minecraft:add",
+			"left": {
+				"type": "minecraft:gradient",
+				"axis": "y",
+				"from_coordinate": 230,
+				"to_coordinate": 320,
+				"from_value": -1,
+				"to_value": 1
+			},
+			"right": {
+				"type": "minecraft:gradient",
+				"axis": "y",
+				"from_coordinate": 140,
+				"to_coordinate": 230,
+				"from_value": -1,
+				"to_value": 1
+			}
+		},
+		"right": {
+			"type": "minecraft:noise",
+			"noise": "myld:nether/ceiling_spine",
+			"xz_scale": 8,
+			"y_scale": 0
+		}
+	},
+    "right": 8.0
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:mul",
+    "left": {
+        "type": "minecraft:gradient",
+        "axis": "y",
+        "from_coordinate": 28,
+        "to_coordinate": 36,
+        "from_value": 4.0,
+        "to_value": 0.0
+    },
+    "right": {
+        "type": "minecraft:noise",
+        "noise": "myld:nether/islands",
+        "xz_scale": 1,
+        "y_scale": 0
+    }
+}

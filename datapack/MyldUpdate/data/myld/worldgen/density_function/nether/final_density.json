@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:lerp",
+    "alpha": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "myld:nether/continents",
+            "points": [
+                {
+                    "location": -0.45,
+                    "derivative": 0,
+                    "value": 0
+                },
+                {
+                    "location": -0.04,
+                    "derivative": 0,
+                    "value": 1
+                }
+            ]
+        }
+    },
+    "first": "myld:nether/ocean/final_density",
+    "second": "myld:nether/inland/final_density"
+}

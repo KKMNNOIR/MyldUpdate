@@ -1,0 +1,106 @@
+{
+	"type": "minecraft:squeeze",
+	"input": {
+		"type": "minecraft:mul",
+		"left": 0.64,
+		"right": {
+			"type": "minecraft:upscale",
+			"input": {
+				"type": "minecraft:blend_density",
+				"input": {
+					"type": "minecraft:add",
+					"left": 2.5,
+					"right": {
+						"type": "minecraft:lerp",
+						"alpha": {
+							"type": "minecraft:gradient",
+							"axis": "y",
+							"from_coordinate": -8,
+							"to_coordinate": 24,
+							"from_value": 0.0,
+							"to_value": 1.0
+						},
+						"first": 2.5,
+						"second": {
+							"type": "minecraft:lerp",
+							"alpha": {
+								"type": "minecraft:gradient",
+								"axis": "y",
+								"from_coordinate": 280,
+								"to_coordinate": 320,
+								"from_value": 1.0,
+								"to_value": 0.0
+							},
+							"first": 0.9375,
+							"second": {
+								"type": "minecraft:mul",
+								"left": {
+									"type": "minecraft:gradient",
+									"axis": "y",
+									"from_coordinate": 280,
+									"to_coordinate": 320,
+									"from_value": 1.0,
+									"to_value": 0.0
+								},
+								"right": {
+									"type": "minecraft:max",
+									"left": "minecraft:nether/base_3d_noise",
+									"right": {
+										"type": "minecraft:add",
+										"left": {
+											"type": "minecraft:max",
+											"left": "minecraft:nether/base_3d_noise",
+											"right": {
+												"type": "minecraft:add",
+												"left": "minecraft:nether/base_3d_noise",
+												"right": {
+													"type": "minecraft:range_choice",
+													"input": "myld:nether/pillars",
+													"min_inclusive": -1000000,
+													"max_exclusive": 0.03,
+													"when_in_range": -1000000,
+													"when_out_of_range": {
+														"type": "minecraft:add",
+														"left": "myld:nether/pillars",
+														"right": {
+															"type": "minecraft:abs",
+															"input": {
+																"type": "minecraft:gradient",
+																"axis": "y",
+																"from_coordinate": -32,
+																"to_coordinate": 256,
+																"from_value": -1.5,
+																"to_value": 1.5
+															}
+														}
+													}
+												}
+											}
+										},
+										"right": {
+											"type": "minecraft:max",
+											"left": "myld:nether/ceiling_spine",
+											"right": "myld:nether/islands"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"x": {
+				"cell_size": 1,
+				"mode": "interpolate_linear"
+			},
+			"y": {
+				"cell_size": 2,
+				"mode": "interpolate_linear"
+			},
+			"z": {
+				"cell_size": 1,
+				"mode": "interpolate_linear"
+			}
+		}
+	}
+}

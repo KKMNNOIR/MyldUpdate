@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:mul",
+    "left": -3.0,
+    "right": {
+        "type": "minecraft:add",
+        "left": {
+            "type": "minecraft:reciprocal",
+            "input": 3
+        },
+        "right": {
+            "type": "minecraft:abs",
+            "input": {
+                "type": "minecraft:add",
+                "left": {
+                    "type": "minecraft:mul",
+                    "left": -2.0,
+                    "right": {
+                        "type": "minecraft:reciprocal",
+                        "input": 3
+                    }
+                },
+                "right": {
+                    "type": "minecraft:abs",
+                    "input": "myld:nether/ridges"
+                }
+            }
+        }
+    }
+}

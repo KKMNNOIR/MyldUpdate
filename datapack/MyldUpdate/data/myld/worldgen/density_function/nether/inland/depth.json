@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:lerp",
+    "alpha": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "myld:nether/continents",
+            "points": [
+                {
+                    "location": -0.19,
+                    "derivative": 0,
+                    "value": 0
+                },
+                {
+                    "location": -0.11,
+                    "derivative": 0,
+                    "value": 1
+                }
+            ]
+        }
+    },
+    "first": 0,
+    "second": {
+        "type": "minecraft:add",
+        "left": {
+            "type": "minecraft:gradient",
+            "axis": "y",
+            "from_coordinate": -32,
+            "to_coordinate": 320,
+            "from_value": 1.5,
+            "to_value": -2.0
+        },
+        "right": "myld:nether/inland/offset"
+    }
+}

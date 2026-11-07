@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:add",
+    "left": "myld:nether/inland/depth",
+    "right": "myld:nether/ocean/depth"
+}

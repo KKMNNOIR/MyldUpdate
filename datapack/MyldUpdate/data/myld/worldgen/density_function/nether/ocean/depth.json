@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:mul",
+    "left": {
+        "type": "minecraft:add",
+        "left": "minecraft:nether/base_3d_noise",
+        "right": {
+            "type": "minecraft:gradient",
+            "axis": "y",
+            "from_coordinate": -32,
+            "to_coordinate": 320,
+            "from_value": 1.5,
+            "to_value": -1.5
+        }
+    },
+    "right": {
+        "type": "minecraft:spline",
+        "spline": {
+            "coordinate": "myld:nether/continents",
+            "points": [
+                {
+                    "location": -0.19,
+                    "derivative": 0,
+                    "value": 1
+                },
+                {
+                    "location": 0.0,
+                    "derivative": 0,
+                    "value": 0
+                }
+            ]
+        }
+    }
+}
