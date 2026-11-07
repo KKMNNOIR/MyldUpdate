@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:condition",
+    "if_true": {
+        "type": "minecraft:noise_threshold",
+        "noise": "myld:nether/magma_block",
+        "min_threshold": -0.12,
+        "max_threshold": 0.12,
+        "is_3d": false
+    },
+    "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:blackstone"
+    }
+}

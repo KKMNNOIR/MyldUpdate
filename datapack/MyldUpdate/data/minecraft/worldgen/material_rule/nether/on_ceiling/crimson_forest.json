@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:condition",
+    "if_true": {
+        "type": "minecraft:noise_threshold",
+        "noise": "minecraft:nether_wart",
+        "min_threshold": 0.0,
+        "max_threshold": 0.75,
+        "is_3d": false
+    },
+    "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:nether_wart_block"
+    }
+}
