@@ -43,8 +43,8 @@
         "type": "minecraft:spruce_foliage_placer",
         "radius": {
             "type": "minecraft:uniform",
-            "min_inclusive": 2,
-            "max_inclusive": 3
+            "min_inclusive": 3,
+            "max_inclusive": 4
         },
         "offset": {
             "type": "minecraft:uniform",
@@ -72,13 +72,80 @@
             "block_provider": {
                 "type": "minecraft:simple",
                 "state": {
-                    "id": "minecraft:light_blue_stained_glass_pane"
+                    "id": "minecraft:ice_crystal",
+                    "properties": {
+                        "facing": "down"
+                    }
                 }
             },
-            "probability": 0.05,
+            "probability": 0.125,
             "exclusion_radius_xz": 1,
             "exclusion_radius_y": 1,
             "required_empty_blocks": 1
-        }
+        },
+		{
+			"type": "minecraft:attached_to_logs",
+			"directions": [
+				"east"
+			],
+			"probability": 0.2,
+			"block_provider": {
+				"type": "minecraft:simple",
+				"state": {
+					"id": "minecraft:ice_crystal",
+					"properties": {
+						"facing": "east"
+					}
+				}
+			}
+		},
+		{
+			"type": "minecraft:attached_to_logs",
+			"directions": [
+				"north"
+			],
+			"probability": 0.2,
+			"block_provider": {
+				"type": "minecraft:simple",
+				"state": {
+					"id": "minecraft:ice_crystal",
+					"properties": {
+						"facing": "north"
+					}
+				}
+			}
+		},
+		{
+			"type": "minecraft:attached_to_logs",
+			"directions": [
+				"south"
+			],
+			"probability": 0.2,
+			"block_provider": {
+				"type": "minecraft:simple",
+				"state": {
+					"id": "minecraft:ice_crystal",
+					"properties": {
+						"facing": "south"
+					}
+				}
+			}
+		},
+		{
+			"type": "minecraft:attached_to_logs",
+			"directions": [
+				"west"
+			],
+			"probability": 0.2,
+			"block_provider": {
+				"type": "minecraft:simple",
+				"state": {
+					"id": "minecraft:ice_crystal",
+					"properties": {
+						"facing": "west"
+					}
+				}
+			}
+		}
     ]
 }
