@@ -61,13 +61,9 @@
                 "spawns_by_category": {
                     "monster": [
                         {
-                            "type": "minecraft:zombie",
+                            "type": "minecraft:frostbite",
                             "weight": 50,
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min_inclusive": 1,
-                                "max_inclusive": 3
-                            }
+                            "count": 4
                         },
                         {
                             "type": "minecraft:zombified_piglin",
@@ -79,13 +75,9 @@
                             }
                         },
                         {
-                            "type": "minecraft:skeleton",
+                            "type": "minecraft:stray",
                             "weight": 100,
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min_inclusive": 1,
-                                "max_inclusive": 2
-                            }
+                            "count": 4
                         },
                         {
                             "type": "minecraft:creeper",
