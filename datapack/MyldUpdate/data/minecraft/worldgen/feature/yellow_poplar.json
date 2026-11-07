@@ -1,0 +1,107 @@
+{
+	"type": "minecraft:tree",
+	"minimum_size": {
+		"type": "minecraft:two_layers_feature_size",
+		"lower_size": 0,
+		"upper_size": 1,
+		"limit": 64
+	},
+	"below_trunk_provider": "minecraft:soil_beneath_tree",
+	"trunk_placer": {
+		"type": "minecraft:poplar_trunk_placer",
+		"base_height": 8,
+		"height_rand_a": 4,
+		"height_rand_b": 4,
+		"branch_amount": {
+			"type": "minecraft:uniform",
+			"min_inclusive": 1,
+			"max_inclusive": 4
+		},
+		"trunk_height_above_branches": 8
+	},
+	"trunk_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [
+            {
+                "if_true": {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:poplar_log"],
+                            "offset": [1,0,0]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:poplar_log"],
+                            "offset": [-1,0,0]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:poplar_log"],
+                            "offset": [0,0,1]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:poplar_log"],
+                            "offset": [0,0,-1]
+                        }
+                    ]
+                },
+                "then": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:orange_poplar_leaves",
+                        "properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:poplar_log",
+                "properties": {
+                    "axis": "y"
+                }
+            }
+        }
+    },
+	"ignore_vines": false,
+	"foliage_placer": {
+		"type": "minecraft:poplar_foliage_placer",
+		"radius": {
+			"type": "minecraft:uniform",
+			"min_inclusive": 3,
+			"max_inclusive": 4
+		},
+		"height": {
+			"type": "minecraft:uniform",
+			"min_inclusive": 10,
+			"max_inclusive": 12
+		},
+		"offset": 0,
+		"side_hole_chance": 0.1
+	},
+	"foliage_provider": {
+		"type": "minecraft:simple",
+		"state": {
+			"id": "minecraft:orange_poplar_leaves",
+			"properties": {
+				"distance": "7",
+				"persistent": "false",
+				"waterlogged": "false"
+			}
+		}
+	},
+	"decorators": [
+		{
+			"type": "minecraft:shelf_mushroom",
+			"probability": 0.4
+		}
+	]
+}
