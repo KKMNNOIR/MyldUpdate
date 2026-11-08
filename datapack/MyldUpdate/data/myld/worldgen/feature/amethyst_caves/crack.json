@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:crevasse",
+	"carvable_blocks": {
+		"type": "minecraft:matching_block_tag",
+		"tag": "myld:amethyst_caves_cracking_replaceable"
+	},
+	"max_width": 4,
+	"max_length": 16,
+	"min_footprint": 1,
+	"column_surface_search_range": 32,
+	"cursor_surface_search_range": 32,
+	"carve_depth": {
+		"type": "minecraft:uniform",
+		"min_inclusive": 20,
+		"max_inclusive": 25
+	},
+	"surface_block": {
+		"id": "minecraft:air"
+	},
+	"fill_block": {
+		"type": "minecraft:weighted",
+		"entries": [
+			{
+				"weight": 3,
+				"data": "minecraft:amethyst_block"
+			},
+			{
+				"weight": 1,
+				"data": "minecraft:budding_amethyst"
+			}
+		]
+	},
+	"fill_depth": 12,
+	"acceptable_barrier": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:features_cannot_replace"
+    },
+	"twistiness": 4.0,
+	"tapering": 0.6,
+	"turn_factor": 0.1
+}
