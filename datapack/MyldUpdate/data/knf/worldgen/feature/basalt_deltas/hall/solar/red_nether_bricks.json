@@ -1,22 +1,20 @@
 {
     "type": "minecraft:simple_block",
-    "config": {
-        "to_place": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
-                {
-                    "data": {
-                        "Name": "minecraft:red_nether_bricks"
-                    },
-                    "weight": 4
+    "to_place": {
+        "type": "minecraft:weighted",
+        "entries": [
+            {
+                "data": {
+                    "id": "minecraft:red_nether_bricks"
                 },
-                {
-                    "data": {
-                        "Name": "minecraft:nether_wart_block"
-                    },
-                    "weight": 1
-                }
-            ]
-        }
+                "weight": 4
+            },
+            {
+                "data": {
+                    "id": "minecraft:nether_wart_block"
+                },
+                "weight": 1
+            }
+        ]
     }
 }
