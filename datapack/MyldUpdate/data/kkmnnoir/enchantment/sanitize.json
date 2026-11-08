@@ -30,7 +30,7 @@
                     "predicate": {
                         "tags": [
                             {
-                                "id": "#vanilla_plus:slip_damage",
+                                "id": "#myld:slip_damage",
                                 "expected": true
                             }
                         ]

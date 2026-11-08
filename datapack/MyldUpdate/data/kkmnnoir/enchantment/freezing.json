@@ -64,7 +64,7 @@
                     "effects": [
                         {
                             "type": "minecraft:damage_entity",
-                            "damage_type": "vanilla_plus:frozen_snowball",
+                            "damage_type": "myld:frozen_snowball",
                             "min_damage": {
                                 "type": "minecraft:linear",
                                 "base": 4.0,
