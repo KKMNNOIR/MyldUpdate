@@ -173,8 +173,7 @@
     [
       "myld:dripstone_cluster",
       "minecraft:pointed_dripstone",
-      "myld:dripstone_terrace",
-      "myld:deep_dark/sculkystis"
+      "myld:dripstone_terrace"
     ],
     [
       "minecraft:spring_water",

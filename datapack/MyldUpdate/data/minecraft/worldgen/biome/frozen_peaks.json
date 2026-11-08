@@ -156,8 +156,7 @@
       "myld:ore_emerald_extra_deep"
     ],
     [
-      "minecraft:ore_infested",
-      "myld:deep_dark/sculkystis"
+      "minecraft:ore_infested"
     ],
     [
       "minecraft:spring_water",

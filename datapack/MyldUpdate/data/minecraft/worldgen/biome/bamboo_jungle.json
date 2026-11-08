@@ -190,9 +190,7 @@
 			"minecraft:ore_emerald",
 			"myld:ore_emerald_deep"
 		],
-		[
-			"myld:deep_dark/sculkystis"
-		],
+		[],
 		[
 			"minecraft:spring_water",
 			"minecraft:spring_lava"
