@@ -18,14 +18,14 @@
                             "from_value": 0.0,
                             "to_value": 1.0
                         },
-                        "first": -0.1171875,
+                        "first": 0.1171875,
                         "second": {
                             "type": "minecraft:lerp",
                             "alpha": {
                                 "type": "minecraft:gradient",
                                 "axis": "y",
                                 "from_coordinate": 240,
-                                "to_coordinate": 256,
+                                "to_coordinate": 320,
                                 "from_value": 1.0,
                                 "to_value": 0.0
                             },
