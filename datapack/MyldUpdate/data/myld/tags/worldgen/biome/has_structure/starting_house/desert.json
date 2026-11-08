@@ -1,7 +1,7 @@
 {
     "values": [
         "minecraft:desert",
-        "vanilla_plus:lush_desert",
+        "myld:overworld/lush_desert",
         "#minecraft:is_beach"
     ]
 }
