@@ -14,7 +14,7 @@ execute store result score @s kkmnOozingSlimeSize run data get entity @s Size 0.
 execute store result entity @s data.enchantments.oozing.size int 1 run scoreboard players get @s kkmnOozingSlimeSize
 
 # 召喚
-function kkmnnoir:enchantment/oozing/summon_slime with entity data.enchantments.oozing
+function kkmnnoir:enchantment/oozing/summon_slime with entity @s data.enchantments.oozing
 
 
 # dataに保存
