@@ -23,13 +23,65 @@
             "max_inclusive": 5
         },
         "offset": 0,
-        "radius": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 4,
-            "max_inclusive": 5
-        }
+        "radius": 4
     },
-    "foliage_provider": "myld:trees/spruce/foliage",
+    "foliage_provider": {
+        "type": "minecraft:rule_based",
+        "rules": [
+            {
+                "if_true": {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [-4,0,-3]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [-4,0,3]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [4,0,-3]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [4,0,3]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [-3,0,-4]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [-3,0,4]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [3,0,-4]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:spruce_log"],
+                            "offset": [3,0,4]
+                        }
+                    ]
+                },
+                "then": {
+                    "type": "minecraft:rule_based",
+                    "rules": []
+                }
+            }
+        ],
+        "fallback": "myld:trees/spruce/foliage"
+    },
     "decorators": [
         {
             "type": "minecraft:trunk_vine"

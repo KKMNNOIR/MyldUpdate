@@ -19,11 +19,7 @@
         "type": "minecraft:blob_foliage_placer",
         "height": 6,
         "offset": 6,
-        "radius": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 3,
-            "max_inclusive": 4
-        }
+        "radius": 3
     },
     "foliage_provider": "myld:trees/oak/foliage",
     "root_placer": {

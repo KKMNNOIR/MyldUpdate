@@ -3,7 +3,7 @@
     "default": "myld:birch_forest/tall_birch_checked",
     "features": [
         {
-            "chance": 0.5,
+            "chance": 0.2,
             "feature": "myld:birch_forest/fancy_birch_checked"
         },
         {
