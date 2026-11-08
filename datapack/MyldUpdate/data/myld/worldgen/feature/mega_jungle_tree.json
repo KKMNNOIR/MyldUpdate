@@ -61,7 +61,8 @@
                 "slow_noise": {
                     "base_octave": -1,
                     "amplitude_modifiers": [1,2,2,1,1],
-                    "normalize": "legacy"
+                    "normalize": "legacy",
+                    "octave_count": 5
                 },
                 "slow_scale": 1,
                 "variety": {
@@ -71,7 +72,8 @@
                 "noise": {
                     "base_octave": -3,
                     "amplitude_modifiers": [1,1,1],
-                    "normalize": "legacy"
+                    "normalize": "legacy",
+                    "octave_count": 3
                 },
                 "scale": 1,
                 "seed": 0,
