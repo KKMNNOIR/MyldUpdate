@@ -133,8 +133,8 @@
 	"features": [
 		[],
 		[
-			"myld:lake_water_surface_mossy",
-			"minecraft:lake_lava_underground"
+			"minecraft:lake_lava_underground",
+			"myld:lake_water_surface_mossy"
 		],
 		[
 			"minecraft:amethyst_geode"
