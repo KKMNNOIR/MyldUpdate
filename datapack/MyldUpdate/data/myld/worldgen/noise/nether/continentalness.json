@@ -11,5 +11,6 @@
     1.0,
     1.0
   ],
-  "normalize": "legacy"
+  "normalize": "legacy",
+  "octave_count": 9
 }

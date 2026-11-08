@@ -9,5 +9,6 @@
         0.013333333333333334,
         0
     ],
-    "normalize": "legacy"
+    "normalize": "legacy",
+    "octave_count": 7
 }
