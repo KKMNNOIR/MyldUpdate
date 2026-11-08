@@ -9,10 +9,6 @@
     {
       "structure": "minecraft:nether_fossil",
       "weight": 3
-    },
-    {
-      "structure": "vanilla_plus:nether_fossil",
-      "weight": 1
     }
   ]
 }
