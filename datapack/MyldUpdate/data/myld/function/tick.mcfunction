@@ -43,7 +43,7 @@ execute as @e[type=minecraft:splash_potion] if predicate myld:linger_chance at @
 
 execute as @e[type=#myld:soul_sand_nether_fortress_monsters,predicate=myld:in_nether,tag=!vpNetherSpawned] at @s run tag @s add vpNetherSpawned
 
-execute as @e[type=#knf:soul_sand_nether_fortress_monsters,tag=vpFortressSpawned] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:effects":{"minecraft:wither":{duration:{min:1}}}}} at @s run effect clear @s minecraft:wither
+execute as @e[type=#knf:soul_sand_nether_fortress_monsters,tag=vpFortressSpawned] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:effects":{"minecraft:wither":{duration:{min:1}}}}} at @s run effect clear @s minecraft:wither
 
 
 ## Oxidized Copper Spike
