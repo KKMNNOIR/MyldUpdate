@@ -1,0 +1,136 @@
+{
+	"type": "minecraft:sequence",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:large_speleothem",
+				"base_block": "minecraft:amethyst_block",
+				"replaceable_blocks": "#myld:replaceable_by_large_amethyst_bud",
+				"column_radius": {
+					"type": "minecraft:uniform",
+					"min_inclusive": 6,
+					"max_inclusive": 7
+				},
+				"height_scale": 0.6,
+				"wind_speed": 0.0,
+				"stalactite_bluntness": 0.1,
+				"stalagmite_bluntness": 0.1,
+				"min_radius_for_wind": 6,
+				"min_bluntness_for_wind": 0.1,
+				"max_column_radius_to_cave_height_ratio": 0.5,
+				"floor_to_ceiling_search_range": 512
+			},
+			"placement": []
+		},
+        {
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"can_replace": {
+					"type": "minecraft:matching_blocks",
+					"blocks": ["minecraft:amethyst_block"]
+				},
+				"block": {
+					"type": "minecraft:rule_based",
+					"rules": []
+				},
+				"chance_to_continue": 1.0,
+				"cap_feature": {
+					"feature": {
+                        "type": "minecraft:simple_block",
+                        "to_place": {
+                            "id": "minecraft:amethyst_block"
+                        }
+                    },
+					"placement": [
+                        {
+                            "type": "minecraft:count",
+                            "count": 512
+                        },
+                        {
+                            "type": "minecraft:offset",
+                            "x": {
+                                "type": "minecraft:trapezoid",
+                                "min": -3,
+                                "max": 3,
+                                "plateau": 0
+                            },
+                            "y": 0,
+                            "z": {
+                                "type": "minecraft:trapezoid",
+                                "min": -3,
+                                "max": 3,
+                                "plateau": 0
+                            }
+                        },
+                        {
+                            "type": "minecraft:environment_scan",
+                            "direction_of_search": "down",
+                            "max_steps": 32,
+                            "target_condition": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "myld:replaceable_by_large_amethyst_bud"
+                            }
+                        }
+                    ]
+				}
+			},
+			"placement": []
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "up",
+				"can_replace": {
+					"type": "minecraft:matching_blocks",
+					"blocks": ["minecraft:amethyst_block"]
+				},
+				"block": {
+					"type": "minecraft:rule_based",
+					"rules": []
+				},
+				"chance_to_continue": 1.0,
+				"cap_feature": {
+					"feature": {
+                        "type": "minecraft:simple_block",
+                        "to_place": {
+                            "id": "minecraft:amethyst_block"
+                        }
+                    },
+					"placement": [
+                        {
+                            "type": "minecraft:count",
+                            "count": 512
+                        },
+                        {
+                            "type": "minecraft:offset",
+                            "x": {
+                                "type": "minecraft:trapezoid",
+                                "min": -3,
+                                "max": 3,
+                                "plateau": 0
+                            },
+                            "y": 0,
+                            "z": {
+                                "type": "minecraft:trapezoid",
+                                "min": -3,
+                                "max": 3,
+                                "plateau": 0
+                            }
+                        },
+                        {
+                            "type": "minecraft:environment_scan",
+                            "direction_of_search": "up",
+                            "max_steps": 32,
+                            "target_condition": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "myld:replaceable_by_large_amethyst_bud"
+                            }
+                        }
+                    ]
+				}
+			},
+			"placement": []
+		}
+	]
+}
