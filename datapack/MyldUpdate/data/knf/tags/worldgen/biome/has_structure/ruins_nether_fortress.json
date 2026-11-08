@@ -1,8 +1,8 @@
 {
     "values": [
         "minecraft:basalt_deltas",
-        "vanilla_plus:nether/charred_forest",
-        "vanilla_plus:nether/withered_barrens",
-        "vanilla_plus:nether/volcanic_peaks"
+        "myld:nether/withered_forest",
+        "myld:nether/withered_wastes",
+        "myld:nether/lava_peaks"
     ]
 }
