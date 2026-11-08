@@ -11,8 +11,6 @@
         "myld:overworld/snowy_old_growth_spruce_taiga",
         "myld:overworld/snowy_dead_forest",
         "minecraft:jagged_peaks",
-        "myld:overworld/icy_grove",
-        "myld:overworld/frozen_cave",
-        "myld:overworld/snowy_cave"
+        "myld:overworld/icy_grove"
     ]
 }
