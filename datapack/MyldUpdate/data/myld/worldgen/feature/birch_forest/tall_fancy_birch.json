@@ -17,12 +17,8 @@
     "ignore_vines": true,
     "foliage_placer": {
         "type": "minecraft:pine_foliage_placer",
-        "radius": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 2,
-            "max_inclusive": 3
-        },
-        "height": 5,
+        "radius": 2,
+        "height": 3,
         "offset": 1
     },
     "foliage_provider": "myld:trees/birch/foliage",
