@@ -4,7 +4,6 @@
         "minecraft:sunflower_plains",
         "minecraft:meadow",
         "#minecraft:is_river",
-        "#minecraft:is_ocean",
-        "vanilla_plus:hills"
+        "#minecraft:is_ocean"
     ]
 }
