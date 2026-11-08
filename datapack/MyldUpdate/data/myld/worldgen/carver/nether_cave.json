@@ -13,8 +13,8 @@
   },
   "floor_level": {
     "type": "minecraft:uniform",
-    "min_inclusive": -0.4,
-    "max_exclusive": -1.0
+    "max_exclusive": -0.4,
+    "min_inclusive": -1.0
   },
   "vertical_radius_multiplier": {
     "type": "minecraft:uniform",
