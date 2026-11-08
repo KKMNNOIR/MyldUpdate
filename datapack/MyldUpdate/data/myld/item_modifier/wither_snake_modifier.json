@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:enchant_with_levels",
+      "levels": {
+        "type": "minecraft:uniform",
+        "min": 10,
+        "max": 30
+      },
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.3
+      }
+    },
+    {
+      "type": "minecraft:set_enchantments",
+      "enchantments": {
+        "kkmnnoir:wither_shot": {
+          "type": "minecraft:uniform",
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_model_data",
+      "strings": {
+        "values": ["vanilla_plus:wither_snake"],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_name",
+      "name": {
+        "text": "ウィザースネーク",
+        "italic": false,
+        "bold": true,
+        "color": "dark_gray"
+      }
+    }
+  ]
+}
