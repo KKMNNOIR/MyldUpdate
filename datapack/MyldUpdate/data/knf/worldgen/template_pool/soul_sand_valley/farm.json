@@ -6,7 +6,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_wart_farm",
+                "processors": "knf:soul_sand_valley/cracking_wart_farm",
                 "location": "knf:soul_sand_valley/farm/top_deco_1"
             }
         },
@@ -15,7 +15,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "processors": "vanilla_plus:nether_fortress/soul_sand_valley/cracking_wart_farm",
+                "processors": "knf:soul_sand_valley/cracking_wart_farm",
                 "location": "knf:soul_sand_valley/farm/top_deco_2"
             }
         }

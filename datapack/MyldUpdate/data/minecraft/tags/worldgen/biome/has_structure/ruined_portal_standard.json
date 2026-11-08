@@ -1,10 +1,9 @@
 {
     "values": [
-        "vanilla_plus:hills",
-        "vanilla_plus:lush_dripstone_caves",
-        "vanilla_plus:steppe",
-        "vanilla_plus:wastes",
-        "vanilla_plus:wooded_slopes",
-        "vanilla_plus:tundra"
+        "myld:overworld/lush_dripstone_caves",
+        "myld:overworld/steppe",
+        "myld:overworld/wastes",
+        "myld:overworld/wooded_slopes",
+        "myld:overworld/tundra"
     ]
 }

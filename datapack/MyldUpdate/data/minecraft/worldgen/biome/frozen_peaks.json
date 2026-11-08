@@ -108,8 +108,8 @@
     [],
     [
       "minecraft:lake_lava_underground",
-      "vanilla_plus:lake_lava_surface_frozen",
-      "vanilla_plus:lake_powder_snow"
+      "myld:lake_lava_surface_frozen",
+      "myld:lake_powder_snow"
     ],
     [
       "minecraft:amethyst_geode"

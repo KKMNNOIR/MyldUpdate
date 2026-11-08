@@ -146,7 +146,7 @@
                 "entity": "this",
                 "predicate": {
                   "components": {
-                    "minecraft:cow/variant": "vanilla_plus:umbra"
+                    "minecraft:cow/variant": "myld:umbra"
                   }
                 }
               }

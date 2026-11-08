@@ -3,15 +3,15 @@
         "minecraft:nether_wastes",
         "minecraft:crimson_forest",
         "minecraft:warped_forest",
-        "vanilla_plus:nether/crimson_plains",
-        "vanilla_plus:nether/warped_plains",
-        "vanilla_plus:nether/white_sands",
-        "vanilla_plus:nether/diamond_forest",
-        "vanilla_plus:nether/nether_frost",
-        "#vanilla_plus:is_nether_wastes",
-        "vanilla_plus:nether/mixed_fungi_forest",
-        "vanilla_plus:nether/nether_gold_mine",
-        "#vanilla_plus:nether_plains"
+        "myld:nether/crimson_plains",
+        "myld:nether/warped_plains",
+        "myld:nether/white_sands",
+        "myld:nether/diamond_forest",
+        "myld:nether/nether_frost",
+        "#myld:is_nether_wastes",
+        "myld:nether/mixed_fungi_forest",
+        "myld:nether/nether_gold_mine",
+        "#myld:nether_plains"
     ],
     "replace": true
 }

@@ -16,8 +16,8 @@
         "type": "minecraft:biome",
         "biomes": [
           "minecraft:snowy_taiga",
-          "vanilla_plus:snowy_old_growth_pine_taiga",
-          "vanilla_plus:snowy_old_growth_spruce_taiga"
+          "myld:overworld/snowy_old_growth_pine_taiga",
+          "myld:overworld/snowy_old_growth_spruce_taiga"
         ]
       }
     }
