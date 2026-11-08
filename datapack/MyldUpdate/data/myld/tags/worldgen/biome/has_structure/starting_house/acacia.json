@@ -1,6 +1,6 @@
 {
     "values": [
         "#minecraft:is_savanna",
-        "vanilla_plus:steppe"
+        "myld:overworld/steppe"
     ]
 }
