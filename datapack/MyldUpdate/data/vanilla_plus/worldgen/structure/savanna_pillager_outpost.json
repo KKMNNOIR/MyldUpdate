@@ -1,5 +1,5 @@
 {
-  "biomes": "#vanilla_plus:is_savanna",
+  "biomes": "#minecraft:is_savanna",
   "spawn_overrides": {
     "monster": {
       "bounding_box": "full",
