@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:overlay",
+    "type": "minecraft:sequence",
     "features": [
         {
             "feature": "minecraft:spring_water",
