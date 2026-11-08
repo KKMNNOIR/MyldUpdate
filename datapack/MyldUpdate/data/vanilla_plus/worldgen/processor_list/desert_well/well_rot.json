@@ -1,0 +1,153 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "probability": 0.3,
+                        "block": "minecraft:oak_planks"
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_planks"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "id": "minecraft:oak_slab",
+                            "properties": {
+                                "type": "bottom",
+                                "waterlogged": "false"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_slab",
+                        "properties": {
+                            "type": "bottom",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "east"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_stairs",
+                        "properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "north"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_stairs",
+                        "properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "south"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_stairs",
+                        "properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "probability": 0.3,
+                        "block_state": {
+                            "id": "minecraft:oak_stairs",
+                            "properties": {
+                                "half": "top",
+                                "waterlogged": "false",
+                                "shape": "straight",
+                                "facing": "west"
+                            }
+                        }
+                    },
+                    "output_state": {
+                        "id": "minecraft:spruce_stairs",
+                        "properties": {
+                            "half": "top",
+                            "waterlogged": "false",
+                            "shape": "straight",
+                            "facing": "west"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
