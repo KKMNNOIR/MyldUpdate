@@ -143,7 +143,7 @@
   "features": [
     [],
     [
-      "vanilla_plus:marsh",
+      "myld:marsh_swamp",
       "minecraft:lake_lava_underground",
       "myld:lake_lava_swamp_surface"
     ],
