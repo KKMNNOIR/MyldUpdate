@@ -6,7 +6,7 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-          "vanilla_plus:nether/diamond_forest"
+          "myld:nether/diamond_forest"
         ]
       },
       "priority": 1

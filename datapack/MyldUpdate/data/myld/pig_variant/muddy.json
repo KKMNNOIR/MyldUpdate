@@ -6,7 +6,7 @@
         {
             "condition": {
                 "type": "minecraft:biome",
-                "biomes": "#vanilla_plus:spawn_muddy_pigs"
+                "biomes": "#myld:spawn_muddy_pigs"
             },
             "priority": 0
         }
