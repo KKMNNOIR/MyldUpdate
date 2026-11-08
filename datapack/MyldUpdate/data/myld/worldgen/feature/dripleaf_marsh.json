@@ -1,0 +1,214 @@
+{
+    "type": "minecraft:random_selector",
+    "default": {
+        "feature": {
+            "type": "minecraft:simple_block",
+            "to_place": {
+                "type": "minecraft:rotated",
+                "state": {
+                    "type": "minecraft:simple",
+                    "state": {
+                        "id": "minecraft:small_dripleaf",
+                        "properties": {
+                            "half": "lower"
+                        }
+                    }
+                }
+            }
+        },
+        "placement": []
+    },
+    "features": [
+        {
+            "chance": 0.125,
+            "feature": {
+                "feature": {
+                    "type": "minecraft:simple_random_selector",
+                    "features": [
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "direction": "up",
+                                "allowed_placement": {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:water","minecraft:air"]
+                                },
+                                "prioritize_tip": true,
+                                "layers": [
+                                    {
+                                        "height": {
+                                            "type": "minecraft:uniform",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 4
+                                        },
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf_stem",
+                                                "properties": {
+                                                    "facing": "east",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "height": 1,
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf",
+                                                "properties": {
+                                                    "facing": "east",
+                                                    "tilt": "none",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "placement": []
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "direction": "up",
+                                "allowed_placement": {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:water","minecraft:air"]
+                                },
+                                "prioritize_tip": true,
+                                "layers": [
+                                    {
+                                        "height": {
+                                            "type": "minecraft:uniform",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 4
+                                        },
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf_stem",
+                                                "properties": {
+                                                    "facing": "north",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "height": 1,
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf",
+                                                "properties": {
+                                                    "facing": "north",
+                                                    "tilt": "none",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "placement": []
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "direction": "up",
+                                "allowed_placement": {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:water","minecraft:air"]
+                                },
+                                "prioritize_tip": true,
+                                "layers": [
+                                    {
+                                        "height": {
+                                            "type": "minecraft:uniform",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 4
+                                        },
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf_stem",
+                                                "properties": {
+                                                    "facing": "south",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "height": 1,
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf",
+                                                "properties": {
+                                                    "facing": "south",
+                                                    "tilt": "none",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "placement": []
+                        },
+                        {
+                            "feature": {
+                                "type": "minecraft:block_column",
+                                "direction": "up",
+                                "allowed_placement": {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": ["minecraft:water","minecraft:air"]
+                                },
+                                "prioritize_tip": true,
+                                "layers": [
+                                    {
+                                        "height": {
+                                            "type": "minecraft:uniform",
+                                            "min_inclusive": 1,
+                                            "max_inclusive": 4
+                                        },
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf_stem",
+                                                "properties": {
+                                                    "facing": "west",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "height": 1,
+                                        "provider": {
+                                            "type": "minecraft:simple",
+                                            "state": {
+                                                "id": "minecraft:big_dripleaf",
+                                                "properties": {
+                                                    "facing": "west",
+                                                    "tilt": "none",
+                                                    "waterlogged": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "placement": []
+                        }
+                    ]
+                },
+                "placement": []
+            }
+        }
+    ]
+}
