@@ -1,4 +1,62 @@
 {
+    "debug_functions": [
+        {
+            "function": "myld:nether/continents",
+            "label": "従来地形/魔改造地形"
+        },
+        {
+            "function": "myld:nether/erosion",
+            "label": "Erosion"
+        },
+        {
+            "function": "myld:nether/temperature",
+            "label": "温度"
+        },
+        {
+            "function": "myld:nether/vegetation",
+            "label": "湿度(植性)"
+        },
+        {
+            "function": "myld:nether/ridges",
+            "label": "Ridges"
+        },
+        {
+            "function": "myld:nether/ridges_folded",
+            "label": "Peaks/Valley"
+        },
+        {
+            "function": "myld:nether/depth",
+            "label": "Depth"
+        },
+        {
+            "function": "myld:nether/inland/depth",
+            "label": "魔改造地形Depth"
+        },
+        {
+            "function": "myld:nether/ocean/depth",
+            "label": "従来地形Depth"
+        },
+        {
+            "function": "myld:nether/final_density",
+            "label": "地形"
+        },
+        {
+            "function": "myld:nether/inland/final_density",
+            "label": "魔改造Final Density"
+        },
+        {
+            "function": "myld:nether/ocean/final_density",
+            "label": "魔改造Final Density"
+        },
+        {
+            "function": "myld:nether/islands",
+            "label": "溶岩海の島"
+        },
+        {
+            "function": "myld:nether/ceiling_spine",
+            "label": "天井の刺"
+        }
+    ],
     "legacy_random_source": false,
     "sea_level": 32,
     "disable_mob_generation": false,
