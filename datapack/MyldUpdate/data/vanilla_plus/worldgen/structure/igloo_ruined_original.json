@@ -1,6 +1,6 @@
 {
     "type": "minecraft:jigsaw",
-    "biomes": "vanilla_plus:snowy_dead_forest",
+    "biomes": "myld:overworld/snowy_dead_forest",
     "step": "surface_structures",
     "spawn_overrides": {},
     "project_start_to_heightmap": "WORLD_SURFACE_WG",
