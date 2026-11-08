@@ -1,0 +1,63 @@
+{
+    "feature": "myld:amethyst_bud_wall",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 640
+        },
+        {
+            "type": "minecraft:count",
+            "count": 2
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "above_bottom": 0
+                },
+                "max_inclusive": {
+                    "below_top": 0
+                }
+            }
+        },
+        {
+            "type": "minecraft:count",
+            "count": 96
+        },
+        {
+            "type": "minecraft:offset",
+            "x": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            },
+            "y": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            },
+            "z": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+            }
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": ["minecraft:air"]
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

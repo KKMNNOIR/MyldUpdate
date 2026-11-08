@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:simple_block",
+    "to_place": {
+        "type": "minecraft:rule_based",
+        "rules": [
+            {
+                "if_true": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                    "offset": [1,0,0]
+                },
+                "then": "myld:amethst_buds_west"
+            },
+            {
+                "if_true": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                    "offset": [-1,0,0]
+                },
+                "then": "myld:amethst_buds_east"
+            },
+            {
+                "if_true": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                    "offset": [0,0,1]
+                },
+                "then": "myld:amethst_buds_north"
+            },
+            {
+                "if_true": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                    "offset": [0,0,-1]
+                },
+                "then": "myld:amethst_buds_south"
+            }
+        ]
+    }
+}
