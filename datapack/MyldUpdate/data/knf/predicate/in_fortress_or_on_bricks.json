@@ -2,8 +2,14 @@
     "type": "minecraft:any_of",
     "terms": [
         {
-            "type": "minecraft:reference",
-            "name": "vanilla_plus:in_fortress"
+            "type": "minecraft:location_check",
+            "predicate": {
+                "structures": [
+                    "minecraft:fortress",
+                    "knf:ruins_nether_fortress",
+                    "knf:soul_sand_nether_fortress"
+                ]
+            }
         },
         {
             "type": "minecraft:location_check",
