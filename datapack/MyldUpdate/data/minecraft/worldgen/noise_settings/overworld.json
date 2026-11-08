@@ -1,0 +1,132 @@
+{
+	"debug_functions": [
+		{
+			"function": "minecraft:overworld/final_density",
+			"label": "地形"
+		},
+		{
+			"function": "myld:overworld/sloped_cheese",
+			"label": "地表までの地形"
+		},
+		{
+			"function": "myld:overworld/underground",
+			"label": "地下の地形"
+		},
+		{
+			"function": "myld:overworld/temperature",
+			"label": "温度"
+		},
+		{
+			"function": "myld:overworld/vegetation",
+			"label": "湿度(植性)"
+		},
+		{
+			"function": "myld:overworld/continents",
+			"label": "内陸度"
+		},
+		{
+			"function": "myld:overworld/erosion",
+			"label": "平坦度"
+		},
+		{
+			"function": "myld:overworld/depth",
+			"label": "地表からの深さ"
+		},
+		{
+			"function": "myld:overworld/ridges",
+			"label": "Ridges"
+		},
+		{
+			"function": "myld:overworld/ridges_folded",
+			"label": "Peaks/Valleys"
+		},
+		{
+			"function": "minecraft:overworld/preliminary_surface_level",
+			"label": "暫定表面高度"
+		}
+	],
+	"default_fluid": {
+		"id": "minecraft:water",
+		"properties": {
+			"level": "0"
+		}
+	},
+	"disable_mob_generation": false,
+	"legacy_random_source": false,
+	"noise": {
+		"height": 2048,
+		"min_y": -64
+	},
+	"noise_router": {
+		"continents": "myld:overworld/continents",
+		"depth": "myld:overworld/depth",
+		"erosion": "myld:overworld/erosion",
+		"final_density": "myld:overworld/final_density",
+		"chunk_surface_level": "myld:overworld/preliminary_surface_level",
+		"ridges": "myld:overworld/ridges",
+		"temperature": "myld:overworld/temperature",
+		"vegetation": "myld:overworld/vegetation"
+	},
+	"aquifers": {
+		"surface_level": "myld:overworld/preliminary_surface_level",
+		"fluid_level_floodedness": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_fluid_level_floodedness",
+			"xz_scale": 1.0,
+			"y_scale": 0.67
+		},
+		"fluid_level_spread": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_fluid_level_spread",
+			"xz_scale": 1.0,
+			"y_scale": 0.7142857142857143
+		},
+		"barrier": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_barrier",
+			"xz_scale": 1.0,
+			"y_scale": 0.5
+		},
+		"lava": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_lava",
+			"xz_scale": 1.0,
+			"y_scale": 1.0
+		},
+		"exclusion": {
+			"type": "minecraft:min",
+			"left": {
+				"type": "minecraft:sub",
+				"left": -0.225,
+				"right": "minecraft:overworld/erosion"
+			},
+			"right": {
+				"type": "minecraft:max",
+				"left": {
+					"type": "minecraft:sub",
+					"left": "minecraft:overworld/depth",
+					"right": 0.9
+				},
+				"right": 0.0
+			}
+		}
+	},
+	"sea_level": 63,
+	"spawn_target": [
+		{
+			"myld:overworld/continents": [-0.16, 1.0],
+			"myld:overworld/erosion": [-1.0, 1.0],
+			"myld:overworld/vegetation": [-1.0, 1.0],
+			"myld:nether/temperature": [-1.0, 1.0],
+			"myld:overworld/ridges": [-1.0, -0.16]
+		},
+		{
+			"myld:overworld/continents": [-0.16, 1.0],
+			"myld:overworld/erosion": [-1.0, 1.0],
+			"myld:overworld/vegetation": [-1.0, 1.0],
+			"myld:overworld/temperature": [-1.0, 1.0],
+			"myld:overworld/ridges": [0.16, 1.0]
+		}
+	],
+	"material_rule": "minecraft:overworld"
+}
