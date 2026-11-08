@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:add",
+    "left": {
+        "type": "minecraft:min",
+        "left": {
+            "type": "minecraft:squeeze",
+            "input": {
+                "type": "minecraft:upscale",
+                "input": {
+                    "type": "minecraft:blend_density",
+                    "input": {
+                        "type": "minecraft:lerp",
+                        "alpha": {
+                            "type": "minecraft:gradient",
+                            "axis": "y",
+                            "from_coordinate": -64,
+                            "to_coordinate": -40,
+                            "from_value": 0.0,
+                            "to_value": 1.0
+                        },
+                        "first": -0.1171875,
+                        "second": {
+                            "type": "minecraft:lerp",
+                            "alpha": {
+                                "type": "minecraft:gradient",
+                                "axis": "y",
+                                "from_coordinate": 240,
+                                "to_coordinate": 256,
+                                "from_value": 1.0,
+                                "to_value": 0.0
+                            },
+                            "first": -0.078125,
+                            "second": {
+                                "type": "minecraft:range_choice",
+                                "input": "myld:overworld/sloped_cheese",
+                                "max_exclusive": 1.5625,
+                                "min_inclusive": -1000000.0,
+                                "when_in_range": "myld:overworld/surface",
+                                "when_out_of_range": "myld:overworld/underground"
+                            }
+                        }
+                    }
+                },
+                "x": {
+                    "cell_size": 4,
+                    "mode": "interpolate_linear"
+                },
+                "y": {
+                    "cell_size": 8,
+                    "mode": "interpolate_linear"
+                },
+                "z": {
+                    "cell_size": 4,
+                    "mode": "interpolate_linear"
+                }
+            }
+        },
+        "right": "minecraft:overworld/caves/noodle"
+    },
+    "right": {
+        "type": "minecraft:beardifier"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:min",
+    "left": "myld:overworld/sloped_cheese",
+    "right": {
+        "type": "minecraft:mul",
+        "left": "minecraft:overworld/caves/entrances",
+        "right": 5.0
+    }
+}
