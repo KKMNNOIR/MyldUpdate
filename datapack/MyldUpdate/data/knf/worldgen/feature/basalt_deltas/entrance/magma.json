@@ -8,7 +8,8 @@
                 1,
                 1
             ],
-            "normalize": "legacy"
+            "normalize": "legacy",
+            "octave_count": 2
         },
         "states": [
             {

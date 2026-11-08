@@ -14,7 +14,7 @@
                   {
                     "type": "minecraft:location_check",
                     "predicate": {
-                      "biomes": "#vanilla_plus:snowy_biomes"
+                      "biomes": "#myld:snowy_biomes"
                     }
                   },
                   {
