@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:weighted_random_selector",
+  "features": [
+    {
+      "data": "minecraft:red_poplar_leaf_litter",
+      "weight": 200
+    },
+    {
+      "data": "minecraft:orange_poplar_leaf_litter",
+      "weight": 240
+    },
+    {
+      "data": "minecraft:yellow_poplar_leaf_litter",
+      "weight": 90
+    },
+    {
+      "weight": 27,
+      "data": {
+        "feature": {
+          "type": "minecraft:random_boolean_selector",
+          "feature_false": "minecraft:spruce_checked",
+          "feature_true": "myld:birch_dappled_forest_checked"
+        },
+        "placement": []
+      }
+    },
+    {
+      "data": "minecraft:fallen_poplar_tree",
+      "weight": 120
+    }
+  ]
+}
