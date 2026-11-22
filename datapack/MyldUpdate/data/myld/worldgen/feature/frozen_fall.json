@@ -1,0 +1,808 @@
+{
+	"type": "minecraft:overlay",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"block": "myld:frozen_fall",
+				"can_replace": {
+					"type": "minecraft:all_of",
+					"predicates": [
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:has_sturdy_face",
+								"direction": "up"
+							}
+						},
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:water", "minecraft:lava"]
+							}
+						}
+					]
+				},
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:overlay",
+						"features": [
+							{
+								"feature": {
+									"type": "minecraft:projected_random_patchy_square",
+									"size": 4,
+									"block": {
+										"type": "minecraft:rule_based",
+										"rules": [
+											{
+												"if_true": {
+													"type": "minecraft:matching_blocks",
+													"blocks": "minecraft:water"
+												},
+												"then": {
+													"id": "minecraft:ice"
+												}
+											},
+											{
+												"if_true": {
+													"type": "minecraft:matching_blocks",
+													"blocks": "minecraft:lava"
+												},
+												"then": {
+													"id": "minecraft:smooth_basalt"
+												}
+											}
+										]
+									},
+									"project_through": {
+										"type": "minecraft:matching_block_tag",
+										"tag": "minecraft:air"
+									},
+									"max_projection_height": 4
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 0,
+										"y": -1,
+										"z": 0
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 7,
+												"max_inclusive": 9
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": -1,
+										"y": 0,
+										"z": 0
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:matching_block_tag",
+										"tag": "minecraft:air"
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 7,
+												"max_inclusive": 9
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 1,
+										"y": 0,
+										"z": 0
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 7,
+												"max_inclusive": 9
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 0,
+										"y": 0,
+										"z": -1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 7,
+												"max_inclusive": 9
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 0,
+										"y": 0,
+										"z": 1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:matching_block_tag",
+										"tag": "minecraft:air"
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 4,
+												"max_inclusive": 5
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": -1,
+										"y": 0,
+										"z": -1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 4,
+												"max_inclusive": 5
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": -1,
+										"y": 0,
+										"z": 1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 4,
+												"max_inclusive": 5
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 1,
+										"y": 0,
+										"z": -1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": true,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 4,
+												"max_inclusive": 5
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 1,
+										"y": 0,
+										"z": 1
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": false,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 3,
+												"max_inclusive": 4
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": -2,
+										"y": 0,
+										"z": 0
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": false,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 3,
+												"max_inclusive": 4
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 2,
+										"y": 0,
+										"z": 0
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": false,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 3,
+												"max_inclusive": 4
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 0,
+										"y": 0,
+										"z": -2
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							},
+							{
+								"feature": {
+									"type": "minecraft:block_column",
+									"direction": "up",
+									"allowed_placement": {
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:has_sturdy_face",
+											"direction": "up"
+										}
+									},
+									"prioritize_tip": false,
+									"layers": [
+										{
+											"height": {
+												"type": "minecraft:uniform",
+												"min_inclusive": 3,
+												"max_inclusive": 4
+											},
+											"provider": "myld:frozen_fall"
+										}
+									]
+								},
+								"placement": [
+									{
+										"type": "minecraft:offset",
+										"x": 0,
+										"y": 0,
+										"z": 2
+									},
+									{
+										"type": "minecraft:environment_scan",
+										"direction_of_search": "down",
+										"max_steps": 8,
+										"target_condition": {
+											"type": "minecraft:solid",
+											"offset": [0, -1, 0]
+										}
+									}
+								]
+							}
+						]
+					},
+					"placement": []
+				}
+			},
+			"placement": []
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"block": {
+					"id": "minecraft:blue_ice"
+				},
+				"can_replace": {
+					"type": "minecraft:all_of",
+					"predicates": [
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:has_sturdy_face",
+								"direction": "up"
+							}
+						},
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:water", "minecraft:lava"]
+							}
+						}
+					]
+				},
+				"chance_to_continue": 0.9,
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:random_boolean_selector",
+						"feature_false": {
+							"feature": {
+								"type": "minecraft:no_op"
+							},
+							"placement": []
+						},
+						"feature_true": {
+							"feature": "myld:icicle_frozen_fall",
+							"placement": []
+						}
+					},
+					"placement": [
+						{
+							"type": "minecraft:offset",
+							"x": 0,
+							"y": -1,
+							"z": 0
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 0,
+					"z": 0
+				}
+			]
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"block": {
+					"id": "minecraft:blue_ice"
+				},
+				"can_replace": {
+					"type": "minecraft:all_of",
+					"predicates": [
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:has_sturdy_face",
+								"direction": "up"
+							}
+						},
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:water", "minecraft:lava"]
+							}
+						}
+					]
+				},
+				"chance_to_continue": 0.9,
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:random_boolean_selector",
+						"feature_false": {
+							"feature": {
+								"type": "minecraft:no_op"
+							},
+							"placement": []
+						},
+						"feature_true": {
+							"feature": "myld:icicle_frozen_fall",
+							"placement": []
+						}
+					},
+					"placement": [
+						{
+							"type": "minecraft:offset",
+							"x": 0,
+							"y": -1,
+							"z": 0
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 0,
+					"z": 0
+				}
+			]
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"block": {
+					"id": "minecraft:blue_ice"
+				},
+				"can_replace": {
+					"type": "minecraft:all_of",
+					"predicates": [
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:has_sturdy_face",
+								"direction": "up"
+							}
+						},
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:water", "minecraft:lava"]
+							}
+						}
+					]
+				},
+				"chance_to_continue": 0.9,
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:random_boolean_selector",
+						"feature_false": {
+							"feature": {
+								"type": "minecraft:no_op"
+							},
+							"placement": []
+						},
+						"feature_true": {
+							"feature": "myld:icicle_frozen_fall",
+							"placement": []
+						}
+					},
+					"placement": [
+						{
+							"type": "minecraft:offset",
+							"x": 0,
+							"y": -1,
+							"z": 0
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 0,
+					"z": -1
+				}
+			]
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "down",
+				"block": {
+					"id": "minecraft:blue_ice"
+				},
+				"can_replace": {
+					"type": "minecraft:all_of",
+					"predicates": [
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:has_sturdy_face",
+								"direction": "up"
+							}
+						},
+						{
+							"type": "minecraft:not",
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:water", "minecraft:lava"]
+							}
+						}
+					]
+				},
+				"chance_to_continue": 0.9,
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:random_boolean_selector",
+						"feature_false": {
+							"feature": {
+								"type": "minecraft:no_op"
+							},
+							"placement": []
+						},
+						"feature_true": {
+							"feature": "myld:icicle_frozen_fall",
+							"placement": []
+						}
+					},
+					"placement": [
+						{
+							"type": "minecraft:offset",
+							"x": 0,
+							"y": -1,
+							"z": 0
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 0,
+					"z": 1
+				}
+			]
+		}
+	]
+}
