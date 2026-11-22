@@ -1,36 +1,1257 @@
 {
-    "type": "minecraft:tree",
-    "minimum_size": {
-        "type": "minecraft:two_layers_feature_size",
-        "lower_size": 0,
-        "upper_size": 1,
-        "limit": 64,
-        "min_clipped_height": 4
-    },
-    "below_trunk_provider": "minecraft:soil_beneath_tree",
-    "trunk_placer": {
-        "type": "minecraft:straight_trunk_placer",
-        "base_height": 4,
-        "height_rand_a": 2,
-        "height_rand_b": 12
-    },
-    "trunk_provider": {
-        "type": "minecraft:simple",
-        "state": {
-            "id": "minecraft:mushroom_stem",
-            "properties": {
-                "down": "false",
-                "up": "false"
-            }
-        }
-    },
-    "ignore_vines": false,
-    "foliage_placer": {
-        "type": "minecraft:fancy_foliage_placer",
-        "height": 3,
-        "radius": 3,
-        "offset": 0
-    },
-    "foliage_provider": "myld:huge_mushroom/red_hat_swamp",
-    "decorators": []
+	"type": "minecraft:sequence",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:tree",
+				"minimum_size": {
+					"type": "minecraft:two_layers_feature_size",
+					"lower_size": 0,
+					"upper_size": 1,
+					"limit": 64,
+					"min_clipped_height": 4
+				},
+				"below_trunk_provider": "minecraft:soil_beneath_tree",
+				"trunk_placer": {
+					"type": "minecraft:straight_trunk_placer",
+					"base_height": 4,
+					"height_rand_a": 2,
+					"height_rand_b": 12
+				},
+				"trunk_provider": {
+					"type": "minecraft:simple",
+					"state": {
+						"id": "minecraft:mushroom_stem",
+						"properties": {
+							"down": "false",
+							"up": "false"
+						}
+					}
+				},
+				"ignore_vines": false,
+				"foliage_placer": {
+					"type": "minecraft:fancy_foliage_placer",
+					"height": 4,
+					"radius": 3,
+					"offset": 2
+				},
+				"foliage_provider": "myld:empty",
+				"decorators": []
+			},
+			"placement": []
+		},
+		{
+			"feature": {
+				"type": "minecraft:sequence",
+				"features": [
+					{
+						"feature": {
+							"type": "minecraft:simple_block",
+							"to_place": {
+								"type": "minecraft:rule_based",
+								"rules": [],
+								"fallback": {
+									"id": "minecraft:red_mushroom_block",
+									"properties": {
+										"down": "false"
+									}
+								}
+							},
+							"schedule_tick": true
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 0,
+								"y": 0,
+								"z": 0
+							},
+							{
+								"type": "minecraft:cuboid",
+								"xz_size": 7,
+								"y_size": 6,
+								"include_edges": false,
+								"include_interior": true
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:simple_block",
+							"to_place": {
+								"type": "minecraft:rule_based",
+								"rules": [
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,-1,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"south": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"south": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"south": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"south": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"south": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"south": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"east": "false",
+												"north": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"south": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"south": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"south": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"south": "false",
+												"west": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,1,0]
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"west": "false",
+												"up": "false"
+											}
+										}
+									},
+									{
+										"if_true": {
+											"type": "minecraft:all_of",
+											"predicates": [
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [-1,0,0]
+												},
+												{
+													"type": "minecraft:matching_blocks",
+													"blocks": ["minecraft:red_mushroom_block"],
+													"offset": [0,0,-1]
+												},
+												{
+													"type": "minecraft:not",
+													"predicate": {
+														"type": "minecraft:matching_blocks",
+														"blocks": ["minecraft:red_mushroom_block"],
+														"offset": [0,1,0]
+													}
+												}
+											]
+										},
+										"then": {
+											"id": "minecraft:red_mushroom_block",
+											"properties": {
+												"down": "false",
+												"north": "false",
+												"west": "false"
+											}
+										}
+									}
+								]
+							}
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 0,
+								"y": 0,
+								"z": 0
+							},
+							{
+								"type": "minecraft:cuboid",
+								"xz_size": 7,
+								"y_size": 6,
+								"include_edges": false,
+								"include_interior": true
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:replace_single_block",
+							"targets": [
+								{
+									"target": {
+										"predicate_type": "minecraft:block_match",
+										"block": "minecraft:red_mushroom_block"
+									},
+									"state": "minecraft:air"
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 1,
+								"y": 0,
+								"z": 1
+							},
+							{
+								"type": "minecraft:cuboid",
+								"xz_size": 5,
+								"y_size": 5,
+								"include_edges": true,
+								"include_interior": true
+							}
+						]
+					}
+				]
+			},
+			"placement": [
+				{
+					"type": "minecraft:environment_scan",
+					"direction_of_search": "up",
+					"max_steps": 32,
+					"target_condition": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:mushroom_stem"],
+								"offset": [0,-1,0]
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air"
+							}
+						]
+					}
+				},
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 0,
+					"z": -3
+				}
+			]
+		},
+		{
+			"feature": {
+				"type": "minecraft:overlay",
+				"features": [
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "up",
+							"allowed_placement": {
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air",
+								"offset": [0, -1, 0]
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": 1,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"up": "false"
+											}
+										}
+									}
+								},
+								{
+									"height": 11,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"down": "false",
+												"up": "false"
+											}
+										}
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": -1,
+								"y": {
+									"type": "minecraft:uniform",
+									"max_inclusive": 0,
+									"min_inclusive": -1
+								},
+								"z": 0
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "up",
+							"allowed_placement": {
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air",
+								"offset": [0, -1, 0]
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": 1,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"up": "false"
+											}
+										}
+									}
+								},
+								{
+									"height": 11,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"down": "false",
+												"up": "false"
+											}
+										}
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 1,
+								"y": {
+									"type": "minecraft:uniform",
+									"max_inclusive": 0,
+									"min_inclusive": -1
+								},
+								"z": 0
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "up",
+							"allowed_placement": {
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air",
+								"offset": [0, -1, 0]
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": 1,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"up": "false"
+											}
+										}
+									}
+								},
+								{
+									"height": 11,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"down": "false",
+												"up": "false"
+											}
+										}
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 0,
+								"y": {
+									"type": "minecraft:uniform",
+									"max_inclusive": 0,
+									"min_inclusive": -1
+								},
+								"z": -1
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "up",
+							"allowed_placement": {
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air",
+								"offset": [0, -1, 0]
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": 1,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"up": "false"
+											}
+										}
+									}
+								},
+								{
+									"height": 11,
+									"provider": {
+										"type": "minecraft:simple",
+										"state": {
+											"id": "minecraft:mushroom_stem",
+											"properties": {
+												"down": "false",
+												"up": "false"
+											}
+										}
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:offset",
+								"x": 0,
+								"y": 0,
+								"z": 1
+							}
+						]
+					}
+				]
+			},
+			"placement": [
+				{
+					"type": "minecraft:environment_scan",
+					"max_steps": 32,
+					"direction_of_search": "up",
+					"target_condition": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": ["minecraft:mushroom_stem"],
+								"offset": [0, -1, 0]
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"tag": "minecraft:air"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
 }
