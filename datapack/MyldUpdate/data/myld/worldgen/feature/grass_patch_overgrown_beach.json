@@ -32,6 +32,13 @@
     },
     "features": [
         {
+            "chance": 0.3,
+            "feature": {
+                "feature": "minecraft:bush",
+                "placement": []
+            }
+        },
+        {
             "chance": 0.025,
             "feature": {
                 "feature": "myld:overgrown_beach_bush",
