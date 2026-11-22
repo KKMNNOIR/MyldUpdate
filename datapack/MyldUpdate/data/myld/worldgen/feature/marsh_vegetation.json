@@ -6,7 +6,7 @@
     },
     "features": [
         {
-            "chance": 0.00625,
+            "chance": 0.0625,
             "feature": {
                 "feature": "myld:dripleaf_marsh",
                 "placement": [
@@ -101,13 +101,6 @@
                         }
                     }
                 ]
-            }
-        },
-        {
-            "chance": 0.125,
-            "feature": {
-                "feature": "myld:gama",
-                "placement": []
             }
         }
     ]
