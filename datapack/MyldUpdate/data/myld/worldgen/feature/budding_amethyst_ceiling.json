@@ -16,6 +16,23 @@
     "vegetation_chance": 1.0,
     "vegetation_feature": {
         "feature": "myld:amethyst_buds_ceiling",
-        "placement": []
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:replaceable"
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": ["minecraft:amethyst_block","minecraft:budding_amethyst"],
+                            "offset": [0,1,0]
+                        }
+                    ]
+                }
+            }
+        ]
     }
 }
