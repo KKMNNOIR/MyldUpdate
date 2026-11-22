@@ -124,7 +124,9 @@
 			"minecraft:monster_room",
 			"minecraft:monster_room_deep"
 		],
-		[],
+		[
+			"myld:patch_ice_crystal_icy_grove"
+		],
 		[],
 		[
 			"minecraft:ore_dirt",
