@@ -3,6 +3,7 @@
         "#minecraft:sand",
         "minecraft:sandstone",
         "minecraft:cut_sandstone",
-        "minecraft:chiseled_sandstone"
+        "minecraft:chiseled_sandstone",
+        "minecraft:smooth_sandstone"
     ]
 }
