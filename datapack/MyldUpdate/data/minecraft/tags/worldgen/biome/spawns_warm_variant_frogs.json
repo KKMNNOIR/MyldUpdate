@@ -10,7 +10,8 @@
     "myld:overworld/lush_desert",
     "myld:overworld/steppe",
     "myld:overworld/wastes",
-    "myld:overworld/deep_warm_ocean"
+    "myld:overworld/deep_warm_ocean",
+    "myld:overworld/desert_caves"
   ],
   "replace": true
 }
