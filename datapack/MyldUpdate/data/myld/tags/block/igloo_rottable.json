@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:snow_block",
+        "minecraft:snow_bricks",
+        "minecraft:snow_brick_slab",
+        "minecraft:snow_brick_stairs",
+        "minecraft:chiseled_packed_ice",
+        "minecraft:ice_crystal",
+        "minecraft:ice",
+        "#minecraft:wool_carpets"
+    ]
+}
