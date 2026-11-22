@@ -1,0 +1,14 @@
+{
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "myld:igloo/middle_2",
+                "processors": "myld:igloo_ruined",
+                "projection": "rigid"
+            }
+        }
+    ]
+}
