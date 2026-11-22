@@ -27,6 +27,37 @@
     "vegetation_chance": 0.015625,
     "vegetation_feature": {
         "feature": "myld:cactus_selected",
-        "placement": []
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:volume_match",
+                            "min": [-1,0,0],
+                            "max": [1,0,0],
+                            "match": {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:solid"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:volume_match",
+                            "min": [0,0,-1],
+                            "max": [0,0,1],
+                            "match": {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:solid"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     }
 }
