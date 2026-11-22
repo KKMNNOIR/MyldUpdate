@@ -35,13 +35,17 @@
         "radius": {
             "type": "minecraft:uniform",
             "min_inclusive": 3,
-            "max_inclusive": 4
+            "max_inclusive": 5
         },
-        "height": 6,
-        "corner_hole_chance": 0,
-        "hanging_leaves_chance": 0.01,
-        "hanging_leaves_extension_chance": 0.05,
-        "wide_bottom_layer_hole_chance": 0
+        "height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 6,
+            "max_inclusive": 7
+        },
+        "corner_hole_chance": 0.25,
+        "hanging_leaves_chance": 0.1,
+        "hanging_leaves_extension_chance": 0.1,
+        "wide_bottom_layer_hole_chance": 0.25
     },
     "foliage_provider": {
         "type": "minecraft:simple",
