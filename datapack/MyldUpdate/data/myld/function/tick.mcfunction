@@ -51,3 +51,10 @@ execute as @e[type=minecraft:item_display,tag=vpOxidizedCopperSpike] at @s run f
 execute as @e[type=#myld:can_hurt_by_spike,tag=!vpCopperSpikeImmune] at @s if entity @e[distance=0..2,dx=0,dz=0,tag=vpOxidizedCopperSpikeInteraction] run function myld:trial_chambers/oxidized_copper_spike/damage_entity/detect_falling
 execute as @e[type=minecraft:item] at @s if entity @n[type=minecraft:item_display,tag=vpOxidizedCopperSpike,distance=..0.5,nbt={item:{components:{"minecraft:custom_data":{blockstates:{damage_item:true}}}}}] run damage @s 5.0 myld:copper_spike
 execute as @e[tag=vpOxidizedCopperSpikeInteraction] at @s if block ~ ~-1 ~ #minecraft:replaceable run function myld:trial_chambers/oxidized_copper_spike/break
+
+# Gama
+# 基本動作
+execute as @e[tag=vpGamaInteraction] at @s run function myld:swamp/gama/main
+
+# Jungle Flower
+execute as @e[tag=vpJungleFlowerInteraction] at @s run function myld:jungle/jungle_flower/main
