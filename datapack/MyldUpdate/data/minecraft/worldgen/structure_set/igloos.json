@@ -11,15 +11,15 @@
       "weight": 1
     },
     {
-      "structure": "vanilla_plus:igloo",
+      "structure": "myld:igloo",
       "weight": 1
     },
     {
-      "structure": "vanilla_plus:igloo_ruined",
+      "structure": "myld:igloo_ruined",
       "weight": 1
     },
     {
-      "structure": "vanilla_plus:igloo_ruined_original",
+      "structure": "myld:igloo_original_ruined",
       "weight": 1
     }
   ]
