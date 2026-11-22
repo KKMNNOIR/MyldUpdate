@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:range_choice",
+	"input": "minecraft:y",
+	"max_exclusive": 50,
+	"min_inclusive": -60,
+	"when_in_range": "myld:overworld/ore_vein/desert_caves/copper_density_main",
+	"when_out_of_range": -1
+}

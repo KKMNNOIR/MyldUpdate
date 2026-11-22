@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:range_choice",
+	"input": "minecraft:overworld/ore_vein/mask",
+	"max_exclusive": 1000000.0,
+	"min_inclusive": 0.0,
+	"when_in_range": {
+		"type": "minecraft:range_choice",
+		"input": {
+			"type": "minecraft:add",
+			"left": {
+				"type": "minecraft:add",
+				"left": "myld:overworld/ore_vein/desert_caves/toggle",
+				"right": 4
+			},
+			"right": {
+				"type": "minecraft:add",
+				"left": {
+					"type": "minecraft:mul",
+					"left": {
+						"type": "minecraft:clamp",
+						"input": {
+							"type": "minecraft:min",
+							"left": {
+								"type": "minecraft:sub",
+								"left": 60,
+								"right": "minecraft:y"
+							},
+							"right": "minecraft:y"
+						},
+						"max": 20.0,
+						"min": -36.0
+					},
+					"right": 0.0
+				},
+				"right": 0.0
+			}
+		},
+		"max_exclusive": 1000000.0,
+		"min_inclusive": 0.0,
+		"when_in_range": 0.7,
+		"when_out_of_range": -1.0
+	},
+	"when_out_of_range": -1.0
+}
