@@ -21,10 +21,35 @@
                     "plateau": 0
                 },
                 "block": {
-                    "type": "minecraft:simple",
-                    "state": {
-                        "id": "minecraft:mossy_cobblestone"
-                    }
+                    "type": "minecraft:rule_based",
+                    "rules": [
+                        {
+                            "if_true": {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": "minecraft:water"
+                                }
+                            },
+                            "then": {
+                                "type": "minecraft:rule_based",
+                                "rules": [
+                                    {
+                                        "if_true": {
+                                            "type": "minecraft:matching_blocks",
+                                            "blocks": "minecraft:deepslate"
+                                        },
+                                        "then": {
+                                            "id": "minecraft:moss_block"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "id": "minecraft:mossy_cobblestone"
+                                }
+                            }
+                        }
+                    ]
                 },
                 "can_replace": {
                     "type": "minecraft:matching_blocks",
@@ -40,6 +65,7 @@
                 "attempts": 64,
                 "accepted_neighbors": [
                     "minecraft:mossy_cobblestone",
+                    "minecraft:moss_block",
                     "minecraft:water"
                 ]
             },
