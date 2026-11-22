@@ -1,31 +1,123 @@
 {
-    "type": "minecraft:ore",
-    "size": 8,
-    "targets": [
-        {
-            "target": {
-                "predicate_type": "minecraft:tag_match",
-                "tag": "myld:desert_cave_replaceables"
+    "type": "minecraft:geode",
+    "min_gen_offset": -8,
+    "max_gen_offset": 8,
+    "outer_wall_distance": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+    },
+    "distribution_points": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+            {
+                "weight": 3,
+                "data": 2
             },
-            "state": {
-                "id": "minecraft:redstone_ore",
-                "properties": {
-                    "lit": "false"
-                }
+            {
+                "weight": 1,
+                "data": 3
             }
+        ]
+    },
+    "invalid_blocks_threshold": 21,
+    "point_offset": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+    },
+    "noise_multiplier": 0.05,
+    "blocks": {
+        "filling_provider": {
+            "type": "minecraft:rule_based",
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "myld:desert_cave_replaceables"
+                    },
+                    "then": {
+                        "id": "minecraft:redstone_block"
+                    }
+                }
+            ]
         },
-        {
-            "target": {
-                "predicate_type": "minecraft:tag_match",
-                "tag": "minecraft:deepslate_ore_replaceables"
-            },
-            "state": {
-                "id": "minecraft:deepslate_redstone_ore",
-                "properties": {
-                    "lit": "false"
+        "inner_layer_provider": {
+            "type": "minecraft:rule_based",
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "myld:desert_cave_replaceables"
+                    },
+                    "then": {
+                        "id": "minecraft:red_terracotta"
+                    }
                 }
+            ]
+        },
+        "alternate_inner_layer_provider": {
+            "type": "minecraft:rule_based",
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "myld:desert_cave_replaceables"
+                    },
+                    "then": {
+                        "id": "minecraft:cinnabar"
+                    }
+                }
+            ]
+        },
+        "middle_layer_provider": {
+            "type": "minecraft:rule_based",
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "myld:desert_cave_replaceables"
+                    },
+                    "then": {
+                        "id": "minecraft:granite"
+                    }
+                }
+            ]
+        },
+        "outer_layer_provider": {
+            "type": "minecraft:rule_based",
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "myld:desert_cave_replaceables"
+                    },
+                    "then": {
+                        "id": "minecraft:sulfur"
+                    }
+                }
+            ]
+        },
+        "inner_placements": [
+            {
+                "id": "minecraft:air"
             }
-        }
-    ],
-    "discard_chance_on_air_exposure": 0.0
+        ],
+        "cannot_replace": "#minecraft:features_cannot_replace",
+        "invalid_blocks": "#minecraft:geode_invalid_blocks"
+    },
+    "layers": {
+        "filling": 1.0,
+        "inner_layer": 1.2,
+        "middle_layer": 1.7,
+        "outer_layer": 2.5
+    },
+    "crack": {
+        "base_crack_size": 1,
+        "crack_point_offset": 1,
+        "generate_crack_chance": 0
+    },
+    "use_alternate_layer0_chance": 0.1,
+    "use_potential_placements_chance": 0.0,
+    "placements_require_layer0_alternate": false
 }
