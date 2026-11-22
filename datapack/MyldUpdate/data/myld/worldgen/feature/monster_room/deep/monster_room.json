@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "feature": "myld:monster_room/deep/monster_room_xz4",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/deep/monster_room_x4z3",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/deep/monster_room_x3z4",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/deep/monster_room_xz3",
+            "placement": []
+        }
+    ]
+}

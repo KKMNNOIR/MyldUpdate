@@ -1,0 +1,146 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:simple_random_selector",
+				"features": [
+					{
+						"feature": {
+							"type": "minecraft:template",
+							"templates": [
+								{
+									"weight": 1,
+									"data": {
+										"id": "myld:monster_room/chest",
+										"rotations": ["none"]
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:all_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:cave_air"
+										},
+										{
+											"type": "minecraft:solid",
+											"offset": [1, 0, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:template",
+							"templates": [
+								{
+									"weight": 1,
+									"data": {
+										"id": "myld:monster_room/chest",
+										"rotations": ["clockwise_90"]
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:all_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:cave_air"
+										},
+										{
+											"type": "minecraft:solid",
+											"offset": [0, 0, 1]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:template",
+							"templates": [
+								{
+									"weight": 1,
+									"data": {
+										"id": "myld:monster_room/chest",
+										"rotations": ["180"]
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:all_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:cave_air"
+										},
+										{
+											"type": "minecraft:solid",
+											"offset": [-1, 0, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:template",
+							"templates": [
+								{
+									"weight": 1,
+									"data": {
+										"id": "myld:monster_room/chest",
+										"rotations": ["counterclockwise_90"]
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:all_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:cave_air"
+										},
+										{
+											"type": "minecraft:solid",
+											"offset": [0, 0, -1]
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"placement": [
+				{
+					"type": "minecraft:count",
+					"count": 400
+				}
+			]
+		}
+	]
+}

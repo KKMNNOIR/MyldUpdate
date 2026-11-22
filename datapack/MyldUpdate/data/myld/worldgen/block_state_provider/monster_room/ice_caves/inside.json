@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:rule_based",
+    "rules": [
+        {
+            "if_true": {
+                "type": "minecraft:not",
+                "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": ["minecraft:chest","minecraft:spawner"]
+                }
+            },
+            "then": {
+                "id": "minecraft:cave_air"
+            }
+        }
+    ]
+}

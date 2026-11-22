@@ -1,0 +1,544 @@
+{
+	"type": "minecraft:overlay",
+	"features": [
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -3,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -2,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": -1,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 0,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 1,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/floor"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 2,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": -3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": -2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": -1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": 0
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": 1
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": 2
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		},
+		{
+			"placement": [
+				{
+					"type": "minecraft:offset",
+					"x": 3,
+					"y": 3,
+					"z": 3
+				}
+			],
+			"feature": "myld:monster_room/ice_caves/wall"
+		}
+	]
+}

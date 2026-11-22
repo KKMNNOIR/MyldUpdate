@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:rule_based",
+    "rules": [
+        {
+            "if_true": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:inside_world_bounds"
+                    },
+                    {
+                        "type": "minecraft:not",
+                        "predicate": {
+                            "type": "minecraft:solid",
+                            "offset": [0,-1,0]
+                        }
+                    }
+                ]
+            },
+            "then": {
+                "id": "minecraft:cave_air"
+            }
+        },
+        {
+            "if_true": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "type": "minecraft:solid"
+                    },
+                    {
+                        "type": "minecraft:not",
+                        "predicate": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:chest"
+                        }
+                    }
+                ]
+            },
+            "then": {
+                "id": "minecraft:cobbled_deepslate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "features": [
+        {
+            "feature": "myld:monster_room/ice_caves/monster_room_xz_4",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/ice_caves/monster_room_x4z3",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/ice_caves/monster_room_x3z4",
+            "placement": []
+        },
+        {
+            "feature": "myld:monster_room/ice_caves/monster_room_xz_3",
+            "placement": []
+        }
+    ]
+}

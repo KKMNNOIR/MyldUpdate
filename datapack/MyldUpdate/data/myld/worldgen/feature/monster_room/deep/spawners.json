@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:template",
+    "templates": [
+        {
+            "weight": 4,
+            "data": {
+                "id": "myld:monster_room/spawner_zombie"
+            }
+        },
+        {
+            "weight": 1,
+            "data": {
+                "id": "myld:monster_room/spawner_zombie_villager"
+            }
+        },
+        {
+            "weight": 2,
+            "data": {
+                "id": "myld:monster_room/spawner_skeleton"
+            }
+        },
+        {
+            "weight": 2,
+            "data": {
+                "id": "myld:monster_room/spawner_spider"
+            }
+        },
+        {
+            "weight": 1,
+            "data": {
+                "id": "myld:monster_room/spawner_creeper"
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:template",
+    "templates": [
+        {
+            "weight": 2,
+            "data": {
+                "id": "myld:monster_room/ice_caves/spawner_frostbite"
+            }
+        },
+        {
+            "weight": 1,
+            "data": {
+                "id": "myld:monster_room/ice_caves/spawner_stray"
+            }
+        },
+        {
+            "weight": 1,
+            "data": {
+                "id": "myld:monster_room/spawner_spider"
+            }
+        }
+    ]
+}
