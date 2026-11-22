@@ -137,7 +137,8 @@
 			"myld:large_amethyst_bud",
             "myld:patch_amethyst_buds_ceiling",
 			"myld:patch_amethyst_buds_floor",
-			"myld:patch_amethyst_buds_wall"
+			"myld:patch_amethyst_buds_wall",
+			"myld:patch_amethyst_buds_waterlogged"
         ],
 		[
             "minecraft:spring_water",
