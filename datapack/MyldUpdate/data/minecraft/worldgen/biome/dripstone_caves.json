@@ -134,7 +134,8 @@
       "minecraft:monster_room_deep"
     ],
     [
-      "myld:calcite_pinnacle"
+      "myld:calcite_pinnacle",
+      "myld:patch_calcite_blob"
     ],
     [],
     [
