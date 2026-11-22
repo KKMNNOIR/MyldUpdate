@@ -18,7 +18,7 @@
       "data": {
         "feature": {
           "type": "minecraft:random_boolean_selector",
-          "feature_false": "minecraft:spruce_checked",
+          "feature_false": "myld:spruce_dappled_forest_checked",
           "feature_true": "myld:birch_dappled_forest_checked"
         },
         "placement": []

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:tree",
+    "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "lower_size": 0,
+        "upper_size": 2,
+        "limit": 2
+    },
+    "below_trunk_provider": "minecraft:soil_beneath_tree",
+    "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 12,
+        "height_rand_a": 4,
+        "height_rand_b": 2
+    },
+    "trunk_provider": "myld:trees/spruce/log",
+    "ignore_vines": true,
+    "foliage_placer": {
+        "type": "minecraft:spruce_foliage_placer",
+        "offset": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0,
+            "max_inclusive": 2
+        },
+        "radius": 3,
+        "trunk_height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 2
+        }
+    },
+    "foliage_provider": "myld:trees/spruce/foliage",
+    "decorators": []
+}
