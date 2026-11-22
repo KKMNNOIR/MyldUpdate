@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#minecraft:substrate_overworld",
+        "minecraft:oak_wood",
+        "minecraft:jungle_wood",
+        "minecraft:spruce_wood",
+        "minecraft:birch_wood",
+        "minecraft:pale_oak_wood",
+        "minecraft:poplar_wood"
+    ]
+}
