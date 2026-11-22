@@ -8,7 +8,7 @@
                 "tag": "myld:desert_cave_replaceables"
             },
             "state": {
-                "id": "minecraft:iron_ore"
+                "id": "minecraft:raw_iron_block"
             }
         },
         {

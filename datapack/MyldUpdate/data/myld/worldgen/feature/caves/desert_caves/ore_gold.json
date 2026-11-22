@@ -8,7 +8,7 @@
                 "tag": "myld:desert_cave_replaceables"
             },
             "state": {
-                "id": "minecraft:gold_ore"
+                "id": "minecraft:raw_gold_block"
             }
         },
         {
