@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 56,
+		"pack_format": 127,
 		"description": [
             {
                 "text": "This is my "
@@ -10,10 +10,6 @@
                 "color": "#98fb98",
                 "bold": true
             }
-        ],
-        "supported_formats": [
-            18,
-            82
         ],
         "min_format": 107,
         "max_format": 128
