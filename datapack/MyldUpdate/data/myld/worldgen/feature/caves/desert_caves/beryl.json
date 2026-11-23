@@ -1,0 +1,412 @@
+{
+	"type": "minecraft:overlay",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:simple_block",
+				"to_place": {
+					"id": "minecraft:calcite"
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:count",
+					"count": 140
+				},
+				{
+					"type": "minecraft:randomly_selected",
+					"placements": [
+						{
+							"type": "minecraft:offset",
+							"x": {
+								"type": "minecraft:trapezoid",
+								"min": -1,
+								"max": 1,
+								"plateau": 0
+							},
+							"y": {
+								"type": "minecraft:trapezoid",
+								"min": -1,
+								"max": 1,
+								"plateau": 0
+							},
+							"z": {
+								"type": "minecraft:trapezoid",
+								"min": -2,
+								"max": 2,
+								"plateau": 0
+							}
+						},
+						{
+							"type": "minecraft:offset",
+							"x": {
+								"type": "minecraft:trapezoid",
+								"min": -2,
+								"max": 2,
+								"plateau": 0
+							},
+							"y": {
+								"type": "minecraft:trapezoid",
+								"min": -1,
+								"max": 1,
+								"plateau": 0
+							},
+							"z": {
+								"type": "minecraft:trapezoid",
+								"min": -1,
+								"max": 1,
+								"plateau": 0
+							}
+						},
+						{
+							"type": "minecraft:offset",
+							"x": {
+								"type": "minecraft:trapezoid",
+								"min": -2,
+								"max": 2,
+								"plateau": 0
+							},
+							"y": {
+								"type": "minecraft:trapezoid",
+								"min": -2,
+								"max": 2,
+								"plateau": 0
+							},
+							"z": {
+								"type": "minecraft:trapezoid",
+								"min": -2,
+								"max": 2,
+								"plateau": 0
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"feature": {
+				"type": "minecraft:simple_random_selector",
+				"features": [
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "up",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [0, -1, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "down",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [0, 1, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "east",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [-1, 0, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "west",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [1, 0, 0]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "north",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [0, 0, 1]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"feature": {
+							"type": "minecraft:block_column",
+							"direction": "south",
+							"allowed_placement": {
+								"type": "minecraft:true"
+							},
+							"prioritize_tip": false,
+							"layers": [
+								{
+									"height": {
+										"type": "minecraft:weighted_list",
+										"distribution": [
+											{
+												"weight": 4,
+												"data": 2
+											},
+											{
+												"weight": 1,
+												"data": 3
+											}
+										]
+									},
+									"provider": {
+										"id": "minecraft:emerald_block"
+									}
+								}
+							]
+						},
+						"placement": [
+							{
+								"type": "minecraft:block_predicate_filter",
+								"predicate": {
+									"type": "minecraft:any_of",
+									"predicates": [
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite"
+										},
+										{
+											"type": "minecraft:matching_blocks",
+											"blocks": "minecraft:calcite",
+											"offset": [0, 0, -1]
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"placement": [
+				{
+					"type": "minecraft:count",
+					"count": 16
+				},
+				{
+					"type": "minecraft:offset",
+					"x": {
+						"type": "minecraft:uniform",
+						"min_inclusive": -2,
+						"max_inclusive": 2
+					},
+					"y": {
+						"type": "minecraft:uniform",
+						"min_inclusive": -2,
+						"max_inclusive": 2
+					},
+					"z": {
+						"type": "minecraft:uniform",
+						"min_inclusive": -2,
+						"max_inclusive": 2
+					}
+				}
+			]
+		}
+	]
+}
