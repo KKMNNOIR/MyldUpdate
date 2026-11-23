@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "max_exclusive": 32,
+    "min_inclusive": -64,
+    "when_in_range": {
+        "type": "minecraft:range_choice",
+        "input": "myld:overworld/ore_vein/desert_caves/gold_vein_mask",
+        "max_exclusive": 1000000.0,
+        "min_inclusive": 0.0,
+        "when_in_range": {
+            "type": "minecraft:range_choice",
+            "input": {
+                "type": "minecraft:add",
+                "left": {
+                    "type": "minecraft:add",
+                    "left": "myld:overworld/ore_vein/desert_caves/gold_vein_toggle",
+                    "right": 0.4
+                },
+                "right": {
+                    "type": "minecraft:add",
+                    "left": {
+                        "type": "minecraft:mul",
+                        "left": {
+                            "type": "minecraft:clamp",
+                            "input": {
+                                "type": "minecraft:min",
+                                "left": {
+                                    "type": "minecraft:sub",
+                                    "left": 32,
+                                    "right": "minecraft:y"
+                                },
+                                "right": {
+                                    "type": "minecraft:sub",
+                                    "left": "minecraft:y",
+                                    "right": -64
+                                }
+                            },
+                            "max": 50,
+                            "min": -64
+                        },
+                        "right": 0.01
+                    },
+                    "right": -0.2
+                }
+            },
+            "max_exclusive": 1000000.0,
+            "min_inclusive": 0.0,
+            "when_in_range": 0.7,
+            "when_out_of_range": -1.0
+        },
+        "when_out_of_range": -1.0
+    },
+    "when_out_of_range": -1.0
+}
