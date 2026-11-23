@@ -1,0 +1,18 @@
+{
+    "values": [
+        "myld:overworld/desert_caves",
+        "myld:overworld/coniferous_forest",
+        "myld:overworld/gravelly_shore",
+        "myld:overworld/icy_grove",
+        "myld:overworld/lush_desert",
+        "myld:overworld/lush_dripstone_caves",
+        "myld:overworld/pale_undergarden",
+        "myld:overworld/rocky_desert",
+        "myld:overworld/snowy_dead_forest",
+        "myld:overworld/snowy_old_growth_pine_taiga",
+        "myld:overworld/snowy_old_growth_spruce_taiga",
+        "myld:overworld/steppe",
+        "myld:overworld/tundra",
+        "myld:overworld/wastes"
+    ]
+}
