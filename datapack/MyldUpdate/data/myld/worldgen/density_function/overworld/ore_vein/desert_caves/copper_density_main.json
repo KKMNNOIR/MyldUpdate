@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:range_choice",
-	"input": "minecraft:overworld/ore_vein/mask",
+	"input": "myld:overworld/ore_vein/desert_caves/iron_vein_mask",
 	"max_exclusive": 1000000.0,
 	"min_inclusive": 0.0,
 	"when_in_range": {
@@ -25,12 +25,16 @@
 								"left": 60,
 								"right": "minecraft:y"
 							},
-							"right": "minecraft:y"
+							"right": {
+								"type": "minecraft:sub",
+								"left": "minecraft:y",
+								"right": -36
+							}
 						},
-						"max": 20.0,
-						"min": -36.0
+						"max": 48.0,
+						"min": 0.0
 					},
-					"right": 0.0
+					"right": 0.01
 				},
 				"right": 0.0
 			}
